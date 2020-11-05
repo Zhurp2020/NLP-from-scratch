@@ -189,12 +189,12 @@ In Exercises 47–58, say whether the function is even, odd, or neither. Give re
     $-g(x) = g(-x) = -\dfrac{x}{x^2 - 1}$
 55. $h(t) = -\dfrac{1}{t - 1}$  
     neither  
-    $-h(x) = \dfrac{1}{t - 1},h(-x) = -\dfrac{1}{-t - 1} = \dfrac{1}{t + 1}$
+    $-h(t) = \dfrac{1}{t - 1},h(-t) = -\dfrac{1}{-t - 1} = \dfrac{1}{t + 1}$
 56. $h(t) = -|t^3|$    
     even, $h(t) = h(-t) = -|t^3|$
 57. $h(t) = 2t + 1$   
     neither  
-    $-h(x) = -2t - 1,h(-x) = -2t + 1$  
+    $-h(t) = -2t - 1,h(-t) = -2t + 1$  
 58. $h(t) = 2|t| + 1$    
     even, $h(t) = h(-t) = 2|t| + 1$
 59. $\sin 2x$    
@@ -215,13 +215,22 @@ In Exercises 47–58, say whether the function is even, odd, or neither. Give re
 65. The variables $r$ and $s$ are inversely proportional, and $r = 6$ when $s = 4$. Determine $s$ when $r = 10$.   
     $s = \dfrac{24}{r}$  
     $s = \dfrac{12}{5}$
-66. **Boyle’s Law** Boyle’s Law says that the volume $V$ of a gas at constant temperature increases whenever the pressure $P$ decreases, so that $V$ and $P$ are inversely proportional. If $P = 14.7 lb/in^2$ when $V = 1000 in^3$, then what is V when $P = 23.4 lb/in^2$?
+66. **Boyle’s Law** Boyle’s Law says that the volume $V$ of a gas at constant temperature increases whenever the pressure $P$ decreases, so that $V$ and $P$ are inversely proportional. If $P = 14.7 lb/in^2$ when $V = 1000 in^3$, then what is $V$ when $P = 23.4 lb/in^2$?  
+    $V = \dfrac{14700}{P}$  
+    $V = \dfrac{14700}{P} = 628.2in^3$
 67. A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions $14 in$. by $22 in$. by cutting out equal squares of side $x$ at each corner and then folding up the sides as in the figure. Express the volume $V$ of the box as a function of $x$.
     ![](../images/Thomas%20Calculus/1-13.jpg)
+    $V = (22 - 2x)(14 - 2x)x$  
+    &emsp;$= (4x^2 - 72x + 308)x$  
+    &emsp;$= 4x^3 - 72x^2 + 308x$
 68. The accompanying figure shows a rectangle inscribed in an isosceles right triangle whose hypotenuse is $2$ units long.   
     ![](../images/Thomas%20Calculus/1-14.jpg)
-    a. Express the $y$-coordinate of $P$ in terms of $x$. (You might start by writing an equation for the line $AB$.)   
-    b. Express the area of the rectangle in terms of $x$.  
+    a. Express the $y$-coordinate of $P$ in terms of $x$. (You might start by writing an equation for the line $AB$.)     
+    $\dfrac{y}{OB} = \dfrac{AP}{AB}$   
+    $\dfrac{y}{1} = \dfrac{\sqrt{2}(1 - x)}{\sqrt{2}}$   
+    $y = 1 - x$  
+    b. Express the area of the rectangle in terms of $x$.    
+    $S = 2xy$  
     
 In Exercises 69 and 70, match each equation with its graph. Do not use a graphing device, and give reasons for your answer.
 
