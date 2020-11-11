@@ -235,23 +235,45 @@ In Exercises 47–58, say whether the function is even, odd, or neither. Give re
 In Exercises 69 and 70, match each equation with its graph. Do not use a graphing device, and give reasons for your answer.
 
 69. a. $y = x^4$ b. $y = x^7$ c. $y = x^{10}$  
-    ![](../images/Thomas%20Calculus/1-15.jpg)
+    ![](../images/Thomas%20Calculus/1-15.jpg)  
+    a-$h$, b-$f$, c-$g$
 70. a. $y = 5x$ b. $y = 5^x$ c. $y = x^5$
-    ![](../images/Thomas%20Calculus/1-16.jpg)
+    ![](../images/Thomas%20Calculus/1-16.jpg)  
+    a-$f$, b-$g$, c-$h$  
 71. a. Graph the functions $f(x) = \dfrac{x}{2}$ and $g(x) = 1 + \dfrac{4}{x}$ together to identify the values of $x$ for which
-$$
-\dfrac{x}{2} > 1 + \dfrac{4}{x}.
-$$
-    b. Confirm your findings in part (a) algebraically.
-1.  a. Graph the functions $f(x) = \dfrac{3}{x - 1}$ and $g(x) = \dfrac{2}{x + 1}$ together to identify the values of $x$ for which
-$$
-\dfrac{3}{x - 1} > \dfrac{2}{x + 1}.
-$$
-    b. Confirm your findings in part (a) algebraically.
-73. For a curve to be symmetric about the $x$-axis, the point $(x, y)$ must lie on the curve if and only if the point $(x, -y)$ lies on the curve. Explain why a curve that is symmetric about the $x$-axis is not the graph of a function, unless the function is $y = 0$.
-74. Three hundred books sell for $40 each, resulting in a revenue of (300)($40) = $12,000. For each $5 increase in the price, 25 fewer books are sold. Write the revenue $R$ as a function of the number $x$ of $5 increases.
-75. A pen in the shape of an isosceles right triangle with legs of length $x$ ft and hypotenuse of length $h$ ft is to be built. If fencing costs $5/ft for the legs and $10/ft for the hypotenuse, write the total cost $C$ of construction as a function of $h$.
+    $$
+    \dfrac{x}{2} > 1 + \dfrac{4}{x}.
+    $$
+    b. Confirm your findings in part (a) algebraically.  
+    if $x>0$:  
+    $x^2 -2x -8 > 0$  
+    $(x - 4)(x + 2) > 0$  
+    $x < -2$ or $x > 4$ and $x > 0$,$x > 4$  
+    if $x>0$:  
+    $x^2 -2x -8 < 0$    
+    $(x - 4)(x + 2) < 0$    
+    $-2 < x < 4$ and $x < 0$,$-2 < x < 0$  
+    $\therefore x\in (-2,0) \cup(4,+\infty)$
+72. a. Graph the functions $f(x) = \dfrac{3}{x - 1}$ and $g(x) = \dfrac{2}{x + 1}$ together to identify the values of $x$ for which
+    $$
+    \dfrac{3}{x - 1} > \dfrac{2}{x + 1}.
+    $$
+    b. Confirm your findings in part (a) algebraically.  
+    $\dfrac{3}{x - 1} - \dfrac{2}{x + 1} > 0$  
+    $\dfrac{3x + 3 - (2x - 2)}{(x + 1)(x - 1)} > 0$   
+    $\dfrac{x + 5}{(x + 1)(x - 1)} > 0$  
+    $x\in (-5,-1)\cup(1,+\infty)$
+73. For a curve to be symmetric about the $x$-axis, the point $(x, y)$ must lie on the curve if and only if the point $(x, -y)$ lies on the curve. Explain why a curve that is symmetric about the $x$-axis is not the graph of a function, unless the function is $y = 0$.   
+    The line $x = x_1,x_1\in D$ will intersect the curve at $(x_1,y)$ and $(x_1,y)$ unless the curve is $y = 0$.  
+74. Three hundred books sell for $40 each, resulting in a revenue of (300)($40) = $12,000. For each $5 increase in the price, 25 fewer books are sold. Write the revenue $R$ as a function of the number $x$ of \$5 increases.    
+    $R = (40 + 5x)(300 -25x)$    
+    $R = -125x^2 + 500x + 12000$
+75. A pen in the shape of an isosceles right triangle with legs of length $x$ ft and hypotenuse of length $h$ ft is to be built. If fencing costs $5/ft for the legs and $10/ft for the hypotenuse, write the total cost $C$ of construction as a function of $h$.   
+    $C = 10h + 2\dfrac{\sqrt{2}}{2}h$  
+    $C = (10 + \sqrt{2})h$
 76. **Industrial costs** A power plant sits next to a river where the river is 800 ft wide. To lay a new cable from the plant to a location in the city 2 mi downstream on the opposite side costs $180 per foot across the river and $100 per foot along the land.
-    ![](../images/Thomas%20Calculus/1-17.jpg)
-    a. Suppose that the cable goes from the plant to a point $Q$ on the opposite side that is $x$ ft from the point $P$ directly opposite the plant. Write a function $C(x)$ that gives the cost of laying the cable in terms of the distance $x$.
+    ![](../images/Thomas%20Calculus/1-17.jpg)  
+    a. Suppose that the cable goes from the plant to a point $Q$ on the opposite side that is $x$ ft from the point $P$ directly opposite the plant. Write a function $C(x)$ that gives the cost of laying the cable in terms of the distance $x$.    
+    $C(x) = 100(10560-x) + 180\sqrt{x^2 + 800^2}$  
+    $C(x) = 180\sqrt{x^2 + 640000} -100x + 1056000$   
     b. Generate a table of values to determine if the least expensive location for point $Q$ is less than 2000 ft or greater than 2000ft from point $P$.
