@@ -119,7 +119,7 @@ Find a formula for each function graphed in Exercises 29–32.
     $f(x) = \left\{\begin{aligned} -x &, -1 \le x < 0\\ 1&, 0 < x \le 1 \\ -\dfrac{1}{2}x + \dfrac{3}{2} &, 1 \le x < 3\end{aligned}\right.$   
     b. $f(x) = \left\{\begin{aligned} -\dfrac{1}{2}x &, -2 \le x \le 0\\ -2x + 2&, 0 < x \le 1 \\ -1 &, 1 < x \le 3\end{aligned}\right.$  
 32. a. $\left\{\begin{aligned} 3k + b = 0 \\ k + b = 1\end{aligned}\right.$   
-    &emsp;$\left\{\begin{aligned} k &= -\dfrac{1}{2} \\ b &= \dfrac{3}{2}\end{aligned}\right.$   
+    &emsp;$\left\{\begin{aligned} k &= -\dfrac{1}{2} \\ b &= \dfrac{3}{2}\end{aligned}\right.$  
     $f(x) = \left\{\begin{aligned} 0 &, 0 \le x < \dfrac{T}{2}\\ 2Tx - 2T^2 + 1&, \dfrac{T}{2} < x \le T \end{aligned}\right.$   
     b. $f(x) = \left\{\begin{aligned}A &, 0 \le x < \dfrac{T}{2}\quad or\quad T \le x < \dfrac{3}{2}T\\ -A &, \dfrac{T}{2} \le x < T \quad or\quad \dfrac{3}{2}T \le x \le 2T\end{aligned}\right.$  
 #### The Greatest and Least Integer Functions

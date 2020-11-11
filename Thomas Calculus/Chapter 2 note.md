@@ -78,3 +78,42 @@ $$
 >\lim\limits_{x\to c}f(x) = L
 >$$
 ![](../images/Thomas%20Calculus/2-3.jpg)
+### 2.3 The Precise Definition of a Limit
+#### Definition of Limit
+>**DEFINITION** Let $f(x)$ be defined on an open interval about $c$, except possibly at $c$ itself. We say that the limit of $f(x)$ as $x$ approaches $c$ is the number $L$, and write
+>$$
+>\lim_{x\to c}f(x) = L
+>$$
+>if, for every number $\varepsilon > 0$, there exists a corresponding number $\delta > 0$ such that
+>$$
+>|f(x) - L| < \varepsilon\quad\sf{whenever}\quad0 < |x - c| < \delta.
+>$$
+#### Examples: Testing the Definition
+#### Finding Deltas Algebraically for Given Epsilons
+1. Solve the inequality $|f(x) - L| < \varepsilon$ to ind an open interval $(a, b)$ containing $c$ on which the inequality holds for all $x \ne c$. 
+2. Find a value of $\delta > 0$ that places the open interval $(c - \delta, c + \delta)$ centered at $c$ inside the interval $(a, b)$. The inequality $|f(x) - L| < \varepsilon$ will hold for all $x \ne c$ in this $\delta$-interval.
+#### Using the Definition to Prove Theorems
+Given that $\lim_{x\to c}f(x) = L$ and $\lim_{x\to c}g(x) = M$, prove that
+$$
+\lim_{x\to c}(f(x) + g(x)) = L + M
+$$ 
+Proof:  
+Given a $\varepsilon > 0$, find a $\delta > 0$ such that, 
+$$
+|f(x) + g(x) - (L + M)| < \varepsilon\quad\mathsf{whenever}\quad0 < |x - c| < \delta  \\
+|f(x) + g(x) - L - M| = |f(x) - L + g(x) - M| \le |f(x) - L| + |g(x) - M|  
+$$    
+Since $\lim_{x\to c}f(x) = L$, there exists a $\delta_1$ such that:  
+$$
+|f(x) - L| < \dfrac{\varepsilon}{2}\quad\mathsf{whenever}\quad|x - c| < \delta_1
+$$  
+Since $\lim_{x\to c}g(x) = M$, there exists a $\delta_2$ such that:  
+$$
+|g(x) - M| < \dfrac{\varepsilon}{2}\quad\mathsf{whenever}\quad|x - c| < \delta_2  \\
+|f(x) - L| + |g(x) - M| < \varepsilon\quad\mathsf{whenever} \quad|x - c| < \delta_1\quad\mathsf{and}\quad|x - c| < \delta_2
+$$  
+let $\delta$ be $\min\{\delta_1,\delta_2\}$,    
+$$    
+\therefore |f(x) + g(x) - (L + M)| < \varepsilon\quad\mathsf{whenever}\quad0 < |x - c| < \delta \\
+\lim_{x\to c}(f(x) + g(x)) = L + M
+$$ 
