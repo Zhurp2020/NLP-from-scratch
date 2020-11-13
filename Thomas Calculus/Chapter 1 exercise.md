@@ -218,13 +218,13 @@ In Exercises 47–58, say whether the function is even, odd, or neither. Give re
 66. **Boyle’s Law** Boyle’s Law says that the volume $V$ of a gas at constant temperature increases whenever the pressure $P$ decreases, so that $V$ and $P$ are inversely proportional. If $P = 14.7 lb/in^2$ when $V = 1000 in^3$, then what is $V$ when $P = 23.4 lb/in^2$?  
     $V = \dfrac{14700}{P}$  
     $V = \dfrac{14700}{P} = 628.2in^3$
-67. A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions $14 in$. by $22 in$. by cutting out equal squares of side $x$ at each corner and then folding up the sides as in the figure. Express the volume $V$ of the box as a function of $x$.
-    ![](../images/Thomas%20Calculus/1-13.jpg)
-    $V = (22 - 2x)(14 - 2x)x$  
+67. A box with an open top is to be constructed from a rectangular piece of cardboard with dimensions $14 in$. by $22 in$. by cutting out equal squares of side $x$ at each corner and then folding up the sides as in the figure. Express the volume $V$ of the box as a function of $x$.  
+    ![](../images/Thomas%20Calculus/1-13.jpg)   
+    $V = (22 - 2x)(14 - 2x)x$     
     &emsp;$= (4x^2 - 72x + 308)x$  
     &emsp;$= 4x^3 - 72x^2 + 308x$
 68. The accompanying figure shows a rectangle inscribed in an isosceles right triangle whose hypotenuse is $2$ units long.   
-    ![](../images/Thomas%20Calculus/1-14.jpg)
+    ![](../images/Thomas%20Calculus/1-14.jpg)   
     a. Express the $y$-coordinate of $P$ in terms of $x$. (You might start by writing an equation for the line $AB$.)     
     $\dfrac{y}{OB} = \dfrac{AP}{AB}$   
     $\dfrac{y}{1} = \dfrac{\sqrt{2}(1 - x)}{\sqrt{2}}$   
@@ -234,12 +234,12 @@ In Exercises 47–58, say whether the function is even, odd, or neither. Give re
     
 In Exercises 69 and 70, match each equation with its graph. Do not use a graphing device, and give reasons for your answer.
 
-69. a. $y = x^4$ b. $y = x^7$ c. $y = x^{10}$  
-    ![](../images/Thomas%20Calculus/1-15.jpg)  
-    a-$h$, b-$f$, c-$g$
-70. a. $y = 5x$ b. $y = 5^x$ c. $y = x^5$
-    ![](../images/Thomas%20Calculus/1-16.jpg)  
-    a-$f$, b-$g$, c-$h$  
+69. a. $y = x^4$ b. $y = x^7$ c. $y = x^{10}$    
+    ![](../images/Thomas%20Calculus/1-15.jpg)    
+    a-$h$, b-$f$, c-$g$   
+70. a. $y = 5x$ b. $y = 5^x$ c. $y = x^5$   
+    ![](../images/Thomas%20Calculus/1-16.jpg)    
+    a-$f$, b-$g$, c-$h$    
 71. a. Graph the functions $f(x) = \dfrac{x}{2}$ and $g(x) = 1 + \dfrac{4}{x}$ together to identify the values of $x$ for which
     $$
     \dfrac{x}{2} > 1 + \dfrac{4}{x}.
