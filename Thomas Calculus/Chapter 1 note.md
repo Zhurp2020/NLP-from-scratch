@@ -37,9 +37,9 @@ for every $x$ in the function’s domain.
    1. **identity function** $f(x) = x$
     > **DEFINITION** Two variables $y$ and $x$ are **proportional** (to one another) if one is always a constant multiple of the other—that is, if $y = kx$ for some nonzero constant $k$.
 2. **Power Functions** $f(x) = x^a$
-   1. $f(x) = x^a$ with $a=n$, a positive integer
+   1. $f(x) = x^a$ with $a=n$, a positive integer   
    ![](../images/Thomas%20Calculus/1-1.jpg)
-   2.  $f(x) = x^a$ with $a=-1$ or $a=-2$
+   2.  $f(x) = x^a$ with $a=-1$ or $a=-2$   
    ![](../images/Thomas%20Calculus/1-2.jpg)  
    3. $f(x) = x^a$ with $a=\dfrac{1}{2},\dfrac{1}{3},\dfrac{3}{2}$ and $\dfrac{2}{3}$ 
       1. **square root function** $f(x) = \sqrt{x}$   
@@ -51,18 +51,12 @@ for every $x$ in the function’s domain.
    2. **degree** $n$ if $a_n \ne 0$
    3. **quadratic functions** $p(x) = ax^2 + bx + c$
    4. **cubic functions** $p(x) = ax^3 + bx^2 + cx + d$
-   
-   ![](../images/Thomas%20Calculus/1-4.jpg)
 4. **Rational Functions** $f(x) = \dfrac{p(x)}{q(x)}$, where $p$ and $q$ are polynomials
-   ![](../images/Thomas%20Calculus/1-5.jpg)
 5. **Algebraic Functions** Any function constructed from polynomials using algebraic operations (addition, subtraction, multiplication, division, and taking roots)
-   ![](../images/Thomas%20Calculus/1-8.jpg)
-6. **Trigonometric Functions** 
-   ![](../images/Thomas%20Calculus/1-6.jpg)
-7. **Exponential Functions** $f(x) = a^x$ where $a>0$ and $a \ne 1$ 
+6. **Trigonometric Functions**    
+7. **Exponential Functions** $f(x) = a^x$ where $a>0$ and $a \ne 1$    
 8. **Logarithmic Functions** $f(x) = \log_ax$, where $a > 0$ and $a \ne 1$
 9.  **Transcendental Functions** not algebraic   
-   ![](../images/Thomas%20Calculus/1-10.jpg)
 ### 1.2 Combining Functions; Shifting and Scaling Graphs
 #### Sums, Differences, Products, and Quotients
 If $f$ and $g$ are functions, then for $x \in (D(f)\cap D(g))$, 
@@ -163,7 +157,7 @@ $$
 >$$   
 $\sin^2\theta + (1 - \cos\theta)^2 = AP^2 \le \theta^2$  
 $\sin^2\theta \ge 0, (1 - \cos\theta) \ge 0$  
-$\sin^2\theta \le \theta^2, (1 - \cos\theta) \le \theta^2$ 
+$\sin^2\theta \le \theta^2, (1 - \cos\theta) \le \theta^2$   
 ![](../images/Thomas%20Calculus/1-21.jpg)  
 #### Transformations of Trigonometric Graphs
 $$

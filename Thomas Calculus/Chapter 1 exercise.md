@@ -31,12 +31,12 @@ In Exercises 7 and 8, which of the graphs are graphs of functions of $x$, and wh
    $\dfrac{2}{t^2 - 16} \le -\dfrac{1}{8}$ or $\dfrac{2}{t^2 - 16} \ge 0$  
    $D: (-\infty,-4) \cup (-4,4) \cup (4,+\infty)$  
    $R: (-\infty,-\dfrac{1}{8}] \cup (0,+\infty)$     
-7. graph:
-   ![](../images/Thomas%20Calculus/1-7.jpg)
-   a. A vertical line will intersect with the b graph twice.   
-8. graph: 
-   ![](../images/Thomas%20Calculus/1-9.jpg)
-   Neither a nor b.
+7. graph:   
+   ![](../images/Thomas%20Calculus/1-7.jpg)  
+   a. A vertical line will intersect with the b graph twice.     
+8. graph:   
+   ![](../images/Thomas%20Calculus/1-9.jpg)    
+   Neither a nor b.  
 #### Finding Formulas for Functions
 9. Express the area and perimeter of an equilateral triangle as a function of the triangle’s side length $x$.  
    $S=\dfrac{\sqrt{3}}{4}x$
@@ -101,15 +101,15 @@ Graph the functions in Exercises 25–28.
 
 25. $f(x) = \left\{\begin{aligned} x &, 0 \le x \le 1\\ 2 - x &, 1 < x \le 2\end{aligned}\right.$  
 26. $g(x) = \left\{\begin{aligned} 1 - x &, 0 \le x \le 1\\ 2 - x &, 1 < x \le 2\end{aligned}\right.$  
-27. $F(x) = \left\{\begin{aligned} 4 - x &, x \le 1\\ x^2 + 2x &, x \ge 1\end{aligned}\right.$   
+27. $F(x) = \left\{\begin{aligned} 4 - x &, x \le 1\\ x^2 + 2x &, x > 1\end{aligned}\right.$   
 28. $G(x) = \left\{\begin{aligned} \dfrac{1}{x} &, x < 0\\ x &, x \ge 0\end{aligned}\right.$   
     
-Find a formula for each function graphed in Exercises 29–32.
-![](../images/Thomas%20Calculus/1-11.jpg)
-![](../images/Thomas%20Calculus/1-12.jpg)
+Find a formula for each function graphed in Exercises 29–32.    
+![](../images/Thomas%20Calculus/1-11.jpg)  
+![](../images/Thomas%20Calculus/1-12.jpg)  
 
 29. a. $f(x) = \left\{\begin{aligned}x &, 0 \le x \le 1\\ 2 - x &, 1 < x \le 2\end{aligned}\right.$   
-    b. $f(x) = \left\{\begin{aligned}2 &, 0 \le x < 1\quad or\quad 2 \le x < 3\\ 0 &, 1 \le x < 2 \quad or\quad 3 \le x \le 4\end{aligned}\right.$ 
+    b. $f(x) = \left\{\begin{aligned}2 &, 0 \le x < 1\quad or\quad 2 \le x < 3\\ 0 &, 1 \le x < 2 \quad or\quad 3 \le x \le 4\end{aligned}\right.$    
 30. a. $\left\{\begin{aligned} 5k + b = 0 \\ 2k + b = 1\end{aligned}\right.$   
     &emsp;$\left\{\begin{aligned} k &= -\dfrac{1}{3} \\ b &= \dfrac{5}{3}\end{aligned}\right.$   
     $f(x) = \left\{\begin{aligned}2 - x &, 0 < x \le 2\\ -\dfrac{1}{3}x + \dfrac{5}{3}&, 2 < x \le 5\end{aligned}\right.$   
@@ -271,7 +271,7 @@ In Exercises 69 and 70, match each equation with its graph. Do not use a graphin
 75. A pen in the shape of an isosceles right triangle with legs of length $x$ ft and hypotenuse of length $h$ ft is to be built. If fencing costs $5/ft for the legs and $10/ft for the hypotenuse, write the total cost $C$ of construction as a function of $h$.   
     $C = 10h + 2\dfrac{\sqrt{2}}{2}h$  
     $C = (10 + \sqrt{2})h$
-76. **Industrial costs** A power plant sits next to a river where the river is 800 ft wide. To lay a new cable from the plant to a location in the city 2 mi downstream on the opposite side costs $180 per foot across the river and $100 per foot along the land.
+76. **Industrial costs** A power plant sits next to a river where the river is 800 ft wide. To lay a new cable from the plant to a location in the city 2 mi downstream on the opposite side costs $180 per foot across the river and $100 per foot along the land.   
     ![](../images/Thomas%20Calculus/1-17.jpg)  
     a. Suppose that the cable goes from the plant to a point $Q$ on the opposite side that is $x$ ft from the point $P$ directly opposite the plant. Write a function $C(x)$ that gives the cost of laying the cable in terms of the distance $x$.    
     $C(x) = 100(10560-x) + 180\sqrt{x^2 + 800^2}$  
