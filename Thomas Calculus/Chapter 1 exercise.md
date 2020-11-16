@@ -277,3 +277,67 @@ In Exercises 69 and 70, match each equation with its graph. Do not use a graphin
     $C(x) = 100(10560-x) + 180\sqrt{x^2 + 800^2}$  
     $C(x) = 180\sqrt{x^2 + 640000} -100x + 1056000$   
     b. Generate a table of values to determine if the least expensive location for point $Q$ is less than 2000 ft or greater than 2000ft from point $P$.
+### 1.2 Combining Functions; Shifting and Scaling Graphs
+#### Algebraic Combinations
+In Exercises 1 and 2, find the domains and ranges of $f$, $g$, $f + g$, and
+$f \cdot g$.
+1. $f(x) = x, g(x) = 2x - 1$  
+   $f\quad D:R\quad R:R$   
+   $g\quad D:R\quad R:R$    
+   $f + g\quad D:R\quad R:R$   
+   $f\cdot g\quad D:R\quad R:R$
+2. $f(x) = 2x + 1, g(x) = 2x - 1$
+#### Compositions of Functions
+5. If $f(x) = x + 5$ and $g(x) = x^2 - 3$, find the following.     
+a. $f(g(0))$ b. $g(f(0))$  
+c. $f(g(x))$ d. $g(f(x))$  
+e. $f(f(-5))$ f. $g(g(2))$  
+g. $f(f(x))$ h. $g(g(x))$  
+a. $f(g(0)) = g(0) + 5 = -3 + 5 = 2$  
+b. $g(f(0)) = f(0)^2 - 3 = 5^2 - 3 = 22$  
+c. $f(g(x)) = g(x) + 5 = x^2 - 3 + 5 = x^2 + 2$  
+d. $g(f(x)) = f(x)^2 - 3 = (x + 5)^2 - 3 = x^2 + 10x + 22$  
+e. $f(f(-2)) = f(-5) + 5 = 0 + 5 = 5$   
+f. $g(g(2)) = g(2)^2 - 3 = 2^2 -3 - 3 = -2$   
+g. $f(f(x)) = f(x) + 5 = x + 5 + 5 = x + 10$   
+h. $g(g(x)) = g(x)^2 - 3 = (x^2 - 3)^2 -3= x^4 -6x^2 + 6$
+#### Shifting Graphs
+23. The accompanying figure shows the graph of $y = -x^2$ shifted to two new positions. Write equations for the new graphs.    
+![](../images/Thomas%20Calculus/1-4.jpg)
+a. $y = -(x+7)^2 = -x^2 -14x - 49$  
+b. $y = -(x-4)^2 = -x^2 +8x - 16$
+#### Vertical and Horizontal Scaling
+Exercises 59–68 tell by what factor and direction the graphs of the given functions are to be stretched or compressed. Give an equation
+for the stretched or compressed graph.   
+
+59. $y = x^2 - 1$, stretched vertically by a factor of 3     
+    $y = 3x^2 -3$
+#### graphing
+In Exercises 69–76, graph each function, not by plotting points, but by starting with the graph of one of the standard functions presented in Figures 1.14–1.17 and applying an appropriate transformation.  
+
+69. $y = - \sqrt{2x + 1}$
+#### Combining Functions
+79. Assume that $f$ is an even function, $g$ is an odd function, and both $f$ and $g$ are defined on the entire real line $(-q, q)$. Which of the following (where defined) are even? odd?  
+a. $fg$ b. $\dfrac{f}{g}$ c. $\dfrac{g}{f}$   
+d. $f^2 = ff$ e. $g^2 = gg$ f. $ƒ \circ g$   
+g. $g \circ f$ h. $ƒ \circ ƒ$ i. $g \circ g$   
+a. odd b. odd c. odd  
+d. even e. even f. even   
+g. even h. even i. odd
+### 1.3 Trigonometric Functions
+#### Radians and Degrees
+1. On a circle of radius 10 m, how long is an arc that subtends a central angle of   
+   (a) $\dfrac{4\pi}{5}$ radians? (b) $110\degree$?  
+   a. $l = r\theta = 10 * \dfrac{4\pi}{5} = 8\pi m$  
+   a. $l = \dfrac{\theta}{360}2\pi r= \dfrac{110}{360} * 2 * 10 \pi = \dfrac{55}{9}\pi m$
+#### Evaluating Trigonometric Functions
+5. Copy and complete the following table of function values. If the function is undefined at a given angle, enter “UND.” Do not use a calculator or tables.  
+
+| $\theta$     | $-\pi$ | $-\dfrac{2}{3}\pi$ |$0$| $\dfrac{1}{2}\pi$ | $\dfrac{3}{4}\pi$ |
+| ------------ | ------ | ------------------ | --- | ----------------- | ----------------- |
+| $\sin\theta$ |   $0$| $-\dfrac{\sqrt{3}}{2}$|$0$|$1$|$\dfrac{\sqrt{2}}{2}$     |
+| $\cos\theta$ |$-1$| $-\dfrac{1}{2}$|$1$|$0$|$\dfrac{\sqrt{2}}{2}$|
+| $\tan\theta$ |$0$| $\sqrt{3}$|$0$|$\mathsf{UND}$|$-1$|
+| $\cot\theta$ |$\mathsf{UND}$|-$\dfrac{\sqrt{3}}{3}$|$\mathsf{UND}$|$0$|$-1$|
+| $\sec\theta$ |$-1$|$-2$|$1$|$\mathsf{UND}$|$\sqrt{2}$|
+| $\csc\theta$ |$\mathsf{UND}$|$-\dfrac{2\sqrt{3}}{3}$|$\mathsf{UND}$|$1$|$\sqrt{2}$|
