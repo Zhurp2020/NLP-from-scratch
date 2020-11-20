@@ -341,3 +341,128 @@ g. even h. even i. odd
 | $\cot\theta$ |$\mathsf{UND}$|-$\dfrac{\sqrt{3}}{3}$|$\mathsf{UND}$|$0$|$-1$|
 | $\sec\theta$ |$-1$|$-2$|$1$|$\mathsf{UND}$|$\sqrt{2}$|
 | $\csc\theta$ |$\mathsf{UND}$|$-\dfrac{2\sqrt{3}}{3}$|$\mathsf{UND}$|$1$|$\sqrt{2}$|
+#### Graphing Trigonometric Functions
+Graph the functions in Exercises 13–22. What is the period of each function?
+
+13. $\sin 2x$  
+    period: $\pi$
+#### Using the Addition Formulas
+Use the addition formulas to derive the identities in Exercises 31–36.  
+
+31. $\cos(x - \dfrac{\pi}{2}) = \sin x$  
+    $\cos(x - \dfrac{\pi}{2})$   
+    $= \cos x\cos\dfrac{\pi}{2} + \sin x \sin \dfrac{\pi}{2}$  
+    $= \sin x$
+#### Using the Half-Angle Formulas
+Find the function values in Exercises 47–50.  
+
+47. $\cos^2 \dfrac{\pi}{8}$  
+    $\cos^2 \dfrac{\pi}{8}$  
+    $= \dfrac{1 + \cos\dfrac{\pi}{4}}{2}$  
+    $= \dfrac{1 + \dfrac{\sqrt{2}}{2}}{2}$  
+    $= \dfrac{2 + \sqrt{2}}{4}$
+#### Solving Trigonometric Equations
+For Exercises 51–54, solve for the angle $\theta$, where $0 \le \theta \le 2\pi$.
+
+ 51. $\sin^2 \theta = \dfrac{3}{4}$  
+     $\sin \theta = \plusmn\dfrac{\sqrt{3}}{2}$  
+     $\theta = \plusmn \dfrac{\pi}{3},\plusmn\dfrac{2\pi}{3}$
+#### Theory and Examples
+55. The tangent sum formula. The standard formula for the tangent of the sum of two angles is
+$$
+\tan(A + B) = \dfrac{\tan A + \tan B}{1 - \tan A\tan B}.
+$$
+Derive the formula.  
+$\tan(A + B)$  
+$= \dfrac{\sin(A + B)}{\cos(A + B)}$  
+$= \dfrac{\sin A\cos B + \cos A \sin B}{\cos A\cos B - \sin A \sin B}$  
+$= \dfrac{\tan A + \tan B}{1 - \tan A \tan B}$
+#### COMPUTER EXPLORATIONS
+In Exercises 71–74, you will explore graphically the general sine function
+$$
+f(x) = A\sin(\dfrac{2\pi}{B}(x - C))+ D
+$$
+as you change the values of the constants $A$, $B$, $C$, and $D$. Use a CAS or computer grapher to perform the steps in the exercises.
+
+71. The period $B$. Set the constants $A = 3, C = D = 0$.  
+a. Plot $f(x)$ for the values $B = 1, 3, 2\pi, 5\pi$ over the interval $-4\pi \le x \le 4\pi$. Describe what happens to the graph of the general sine function as the period increases.  
+b. What happens to the graph for negative values of B? Try it with $B = -3 and B = -2\pi$.
+### 1.4 Graphing with software
+#### Choosing a Viewing Window
+In Exercises 1–4, use graphing software to determine which of the given viewing windows displays the most appropriate graph of the specified function.  
+1. $f(x) = x^4 - 7x^2 + 6x$  
+a. $[-1,1]$ by $[-1,1]$, b. $[-2,2]$ by $[-5,5]$  
+c. $[-10,10]$ by $[-10,10]$, d. $[-5,5]$ by $[-25,15]$
+#### Finding a Viewing Window
+In Exercises 5–30, find an appropriate graphing software viewing window for the given function and use it to display its graph. The window should give a picture of the overall behavior of the function. There is more than one choice, but incorrect choices can miss important aspects of the function.
+
+5. $f(x) = x^4 - 4x^3 + 15$
+### Practice exercises
+#### Functions and Graphs
+1. Express the area and circumference of a circle as functions of the circle’s radius. Then express the area as a function of the circumference.  
+   $S = \pi r^2, C = 2\pi r$  
+   $r = \dfrac{C}{2\pi}$  
+   $S = \pi \dfrac{C^2}{4\pi^2} = \dfrac{C^2}{4\pi}$
+#### Piecewise-Defined Functions
+In Exercises 35 and 36, find the (a) domain and (b) range.
+
+35. $y = \left\{\begin{aligned} \sqrt{-x}\quad &-4 \le x \le 0 \\ \sqrt{x}\quad&0 < x \le 4\end{aligned}\right.$   
+    $D: [-4,4],R:[0,2]$
+#### Composition of Functions
+In Exercises 39 and 40, find    
+a. $(f \circ g)(-1)$. b. $(g \circ f)(2)$.  
+c. $(f \circ f)(x)$. d. $(g \circ g)(x)$.  
+
+39. $f(x) =\dfrac{1}{x},g(x) = \dfrac{1}{\sqrt{x + 2}}$  
+    a. $(f \circ g)(-1) = \dfrac{1}{g(-1)} = 1$   
+    b. $(g \circ f)(2) = \dfrac{1}{\sqrt{f(2) + 2}} = \dfrac{1}{\sqrt{\dfrac{5}{2}}} = \dfrac{2}{\sqrt{10}} = \dfrac{\sqrt{10}}{5}$.    
+    c. $(f \circ f)(x) = \dfrac{1}{f(x)} = x$.   
+    d. $(g \circ g)(x) = \dfrac{1}{\sqrt{g(x) + 2}} = \dfrac{1}{\sqrt{\dfrac{1}{x + 2}+ 2}} = \dfrac{1}{\sqrt{\dfrac{1 + 2x + 4}{x + 2}}} = \sqrt{\dfrac{x + 2}{2x + 5}} = \dfrac{\sqrt{2x^2 + 9x + 10}}{2x + 5}$.  
+#### Shifting and Scaling Graphs
+53. Suppose the graph of $g$ is given. Write equations for the graphs that are obtained from the graph of $g$ by shifting, scaling, or reflecting, as indicated.  
+a. Up $\dfrac{1}{2}$ unit, right 3  
+$g(x - 3) + \dfrac{1}{2}$  
+b. Down 2 units, left $\dfrac{2}{3}$   
+$g(x + \dfrac{2}{3}) - 2$  
+c. Reflect about the $y$-axis  
+$g(-x)$   
+d. Reflect about the $x$-axis  
+$-g(x)$   
+e. Stretch vertically by a factor of 5  
+$5g(x)$  
+f. Compress horizontally by a factor of 5  
+$g(5x)$ 
+#### Trigonometry
+In Exercises 59–62, sketch the graph of the given function. What is the period of the function?
+
+59. $y = \cos 2x$   
+    period: $\pi$
+### Additional and Advanced Exercises
+#### Functions and Graphs
+1. Are there two functions $f$ and $g$ such that $f \circ g = g \circ f$? Give reasons for your answer.  
+   Yes. $f(x) = x, g(x) = 2x, f \circ g = g \circ f = 2x$
+#### Derivations and Proofs
+7. Prove the following identities.  
+a. $\dfrac{1 - \cos x}{\sin x} = \dfrac{\sin x}{1 + \cos x}$  
+b. $\dfrac{1 - \cos x}{1 + \cos x}= \tan^2\dfrac{x}{2}$  
+a. $\dfrac{1 - \cos x}{\sin x} - \dfrac{\sin x}{1 + \cos x}$  
+$= \dfrac{1 - \cos^2x - \sin^2x}{\sin x + \cos x} = 0$  
+$\therefore, \dfrac{1 - \cos x}{\sin x} = \dfrac{\sin x}{1 + \cos x}$  
+b. $\dfrac{1 - \cos x}{1 + \cos x}$  
+$= \dfrac{\dfrac{1- \cos x}{2}}{\dfrac{1 + \cos x}{2}}$   
+$= \dfrac{\sin^2 \dfrac{x}{2}}{\cos^2 \dfrac{x}{2}}$  
+$= \tan^2 \dfrac{x}{2}$
+#### Effects of Parameters on Graphs
+13. What happens to the graph of $y = ax^2 + bx + c$ as   
+a. $a$ changes while $b$ and $c$ remain fixed?  
+b. $b$ changes ($a$ and $c$ fixed, $a$ ≠ 0)?  
+c. $c$ changes ($a$ and $b$ fixed, $a$ ≠ 0)?  
+a. The opening of the graph becomes bigger or smaller  
+b. The symmetry axis moves left or right, the vertex moves up or down.  
+c. The graph moves up or down.
+#### Geometry
+15. An object’s center of mass moves at a constant velocity $v$ along a straight line past the origin. The accompanying figure shows the coordinate system and the line of motion. The dots show positions that are 1 sec apart. Why are the areas $A_1, A_2, \cdots, A_5$ in the figure all equal? As in Kepler’s equal area law (see Section 13.6), the line that joins the object’s center of mass to the origin sweeps out equal areas in equal times.   
+![](../images/Thomas%20Calculus/1-5.jpg)
+The distance traveled per second $d = v\Delta t$ is the same.   
+The distance from the origin to the line is $h$.   
+The area of the triangles: $S = \dfrac{1}{2}v\Delta t h$ remains the same.
