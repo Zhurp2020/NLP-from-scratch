@@ -2,12 +2,6 @@
 ## Chapter 2 Limits and Continuity
 ### 2.1 Rates of Change and Tangent Lines to Curves
 #### Average and Instantaneous Speed
-> **Average Speed**  
-> When $f(t)$ measures the distance traveled at time $t$,  
-> Average speed over $[t_1,t_2]$  
-> $$
-> = \dfrac{f(t_2) - f(t_1)}{t_2 - t_1}
->$$
 #### Average Rates of Change and Secant Lines
 >**DEFINITION** The average rate of change of $y = f(x)$ with respect to $x$ over the interval $[x_1,x_2]$ is
 >$$
@@ -103,11 +97,11 @@ $$
 |f(x) + g(x) - (L + M)| < \varepsilon\quad\mathsf{whenever}\quad0 < |x - c| < \delta  \\
 |f(x) + g(x) - L - M| = |f(x) - L + g(x) - M| \le |f(x) - L| + |g(x) - M|  
 $$    
-Since $\lim_{x\to c}f(x) = L$, there exists a $\delta_1$ such that:  
+Since $\lim\limits_{x\to c}f(x) = L$, there exists a $\delta_1$ such that:  
 $$
 |f(x) - L| < \dfrac{\varepsilon}{2}\quad\mathsf{whenever}\quad|x - c| < \delta_1
 $$  
-Since $\lim_{x\to c}g(x) = M$, there exists a $\delta_2$ such that:  
+Since $\lim\limits_{x\to c}g(x) = M$, there exists a $\delta_2$ such that:  
 $$
 |g(x) - M| < \dfrac{\varepsilon}{2}\quad\mathsf{whenever}\quad|x - c| < \delta_2  \\
 |f(x) - L| + |g(x) - M| < \varepsilon\quad\mathsf{whenever} \quad|x - c| < \delta_1\quad\mathsf{and}\quad|x - c| < \delta_2
