@@ -33,11 +33,11 @@ $$
 >  $$
 >  \lim_{x\to c}(kf(x))= kL 
 >  $$
->4. Product Rule: lim
+>4. Product Rule:
 >  $$
 >  \lim_{x\to c}(f(x)g(x))= L \cdot M
 >  $$
->5. Quotient Rule: lim
+>5. Quotient Rule: 
 >  $$
 >  \lim_{x\to c}\dfrac{f(x)}{g(x)}= \dfrac{L}{M}, M \ne 0
 >  $$
@@ -87,7 +87,7 @@ $$
 1. Solve the inequality $|f(x) - L| < \varepsilon$ to ind an open interval $(a, b)$ containing $c$ on which the inequality holds for all $x \ne c$. 
 2. Find a value of $\delta > 0$ that places the open interval $(c - \delta, c + \delta)$ centered at $c$ inside the interval $(a, b)$. The inequality $|f(x) - L| < \varepsilon$ will hold for all $x \ne c$ in this $\delta$-interval.
 #### Using the Definition to Prove Theorems
-Given that $\lim_{x\to c}f(x) = L$ and $\lim_{x\to c}g(x) = M$, prove that
+Given that $\lim\limits_{x\to c}f(x) = L$ and $\lim\limits_{x\to c}g(x) = M$, prove that
 $$
 \lim_{x\to c}(f(x) + g(x)) = L + M
 $$ 
