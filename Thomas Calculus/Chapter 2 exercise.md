@@ -328,3 +328,110 @@ Graph the rational functions in Exercises 103–108. Include the graphs and equa
 Graph the curves in Exercises 109–112. Explain the relationship between the curve’s formula and what you see.
 
 109. $y = \dfrac{x}{\sqrt{4 - x^2}}$
+### Practice Exercises
+Limits and Continuity
+1. Graph the function
+   $$
+   f(x) = \left\{\begin{aligned}
+       1&\quad x \le -1\\
+       -x&\quad -1 < x < 0\\
+       1&\quad x = 0\\
+       -x&\quad 0 < x < 1\\
+       1&\quad x \ge 1
+   \end{aligned}\right.
+   $$
+Then discuss, in detail, limits, one-sided limits, continuity, and one-sided continuity of $f$ at $x = -1, 0$, and $1$. Are any of the discontinuities removable? Explain  
+$\lim\limits_{x\to-1} = 1, \lim\limits_{x\to1^-} = -1,\lim\limits_{x\to1^+} = 1, \lim\limits_{x\to0} = 0$.  
+The function has a removable discontinuity at $x = 0$ and a jump discontinuity at $x = 1$
+#### Finding Limits
+In Exercises 9–28, find the limit or explain why it does not exist.
+ 
+9. $\lim\dfrac{x^2 - 4x + 4}{x^3 + 5x^2 -14x}$  
+    a. as $x \to 0$ b. as $x \to 2$  
+    a. $\lim\limits_{x \to 0}\dfrac{x^2 - 4x + 4}{x^3 + 5x^2 -14x} = \lim\limits_{x \to 0}\dfrac{(x - 2)^2}{x(x + 7)(x - 2)} = \lim\limits_{x \to 0}\dfrac{x - 2}{x(x + 7)}$  
+    It does not exist because it grows arbitrarily large near $x = 0$.  
+    b. $\lim\limits_{x \to 2}\dfrac{x^2 - 4x + 4}{x^3 + 5x^2 -14x} = \lim\limits_{x \to 2}\dfrac{x - 2}{x(x + 7)} = 0$
+#### Roots
+29. Let $f(x) = x^3 - x - 1$.  
+    a. Use the Intermediate Value Theorem to show that $f$ has a zero between -1 and 2.  
+    b. Solve the equation $f(x) = 0$ graphically with an error of magnitude at most $10^{-8}$.  
+    c. It can be shown that the exact value of the solution in part (b) is
+    $$
+    (\dfrac{1}{2} + \dfrac{\sqrt{69}}{18})^{\dfrac{1}{3}} + (\dfrac{1}{2} - \dfrac{\sqrt{69}}{18})^{\dfrac{1}{3}}
+    $$
+    Evaluate this exact answer and compare it with the value you found in part (b).  
+    a. $f(-1) = -1 < 0< f(2) = 5$  
+    $f$ is continuous over $[-1,2]$.  
+    The Intermediate Value Theorem gives that $f$ has a zero between -1 and 2.  
+#### Continuous Extension
+31. Can $f(x) = \dfrac{x (x^2 - 1)}{|x^2 - 1|}$ be extended to be continuous at $x = 1$ or $-1$? Give reasons for your answers. (Graph the function—you will find the graph interesting.)   
+   $f(x) = \left\{\begin{aligned}x&\quad x < -1 \\-x&\quad -1 < x < 1\\ x&\quad x >1\end{aligned}\right.$  
+   The function has a jump discontinuity at $x = 1$ and $-1$. It can not be extended to continuous.
+#### Limits at Infinity
+Find the limits in Exercises 37–46.
+
+37. $\lim\limits_{x \to \infty}\dfrac{2x + 3}{5x + 7}$  
+    $\lim\limits_{x \to \infty}\dfrac{2x + 3}{5x + 7} = \dfrac{2}{5}$
+#### Horizontal and Vertical Asymptotes
+47. Use limits to determine the equations for all vertical asymptotes.   
+    a. $y =\dfrac{x^2 + 4}{x - 3}$ b. $f(x) =\dfrac{x^2 - x - 2}{x^2 - 2x + 1}$  
+    c. $y =\dfrac{x^2 + x - 6}{x^2 + 2x - 8}$  
+    a. $y =\dfrac{x^2 + 4}{x - 3} = x + 3 + \dfrac{7}{x - 3}$  
+    The vertical asymptotes is $x = 3$  
+    b. $f(x) =\dfrac{x^2 - x - 2}{x^2 - 2x + 1} = 1 + \dfrac{x - 3}{x^2 - 2x + 1}$.  
+    The vertical asymptotes is $x = 1$  
+    c. $y =\dfrac{x^2 + x - 6}{x^2 + 2x - 8} = 1-\dfrac{x - 2}{x^2 + 2x - 8} = 1-\dfrac{x -2}{(x + 4)(x - 2)} = 1 - \dfrac{1}{x + 4}$  
+    The vertical asymptotes is $x = -4$ 
+### Additional and Advanced Exercises
+1. Lorentz contraction In relativity theory, the length of an object, say a rocket, appears to an observer to depend on the speed at which the object is traveling with respect to the observer. If the observer measures the rocket’s length as $L_0$at rest, then at speed $y$ the length will appear to be
+$$
+L = L_0\sqrt{1 - \dfrac{v^2}{c^2}}
+$$
+This equation is the Lorentz contraction formula. Here, $c$ is the speed of light in a vacuum, about $3 * 10^8 m/sec$. What happens to $L$ as $y$ increases? Find $\lim\limits_{y\to c^-} L$. Why was the left-hand limit needed?  
+$\lim\limits_{y\to c^-} L = 0$
+#### Precise Definition of Limit
+In Exercises 5–8, use the formal definition of limit to prove that the function is continuous at $c$.   
+
+5. $f(x) = x^2 - 7, c = 1$  
+   $\lim\limits_{x\to 1} = -6$   
+   Let $\varepsilon > 0$ be given  
+   $|f(x) + 6| < \varepsilon$   
+   $1 - \varepsilon < x^2 < 1 + \varepsilon$  
+   $-\sqrt{1 + \varepsilon} < x < \sqrt{1 + \varepsilon}$ and $x < -\sqrt{1 - \varepsilon}$ or $x > \sqrt{1 - \varepsilon}$     
+   $\sqrt{1 - \varepsilon} < x < \sqrt{1 + \varepsilon}$ or $-\sqrt{1 + \varepsilon} < x < -\sqrt{1 - \varepsilon}$  
+   There is a $0 < \delta < \sqrt{1 + \varepsilon} -1$ such that  
+   $$
+    |f(x) + 6| < \varepsilon\quad\mathsf{whenever}\quad |x - 1| < \delta
+   $$
+   This proves that $\lim\limits_{x\to 1} = -6$  
+   $\lim\limits_{x\to 1} = -6 = f(1)$  
+   This proves that the function is continuous at $x = 1$
+#### Generalized Limits Involving $\dfrac{\sin\theta}{\theta}$
+The formula $\lim\limits_{x\to0}\dfrac{\sin\theta}{\theta} = 1$ can be generalized. If $\lim\limits_{x\to0}f(x) = 0$ and $f(x)$ is never zero in an open interval containing the point $x = c$, except possibly at $c$ itself, then
+$$
+\lim\limits_{x\to0}\dfrac{\sin f(x)}{f(x)} = 1
+$$
+Here are several examples.  
+a. $\lim\limits_{x\to0}\dfrac{\sin x^2}{x^2} = 1$  
+b. $\lim\limits_{x\to0}\dfrac{\sin x^2}{x} = \lim\limits_{x\to0}\dfrac{\sin x^2}{x^2}\lim\limits_{x\to0}\dfrac{x^2}{x} = 0$  
+c.  $\lim\limits_{x\to-1}\dfrac{\sin (x^2 - x - 2)}{x + 1} = \lim\limits_{x\to-1}\dfrac{\sin (x^2 - x - 2)}{x^2 - x - 2}\lim\limits_{x\to-1}\dfrac{x^2 - x - 2}{x + 1} = \lim\limits_{x\to-1}\dfrac{(x - 2)(x + 1)}{x + 1} = -3$  
+d. $\lim\limits_{x\to1}\dfrac{\sin (1-\sqrt{x})}{x - 1} = \lim\limits_{x\to1}\dfrac{\sin (1-\sqrt{x})}{1-\sqrt{x}}\dfrac{1-\sqrt{x}}{x - 1} =\lim\limits_{x\to1}\dfrac{-1}{1 + \sqrt{x}} = -\dfrac{1}{2}$  
+Find the limits in Exercises 23–28.
+
+23. $\lim\limits_{x\to0}\dfrac{\sin (1 - \cos x)}{x}$  
+    $\lim\limits_{x\to0}\dfrac{\sin (1 - \cos x)}{x} =\lim\limits_{x\to0}\dfrac{\sin (1 - \cos x)}{1 - \cos x}\dfrac{1 - \cos x}{x} =\lim\limits_{x\to0}\dfrac{2\sin^2\frac{x}{2}}{x} = \lim\limits_{x\to0}\sin\dfrac{x}{2}\lim\limits_{x\to0}\dfrac{\sin\frac{x}{2}}{\frac{x}{2}} = 0$
+#### Oblique Asymptotes
+Find all possible oblique asymptotes in Exercises 29–32.
+
+29. $y = \dfrac{2x^\frac{3}{2}+ 2x - 3}{\sqrt{x} + 1}$  
+    $y = \dfrac{2x^\frac{3}{2}+ 2x - 3}{x^\frac{1}{2} + 1} =2x - \dfrac{3}{x^\frac{1}{2} + 1}$  
+    The oblique asymptotes is $y = 2x$
+#### Showing an Equation Is Solvable
+33. Assume that $1 < a < b$ and $\dfrac{a}{x} + x = \dfrac{1}{x - b}$. Show that this equation is solvable.   
+    $\dfrac{a}{x} + x = \dfrac{1}{x - b}$   
+    $a(x - b) + x^2(x - b) - x= 0$  
+    Let $f(x) = a(x - b) + x^2(x - b) - x$   
+    $f(1) = a -ab + 1 -b -1 = a - b -ab < 0$  
+    $f(a + b) = a^2 + a(a+b)^2 - a -b =a^2 + a^3 + 2a^2b + ab^2 -a-ab > a^2 + a^3 + 2a^2b + ab^2 - 2a^b = a^2 + a^3 + ab^2 > 0$  
+    $f(1)<0<f(a+b)$, $f$ is continuous over $(1,a+b)$.  
+    There is a $c\in(1, a+b)$ such that $f(c) = 0$. This shows that the equation is solvable.
