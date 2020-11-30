@@ -42,7 +42,7 @@ $$
 #### Notation
 #### Graphing the Derivative
 #### Differentiable on an Interval; One-Sided Derivatives
-A function $y = f(x)$ is differentiable on an open interval (finite or infinite) if it has a derivative at each point of the interval. It is differentiable on a closed interval $[a, b]$ if it is differentiable on the interior $(a, b)$ and if the limits $\lim_{h\to0^+}\dfrac{f(x_0 + h) - ƒ(x_0)}{h}$(Right-hand derivative at $a$) and $\lim_{h\to0^-}\dfrac{f(x_0 + h) - ƒ(x_0)}{h}$ (Left-hand derivative at $b$) exist at the endpoints.
+A function $y = f(x)$ is differentiable on an open interval (finite or infinite) if it has a derivative at each point of the interval. It is differentiable on a closed interval $[a, b]$ if it is differentiable on the interior $(a, b)$ and if the limits $\lim\limits_{h\to0^+}\dfrac{f(x_0 + h) - ƒ(x_0)}{h}$(Right-hand derivative at $a$) and $\lim\limits_{h\to0^-}\dfrac{f(x_0 + h) - ƒ(x_0)}{h}$ (Left-hand derivative at $b$) exist at the endpoints.
 #### When Does a Function Not Have a Derivative at a Point?
 ![](../images/Thomas%20Calculus/3-1.jpg) 
 #### Differentiable Functions Are Continuous
@@ -88,7 +88,7 @@ $$
 >\dfrac{d}{dx}cu= c\dfrac{du}{dx}
 >$$
 
->Derivative Sum Rule
+>Derivative Sum Rule   
 If $u$ and $v$ are differentiable functions of $x$, then their sum $u + v$ is differentiable at every point where $u$ and $v$ are both differentiable. At such points,
 >$$
 >\dfrac{d}{dx}(u + v) = \dfrac{du}{dx} + \dfrac{dv}{dx}
