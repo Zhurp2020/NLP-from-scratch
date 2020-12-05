@@ -93,7 +93,7 @@ Find the natural domain and graph the functions in Exercises 15–20.
 23. Graph the following equations and explain why they are not
 graphs of functions of $x$.   
    a. $|y| = x$ b. $y^2 = x^2$
-1.   Graph the following equations and explain why they are not
+24. Graph the following equations and explain why they are not
 graphs of functions of $x$.       
    a. $|x| + |y| = 1$ b. $|x + y| = 1$
 #### Piecewise-Defined Functions
