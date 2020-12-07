@@ -8,7 +8,7 @@ and an absolute minimum value on $D$ at $c$ if
 $f(x) \ge ƒ(c)$  all $x$ in $D$.
 
 >**THEOREM 1—The Extreme Value Theorem**  
-If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains both an absolute maximum value $M$ and an absolute minimum value $m$ in $[a, b]$ . That is, there are numbers $x1$ and $x2$ in $[a, b]$ with $f(x1) = m, ƒ(x2) = M$, and $m \le f(x) \le M$ for every other $x$ in $[a, b]$.
+If $f$ is continuous on a closed interval $[a, b]$, then $f$ attains both an absolute maximum value $M$ and an absolute minimum value $m$ in $[a, b]$ . That is, there are numbers $x_1$ and $x_2$ in $[a, b]$ with $f(x_1) = m, f(x_2) = M$, and $m \le f(x) \le M$ for every other $x$ in $[a, b]$.
 #### Local (Relative) Extreme Values
 >**DEFINITIONS** A function $f$ has a local maximum value at a point $c$ within its domain $D$ if $f(x) \le f(c)$ for all $x\in D$ lying in some open interval containing $c$.      
 A function $f$ has a local minimum value at a point $c$ within its domain $D$ if $f(x) \ge f(c)$ for all $x\in D$ lying in some open interval containing $c$
