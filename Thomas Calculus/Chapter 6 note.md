@@ -13,4 +13,6 @@ The volume of a solid of integrable cross-sectional area $A(x)$ from $x = a$ to 
 >V = \int_a^bA(x)dx = \int_a^b\pi [R(x)^2]dx
 >$$
 #### Solids of Revolution: The Washer Method
-
+### 6.2 Volumes Using Cylindrical Shells
+#### Slicing with Cylinders
+#### The Shell Method
