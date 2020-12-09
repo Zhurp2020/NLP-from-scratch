@@ -16,3 +16,11 @@ The volume of a solid of integrable cross-sectional area $A(x)$ from $x = a$ to 
 ### 6.2 Volumes Using Cylindrical Shells
 #### Slicing with Cylinders
 #### The Shell Method
+### 6.3 Arc Length
+.**DEFINITION**   
+If $f'$ is continuous on $[a, b]$ , then the length (arc length) of the curve $y = fƒ(x)$ from the point $A = (a, f(a))$ to the point $B = (b, f(b))$ is the value of the integral
+>$$
+>L = \int_a^b\sqrt{1+[f'(x)]^2}dx
+>$$
+#### Dealing with Discontinuities in $\dfrac{dx}{dy}$
+#### The Differential Formula for Arc Length

@@ -103,3 +103,36 @@ Exercises 41–44 give the velocity $y = \dfrac{ds}{dt}$ and initial position of
     $\dfrac{1}{ab} = \dfrac{1}{c^2}$  
     $c = \plusmn\sqrt{ab}$  
     Since $0<a<c<b, c = \sqrt{ab}$
+### 4.3 Monotonic Functions and the First Derivative Test
+#### Analyzing Functions from Derivatives
+Answer the following questions about the functions whose derivatives are given in Exercises 1–14:  
+a. What are the critical points of $f$?  
+b. On what open intervals is $f$ increasing or decreasing?  
+c. At what points, if any, does $f$ assume local maximum and minimum values?
+1. $f'(x) = x(x - 1)$  
+   a. $x(x-1) = 0, x_1 = 0, x_2 = 1$  
+   Critical points:$(0,f(0)),(1,f(1)$  
+   b. $x(x-1) > 0, x<0$ or $x > 1$   
+   Increasing: $(-\infty,0)$ and $(0,\infty)$  
+   Decreasing: $(0,1)$  
+#### dentifying Extrema
+In Exercises 15–40:  
+a. Find the open intervals on which the function is increasing and decreasing.   
+b. Identify the function’s local and absolute extreme values, if any, saying where they occur.
+
+15. ![](../images/Thomas%20Calculus/4-5.jpg)  
+    a. Increasing: $(-2,0)$ and $(2,\infty)$  
+    Decreasing: $(-\infty,-2)$ and $(0,2)$   
+    b. Local minimum:$x = -2$  
+    Local maximum: $x = 0$  
+    Absolute minimum: $x = 2$   
+#### Theory and Examples
+Show that the functions in Exercises 63 and 64 have local extreme values at the given values of $\theta$, and say which kind of local extreme the function has.
+
+63. $h(u) = 3\cos\dfrac{\theta}{2},0\le \theta \le 2\pi$ at $\theta = 0$ and $\theta = 2\pi$  
+    $h'(\theta) = 3\sin\dfrac{\theta}{2}\cdot\dfrac{1}{2}= \dfrac{3}{2}\sin\dfrac{\theta}{2}$  
+    $h'(0) = 0, h'(2\pi) = 0$  
+    When $0< \theta < 2\pi:$  
+    $0< \sin\dfrac{\theta}{2} \le 1:$  
+    $h'(\theta) > 0$  
+    Therefore, $h(\theta)$ have local minimum at $\theta = 0$ and $\theta = 2\pi$
