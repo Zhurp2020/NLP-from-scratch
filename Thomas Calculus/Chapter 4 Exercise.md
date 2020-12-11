@@ -136,3 +136,73 @@ Show that the functions in Exercises 63 and 64 have local extreme values at the 
     $0< \sin\dfrac{\theta}{2} \le 1:$  
     $h'(\theta) > 0$  
     Therefore, $h(\theta)$ have local minimum at $\theta = 0$ and $\theta = 2\pi$
+### 4.4 Concavity and Curve Sketching
+#### Analyzing Functions from Graphs
+Identify the inflection points and local maxima and minima of the functions graphed in Exercises 1–8. Identify the intervals on which the functions are concave up and concave down.
+1. $y = \dfrac{x^3}{3}-\dfrac{x^2}{2}-2x + \dfrac{1}{3}$    
+   ![](../images/Thomas%20Calculus/4-6.jpg)  
+   $y' = x^2 - x -2 = 0, x_1 = 2, x_2 = -1$  
+   $y'' = 2x -1 = 0, x = \dfrac{1}{2}$   
+   Inflection point: $(\dfrac{1}{2},-\dfrac{3}{4})$   
+   Local maxima: $f(-1) = \dfrac{3}{2}$   
+   Local minima: $f(2) = -3$  
+   Concave up: $(\dfrac{1}{2},\infty)$  
+   Concave down: $(-\infty,\dfrac{1}{2})$
+#### Graphing Functions
+In Exercises 9–50, identify the coordinates of any local and absolute extreme points and inflection points. Graph the function.
+
+9. $y = x^2 - 4x + 3$  
+   $y' = 2x - 4 = 0, x = 2$  
+   $y'' = 2 > 0$   
+   Absolute minimum: $f(2) = -1$  
+   There is no inflection point. 
+#### Sketching the General Shape, Knowing $y'$
+Each of Exercises 51–72 gives the first derivative of a continuous function $y = f(x)$. Find $y''$ and then use Steps 2–4 of the graphing procedure on page 207 to sketch the general shape of the graph of $f$.
+
+51. $y' = 2 + x - x^2$  
+    $y'' = -2x + 1$  
+    $y' = 2 + x - x^2 = 0$  
+    $x^2 -x - 2 = 0, x_1 = 2, x_2 = -1$   
+    Critical points are at $x = 2$ and $x = -1$  
+    When $x<-1$ or $x > 2,y'>0,f$  increases.  
+    When $-1<x<2, y'<0, f$ decreases. 
+#### Sketching $y$ from Graphs of $y'$ and $y''$
+Each of Exercises 73–76 shows the graphs of the first and second derivatives of a function $y = f(x)$. Copy the picture and add to it a sketch of the approximate graph of $ƒ$, given that the graph passes through the point $P$.  
+
+73. ![](../images/Thomas%20Calculus/4-7.jpg)  
+#### Graphing Rational Functions
+Graph the rational functions in Exercises 77–94 using all the steps in the graphing procedure on page 207.
+
+77. $y = \dfrac{2x^2 + x -1}{x^2 -1}$  
+    Domain: $(-\infty-1)\cup(-1,1)\cup(1,\infty)(-\infty-1)\cup(-1,1)\cup(1,\infty)$   
+    The function is neither an even one nor an odd one.  
+    $y = \dfrac{(2x - 1)(x + 1)}{(x + 1)(x - 1)} = \dfrac{2x - 1}{x - 1}$   
+    $y' = \dfrac{2(x - 1)-(2x-1)}{x^2 - 2x + 1}$  
+    $= -\dfrac{1}{x^2 - 2x + 1}$   
+    $y'' = -\dfrac{0 - (2x - 2)}{(x^2 - 2x + 1)^2}$   
+    $= \dfrac{2(x- 1)}{(x - 1)^4}$  
+    $= \dfrac{2}{(x - 1)^3}$  
+    $y' < 0$ for all $x,y'$ has no critical point.  
+    $y$ decreases over $(-\infty-1)$ and $(-1,1)$ and $(1,\infty)$   
+    $y'' > 0$ for $x >1, y'' < 0$ for $x < 1$ and $x \ne -1,y$ has no inflection point.   
+    $y$ concaves up when $x > 1$ and concaves down when  $x < 1$ and $x \ne -1$  
+    $\lim\limits_{x\to\infty}y = 2$  and $\lim\limits_{x\to1}y$ does not exist. Asymptotes: $x = 1, y = 2$
+#### Theory and Examples
+95. The accompanying figure shows a portion of the graph of a twicedifferentiable function $y = f(x)$. At each of the five labeled points, classify $y'$ and $y'$ as positive, negative, or zero.   
+    ![](../images/Thomas%20Calculus/4-8.jpg)  
+    $P, y' < 0, y'' > 0$    
+    $Q, y' > 0, y'' > 0$    
+    $R, y' > 0, y'' = 0$   
+    $S, y' = 0, y'' < 0$   
+    $T, y' < 0, y'' < 0$ 
+#### COMPUTER EXPLORATIONS
+In Exercises 121–126, find the inflection points (if any) on the graph of the function and the coordinates of the points on the graph where the function has a local maximum or local minimum value. Then graph the function in a region large enough to show all these points simultaneously. Add to your picture the graphs of the function’s first and second derivatives. How are the values at which these graphs intersect the $x$-axis related to the graph of the function? In what other ways are the graphs of the derivatives related to the graph of the function?
+
+121. $y = x^5 - 5x^4 - 240$  
+     $y' = 5x^4 - 20x^3 = 0$  
+     $x^3(x-4) = 0, x_1 = 0, x_2 = 4$   
+     Local maximum: $(0,-240)$  
+     Local minimum: $(4,-496)$  
+     $y'' = 20x^3 - 60x^2 = 0$  
+     $x^2(x - 3) = 0, x_1 =0, x_2 = 3$  
+     Inflection points$(0,-240),(3,-402)$
