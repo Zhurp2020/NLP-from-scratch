@@ -206,3 +206,73 @@ In Exercises 121–126, find the inflection points (if any) on the graph of the 
      $y'' = 20x^3 - 60x^2 = 0$  
      $x^2(x - 3) = 0, x_1 =0, x_2 = 3$  
      Inflection points$(0,-240),(3,-402)$
+### 4.5 Applied Optimization
+#### Mathematical Applications
+Whenever you are maximizing or minimizing a function of a single variable, we urge you to graph it over the domain that is appropriate to the problem you are solving. The graph will provide insight before you calculate and will furnish a visual context for understanding your answer.
+1. Minimizing perimeter. What is the smallest perimeter possible for a rectangle whose area is $16 in^2$ , and what are its dimensions?  
+   $S = f(x) = x(16 - x) = -x^2 + 16x$  
+   $f'(x) = -2x + 16 = 0 , x = 8$  
+   $S_{\min} = f(8) = 64$
+#### Physical Applications
+41. Vertical motion. The height above ground of an object moving vertically is given by
+$$
+s = -16t^2 + 96t + 112,
+$$
+with $s$ in feet and $t$ in seconds. Find  
+a. the object’s velocity when $t = 0$;  
+b. its maximum height and when it occurs;  
+c. its velocity when $s = 0$.   
+a. $f(0) = 112$  
+b. $\dfrac{ds}{dt} = -32t + 96 = 0, t = 3, s = 256$  
+c. $\dfrac{ds}{dt}|_{s = 0} = 96$ 
+#### Business and Economics
+55. It costs you $c$ dollars each to manufacture and distribute backpacks. If the backpacks sell at $x$ dollars each, the number sold is given by
+$$
+n = \dfrac{a}{x - c}+ b(100 - x)
+$$
+where $a$ and $b$ are positive constants. What selling price will bring a maximum profit?        
+$P = f(x) = (x- c)(\dfrac{a}{x - c}+ b(100 - x))$       
+$= a + b(100 -x)(x -c) = -bx^2+b(100+c)x-100bc+a$  
+$\dfrac{dP}{dx} = -2bx + 100b + bc = 0$  
+$x = \dfrac{100 + c}{2}$   
+#### Biology
+63. Sensitivity to medicine (Continuation of Exercise 60, Section 3.3.) Find the amount of medicine to which the body is most sensitive by finding the value of $M$ that maximizes the derivative $\dfrac{dR}{dM}$, where
+$$
+R = M^2(\dfrac{C}{2} - \dfrac{M}{3})
+$$
+and $C$ is a constant.  
+$\dfrac{dR}{dM} = -\dfrac{1}{3}M^2 + 2M(\dfrac{C}{2} - \dfrac{M}{3})$  
+$= -M^2 + 2CM$   
+$\dfrac{d^2R}{dM^2} = -2M + 3C = 0, M = C$
+#### Theory and Examples
+65. An inequality for positive integers. Show that if $a$, $b$, $c$, and $d$ are positive integers, then
+$$
+\dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd}\ge 16.
+$$   
+Let $f(x) = \dfrac{x^2 + 1}{x} = x + \dfrac{1}{x}, x > 0, x \in Z$  
+$f'(x) = 1 - \dfrac{1}{x^2} = 0, x = \plusmn 1, x > 0, x = 1$  
+$f(x) \ge f(1) = 2$  
+$\dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd} \ge 2^4 = 16$
+### 4.6 Newton’s Method
+#### Root Finding
+1. Use Newton’s method to estimate the solutions of the equation $x^2 + x - 1 = 0$. Start with $x_0 = -1$ for the left-hand solution and with $x_0 = 1$ for the solution on the right. Then, in each case, find $x_2$.    
+   Let $f(x) = x^2 + x - 1$  
+   $f'(x) = 2x + 1$  
+   $x_1 = -2, x_2 = -\dfrac{5}{3}$
+#### Dependence on Initial Point
+8. Using the function shown in the figure, and for each initial estimate $x_0$ , determine graphically what happens to the sequence of Newton’s method approximations  
+a. $x_0 = 0$ b. $x_0 = 1$  
+c. $x_0 = 2$ d. $x_0 = 4$   
+e. $x_0 = 5.5$  
+![](../images/Thomas%20Calculus/4-9.jpg)
+#### Theory and Examples
+11. Oscillation. Show that if $h > 0$, applying Newton’s method to
+$$
+f(x) = \left\{\begin{aligned}
+    \sqrt{x} &\quad,x \ge 0 \\
+    \sqrt{-x}&\quad,x < 0
+\end{aligned}\right.
+$$
+leads to $x_1 = -h$ if $x_0 = h$ and to $x_1 = h$ if $x_0 = -h$. Draw a picture that shows what is going on.     
+When $x \ge 0, x_{n+1} = xn - \dfrac{\sqrt{x_n}}{\frac{1}{2\sqrt{x_n}}} = x_n -2x_n - -x_n$  
+$\therefore$ if $h > 0$ leads to $x_1 = -h$ if $x_0 = h$ and to $x_1 = h$ if $x_0 = -h$
