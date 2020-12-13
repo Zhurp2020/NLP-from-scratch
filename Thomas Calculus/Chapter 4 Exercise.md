@@ -227,32 +227,32 @@ b. $\dfrac{ds}{dt} = -32t + 96 = 0, t = 3, s = 256$
 c. $\dfrac{ds}{dt}|_{s = 0} = 96$ 
 #### Business and Economics
 55. It costs you $c$ dollars each to manufacture and distribute backpacks. If the backpacks sell at $x$ dollars each, the number sold is given by
-$$
-n = \dfrac{a}{x - c}+ b(100 - x)
-$$
-where $a$ and $b$ are positive constants. What selling price will bring a maximum profit?        
-$P = f(x) = (x- c)(\dfrac{a}{x - c}+ b(100 - x))$       
-$= a + b(100 -x)(x -c) = -bx^2+b(100+c)x-100bc+a$  
-$\dfrac{dP}{dx} = -2bx + 100b + bc = 0$  
-$x = \dfrac{100 + c}{2}$   
+    $$
+    n = \dfrac{a}{x - c}+ b(100 - x)
+    $$
+    where $a$ and $b$ are positive constants. What selling price will bring a maximum profit?        
+    $P = f(x) = (x- c)(\dfrac{a}{x - c}+ b(100 - x))$       
+    $= a + b(100 -x)(x -c) = -bx^2+b(100+c)x-100bc+a$  
+    $\dfrac{dP}{dx} = -2bx + 100b + bc = 0$  
+    $x = \dfrac{100 + c}{2}$   
 #### Biology
 63. Sensitivity to medicine (Continuation of Exercise 60, Section 3.3.) Find the amount of medicine to which the body is most sensitive by finding the value of $M$ that maximizes the derivative $\dfrac{dR}{dM}$, where
-$$
-R = M^2(\dfrac{C}{2} - \dfrac{M}{3})
-$$
-and $C$ is a constant.  
-$\dfrac{dR}{dM} = -\dfrac{1}{3}M^2 + 2M(\dfrac{C}{2} - \dfrac{M}{3})$  
-$= -M^2 + 2CM$   
-$\dfrac{d^2R}{dM^2} = -2M + 3C = 0, M = C$
+    $$
+    R = M^2(\dfrac{C}{2} - \dfrac{M}{3})
+    $$
+    and $C$ is a constant.  
+    $\dfrac{dR}{dM} = -\dfrac{1}{3}M^2 + 2M(\dfrac{C}{2} - \dfrac{M}{3})$  
+    $= -M^2 + 2CM$   
+    $\dfrac{d^2R}{dM^2} = -2M + 3C = 0, M = C$
 #### Theory and Examples
 65. An inequality for positive integers. Show that if $a$, $b$, $c$, and $d$ are positive integers, then
-$$
-\dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd}\ge 16.
-$$   
-Let $f(x) = \dfrac{x^2 + 1}{x} = x + \dfrac{1}{x}, x > 0, x \in Z$  
-$f'(x) = 1 - \dfrac{1}{x^2} = 0, x = \plusmn 1, x > 0, x = 1$  
-$f(x) \ge f(1) = 2$  
-$\dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd} \ge 2^4 = 16$
+    $$
+    \dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd}\ge 16.
+    $$   
+    Let $f(x) = \dfrac{x^2 + 1}{x} = x + \dfrac{1}{x}, x > 0, x \in Z$  
+    $f'(x) = 1 - \dfrac{1}{x^2} = 0, x = \plusmn 1, x > 0, x = 1$  
+    $f(x) \ge f(1) = 2$  
+    $\dfrac{(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1)}{abcd} \ge 2^4 = 16$
 ### 4.6 Newton’s Method
 #### Root Finding
 1. Use Newton’s method to estimate the solutions of the equation $x^2 + x - 1 = 0$. Start with $x_0 = -1$ for the left-hand solution and with $x_0 = 1$ for the solution on the right. Then, in each case, find $x_2$.    
@@ -276,3 +276,141 @@ $$
 leads to $x_1 = -h$ if $x_0 = h$ and to $x_1 = h$ if $x_0 = -h$. Draw a picture that shows what is going on.     
 When $x \ge 0, x_{n+1} = xn - \dfrac{\sqrt{x_n}}{\frac{1}{2\sqrt{x_n}}} = x_n -2x_n - -x_n$  
 $\therefore$ if $h > 0$ leads to $x_1 = -h$ if $x_0 = h$ and to $x_1 = h$ if $x_0 = -h$
+### 4.7 Antiderivatives
+#### Finding Antiderivatives
+In Exercises 1–16, find an antiderivative for each function. Do as many as you can mentally. Check your answers by differentiation.   
+1. a. $2x$ b. $x^2$ c. $x^2 - 2x + 1$  
+   a. $x^2$ b. $\dfrac{1}{3}x^3$ c. $\dfrac{1}{3}x^2-x^2+x$
+#### Finding Indefinite Integrals
+In Exercises 17–56, find the most general antiderivative or indefinite integral. You may need to try a solution and then adjust your guess. Check your answers by differentiation
+
+17. $\int(x + 1) dx$  
+    $\int(x + 1) dx = \dfrac{1}{2}x^2 + x + C$
+#### Checking Antiderivative Formulas
+Verify the formulas in Exercises 57–62 by differentiation.
+
+57.$\int(7x - 2)^3 dx =\dfrac{(7x - 2)^4}{28}+ C$  
+   $\dfrac{d}{dx}\dfrac{(7x - 2)^4}{28}+ C =\dfrac{1}{28}\cdot4(7x-2)^3\cdot7 = (7x - 2)^3$
+#### Initial Value Problems
+69. Which of the following graphs shows the solution of the initial value problem?
+    $$
+    \dfrac{dy}{dx}= 2x, y = 4\quad\mathsf{when}\quad x = 1
+    $$
+    Give reasons for your answer.  
+    ![](../images/Thomas%20Calculus/4-10.jpg)  
+    $\int2xdx = x^2 + C$  
+    $1 + C = 4, C = 3, f(x) = x^2 + 3$  
+    b.
+#### Solution (Integral) Curves
+Exercises 97–100 show solution curves of differential equations. In each exercise, find an equation for the curve through the labeled point.  
+
+97. ![](../images/Thomas%20Calculus/4-11.jpg)  
+    $\int1-\dfrac{4}{3}x^\frac{1}{3}dx = x - x^\frac{4}{3} + C$   
+    $f(1) = C = \dfrac{1}{2}$  
+    $f(x) = x - x^\frac{4}{3} + \dfrac{1}{2}$
+#### Applications
+101. Finding displacement from an antiderivative of velocity   
+    a. Suppose that the velocity of a body moving along the $s$-axis is
+     $$
+     \dfrac{ds}{dt}= v = 9.8t - 3
+     $$
+     i) Find the body’s displacement over the time interval from $t = 1$ to $t = 3$ given that $s = 5$ when $t = 0$.   
+     ii) Find the body’s displacement from $t = 1$ to $t = 3$ given that $s = -2$ when $t = 0$.  
+     iii) Now find the body’s displacement from $t = 1$ to $t = 3$ given that $s = s_0$ when $t = 0$.   
+    b. Suppose that the position $s$ of a body moving along a coordinate line is a diferentiable function of time $t$. Is it true that once you know an antiderivative of the velocity function $\dfrac{ds}{dt}$ you can find the body’s displacement from $t = a$ to $t = b$ even if you do not know the body’s exact position at either of those times? Give reasons for your answer.   
+    a. $s = f(t) = \int9.8t - 3dt = 4.9t^2 -3t + C$  
+    i) $f(0) = C = 5,C = 5, f(t) = 4.9t^2 -3t +5$  
+    $f(3) - f(1) = 27.2$  
+    ii) $f(3) - f(1) = 27.2$  
+    iii) $f(3) - f(1) = 27.2$  
+    b. Yes. $s = f(t) = \int\dfrac{ds}{dt}dt = g(t) + C$  
+    $f(b) - f(a) = g(b) - g(a)$
+#### COMPUTER EXPLORATIONS
+Use a CAS to solve the initial value problems in Exercises 111–114. Plot the solution curves.
+
+111. $y' = \cos^2x + \sin x, y(\pi) = 1$  
+     $\int\cos^2x + \sin xdx$  
+     $= \int\dfrac{\cos2x + 1}{2} + \sin xdx$  
+     $= \dfrac{\sin 2x}{4} + \dfrac{1}{2}x - \cos x + C$  
+     $y(\pi) = \dfrac{1}{2}\pi + 1 + C = 1, C = -\dfrac{1}{2}\pi$  
+     $y = \dfrac{\sin 2x}{4} + \dfrac{1}{2}x - \cos x - \dfrac{1}{2}$
+### Practice Exercises
+#### Finding Extreme Values
+In Exercises 1–10, ind the extreme values (absolute and local) of the function over its natural domain, and where they occur.
+1. $y = 2x^2 - 8x + 9$  
+   $y' = 4x -8 = 0, x = 2$  
+   minima:$f(2) = -1$
+#### Extreme Values
+11. Does $f(x) = x^3 + 2x + \tan x$ have any local maximum or minimum values? Give reasons for your answer.  
+    $f'(x) = 3x^2 + 2 + \dfrac{1}{\sec^2 x} > 0$ for all $x\in D$.  
+    Therefore, it has no local maximum or minimum. 
+#### The Mean Value Theorem
+21. a. Show that $g(t) = \sin^2t - 3t$ decreases on every interval in its domain.  
+b. How many solutions does the equation $\sin^2 t - 3t = 5$ have? Give reasons for your answer.  
+a. $g'(t) = 2\sin t\cos t -3 = \sin 2t -3< 0$ for all $t\in R$  
+Therefore, the function decreases on every interval in its domain.   
+b. Let $f(t) = \sin^2t - 3t$, from a we know that if the equation has a solution, it has only one solution.    
+$f(-\pi) = 3\pi > 5, f(0) = 0 <5$  
+There is one and only one solution $x\in(-\pi,0)$
+#### Analyzing Graphs
+In Exercises 29 and 30, use the graph to answer the questions.
+
+29. Identify any global extreme values of $f$ and the values of $x$ at which they occur.  
+    ![](../images/Thomas%20Calculus/4-12.jpg)  
+    $f(x)_{\min} = f(2) = \dfrac{1}{2}$
+#### Graphs and Graphing
+Graph the curves in Exercises 33–42.
+
+33. $y = x^2 - (\dfrac{x^3}{6})$
+#### Optimization
+61. The sum of two nonnegative numbers is 36. Find the numbers if     
+a. the difference of their square roots is to be as large as possible.     
+b. the sum of their square roots is to be as large as possible.   
+a. If $0 \le a \le 18,f(a) = \sqrt{36 - a} - \sqrt{a}$  
+   $f'(a) = -\dfrac{1}{2\sqrt{36 - a}} - \dfrac{1}{2\sqrt{a}} = 0$   
+   $-\sqrt{a} = \sqrt{36 - a}$, no solution  
+   $f(0) = 6, f(18) = 0$  
+   Therefore, $a = 0, b=36$  
+b. $g(a) = \sqrt{a} + \sqrt{36-a},0\le a\le 18$  
+   $g'(a) = \dfrac{1}{2\sqrt{a}}  -\dfrac{1}{2\sqrt{36 - a}} = 0$  
+   $a = 36 - a, a = b = 18$  
+   $g(18)= 6\sqrt{2} > g(0) = 6$  
+#### Newton’s Method
+71. Let $f(x) = 3x - x^3$. Show that the equation $f(x) = -4$ has a solution in the interval $[2,3]$ and use Newton’s method to find it.
+    $f(2) = -2 >-4, f(3) = -18 < -4$  
+    There is a solution in $[2,3]$    
+    $x_{n+1} = x_n + \dfrac{3x_n - x_n^3}{3-3x_n^2}$
+#### Finding Indefinite Integrals
+Find the indefinite integrals (most general antiderivatives) in Exercises 73–88. You may need to try a solution and then adjust your guess. Check your answers by diferentiation.
+
+73. $\int(x^3 + 5x - 7) dx$    
+    $\int(x^3 + 5x - 7) dx = \dfrac{1}{4}x^4 + \dfrac{5}{2}x^2 -7x$
+#### Initial Value Problems
+Solve the initial value problems in Exercises 89–92.
+
+89. $\dfrac{dy}{dx} = \dfrac{x^2 + 1}{x^2},y(1) = -1$    
+    $\int\dfrac{x^2 + 1}{x^2}dx = \int1 + \dfrac{1}{x^2}dx = x - \dfrac{1}{x} + C$  
+    $y(1) = C = -1$  
+    $y = x - \dfrac{1}{x} -1$
+### Additional and Advanced Exercises
+#### Functions and Derivatives
+1. What can you say about a function whose maximum and minimum values on an interval are equal? Give reasons for your answer.  
+   $f(x)_{\max} = f(x)_{\min} = M$  
+   $M \le f(x) \le M$ for all $x$ in the interval.
+#### Optimization
+13. Largest inscribed triangle. Points $A$ and $B$ lie at the ends of a diameter of a unit circle and point $C$ lies on the circumference. Is it true that the area of triangle $ABC$ is largest when the triangle is isosceles? How do you know?  
+    $S_{\triangle ABC} = \dfrac{1}{2}\cdot2\cdot\sqrt{x_c^2 + y_c^2} = 1$  
+    It is false.  
+#### Theory and Examples
+21. Suppose that it costs a company $y = a + bx$ dollars to produce $x$ units per week. It can sell $x$ units per week at a price of $P = c - ex$ dollars per unit. Each of $a, b, c,$ and $e$ represents a positive constant.   
+(a) What production level maximizes the profit?  
+(b) What is the corresponding price?   
+(c) What is the weekly profit at this level of production?    
+(d) At what price should each item be sold to maximize profits if the government imposes a tax of $t$ dollars per item sold? Comment on the difference between this price and the price before the tax.  
+a. $p = f(x) = (c - ex)x - a-bx=-ex^2 +(c - b)x -a$  
+$f'(x) = -2ex + c - b = 0, x = \dfrac{c - b}{2e}$  
+b. $P = c-ex = c - \dfrac{c-b}{2} = \dfrac{c-b}{2}$   
+c. $p = \dfrac{c-b}{2}x -a -bx = \dfrac{c-3b}{2}x - a$  
+d. $p_2 = g(x) = (c - ex -t)x - a-bx = -ex^2 +(c - t -b)x -a$  
+$g'(x) = -2ex + c - t - b = 0, x = \dfrac{c -t - b}{2e}$  
+$P = c - \dfrac{c - t- b}{2} = \dfrac{c - t- b}{2}$
