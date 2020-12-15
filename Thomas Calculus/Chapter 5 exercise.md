@@ -24,7 +24,7 @@ b. right-endpoint values
 |     2     |        56        |     8     |        5         |
 |     3     |        25        |     9     |        15        |
 |     4     |        38        |    10     |        0         |
-|     5     |        33        |  
+|     5     |        33        |
  a. $d = 245$    
  b. $d = 245$ 
 #### Average Value of a Function
@@ -35,13 +35,13 @@ In Exercises 15–18, use a finite sum to estimate the average value of $f$ on t
 #### Examples of Estimations
 19. Water pollution. Oil is leaking out of a tanker damaged at sea. The damage to the tanker is worsening as evidenced by the increased leakage each hour, recorded in the following table.  
      
-| Time(h) | Leakage (gal/h)  | Time(h) | Leakage (gal/h) |
-| :-------: | :--------------: | :-------: | :--------------: |
-|     0     |        50         |     5     |        265        |
-|     1     |        70        |     6     |        369
-|     2     |        90        |     7     |        516         |
-|     3     |        136        |     8     |        720        |
-|     4     |        190        |          |
+| Time(h) | Leakage (gal/h) | Time(h) | Leakage (gal/h) |
+| :-----: | :-------------: | :-----: | :-------------: |
+|    0    |       50        |    5    |       265       |
+|    1    |       70        |    6    |       369       |
+|    2    |       90        |    7    |       516       |
+|    3    |       136       |    8    |       720       |
+|    4    |       190       |         |
 a. Give an upper and a lower estimate of the total quantity of oil that has escaped after 5 hours.  
 b. Repeat part (a) for the quantity of oil that has escaped after 8 hours.  
 c. The tanker continues to leak 720 gal/h after the first 8 hours. If the tanker originally contained 25,000 gal of oil, approximately how many more hours will elapse in the worst case before all the oil has spilled? In the best case?  
@@ -56,3 +56,33 @@ c. Compute the average value of the function values generated in part (b).
 d. Solve the equation $f(x) =$ (average value) for $x$ using the average value calculated in part (c) for the $n = 1000$ partitioning.
 
 23.  $f(x) = \sin x$ on $[0,\pi]$
+### 5.2 Sigma Notation and Limits of Finite Sums
+#### Sigma Notation
+Write the sums in Exercises 1–6 without sigma notation. Then evaluate them.
+1. $\sum\limits_{k=1}^2\dfrac{6k}{k + 1}$   
+   $\sum\limits_{k=1}^2\dfrac{6k}{k + 1} = 3 + 4 =7$
+#### Values of Finite Sums
+17. Suppose that $\sum\limits_{k=1}^na_k = -5$ and $\sum\limits_{k=1}^nb_k = 6$. Find the values of  
+    a. $\sum\limits_{k=1}^n3a_k$  b. $\sum\limits_{k=1}^n\dfrac{b_k}{6}$ c. $\sum\limits_{k=1}^n(a_k + b_k)$   
+    d. $\sum\limits_{k=1}^n(a_k - b_k)$ e. $\sum\limits_{k=1}^n( b_k-2a_k )$   
+    a. $\sum\limits_{k=1}^n3a_k = -15$    
+    b. $\sum\limits_{k=1}^n\dfrac{b_k}{6}=1$   
+    c. $\sum\limits_{k=1}^n(a_k + b_k) = 1$     
+    d. $\sum\limits_{k=1}^n(a_k - b_k) = -11$    
+    e. $\sum\limits_{k=1}^n( b_k-2a_k ) = 16$  
+#### Riemann Sums
+In Exercises 37–42, graph each function $f(x)$ over the given interval. Partition the interval into four subintervals of equal length. Then add to your sketch the rectangles associated with the Riemann sum $\sum\limits_{k=1}^4f(c_k)\Delta x_k$ , given that $c_k$
+is the (a) left-hand endpoint, (b) righthand endpoint, (c) midpoint of the $k$th subinterval. (Make a separate sketch for each set of rectangles.)
+
+37.  $f(x) = x^2 - 1, [0, 2]$
+#### Limits of Riemann Sums
+For the functions in Exercises 43–50, find a formula for the Riemann sum obtained by dividing the interval $[a, b]$ into $n$ equal subintervals and using the right-hand endpoint for each $c_k$. Then take a limit of these sums as $n \to\infty$ to calculate the area under the curve over $[a, b]$ .
+
+43.  $f(x) = 1 - x^2$ over the interval $[0, 1]$ .   
+     $S = \sum\limits_{k = 1}^nf(c_k)\Delta x_k$   
+     $= \sum\limits_{k = 1}^n(1-c_k^2)\dfrac{1}{n}$  
+     $= \sum\limits_{k = 1}^n(1-(\dfrac{k}{n})^2)\dfrac{1}{n}$  
+     $= \sum\limits_{k = 1}^n\dfrac{1}{n} - \dfrac{k^2}{n^3}$  
+     $= 1 - \dfrac{1}{n^3}\sum\limits_{k = 1}^nk^2$  
+     $= 1-\dfrac{1}{n^3}\dfrac{n(n + 1)(2n + 1)}{6}$    
+     $\lim\limits_{n\to\infty}S = 1-\dfrac{1}{3} = \dfrac{2}{3}$
