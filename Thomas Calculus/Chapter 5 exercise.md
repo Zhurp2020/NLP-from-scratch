@@ -86,3 +86,45 @@ For the functions in Exercises 43–50, find a formula for the Riemann sum obtai
      $= 1 - \dfrac{1}{n^3}\sum\limits_{k = 1}^nk^2$  
      $= 1-\dfrac{1}{n^3}\dfrac{n(n + 1)(2n + 1)}{6}$    
      $\lim\limits_{n\to\infty}S = 1-\dfrac{1}{3} = \dfrac{2}{3}$
+### 5.3 The Definite Integral
+#### Interpreting Limits of Sums as Integrals
+Express the limits in Exercises 1–8 as definite integrals
+1. $\lim\limits_{||P||\to0}\sum\limits_{k=1}^nc_k^2\Delta x_k$, where $P$ is a partition of $[0, 2]$  
+   $\int_0^2x^2dx$
+#### Using the Definite Integral Rules
+9. Suppose that $f$ and $g$ are integrable and that
+   $$
+   \int_1^2 f(x) dx = -4, \\
+   \int_1^5 f(x) dx = 6, \\  
+   \int_1^5 g(x) dx = 8, \\
+   $$
+   Use the rules in Table 5.6 to find   
+   a. $\int_2^2 g(x) dx$ b. $\int_5^1 g(x) dx$  
+   c. $\int_1^2 3f(x) dx$ d. $\int_2^5 f(x) dx$  
+   e. $\int_1^5 [f(x) - g(x)] dx$ f. $\int_1^5 [4f(x) - g(x)] dx$   
+   a. $\int_2^2 g(x) dx = 0$    
+   b. $\int_5^1 g(x) dx = -6$  
+   c. $\int_1^2 3f(x) d = -12x$   
+   d. $\int_2^5 f(x) dx = 10$     
+   e. $\int_1^5 [f(x) - g(x)] dx = -2$   
+   f. $\int_1^5 [4f(x) - g(x)] dx = 16$ 
+#### Using Known Areas to Find Integrals
+In Exercises 15–22, graph the integrands and use known area formulas to evaluate the integrals.
+
+15. $\int_{-2}^4 (\dfrac{x}{2} + 3)dx$  
+    $S = \dfrac{1}{2}(5 + 2)\cdot6 = 21$
+#### Evaluating Definite Integrals
+Use the results of Equations (2) and (4) to evaluate the integrals in Exercises 29–40.
+
+29. $\int_1^{\sqrt{2}} xdx$  
+    $S = \dfrac{2}{2} - \dfrac{1}{2} = \dfrac{1}{2}$  
+#### Finding Area by Definite Integrals
+In Exercises 51–54, use a definite integral to find the area of the region between the given curve and the $x$-axis on the interval $[0, b]$ .
+
+51. $y = 3x^2$  
+    $S = \int_0^b3x^2dx = 3\dfrac{b^3}{3} =  b^3$
+#### Finding Average Value
+In Exercises 55–62, graph the function and find its average value over the given interval.
+
+55. $f(x) = x^2 - 1$ on $[0,\sqrt{3}]$  
+    $a = \dfrac{\int_0^{\sqrt{3}}(x^2 - 1)dx}{\sqrt{3}} = \dfrac{\frac{3\sqrt{3}}{3} - \sqrt{3}}{\sqrt{3}} =0$

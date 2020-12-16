@@ -112,7 +112,7 @@ If $y = f(x)$ is nonnegative and integrable over a closed interval $[a, b]$, the
 >$$
 >\int_a^b xdx = \dfrac{b^2}{2} - \dfrac{a^2}{2} \\
 >\int_a^b cdx = c(b - a) \\
->\int_a^b x^2dx = \dfrac{b^3}{2} - \dfrac{a^3}{2} \\
+>\int_a^b x^2dx = \dfrac{b^3}{3} - \dfrac{a^3}{3} \\
 >$$
 Proof:  
 For a partition $P = \{0,\dfrac{b}{n},\dfrac{2b}{n},\cdots,\dfrac{nb}{n}\}$ and $c_k=\dfrac{kb}{n}$:

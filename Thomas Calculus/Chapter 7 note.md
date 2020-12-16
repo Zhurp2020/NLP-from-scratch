@@ -90,5 +90,94 @@ $$
 >\int\cot u du = \ln |\sin u| + C \\
 >\int\sec u du = \ln |\sec u + \tan u| + C \\
 >\int\csc u du = \ln |\csc u + \cot u| + C \\
-$$
+>$$
 #### Logarithmic Differentiation
+### 7.3 Exponential Functions
+#### The Inverse of $\ln x$ and the Number $e$  
+$$
+\ln e^r = r\ln e = r \\
+\ln ^{-1} \ln e^r = \ln ^{-1} r \\
+\exp r = e^r
+$$
+>**DEFINITION**    
+For every real number $x$, we define the natural exponential function to be $e^x = \exp x$
+>Inverse Equations for $e^x$ and $\ln x$
+>$$
+>e^{\ln x} = x (\forall x > 0)  \\
+>\ln (e^x) = x (\forall x)
+>$$
+#### The Derivative and Integral of $e^x$
+$$
+\ln (e^x) = x \\
+\dfrac{d}{dx}\ln e^x = 1 \\
+\dfrac{1}{e^x}\dfrac{d}{dx}e^x = 1 \\
+\dfrac{d}{dx}e^x = e^x 
+$$
+If $u$ is any differentiable function of $x$, then  
+$$
+\dfrac{d}{dx}e^u = e^u\dfrac{du}{dx}
+$$
+>The general antiderivative of the exponential function  
+>$$
+>\int e^xdx = e^x + C
+>$$
+#### Laws of Exponents
+#### The General Exponential Function $a^x$
+>**DEFINITION**   
+For any numbers $a > 0$ and $x$, the exponential function with base $a$ is
+>$$
+>a^x = e^{x \ln a}
+>$$
+#### Proof of the Power Rule (General Version)
+>DEFINITION    
+For any $x > 0$ and for any real number $n$,
+>$$
+>x^n = e^{n \ln x}
+>$$
+When $x > 0$
+$$
+\dfrac{d}{dx}x^n = \dfrac{d}{dx}e^{n \ln x} \\
+= e^{n \ln x}\dfrac{d}{dx}n \ln x \\
+= x^n\dfrac{n}{x} \\
+= nx^{n - 1}
+$$
+When $x < 0$:
+$$
+\ln |y| = \ln |x^n| = n\ln |x| = n\ln (-x) \\
+\dfrac{y'}{y} = \dfrac{n}{x} \\
+y' =\dfrac{nx^n}{n} = nx^{n - 1}
+$$
+#### The Number $e$ Expressed as a Limit
+> THEOREM 4—The Number e as a Limit  
+The number $e$ can be calculated as the limit
+>$$
+>e = \lim_{x\to0}(1 + x)^\frac{1}{x}
+>$$
+Proof
+$$
+f(x) = \ln x, f'(x) = \dfrac{1}{x}, f'(1) = 1 \\
+f'(1) = \lim_{h\to0}\dfrac{f(1 + h) -f(1)}{h} \\
+= \lim_{h\to0}\dfrac{\ln (1 + h) - \ln 1}{h}  \\
+= \lim_{h\to0}\dfrac{1}{h}\ln(\dfrac{1 + h}{1}) \\
+= \lim_{h\to0}\ln(1 + h)^\frac{1}{h} \\
+= \ln(\lim_{h\to0}(1 +h)^\frac{1}{h}) = 1 \\
+e = \lim_{x\to0}(1 + x)^\frac{1}{x}
+$$
+#### The Derivative of $a^u$
+$$
+\dfrac{d}{dx}a^x = \dfrac{d}{dx}e^{x\ln a} = e^{x\ln a}\dfrac{d}{dx}(x\ln a) \\
+= a^x\ln a
+$$
+If $a > 0$ and $u$ is a differentiable function of $x$, then $a^u$ is a differentiable function of $x$ and  
+$$
+\dfrac{d}{dx}a^u = a^u\ln a \cdot\dfrac{du}{dx} \\
+\int a^udu =\dfrac{a^u}{\ln a} + C 
+$$
+#### Logarithms with Base $a$
+$$
+\log_ax = \dfrac{\ln x}{\ln a}
+$$
+#### Derivatives and Integrals Involving $\log_a x$
+$$
+\dfrac{d}{dx} \log_a u = \dfrac{1}{\ln a}\cdot\dfrac{1}{u}\dfrac{du}{dx}    
+$$
