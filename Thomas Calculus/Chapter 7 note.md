@@ -181,3 +181,177 @@ $$
 $$
 \dfrac{d}{dx} \log_a u = \dfrac{1}{\ln a}\cdot\dfrac{1}{u}\dfrac{du}{dx}    
 $$
+### 7.4 Exponential Change and Separable Differential Equations
+#### Exponential Change
+The solution of the initial value problem
+$$
+\dfrac{dy}{dt} = ky, y(0) = y_0 \\
+\dfrac{1}{y}\dfrac{dy}{dt} = k \\
+\int\dfrac{1}{y}\dfrac{dy}{dt}dt = \int kdt \\
+\ln |y| + C_1 = kt + C_2 \\
+|y| = e^{kt + C_2 - C_1} \\
+y = \plusmn e^{C_2 - C_1}\cdot e^{kt} \\
+y(0) = \plusmn e^{C_2 - C_1} = y_0 \\
+y = y_0e^{kt}
+$$
+#### Separable Differential Equations
+#### Unlimited Population Growth
+#### Radioactivity
+#### Heat Transfer: Newton’s Law of Cooling
+### 7.5 Indeterminate Forms and L’Hôpital’s Rule
+#### Indeterminate Form $\dfrac{0}{0}$  
+>THEOREM 5—L’Hôpital’s Rule  
+Suppose that $f(a) = g(a) = 0$, that $f$ and $g$ are differentiable on an open interval $I$ containing $a$, and that $g'(x) \ne 0$ on $I$ if $x \ne a$. Then
+>$$
+>\lim_{x\to a}\dfrac{f(x)}{g(x)} = \lim_{x\to a}\dfrac{f'(x)}{g'(x)}
+>$$
+>assuming that the limit on the right side of this equation exists.
+#### Indeterminate Forms $\dfrac{\infty}{\infty},\infty\cdot0,\infty-\infty$  
+For $\dfrac{\infty}{\infty}$, L’Hôpital’s Rule still applies
+#### Indeterminate Powers
+If $\lim\limits_{x\to a}\ln f(x) = L$, then   
+$$
+\lim\limits_{x\to a}f(x) = \lim\limits_{x\to a}e^{\ln f(x)} = e^L
+$$
+Here $a$ may be either finite or infinite
+#### Proof of L’Hôpital’s Rule
+>THEOREM 6—Cauchy’s Mean Value Theorem   
+Suppose functions $f$ and $g$ are continuous on $[a, b]$ and differentiable throughout $(a, b)$ and also suppose $g'(x) \ne 0$ throughout $(a, b)$. Then there exists a number $c$ in $(a, b)$ at which  
+>$$
+>\dfrac{f'(c)}{g'(c)} = \dfrac{f(b)-f(a)}{g(b)-g(a)}
+>$$
+Proof:   
+If $g(a) = g(b)$, then there is a point $c\in(a,b)$ such that 
+$$
+g'(c) = \dfrac{g(b) - g(a)}{b - a} = 0
+$$
+But $g'(x) \ne 0$ throughout $(a, b)$, therefore, $g(a) \ne g(b)$   
+Let $F(x)$ be
+$$
+F(x) = f(x) - f(a) - \dfrac{f(b) - f(a)}{g(b) - g(a)}[g(x) - g(a)]
+$$
+then there is a point $c\in(a,b)$ such that 
+$$
+F'(c) = f'(c) - \dfrac{f(b) - f(a)}{g(b) - g(a)}g'(x) = 0\\
+\dfrac{f'(c)}{g'(c)} = \dfrac{f(b)-f(a)}{g(b)-g(a)}
+$$
+Proof of L’Hôpital’s Rule:   
+Suppose $x > a$, then there is a point $c\in(x,a)$ such that  
+$$
+\dfrac{f'(c)}{g'(c)} = \dfrac{f(x)-f(a)}{g(x)-g(a)} = \dfrac{f(x)}{g(x)}
+$$
+As $x\to a^+, c\to a^+$  
+$$
+\lim_{x\to a^+}\dfrac{f(x)}{g(x)} = \lim_{c\to a^+}\dfrac{f'(c)}{g'(c)} = \lim_{x\to a^+}\dfrac{f'(x)}{g'(x)}
+$$   
+Similarly, 
+$$
+\lim_{x\to a^-}\dfrac{f(x)}{g(x)} = \lim_{x\to a^-}\dfrac{f'(x)}{g'(x)}
+$$
+therefore, 
+$$
+\lim_{x\to a}\dfrac{f(x)}{g(x)} = \lim_{x\to a}\dfrac{f'(x)}{g'(x)}
+$$
+### 7.6 Inverse Trigonometric Functions
+#### Defining the Inverse Trigonometric Functions
+![](../images/Thomas%20Calculus/7-1.jpg)
+#### The Arcsine and Arccosine Functions
+#### Identities Involving Arcsine and Arccosine
+#### Inverses of $\tan x, \cot x, \sec x$, and $\csc x$
+#### The Derivative of $y = \arcsin u$
+$$
+(f^{-1})'(x) = \dfrac{1}{f'(f^{-1}(x))} \\
+= \dfrac{1}{\cos(\arcsin x)} \\
+= \dfrac{1}{\sqrt{1-\sin^2(\arcsin x)}} \\
+= \dfrac{1}{1-x^2}
+$$
+#### The Derivative of $y = \arctan u$
+$$
+(f^{-1})'(x) = \dfrac{1}{f'(f^{-1}(x))} \\
+= \dfrac{1}{\sec^2(\arctan x)} \\  
+= \dfrac{1}{1 + \tan^2(\arctan x)} \\
+= \dfrac{1}{1+x^2}
+$$
+#### The Derivative of $y = arc\sec u$
+$$
+y = arc\sec x  \\
+\sec y = x \\
+\dfrac{d}{dx}\sec y = 1 \\
+\sec y \tan y\dfrac{dy}{dx}  = 1\\
+\dfrac{dy}{dx} = \dfrac{1}{\sec y\tan y}  \\
+\sec y = x, \tan y = \plusmn \sqrt{\sec^2 y -1} = \plusmn \sqrt{x^2 - 1} \\
+\dfrac{dy}{dx} = \plusmn \dfrac{1}{x\sqrt{x^2 - 1}} \\
+= \left\{\begin{aligned}
+    \dfrac{1}{x\sqrt{x^2 - 1}} \quad&x > 1\\
+    -\dfrac{1}{x\sqrt{x^2 - 1}}\quad&x < -1
+\end{aligned}\right. \\
+= \dfrac{1}{|x|\sqrt{x^2 - 1}}
+$$
+#### Derivatives of the Other Three Inverse Trigonometric Functions
+>Inverse Function–Inverse Cofunction Identities   
+>$$
+>\arccos x = \dfrac{\pi}{2} - \arcsin x \\
+>\arcctg x = \dfrac{\pi}{2} - \arctan x \\
+>arc\csc x = \dfrac{\pi}{2} - arc\sec x
+>$$ 
+#### Integration Formulas
+The following formulas hold for any constant $a > 0$.
+1. $\int\dfrac{du}{\sqrt{a^2-u^2}} = \sin^{-1}\dfrac{u}{a} + C$ 
+2. $\int\dfrac{du}{\sqrt{a^2+u^2}} = \dfrac{1}{a}\tan^{-1}\dfrac{u}{a} + C$
+3. $\int\dfrac{du}{u\sqrt{u^2-a^2}} = \dfrac{1}{a}\sec^{-1}|\dfrac{u}{a}| + C$
+### 7.7 Hyperbolic Functions
+#### Definitions and Identities
+$$
+\sinh x = \dfrac{e^x - e^{-x}}{2},\cosh x = \dfrac{e^x + e^{-x}}{2}
+$$
+![](../images/Thomas%20Calculus/7-2.jpg)
+#### Derivatives and Integrals of Hyperbolic Functions
+#### Inverse Hyperbolic Functions
+![](../images/Thomas%20Calculus/7-3.jpg)  
+![](../images/Thomas%20Calculus/7-4.jpg)
+#### Useful Identities
+#### Derivatives of Inverse Hyperbolic Functions
+$$
+\dfrac{d\sinh^{-1}u}{dx} = \dfrac{1}{\sqrt{1 + u^2}}\dfrac{du}{dx}  \\
+\dfrac{d\cosh^{-1}u}{dx} = \dfrac{1}{\sqrt{u^2 - 1}}\dfrac{du}{dx}, u>1  \\
+\dfrac{d\tanh^{-1}u}{dx} = \dfrac{1}{\sqrt{1 - u^2}}\dfrac{du}{dx}, |u|<1  \\
+\dfrac{d\coth^{-1}u}{dx} = \dfrac{1}{\sqrt{1 - u^2}}\dfrac{du}{dx}, |u|>1  \\
+\dfrac{d\sec h^{-1}u}{dx} = -\dfrac{1}{u\sqrt{1 - u^2}}\dfrac{du}{dx}, 0<u<1  \\
+\dfrac{d\csc h^{-1}u}{dx} = -\dfrac{1}{|u|\sqrt{1 + u^2}}\dfrac{du}{dx}, u \ne 0  \\
+\int\dfrac{du}{\sqrt{a^2 + u^2}} =\sinh^{-1}(\dfrac{u}{a}) + C, a>0\\
+\int\dfrac{du}{\sqrt{ u^2-a^2 }} =\cosh^{-1}(\dfrac{u}{a}) + C , u>a>0\\
+\int\dfrac{du}{a^2- u^2} = 
+\left\{\begin{aligned}
+    \dfrac{1}{a}\tanh^{-1}(\dfrac{u}{a}) + C , u^2<a^2\\ 
+    \dfrac{1}{a}\coth^{-1}(\dfrac{u}{a}) + C , u^2>a^2\\
+\end{aligned}\right.\\
+\int\dfrac{du}{u\sqrt{a^2 -u^2 }} =-\dfrac{1}{a}\sec h^{-1}(\dfrac{u}{a}) + C , u<a<0\\
+\int\dfrac{du}{u\sqrt{a^2 +u^2 }} =-\dfrac{1}{a}\sec h^{-1}|\dfrac{u}{a}| + C , u\ne0, a>0
+$$
+### 7.8 Relative Rates of Growth
+#### Growth Rates of Functions
+>**DEFINITION**   
+Let $f(x)$ and $g(x)$ be positive for $x$ sufficiently large
+>1. $f$ grows faster than $g$ as $x \to\infty$ if
+>$$
+>\lim_{x\to\infty}\dfrac{f(x)}{g(x)} = \infty
+>$$
+>or, equivalently, 
+>$$
+>\lim_{x\to\infty}\dfrac{g(x)}{f(x)} = 0
+>$$
+>We also say that $g$ grows slower than $f$ as $x \to\infty$
+>2.  $f$ and $g$ grow at the same rate as $x \to\infty$ if
+>$$
+>\lim_{x\to\infty}\dfrac{f(x)}{g(x)} = L
+>$$
+>where $L$ is finite and positive.
+#### Order and Oh-Notation
+>**DEFINITION**   
+A function $f$ is of smaller order than $g$ as $x \to\infty$ if $\lim\limits_{x\to\infty}\dfrac{f(x)}{g(x)} = 0$. We indicate this by writing $f = o(g)$
+
+>**DEFINITION**   
+Let $f(x)$ and $g(x)$ be positive for $x$ sufficiently large. Then $f$ is of at most the order of $g$ as $x \to\infty$ if there is a positive integer $M$ for which 
+>$$\dfrac{f(x)}{g(x)} \le M$$
+>for $x$ sufficiently large. We indicate this by writing $f = O(g)$ 
+#### Sequential vs. Binary Search
