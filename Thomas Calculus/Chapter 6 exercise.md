@@ -129,3 +129,42 @@ a. $V_x = \int_0^12\pi\cdot(\sqrt{y}-y)\cdot y dy$
     ![](../images/Thomas%20Calculus/6-4.jpg) 
     Disk/Washer: 2 integrals  
     Shell: 1
+### 6.3 Arc Length
+#### Finding Lengths of Curves
+Find the lengths of the curves in Exercises 1–12. If you have graphing software, you may want to graph these curves to see what they look like.
+1. $y = \dfrac{1}{3}(x^2 + 2)^{\frac{3}{2}}$ from $x = 0$ to $x = 3$  
+   $\dfrac{dy}{dx} = \dfrac{1}{2}\sqrt{x^2+2}\cdot 2x$  
+   $l = \int_0^3\sqrt{1+x^2(x^2+2)}dx$  
+   $= \int_0^3\sqrt{x^4+2x^2+1}dx$     
+   $= \int_0^3x^2+1dx$   
+   $= [\dfrac{1}{3}x^3+x]_0^3$  
+   $= 12$
+#### Finding Integrals for Lengths of Curves
+In Exercises 13–20, do the following.  
+a. Set up an integral for the length of the curve.  
+b. Graph the curve to see what it looks like.   
+c. Use your grapher’s or computer’s integral evaluator to find the curve’s length numerically.
+
+13. $y = x^2, -1 \le x \le 2$  
+    $\dfrac{dy}{dx} = 2x$  
+    $l = \int_{-1}^2\sqrt{1+4x^2}dx$
+#### Theory and Examples
+21. a. Find a curve with a positive derivative through the point $(1, 1)$ whose length integral (Equation 3) is
+    $$
+    L = \int_1^4\sqrt{1+\dfrac{1}{4x}}dx
+    $$
+    b. How many such curves are there? Give reasons for your answer.   
+    a. $\dfrac{dy}{dx} = \plusmn \dfrac{1}{2\sqrt{x}}$  
+    $y'(1) >0, y' = \dfrac{1}{2}x^{-\frac{1}{2}}$    
+    one such curve:$y= \sqrt{x}$  
+    b. Infinite. $y = \sqrt{x} + C$
+#### COMPUTER EXPLORATIONS
+In Exercises 35–40, use a CAS to perform the following steps for the given graph of the function over the closed interval.   
+a. Plot the curve together with the polygonal path approximations for $n = 2, 4, 8$ partition points over the interval. (See Figure 6.22.)    
+b. Find the corresponding approximation to the length of the curve by summing the lengths of the line segments.  
+c. Evaluate the length of the curve using an integral. Compare your approximations for $n = 2, 4, 8$ with the actual length given by the integral. How does the actual length compare with the approximations as $n$ increases? Explain your answer.
+
+35. $f(x) = \sqrt{1 - x^2}, -1 \le x \le 1$  
+    $\dfrac{dy}{dx} = \dfrac{1}{2\sqrt{1-x^2}}\cdot(-2x) = -\dfrac{x}{\sqrt{1-x^2}}$    
+    $l =\int_{-1}^1\sqrt{1+\dfrac{x^2}{1-x^2}}dx$  
+    $= \int_{-1}^1\sqrt{\dfrac{1}{1-x^2}}dx$  
