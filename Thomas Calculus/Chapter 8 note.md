@@ -29,3 +29,16 @@ $$
 \sin mx\cos nx = \dfrac{1}{2}[\sin(m-n)x+\sin(m+n)x] \\
 \cos mx\sin nx = \dfrac{1}{2}[\cos(m-n)x+\cos(m+n)x] \\
 $$
+### 8.4 Trigonometric Substitutions
+With $x = a \tan\theta,\theta = \tan^{-1}(\dfrac{x}{a}),\dfrac{\pi}{2} < \theta < \dfrac{\pi}{2}$,
+$$
+a^2 + x^2 = a^2 + a^2\tan^2\theta = a^2(1 + \tan^2\theta) = a^2\sec^2\theta.
+$$
+With $x = a \sin\theta,\theta = \sin^{-1}(\dfrac{x}{a}),\dfrac{\pi}{2}\le \theta \le \dfrac{\pi}{2}$,
+$$
+a^2 - x^2 = a^2 - a^2\sin^2\theta = a^2(1 - \sin^2\theta) = a^2\cos^2\theta.
+$$
+With $x = a \sec\theta,\theta = \sec^{-1}(\dfrac{x}{a}),\left\{\begin{aligned}0 \le \theta<\dfrac{\pi}{2} &\quad\mathsf{if}\quad\dfrac{x}{a} \ge 1 \\  \dfrac{\pi}{2} < \theta \le \pi &\quad\mathsf{if}\quad\dfrac{x}{a} \le -1\end{aligned}\right.$,
+$$
+x^2 - a^2 = a^2\sec^2\theta - a^2 = a^2(\sec^2\theta-1) = a^2\tan^2\theta.
+$$
