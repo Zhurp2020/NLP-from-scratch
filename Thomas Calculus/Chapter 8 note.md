@@ -42,3 +42,20 @@ With $x = a \sec\theta,\theta = \sec^{-1}(\dfrac{x}{a}),\left\{\begin{aligned}0 
 $$
 x^2 - a^2 = a^2\sec^2\theta - a^2 = a^2(\sec^2\theta-1) = a^2\tan^2\theta.
 $$
+### 8.5 Integration of Rational Functions by Partial Fractions
+#### General Description of the Method
+Success in writing a rational function $\dfrac{f(x)}{g(x)}$ as a sum of partial fractions depends on two things:
++ The degree of $f(x)$ must be less than the degree of $g(x)$. 
++ We must know the factors of $g(x)$.
+
+1. Let $x - r$ be a linear factor of $g(x)$. Suppose that $(x - r)^m$ is the highest power of $x - r$ that divides $g(x).$ Then, to this factor, assign the sum of the $m$ partial fractions: 
+   $$\dfrac{A_1}{(x - r)} + \dfrac{A_2}{(x - r)^2}+\cdots + \dfrac{A_m}{(x - r)^m} $$
+   Do this for each distinct linear factor of $g(x).$  
+2. Let $x^2 + px + q$ be an irreducible quadratic factor of $g(x)$ so that $x^2 + px + q$ has no real roots. Suppose that $(x^2 + px + q)^n$ is the highest power of this factor that divides $g(x)$. Then, to this factor, assign the sum of the n partial fractions:
+    $$
+    \dfrac{B_1x + C_1}{x^2 + px + q} + \dfrac{B_2x + C_2}{(x^2 + px + q)^2} + \cdots + \dfrac{B_nx + C_n}{(x^2 + px + q)^n}
+    $$
+    Do this for each distinct quadratic factor of $g(x)$.
+3. Set the original fraction $\dfrac{f(x)}{g(x)}$ equal to the sum of all these partial fractions. Clear the resulting equation of fractions and arrange the terms in decreasing powers of $x$.
+2. Equate the coefficients of corresponding powers of x and solve the resulting equations for the undetermined coefficients
+#### Other Ways to Determine the Coefficients

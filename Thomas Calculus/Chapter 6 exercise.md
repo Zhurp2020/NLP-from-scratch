@@ -188,3 +188,33 @@ $= \dfrac{\sqrt{5}}{4}\pi x^2]_0^4$
 $= 4\sqrt{5}\pi$  
 $S = \dfrac{1}{2}*2\pi*2*2\sqrt{5}$  
 $= 4\sqrt{5}\pi$
+### 6.5 Work and Fluid Forces
+#### Springs
+The graphs of force functions (in newtons) are given in Exercises 1 and 2. How much work is done by each force in moving an object 10 m?
+1. ![](../images/Thomas%20Calculus/6-5.jpg)    
+   $W = \int_0^{10}F(x)dx = \dfrac{1}{2}*3*20+\dfrac{1}{2}*5*14+2*8$  
+   $= 81$
+#### Work Done by a Variable Force
+9. Lifting a rope. A mountain climber is about to haul up a 50-m length of hanging rope. How much work will it take if the rope weighs 0.624 N/m?  
+    $W = \int_0^{50}(50-x)0.624dx$  
+    $= \int_0^{50}31.2-0.624xdx$  
+    $= 31.2x-0.312x^2]_0^{50}$   
+    $= 780 J$ 
+#### Pumping Liquids from Containers
+15. pumping water The rectangular tank shown here, with its top at
+ground level, is used to catch runof water. Assume that the water
+weighs 62.4 lb>ft3
+.
+a. How much work does it take to empty the tank by pumping
+the water back to ground level once the tank is full?
+b. If the water is pumped to ground level with a (5>11)-
+ horsepower (hp) motor (work output 250 ft-lb >sec),
+how long will it take to empty the full tank (to the nearest
+minute)?
+c. Show that the pump in part (b) will lower the water level 10 ft
+(halfway) during the irst 25 min of pumping.
+d. the weight of water What are the answers to parts (a)
+and (b) in a location where water weighs 62.26 lb>ft3
+?
+62.59 lb>ft3
+?
