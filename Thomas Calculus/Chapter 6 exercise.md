@@ -201,20 +201,152 @@ The graphs of force functions (in newtons) are given in Exercises 1 and 2. How m
     $= 31.2x-0.312x^2]_0^{50}$   
     $= 780 J$ 
 #### Pumping Liquids from Containers
-15. pumping water The rectangular tank shown here, with its top at
-ground level, is used to catch runof water. Assume that the water
-weighs 62.4 lb>ft3
-.
-a. How much work does it take to empty the tank by pumping
-the water back to ground level once the tank is full?
-b. If the water is pumped to ground level with a (5>11)-
- horsepower (hp) motor (work output 250 ft-lb >sec),
-how long will it take to empty the full tank (to the nearest
-minute)?
-c. Show that the pump in part (b) will lower the water level 10 ft
-(halfway) during the irst 25 min of pumping.
-d. the weight of water What are the answers to parts (a)
-and (b) in a location where water weighs 62.26 lb>ft3
-?
-62.59 lb>ft3
-?
+15. pumping water The rectangular tank shown here, with its top at ground level, is used to catch runof water. Assume that the water weighs $62.4 lb/ft^3$.  
+a. How much work does it take to empty the tank by pumping the water back to ground level once the tank is full?   
+b. If the water is pumped to ground level with a $\dfrac{5}{11}$ horsepower (hp) motor (work output 250 ft-lb/sec), how long will it take to empty the full tank (to the nearest minute)?   
+c. Show that the pump in part (b) will lower the water level 10 ft (halfway) during the first 25 min of pumping.  
+d. the weight of water. What are the answers to parts (a) and (b) in a location where water weighs $62.26 lb/ft^3$?$62.59 lb/ft^3$?
+![](../images/Thomas%20Calculus/6-6.jpg)  
+a. $V = 120\Delta y$    
+   $\Delta W = 7488\Delta y (-y)$  
+   $W = \int_{-20}^0-7488ydy$  
+   $= \int_0^{20}7488ydy$  
+   $= 3744y^2]_0^{20}$  
+   $= 1497600$ft-lb  
+b. $t = \dfrac{1497600}{250} = 5990.4 \approx 100$ min  
+c. $W = 375000$ft-lb  
+   $W = \int_0^{10}7488ydy = 3744y^2]_0^{10} = 374400 < 375000$ ft-lb
+d. $62.26 lb/ft^3$:
+   $W = \int_{-20}^0-7471.2ydy$    
+   $= 3735.6y^2]_0^{20}$  
+   $= 1494240$ft-lb   
+   $62.59 lb/ft^3$  
+   $W = \int_{-20}^0-7510.8ydy$    
+   $= 3755.4y^2]_0^{20}$  
+   $= 1502160$ft-lb 
+#### Work and Kinetic Energy
+25. Kinetic energy. If a variable force of magnitude $F(x)$ moves an object of mass $m$ along the $x$-axis from $x_1$ to $x_2$, the object’s velocity $v$ can be written as $\dfrac{dx}{dt}$ (where $t$ represents time). Use Newton’s second law of motion $F = m(\dfrac{dv}{dt})$ and the Chain Rule
+    $$
+    \dfrac{dv}{dt} = \dfrac{dv}{dx}\dfrac{dx}{dt} = v\dfrac{dv}{dx}
+    $$
+    to show that the net work done by the force in moving the object from $x_1$ to $x_2$ is
+    $$
+    W = \int^{x_2}_{x_1}F(x) dx = \dfrac{1}{2}mv_2^2- \dfrac{1}{2}mv_1^2
+    $$
+    where $v_1$ and $v_2$ are the object’s velocities at $x_1$ and $x_2$. In physics, the expression $\dfrac{1}{2}mv2$ is called the kinetic energy of an object of mass $m$ moving with velocity $v$. Therefore, the work done by the force equals the change in the object’s kinetic energy, and we can find the work by calculating this change.
+#### Finding Fluid Forces
+35. triangular plate. Calculate the fluid force on one side of the plate in Example 6 using the coordinate system shown here.
+    ![](../images/Thomas%20Calculus/6-7.jpg)  
+    $y = x-5$  
+    $F = \int_{-5}^{-2}62.4\cdot(-y)\cdot2(y+5)dy$  
+    $= -\int_{-2}^{-5}124.8(-y^2-5y)dy$  
+    $= 124.8[\dfrac{1}{3}y^3+\dfrac{5}{2}y^2]_{-2}^{-5}$  
+    $= 124.8(-\dfrac{125}{3}+\dfrac{125}{2}-(-\dfrac{8}{3}+10))$  
+    $= 1684.8$ ft-lb
+### 6.6 Moments and Centers of Mass
+#### Mass of a wire
+In Exercises 1–6, find the mass $M$ and center of mass $\bar{x}$ of the linear wire covering the given interval and having the given density $\delta(x)$.
+1. $1 \le x \le 4, \delta(x) = 2x$  
+   $M = \int_1^4\delta(x)dx$  
+   $= \int_1^42xdx$  
+   $=x^2]_1^4 = 15$  
+   $M_0 = \int_1^4x\delta(x)dx$  
+   $= \int_1^42x^2dx$  
+   $=\dfrac{2}{3}x^3]_1^4 = 42$   
+   $\bar{x} = \dfrac{M_0}{M} = \dfrac{42}{15} = \dfrac{12}{5}$  
+#### Thin Plates with Constant Density
+In Exercises 7-24, find the center of mass of a thin plate of constant density $\delta$ covering the given region.
+
+7. The region bounded by the parabola $y = x^2$ and the line $y = 4$      
+   $\bar{x} = 0$  
+   $\tilde{x} = x, \tilde{y} = \dfrac{4-x^2}{2}$   
+   $dm = \delta (4-x^2)dx$   
+   $M_x = \int_{-2}^2 \dfrac{1}{2}\delta (4-x^2)^2dx$  
+   $= \dfrac{\delta}{2}\int_{-2}^216-8x^2+x^4dx$  
+   $= \dfrac{\delta}{2}[16x-\dfrac{8}{3}x^3+\dfrac{1}{5}x^5]_{-2}^2$   
+   $= \dfrac{\delta}{2}(32-\dfrac{64}{3}+\dfrac{32}{5}+32-\dfrac{64}{3}+\dfrac{32}{5})$  
+   $= (32-\dfrac{64}{3}+\dfrac{32}{5})\delta$  
+   $= \dfrac{480-320+96}{15}\delta$  
+   $= \dfrac{256}{15}\delta$  
+   $M = \int_{-2}^2 \delta (4-x^2)dx$  
+   $= \delta[4x-\dfrac{1}{3}x^3]_{-2}^2$  
+   $= (8-\dfrac{8}{3}+8-\dfrac{8}{3})\delta$  
+   $= \dfrac{32}{3}\delta$  
+   $\bar{y} = \dfrac{M_x}{M} = \dfrac{256}{15}\dfrac{3}{32} = \dfrac{8}{5}$  
+   $(0.\dfrac{8}{5})$
+#### Thin Plates with Varying Density
+21. Find the center of mass of a thin plate covering the region between the $x$-axis and the curve $y = \dfrac{2}{x^2}, 1 \le x \le 2$, if the plate’s density at the point $(x, y)$ is $\delta(x) = x^2$  
+    $\tilde{x} = x, \tilde{y} = \dfrac{1}{x^2}$  
+    $dm = x^2\cdot\dfrac{2}{x^2}dx = 2dx$  
+    $M_x = \int_1^2\dfrac{2}{x^2}dx$  
+    $= -2x^{-1}]_1^2 = 1$  
+    $M_y = \int_1^22xdx$  
+    $= 3$  
+    $M = \int_1^22dx =2x]_1^2 = 3$  
+    $\bar{x} = \dfrac{M_y}{M} = 1$  
+    $\bar{y} = \dfrac{M_x}{M} = \dfrac{1}{3}$  
+    $(1,\dfrac{1}{3})$
+#### Centroids of Triangles
+25. the centroid of a triangle lies at the intersection of the triangle’s medians. You may recall that the point inside a triangle that lies one-third of the way from each side toward the opposite vertex is the point where the triangle’s three medians intersect. Show that the centroid lies at the intersection of the medians by showing that it too lies one-third of the way from each side toward the opposite vertex. To do so, take the following steps.  
+i) Stand one side of the triangle on the $x$-axis as in part (b) of the accompanying figure. Express $dm$ in terms of $L$ and $dy$.  
+ii) Use similar triangles to show that $L = \dfrac{b}{h}(h - y)$. Substitute this expression for $L$ in your formula for $dm.$   
+iii) Show that $\bar{y} = \dfrac{h}{3}$  
+iv) Extend the argument to the other sides
+![](../images/Thomas%20Calculus/6-8.jpg)  
+i. $dm = \delta Ldy$  
+ii. $\dfrac{L}{b} = \dfrac{h-y}{h}$  
+    $L = \dfrac{b(h-y)}{h}$  
+    $dm = \dfrac{b(h-y)}{h}dy$  
+iii.$\tilde{y} = y$   
+    $M_x = \int_0^hy\dfrac{b(h-y)}{h}dy$  
+    $= \int_0^hy(b-\dfrac{b}{h}y)dy$  
+    $= [\dfrac{b}{2}y^2-\dfrac{b}{3h}y^3]_0^h$   
+    $= \dfrac{1}{6}bh^2$  
+    $M = \int_0^h\dfrac{b(h-y)}{h}dy$  
+    $= \int_0^hb-\dfrac{b}{h}ydy$   
+    $= [by-\dfrac{b}{2h}y^2]_0^h$  
+    $= \dfrac{1}{2}bh$  
+    $\bar{y} = \dfrac{M_x}{M}$  
+    $= \dfrac{\frac{1}{6}bh^2}{\frac{1}{2}bh}$  
+    $= \dfrac{h}{3}$
+#### Thin Wires
+31. constant density Find the moment about the $x$-axis of a wire of constant density that lies along the curve $y = \sqrt{x}$ from $x = 0$ to $x = 2$.   
+    $M_x = \int_0^2\sqrt{x}dx$  
+    $= \dfrac{2}{3}x^{\frac{3}{2}}]_0^2$  
+    $= \dfrac{4}{3}2\sqrt{2}$
+#### Plates Bounded by Two Curves
+In Exercises 35–38, find the centroid of the thin plate bounded by the graphs of the given functions. Use Equations (6) and (7) with $\delta = 1$ and $M =$ area of the region covered by the plate.
+
+35. $g(x) = x^2$ and $f(x) = x + 6$  
+    $x^2 -x -6 = 0$  
+    $x_1 = 3, x_2 = -2$  
+    $A(-2,4), B(3,9)$  
+    $M = \int_{-2}^3x+6-x^2dx$  
+    $= [\dfrac{1}{2}x^2+6x-\dfrac{1}{3}x^3]_{-2}^3$  
+    $= \dfrac{9}{2}+18-9-2+12-\dfrac{8}{3}$  
+    $= \dfrac{114+27-16}{6}$  
+    $= \dfrac{125}{6}$  
+    $\bar{x} = \dfrac{6}{125}\int_{-2}^3x(x+6-x^2)dx$  
+    $= \dfrac{6}{125}\int_{-2}^3(-x^3+x^2+6x)dx$  
+    $= \dfrac{6}{125}[-\dfrac{1}{4}x^4+\dfrac{1}{3}x^3+3x^2]_{-2}^3$  
+    $= \dfrac{6}{125}(-\dfrac{81}{4}+9+27+4+\dfrac{8}{3}-12)$  
+    $= \dfrac{6}{125}\dfrac{336-243+32}{12}$  
+    $= \dfrac{1}{2}$   
+    $\bar{y} = \dfrac{6}{125}\int_{-2}^3\dfrac{1}{2}(x^2+12x+36-x^4)dx$  
+    $= \dfrac{3}{125}[-\dfrac{1}{5}x^5+\dfrac{1}{3}x^3+6x^2+36x]_{-2}^3$  
+    $= \dfrac{3}{125}(-\dfrac{243}{5}+9+54+108-\dfrac{32}{5}+\dfrac{8}{3}-24+72$  
+    $= \dfrac{3}{125}\dfrac{3285-825+40}{15}$  
+    $= 4$
+    $(\dfrac{1}{2},4)$
+#### Theory and Examples
+Verify the statements and formulas in Exercises 39 and 40.
+
+39. The coordinates of the centroid of a differentiable plane curve are
+    $$ 
+    \bar{x} = \dfrac{\int xds}{\mathsf{length}}, \bar{y}= \dfrac{\int yds}{\mathsf{length}}
+    $$
+    ![](../images/Thomas%20Calculus/6-9.jpg)  
+    $M_x = \int yds$  
+    $M_y = \int xds$  
+    $M = \mathsf{length}$  
+    $\bar{x} = \dfrac{\int xds}{\mathsf{length}}, \bar{y}= \dfrac{\int yds}{\mathsf{length}}$
