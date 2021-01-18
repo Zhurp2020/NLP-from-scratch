@@ -33,7 +33,7 @@ The natural logarithm is the function given by
 >**DEFINITION** 
 The number $e$ is the number in the domain of the natural logarithm that satisfies
 >$$
->\ln x = \int_1^e \dfrac{1}{t}dt, x > 0
+>\ln e = \int_1^e \dfrac{1}{t}dt, x > 0
 >$$
 #### The Derivative of $y = \ln x$
 $$

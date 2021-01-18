@@ -53,3 +53,67 @@ e. Plot the functions $f$ and $g$, the identity, the two tangent lines, and the 
     $y = \dfrac{3}{14}\sqrt{7}x+\dfrac{5}{14}\sqrt{7}$  
     d. $g'(\sqrt{7}) = \dfrac{1}{f'(g(\sqrt{7}))} = \dfrac{2}{3}\sqrt{7}$   
     $y = \dfrac{2}{3}\sqrt{7}x-\dfrac{5}{3}$
+### 7.2 Natural Logarithms
+#### Using the Algebraic Properties—Theorem 2
+1. Express the following logarithms in terms of $\ln 2$ and $\ln 3$.  
+a. $\ln 0.75$ b. $\ln \dfrac{4}{9}$ c. $\ln \dfrac{1}{2}$  
+d. $\ln \sqrt[3]{9}$ e. $\ln 3\sqrt{2}$ f. $\ln \sqrt{13.5}$   
+a. $\ln 0.75 = \ln \dfrac{3}{4} = \ln 3 - \ln 2^2 = \ln 3 - 2\ln2$  
+b. $\ln \dfrac{4}{9} = 2\ln 2 - 2\ln 3$  
+c. $\ln \dfrac{1}{2} = \ln1 - \ln 2 = -\ln 2$  
+d. $\ln \sqrt[3]{9} = \ln 3^{\frac{2}{3}} = \dfrac{2}{3}\ln 3$  
+e. $\ln 3\sqrt{2} = \ln3 + \dfrac{1}{2}\ln 2$  
+f. $\ln \sqrt{13.5} = \ln (\dfrac{27}{2})^{\frac{1}{2}} = \dfrac{1}{2}(3\ln 3 - \ln 2)$  
+#### Finding Derivatives
+In Exercises 7–38, find the derivative of $y$ with respect to $x, t,$ or $\theta$, as appropriate.
+
+7. $y = \ln 3x$  
+   $\dfrac{dy}{dx} = \dfrac{3}{3x} = \dfrac{1}{x}$  
+#### Evaluating Integrals
+Evaluate the integrals in Exercises 39–56.
+
+39. $\int_{-3}^{-2}\dfrac{dx}{x}$  
+    $\int_{-3}^{-2}\dfrac{dx}{x} = -[\ln x]_2^3 = -\ln \dfrac{3}{2}$
+#### Logarithmic Differentiation
+In Exercises 57–70, use logarithmic differentiation to find the derivative of $y$ with respect to the given independent variable.
+
+57. $y = \sqrt{x(x + 1)}$  
+    $\ln y = \ln \sqrt{x(x + 1)}$  
+    $\dfrac{d}{dx}\ln y = \dfrac{d}{dx} \ln \sqrt{x(x + 1)}$  
+    $\dfrac{1}{y}\dfrac{dy}{dx}= \dfrac{d}{dx} \dfrac{1}{2}\ln (x^2+x)$  
+    $\dfrac{dy}{dx} = \dfrac{y}{2}\dfrac{1}{x^2 + x}(2x+1)$  
+    $= \dfrac{\sqrt{x(x + 1)}(2x+1)}{2x^2+2x}$
+#### Theory and Applications
+71. Locate and identify the absolute extreme values of  
+a. $\ln (\cos x)$ on $[-\dfrac{\pi}{4},\dfrac{\pi}{3}]$,  
+b. $\cos (\ln x)$ on $[\dfrac{1}{2},2]$.  
+a. $\dfrac{d}{dx}\ln (\cos x) = -\dfrac{\sin x}{\cos x} = 0$  
+$\sin x = 0, x = 0$  
+$f(0) = \ln 1 = 0$  
+$f(-\dfrac{\pi}{4}) = \ln \dfrac{\sqrt{2}}{2} = -\dfrac{1}{2}\ln 2$  
+$f(\dfrac{\pi}{3}) = \ln \dfrac{1}{2} = -\ln 2$  
+$f(x)_{\max} = f(0) = 0$  
+$f(x)_{\min} = f(\dfrac{\pi}{3}) = -\ln 2$   
+b. $\dfrac{d}{dx} \cos (\ln x) = -\dfrac{\sin\ln x}{x} = 0$  
+$\sin\ln x = 0, \ln x =0, x = 1$  
+$f(1) = \cos 0 = 1$  
+$f(\dfrac{1}{2}) =\cos\ln \dfrac{1}{2} = -\ln 2$  
+$f(2) = \cos\ln 2$  
+$f(x)_{\max} = f(1) = 1$  
+$f(x)_{\min} = f(\dfrac{1}{2}) = f(2) = \cos\ln 2$ 
+#### Identifying Extrema
+In Exercises 75 and 76:  
+a. Find the open intervals on which the function is increasing and decreasing.  
+b. Identify the function’s local and absolute extreme values, if any, saying where they occur.  
+
+75. $g(x) = x (\ln x)^2$  
+    D:$x > 0$   
+    $\dfrac{dg}{dx} = x\dfrac{d}{dx}(\ln x)^2 + (\ln x)^2$  
+    $= \dfrac{2x\ln x}{x} + (\ln x)^2 = 0$  
+    $\ln x = 0$ or $\ln x = -2$  
+    $x = 1$ or $x = \dfrac{1}{e^2}$  
+    $\dfrac{1}{e^2}< x < 1, -2 < \ln x <0, \dfrac{dg}{dx} < 0, g$ is decreasing  
+    $0 < x < \dfrac{1}{e^2}$ or $x > 1, \ln x < -2$ or $\ln x > 0, \dfrac{dg}{dx}> 0, g$ is increasing  
+    $g(1) = 0, g(\dfrac{1}{e^2}) = \dfrac{4}{e^2}$  
+    $g(x)_{\min} = g(1) = 0$  
+    local maxima: $g(\dfrac{1}{e^2})= \dfrac{4}{e^2}$
