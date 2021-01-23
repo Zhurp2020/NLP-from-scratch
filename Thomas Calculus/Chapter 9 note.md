@@ -33,3 +33,12 @@ $$
 $$
 L\dfrac{di}{dt} + Ri = V 
 $$
+### 9.3 Applications
+#### Motion with Resistance Proportional to Velocity
+$$
+m\dfrac{dv}{dt} = -kv, k>0
+$$
+With initial conditions $v = v_0$  
+$$
+v = v_0e^{-\frac{k}{m}t}
+$$
