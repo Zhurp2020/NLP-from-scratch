@@ -42,3 +42,34 @@ With initial conditions $v = v_0$
 $$
 v = v_0e^{-\frac{k}{m}t}
 $$
+distance to stop:
+$$
+\dfrac{ds}{dt} = v_0e^{-\frac{k}{m}t}, s(0) = 0 \\
+s = -\dfrac{mv_0}{k}e^{-\frac{k}{m}t}+C   \\
+s(0) = -\dfrac{mv_0}{k} + C = 0 \\
+s(t) = \dfrac{mv_0}{k}(1-e^{-\frac{k}{m}t}) \\
+\lim_{t\to\infty}s(t) = \dfrac{mv_0}{k}
+$$
+#### Orthogonal Trajectories
+An orthogonal trajectory of a family of curves is a curve that intersects each curve of the family at right angles, or orthogonally
+#### Mixture Problems
+### 9.4 Graphical Solutions of Autonomous Equations
+#### Equilibrium Values and Phase Lines
+A differential equation for which $\dfrac{dy}{dx}$ is a function of $y$ only is called an autonomous differential equation.  
+> DEFINITION   
+> If $\dfrac{dy}{dx} = g(y)$ is an autonomous differential equation, then the values of $y$ for which $\dfrac{dy}{dx} = 0$ are called equilibrium values or rest points.  
+
+a phase line for the equation is a plot on the y-axis that shows the equation’s equilibrium values along with the intervals where $\dfrac{dy}{dx}$ and $\dfrac{d^2y}{dx^2}$ are positive and negative
+#### Stable and Unstable Equilibria
+#### Newton’s Law of Cooling
+#### A Falling Body Encountering Resistance
+#### Logistic Population Growth
+### 9.5 Systems of Equations and Phase Planes
+#### Phase Planes
+$$
+\dfrac{dx}{dt} = F(x,y) \\
+\dfrac{dy}{dt} = G(x,y)
+$$
+#### A Competitive-Hunter Model
+#### Limitations of the Phase-Plane Analysis Method
+#### Another Type of Behavior

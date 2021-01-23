@@ -186,8 +186,8 @@ $$
 The solution of the initial value problem
 $$
 \dfrac{dy}{dt} = ky, y(0) = y_0 \\
-\dfrac{1}{y}\dfrac{dy}{dt} = k \\
-\int\dfrac{1}{y}\dfrac{dy}{dt}dt = \int kdt \\
+\dfrac{1}{y}dy= k dt\\
+\int\dfrac{1}{y}dy = \int kdt \\
 \ln |y| + C_1 = kt + C_2 \\
 |y| = e^{kt + C_2 - C_1} \\
 y = \plusmn e^{C_2 - C_1}\cdot e^{kt} \\
@@ -195,6 +195,11 @@ y(0) = \plusmn e^{C_2 - C_1} = y_0 \\
 y = y_0e^{kt}
 $$
 #### Separable Differential Equations
+$$
+\dfrac{dy}{dx} = g(x)h(y) \\
+\dfrac{1}{h(y)}dy = g(x)dx \\
+\int\dfrac{1}{h(y)}dy =  \int g(x)dx 
+$$
 #### Unlimited Population Growth
 #### Radioactivity
 #### Heat Transfer: Newton’s Law of Cooling

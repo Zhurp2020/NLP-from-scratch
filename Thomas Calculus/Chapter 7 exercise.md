@@ -117,3 +117,111 @@ b. Identify the function’s local and absolute extreme values, if any, saying w
     $g(1) = 0, g(\dfrac{1}{e^2}) = \dfrac{4}{e^2}$  
     $g(x)_{\min} = g(1) = 0$  
     local maxima: $g(\dfrac{1}{e^2})= \dfrac{4}{e^2}$
+### 7.3 Exponential Functions
+#### Solving Exponential Equations
+In Exercises 1–4, solve for $t$.
+1. a. $e^{-0.3t} = 27$ b. $e^{kt} =\dfrac{1}{2}$ c. $e^{\ln 0.2 t} =0.4$  
+   a. $-0.3t = \ln 27$  
+   $t = - \dfrac{10}{3}\ln 27$  
+   b. $kt = \ln \dfrac{1}{2}$  
+   $t = -\dfrac{1}{k}\ln 2$  
+   c. $\ln 0.2t = \ln 0.4$  
+   $0.2t =  0.4$  
+   $t = 2$  
+#### Finding Derivatives
+In Exercises 7–26, find the derivative of $y$ with respect to $x, t$, or $\theta$, as appropriate.
+
+7. $y = e^{-5x}$  
+   $\dfrac{dy}{dx} = -5e^{-5x}$
+#### Finding Integrals
+Evaluate the integrals in Exercises 33–54.
+
+33. $\int(e^{3x} + 5e^{-x}) dx$  
+    $\int(e^{3x} + 5e^{-x}) dx = \dfrac{1}{3}e^{3x}-5e^{-x} + C$
+#### Initial Value Problems
+Solve the initial value problems in Exercises 55–58.
+
+55. $\dfrac{dy}{dt} = e^t\sin (e^t - 2), y(\ln 2) = 0$  
+    $\int e^t\sin (e^t - 2)dx$  
+    Let $e^t - 2 = u, \dfrac{du}{dx} = e^t$  
+    $\int e^t\sin (e^t - 2)dx = \int\sin udu$  
+    $= -\cos u + C$  
+    $y = -\cos(e^t-2) + C$  
+    $y(\ln 2) = -\cos 0 + C = 0, C = 1$  
+    $y = -\cos(e^t-2) + 1$  
+#### Differentiation
+In Exercises 59–86, find the derivative of y with respect to the given independent variable.
+
+59. $y = 2^x$  
+    $\dfrac{dy}{dx} = e^{x\ln 2}$  
+    $= \ln 2 e^{x\ln 2}$
+#### Integration
+Evaluate the integrals in Exercises 87–96.
+
+87. $\int 5^xdx$  
+    $\int 5^xdx = \int e^{x\ln 5}dx$  
+    $= \dfrac{1}{\ln 5}e^{x\ln 5} + C$
+#### Logarithmic Differentiation
+In Exercises 115–122, use logarithmic differentiation to find the derivative of $y$ with respect to the given independent variable.
+
+115. $y = (x + 1)^x$  
+     $\ln y = \ln (x + 1)^x = x\ln(x+1)$  
+     $\dfrac{1}{y}\dfrac{dy}{dx} = x\dfrac{1}{x+1} + \ln(x+1)$  
+     $\dfrac{dy}{dx} = \dfrac{x}{x+1}(x+1)^x+\ln(x+1)\ln (x + 1)^x$  
+     $= x(x+1)^{x-1}+x\ln^2(x+1)$
+#### Theory and Applications
+129. Find the absolute maximum and minimum values of $f(x) =e^x - 2x$ on $[0, 1]$  
+     $f'(x) = e^x-2 = 0$  
+     $x = \ln 2$  
+     $f(\ln 2) = 2-2\ln 2$  
+     $f(1) = e-2, f(0) = 1$  
+     $f(x)_{\max} = f(0) = 1$  
+     $f(x)_{\min} = f(\ln 2) = 2-2\ln 2$
+### 7.4 Exponential Change and Separable Differential Equations
+#### Verifying Solutions
+In Exercises 1–4, show that each function $y = f(x)$ is a solution of the accompanying differential equation.
+
+1. $2y' + 3y = e^{-x}$  
+a. $y = e^{-x}$ b. $y = e^{-x}+ e^{-\frac{3}{2}x}$  
+c. $y = e^{-x} + Ce^{-\frac{3}{2}x}$  
+    a.  $y' = -e^{-x}$  
+    $2y' + 3y = e^{-x}$  
+    b. $y' = -e^{-x} - \dfrac{3}{2}e^{-\frac{3}{2}x}$  
+    $2y' + 3y = -2e^{-x} - 3e^{-\frac{3}{2}x} + 3e^{-x} + 3e^{-\frac{3}{2}x} = e^{-x}$  
+    c. $y' = -e^{-x} - \dfrac{3}{2}Ce^{-\frac{3}{2}x}$  
+    $2y' + 3y = -2e^{-x} - 3Ce^{-\frac{3}{2}x} + 3e^{-x} + 3Ce^{-\frac{3}{2}x} = e^{-x}$
+#### Initial Value Problems
+In Exercises 5–8, show that each function is a solution of the given initial value problem.
+
+|Differential equation|initial equation|solution candidate|
+|:-:|:-:|:-:|
+|5. $y' + y = \dfrac{2}{1+4e^{2x}}$|$y(-\ln 2) = \dfrac{\pi}{2}$|$y = e^{-x}\tan^{-1}(2e^{x})$|
+$y(-\ln 2) = 2\tan^{-1}1 = \dfrac{\pi}{2}$  
+$y' = -e^{-x}\tan^{-1}(2e^{x}) + e^{-x}\dfrac{1}{\sec^2(\tan^{-1}(2e^{x}))}2e^{x}$  
+$= -e^{-x}\tan^{-1}(2e^{x}) + 2\cos^2(\tan^{-1}(2e^{x}))$  
+$y' + y = -e^{-x}\tan^{-1}(2e^{x}) + 2\cos^2(\tan^{-1}(2e^{x}))+ e^{-x}\tan^{-1}(2e^{x})$  
+$= \dfrac{2}{1+4e^{2x}}$
+#### Separable Differential Equations
+Solve the differential equations in Exercises 9–22.
+
+9. $2\sqrt{xy}\dfrac{dy}{dx}= 1, x, y > 0$  
+    $\dfrac{dy}{dx} = \dfrac{1}{2\sqrt{x}}\dfrac{1}{\sqrt{y}}$  
+    $\dfrac{1}{\sqrt{y}}dy = \dfrac{1}{2\sqrt{x}}dx$  
+    $\int\dfrac{1}{\sqrt{y}}dy = \int\dfrac{1}{2\sqrt{x}}dx$  
+    $2\sqrt{y} + C_1 = \sqrt{x} + C_2$  
+    $\sqrt{y} = \dfrac{1}{2}(\sqrt{x}+C_2-C_1)$  
+    $y = \dfrac{1}{4}(\sqrt{x}+C_2-C_1)^2$
+#### Applications and Examples
+The answers to most of the following exercises are in terms of logarithms and exponentials. A calculator can be helpful, enabling you to express the answers in decimal form.
+
+23. Human evolution continues. The analysis of tooth shrinkage by C. Loring Brace and colleagues at the University of Michigan’s Museum of Anthropology indicates that human tooth size is continuing to decrease and that the evolutionary process has not yet come to a halt some 30,000 years ago. In northern Europeans, for example, tooth size reduction now has a rate of 1% per 1000 years.  
+a. If $t$ represents time in years and $y$ represents tooth size, use the condition that $y = 0.99y_0$ when $t = 1000$ to find the value of $k$ in the equation $y = y_0e^{kt}$. Then use this value of $k$ to answer the following questions.  
+b. In about how many years will human teeth be 90% of their present size?  
+c. What will be our descendants’ tooth size 20,000 years from now (as a percentage of our present tooth size)?  
+a. $y(1000) = y_0e^{1000k} = 0.99y_0$   
+    $1000k = \ln \dfrac{99}{100}$  
+    $k = \dfrac{1}{1000}\ln \dfrac{99}{100}$  
+b. $y(t) = y_0e^{t\frac{1}{1000}\ln \frac{99}{100}} = 0.9y_0$  
+$t\dfrac{1}{1000}\ln \dfrac{99}{100} = \ln \dfrac{9}{10}$    
+$t = 1000\dfrac{\ln\frac{9}{10}}{\ln\frac{99}{100}}$   
+c. $y(20000) = e^{20\ln \frac{99}{100}}y_0$
