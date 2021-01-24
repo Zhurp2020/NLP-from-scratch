@@ -225,3 +225,95 @@ b. $y(t) = y_0e^{t\frac{1}{1000}\ln \frac{99}{100}} = 0.9y_0$
 $t\dfrac{1}{1000}\ln \dfrac{99}{100} = \ln \dfrac{9}{10}$    
 $t = 1000\dfrac{\ln\frac{9}{10}}{\ln\frac{99}{100}}$   
 c. $y(20000) = e^{20\ln \frac{99}{100}}y_0$
+### 7.5 Indeterminate Forms and L’Hôpital’s Rule
+#### Finding Limits in Two Ways
+In Exercises 1–6, use l’Hôpital’s Rule to evaluate the limit. Then
+evaluate the limit using a method studied in Chapter 2.
+1. $\lim\limits_{x\to-2}\dfrac{x + 2}{x^2 - 4}$  
+   $\dfrac{d}{dx}(x+2) = 1, \dfrac{d}{dx}(x^2 - 4 )= 2x$    
+   $\lim\limits_{x\to-2}\dfrac{x + 2}{x^2 - 4} = \lim\limits_{x\to-2}\dfrac{1}{2x} = -\dfrac{1}{4}$  
+   $\lim\limits_{x\to-2}\dfrac{x + 2}{x^2 - 4} = \lim\limits_{x\to-2}\dfrac{x+2}{(x+2)(x-2)} = \lim\limits_{x\to-2}\dfrac{1}{x-2}= -\dfrac{1}{4}$  
+#### Applying l’Hôpital’s Rule
+Use l’Hôpital’s rule to find the limits in Exercises 7–50.
+
+7. $\lim\limits_{x\to2}\dfrac{x - 2}{x^2 - 4}$  
+   $\dfrac{d}{dx}(x-2) = 1, \dfrac{d}{dx}(x^2 - 4) = 2x$ 
+   $\lim\limits_{x\to2}\dfrac{x - 2}{x^2 - 4} =\lim\limits_{x\to2}\dfrac{1}{2x} = \dfrac{1}{4}$  
+#### Indeterminate Powers and Products
+Find the limits in Exercises 51–66.
+
+51. $\lim\limits_{x\to1^+}x^{\frac{1}{1-x}}$  
+    Let $f(x) = x^{\frac{1}{1-x}}$   
+    $\ln f(x) = \ln x^{\frac{1}{1-x}} = \dfrac{1}{1-x}\ln x$  
+    $\dfrac{d}{dx}\ln x = \dfrac{1}{x}$  
+    $\dfrac{d}{dx}(1-x) = -1$   
+    $\lim\limits_{x\to1^+}\dfrac{\ln x}{1-x} = \lim\limits_{x\to1^+}\dfrac{\frac{1}{x}}{-1} = -1$  
+    $\lim\limits_{x\to1^+}x^{\frac{1}{1-x}} = e^{-1} = \dfrac{1}{e}$
+#### Theory and Applications
+L’Hôpital’s Rule does not help with the limits in Exercises 67–74. Try it—you just keep on cycling. Find the limits some other way.
+
+67. $\lim\limits_{x\to\infty}\dfrac{\sqrt{9x+1}}{\sqrt{x+1}}$  
+    $\lim\limits_{x\to\infty}\dfrac{\sqrt{9x+1}}{\sqrt{x+1}} = \lim\limits_{x\to\infty}\sqrt{9-\dfrac{9}{x+1}} = \sqrt{9} = 3$
+### 7.6 Inverse Trigonometric Functions
+#### Common Values
+Use reference triangles like those in Examples 1 and 3 to find the angles in Exercises 1–8.
+1. a. $\tan^{-1} 1$ b. $\arctan (-\sqrt{3})$ c. $\tan^{-1} \dfrac{1}{\sqrt{3}}$  
+   a. $\tan^{-1} 1 = \dfrac{\pi}{4}$  
+   b. $\arctan (-\sqrt{3} = -\dfrac{\pi}{3}$  
+   c. $\tan^{-1} \dfrac{1}{\sqrt{3}} = \dfrac{\pi}{6}$ 
+#### Evaluations
+Find the values in Exercises 9–12.
+
+9. $\sin(\cos^{-1}\dfrac{\sqrt{2}}{2}))$
+   $\sin(\cos^{-1}\dfrac{\sqrt{2}}{2})) = \dfrac{\sqrt{2}}{2}$
+#### Limits
+Find the limits in Exercises 13–20. (If in doubt, look at the function’s graph.)
+
+13. $\lim\limits_{x\to1^-}\sin^{-1}x$ 
+    $\lim\limits_{x\to1^-}\sin^{-1}x = \dfrac{\pi}{2}$
+#### Finding Derivatives
+In Exercises 21–42, find the derivative of y with respect to the appropriate variable.
+
+21. $y = \cos^{-1}(x^2)$  
+    $\dfrac{dy}{dx} = -\dfrac{2x}{\sqrt{1-x^4}}$  
+#### Evaluating Integrals
+Evaluate the integrals in Exercises 47–70.
+
+47. $\int\dfrac{dx}{\sqrt{9-x^2}}$   
+    $\int\dfrac{dx}{\sqrt{9-x^2}} = \sin^{-1}\dfrac{x}{3} + C$
+#### L’Hôpital’s Rule
+Find the limits in Exercises 97–104.
+
+97. $\lim\limits_{x\to0}\dfrac{\sin^{-1}5x}{x}$  
+    $\dfrac{d}{dx}\sin^{-1}5x = \dfrac{5}{\sqrt{1-25x^2}}, \dfrac{d}{dx}x = 1$  
+    $\lim\limits_{x\to0}\dfrac{\sin^{-1}5x}{x} = \lim\limits_{x\to0}\dfrac{\frac{5}{\sqrt{1-25x^2}}}{1} = 5$  
+#### Integration Formulas
+Verify the integration formulas in Exercises 105–108.
+
+105. $\int\dfrac{\tan^{-1}xdx}{x^2} = \ln x - \dfrac{1}{2}\ln(1+x^2)-\dfrac{\tan^{-1}x}{x} + C$  
+     $\dfrac{d}{dx}(\ln x - \dfrac{1}{2}\ln(1+x^2)-\dfrac{\tan^{-1}x}{x} + C)$  
+     $= \dfrac{1}{x} - \dfrac{1}{2}\dfrac{1}{1+x^2}2x - \dfrac{x\frac{1}{1+x^2}- \tan^{-1}x}{x^2}$  
+     $= \dfrac{1}{x} - \dfrac{x}{1+x^2}- \dfrac{\frac{1}{1+x^2}}{x} + \dfrac{\tan^{-1}x}{x^2}$  
+     $= \dfrac{1+x^2-x^2-1}{x(1+x^2)} + \dfrac{\tan^{-1}x}{x^2}$  
+     $= \dfrac{\tan^{-1}x}{x^2}$  
+#### Initial Value Problems
+Solve the initial value problems in Exercises 109–114.
+
+109. $\dfrac{dy}{dx} = \dfrac{1}{\sqrt{1-x^2}}, y(0) = 0$  
+     $\int\dfrac{1}{\sqrt{1-x^2}}dx = \sin^{-1}x + C$  
+     $y(0) = C = 0$  
+     $y = \sin^{-1}x$
+#### Applications and Theory
+113. You are sitting in a classroom next to the wall looking at the blackboard at the front of the room. The blackboard is 12 ft long and starts 3 ft from the wall you are sitting next to.   
+     a. Show that your viewing angle is
+     $$
+     \alpha = \cot^{-1}\dfrac{x}{15} - \cot^{-1}\dfrac{x}{3}
+     $$
+     if you are $x$ ft from the front wall.  
+     b. Find $x$ so that $\alpha$ is as large as possible.  
+     a.$\alpha = \cot^{-1}\dfrac{x}{15} - \cot^{-1}\dfrac{x}{3}$  
+     b.$\dfrac{d}{dx}\alpha = -\dfrac{1}{1+\frac{x^2}{225}}\dfrac{1}{15} + \dfrac{1}{1+\frac{x^2}{9}}\dfrac{1}{3}$  
+     $= \dfrac{3}{x^2+9} - \dfrac{15}{225+x^2} = 0$  
+     $675+3x^2 = 15x^2+135$  
+     $12x^2 = 540$  
+     $x = \sqrt{45} = 3\sqrt{5}$ feet

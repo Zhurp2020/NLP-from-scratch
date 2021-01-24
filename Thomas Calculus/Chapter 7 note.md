@@ -299,6 +299,11 @@ $$
 >\arcctg x = \dfrac{\pi}{2} - \arctan x \\
 >arc\csc x = \dfrac{\pi}{2} - arc\sec x
 >$$ 
+$$
+\dfrac{d}{dx}\arccos u = -\dfrac{1}{\sqrt{1-u^2}}\dfrac{du}{dx}, |u| < 1 \\
+\dfrac{d}{dx}\arcctg u = -\dfrac{1}{1+u^2}\dfrac{du}{dx}, \\
+\dfrac{d}{dx}arc\csc u = -\dfrac{1}{|x|\sqrt{x^2 - 1}}\dfrac{du}{dx}, |u| > 1 \\
+$$
 #### Integration Formulas
 The following formulas hold for any constant $a > 0$.
 1. $\int\dfrac{du}{\sqrt{a^2-u^2}} = \sin^{-1}\dfrac{u}{a} + C$ 
