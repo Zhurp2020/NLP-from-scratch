@@ -317,3 +317,233 @@ Solve the initial value problems in Exercises 109–114.
      $675+3x^2 = 15x^2+135$  
      $12x^2 = 540$  
      $x = \sqrt{45} = 3\sqrt{5}$ feet
+### 7.7 Hyperbolic Functions
+#### Values and Identities
+Each of Exercises 1–4 gives a value of $\sinh x$ or $\cosh x$. Use the definitions and the identity $\cosh^2 x - \sinh^2x = 1$ to find the values of the remaining five hyperbolic functions.
+1. $\sinh x = -\dfrac{3}{4}$  
+   $\cosh^2x = 1+\dfrac{9}{16} = \dfrac{25}{16}$  
+   $\cosh x = \dfrac{5}{4}$  
+   $\tanh x = \dfrac{\sinh x}{\cosh x} = -\dfrac{3}{5}$  
+   $\coth x = \dfrac{1}{\tanh x} = -\dfrac{5}{3}$   
+   $\sec h x = \dfrac{1}{\cosh x} = \dfrac{16}{25}$  
+   $\csc h x =\dfrac{1}{\sinh x} = -\dfrac{4}{3}$
+#### Finding Derivatives
+In Exercises 13–24, find the derivative of y with respect to the appropriate variable.
+
+13. $y = 6 \sinh\dfrac{x}{3}$  
+    $\dfrac{dy}{dx} = 2\cosh x$  
+#### Integration Formulas
+Verify the integration formulas in Exercises 37–40.
+
+37. a. $\int\sec h x dx = \tan^{-1}(\sinh x) + C$  
+b.$\int\sec h x dx = \sin^{-1}(\tanh x) + C$  
+a. $\dfrac{d}{dx}(\tan^{-1}(\sinh x) + C)$  
+$= \dfrac{1}{1+\sinh^2x}\cosh x$  
+$= \dfrac{\cosh x}{\cosh^2x -\sinh^2x +\sinh^2x}$  
+$= \dfrac{1}{\cosh x} = \sec hx$  
+b. $\dfrac{d}{dx}(\sin^{-1}(\tanh x) + C)$  
+$= \dfrac{1}{\sqrt{1-\tanh^2x}}\sec h^2 x$  
+$= \dfrac{\sec h^2 x}{\sqrt{1 - 1 + \sec h^2 x}}$  
+$= \dfrac{1}{\sec h^2 x}$  
+#### Evaluating Integrals
+Evaluate the integrals in Exercises 41–60.
+
+41. $\int\sinh 2x dx$  
+    Let $u = 2x, \dfrac{du}{dx} = 2$  
+    $\int\sinh 2x dx$  
+    $= \int \dfrac{1}{2}\sinh u du$  
+    $= \dfrac{1}{2}\cos u + C$  
+    $= \dfrac{1}{2}\cos 2x + C$
+#### Inverse Hyperbolic Functions and Integrals
+Since the hyperbolic functions can be written in terms of exponential functions, it is possible to express the inverse hyperbolic functions in terms of logarithms, as shown in the following table.
+$$
+\sinh^{-1}x = \ln (x+\sqrt{x^2+1}), -\infty < x < \infty \\
+\cosh^{-1}x = \ln (x+\sqrt{x^2-1}), x\ge 1 \\
+\tanh^{-1}x = \dfrac{1}{2}\ln (x\dfrac{1+x}{1-x}), |x| < 1 \\
+\sec h^{-1}x = \ln (\dfrac{1+\sqrt{1-x^2}}{x}), 0 < x \le 1 \\ 
+\csc h^{-1}x = \ln (\dfrac{1}{x} + \dfrac{\sqrt{1+x^2}}{|x|}), x \ne 0 \\
+\coth^{-1}x = \dfrac{1}{2}\ln (x\dfrac{1-x}{1+x}), |x| > 1
+$$
+Use these formulas to express the numbers in Exercises 61–66 in terms of natural logarithms.
+
+61. $\sinh^{-1}(-\dfrac{5}{12})$  
+    $\sinh^{-1}(-\dfrac{5}{12}) = \ln (-\dfrac{5}{12} + \sqrt{\dfrac{25}{144} + 1})$  
+    $= \ln(-\dfrac{5}{12} +\dfrac{13}{12}$  
+    $= \ln \dfrac{2}{3}$  
+#### Applications and Examples
+75. Show that if a function $f$ is defined on an interval symmetric about the origin (so that $f$ is defined at $-x$ whenever it is defined at $x$), then
+    $$
+    f(x) = \dfrac{f(x)+f(-x)}{2} + \dfrac{f(x)-f(-x)}{2}
+    $$
+    Then show that $\dfrac{f(x)+f(-x)}{2}$ is even and that $\dfrac{f(x)-f(-x)}{2}$ is odd.   
+    $g(x) = \dfrac{f(x)+f(-x)}{2}$ 
+    $g(-x) = \dfrac{f(-x)+f(x)}{2} = g(x), g(x)$ is even 
+    $h(x) = \dfrac{f(x)-f(-x)}{2}$  
+    $h(-x) = \dfrac{f(-x)-f(x)}{2} = -h(x), h(x)$ is odd. 
+### 7.8 Relative Rates of Growth
+#### Comparisons with the Exponential $e^x$
+1. Which of the following functions grow faster than $e^x$ as $x \to \infty$? Which grow at the same rate as $e^x$ ? Which grow slower?
+a. $x - 3$ b. $x^3 + \sin^2x$  
+c. $\sqrt{x}$ d. $4^x$  
+e. $(\dfrac{3}{2})^x$ f. $e^{\frac{x}{2}}$  
+g. $\dfrac{e^x}{2}$ h. $\log_{10}x$  
+a. $\lim\limits_{x \to \infty}\dfrac{x-3}{e^x} = \lim\limits_{x \to \infty}\dfrac{1}{e^x} = 0$, slower than $e^x$   
+b. $\lim\limits_{x \to \infty}\dfrac{x^3 + \sin^2x}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{3x^2 + 2\sin x\cos x}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{6x + 4\cos2x}{e^x}$   
+$= \lim\limits_{x \to \infty}\dfrac{6 - 8\sin2x}{e^x} = 0$, slower than $e^x$   
+c. $\lim\limits_{x \to \infty}\dfrac{\sqrt{x}}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{\frac{1}{2\sqrt{x}}}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{1}{2\sqrt{x}e^x} = 0$  , slower than $e^x$   
+d. $\lim\limits_{x \to \infty}\dfrac{4^x}{e^x}$  
+$= \infty$, faster than $e^x$  
+e. $\lim\limits_{x \to \infty}\dfrac{(\frac{3}{2})^x}{e^x}$  
+$= \lim\limits_{x \to \infty}(\dfrac{(3}{2e})^x$  
+$= 0$, slower than $e^x$   
+f. $\lim\limits_{x \to \infty}\dfrac{e^{\frac{x}{2}}}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{1}{\sqrt{e^x}} = 0$, slower than $e^x$   
+g. $\lim\limits_{x \to \infty}\dfrac{\dfrac{e^x}{2}}{e^x}$  
+$= \dfrac{1}{2},$ same rate  
+h. $\lim\limits_{x \to \infty}\dfrac{\log_{10}x}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{\frac{\ln x}{\ln 10}}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{1}{\ln 10}\dfrac{\frac{1}{x}}{e^x}$  
+$= \lim\limits_{x \to \infty}\dfrac{1}{xe^x\ln 10} = 0$, slower than $e^x$   
+#### Comparisons with the Power $x^2$
+3. Which of the following functions grow faster than $x^2$ as $x \to \infty$?Which grow at the same rate as $x^2$? Which grow slower?  
+a. $x^2 + 4x$ b. $x^5 - x^2$  
+c. $\sqrt{x^4+x^3}$ d. $(x + 3)^2$   
+e. $x \ln x$ f. $2^x$  
+g. $x^3e^{-x}$ h. $8x^2$  
+a same, b faster, c, same, d, same, e, slower f, faster, g, slower, h, same
+#### Comparisons with the Logarithm $\ln x$
+5. Which of the following functions grow faster than $\ln x$ as $x \to \infty$?Which grow at the same rate as $\ln x$? Which grow slower?    
+a. $\log_3 x$ b. $\ln 2x$    
+c. $\ln \sqrt{x}$ d. $\sqrt{x}$  
+e. $x$ f.  $5\ln x$  
+g. $\dfrac{1}{x}$ h. $e^x$  
+a, same, b,same, c, same, d, faster, e, faster, f,same, g, slower, h, faster
+#### Ordering Functions by Growth Rates   
+7. Order the following functions from slowest growing to fastest growing as $x \to \infty$.  
+a. $e^x$ b. $x^x$  
+c. $(\ln x)^x$ d. $e^{\frac{x}{2}}$  
+d,a,c,b
+#### Big-oh and Little-oh; Order
+9. True, or false? As $x \to \infty$,  
+a. $x = o(x)$ b. $x = o(x + 5)$  
+c. $x = O(x + 5)$ d. $x = O(2x)$  
+e. $e^x = o(e^{2x})$ f. $x + \ln x = O(x)$  
+g. $\ln x = o(\ln 2x)$ h. $\sqrt{x^2+5} = O(x)$  
+a. F, b, F, c, T,d,T, e, T, f, F, g, F,h, T
+#### Other Comparisons
+15. Investigate
+    $$
+    \lim\limits_{x \to \infty}\dfrac{\ln(x+1)}{\ln x}
+    $$
+    and 
+    $$
+    \lim\limits_{x \to \infty}\dfrac{\ln(x+99)}{\ln x}
+    $$  
+    Then use l’Hôpital’s Rule to explain what you find.  
+    $\lim\limits_{x \to \infty}\dfrac{\ln(x+1)}{\ln x}$  
+    $= \lim\limits_{x \to \infty}\dfrac{\frac{1}{x+1}}{\frac{1}{x}}$  
+    $= \lim\limits_{x \to \infty}\dfrac{x}{x+1}$  
+    $= 1$  
+    $\lim\limits_{x \to \infty}\dfrac{\ln(x+999)}{\ln x}$  
+    $= \lim\limits_{x \to \infty}\dfrac{\frac{1}{x+999}}{\frac{1}{x}}$  
+    $= \lim\limits_{x \to \infty}\dfrac{x}{x+999}$  
+    $= 1$
+#### Algorithms and Searches
+23. a. Suppose you have three different algorithms for solving the same problem and each algorithm takes a number of steps that is of the order of one of the functions listed here:  
+    $$
+    n\log_2n, n^{\frac{3}{2}},n(\log_2n)^2
+    $$
+    Which of the algorithms is the most efficient in the long run? Give reasons for your answer.    
+    b. Graph the functions in part (a) together to get a sense of how rapidly each one grows.  
+    $n\log_2n$
+### Practice Exercises
+#### Finding Derivatives
+In Exercises 1–24, ind the derivative of y with respect to the appropriate variable.
+1. $y = 10e^{-\frac{x}{5}}$  
+   $\dfrac{dy}{dx} = -2e^{-\frac{x}{5}}$  
+#### Logarithmic Differentiation
+In Exercises 25–30, use logarithmic differentiation to ind the derivative of $y$ with respect to the appropriate variable.
+
+25. $y =\dfrac{2(x^2+1)}{\sqrt{\cos 2x}}$  
+    $\ln y= \ln 2(x^2+1) - \ln\sqrt{\cos 2x}$  
+    $\dfrac{1}{y}\dfrac{dy}{dx} = \dfrac{4x}{2(x^2+1)} - \dfrac{1}{\sqrt{\cos 2x}}\dfrac{d}{dx}\sqrt{\cos 2x}$  
+    $\dfrac{dy}{dx} = \dfrac{4x}{\sqrt{\cos 2x}}+ \dfrac{2(x^2+1)}{\cos 2x}\dfrac{2\sin 2x}{2\sqrt{\cos 2x}}$  
+    $=  \dfrac{4x}{\sqrt{\cos 2x}}+\tan 2x\dfrac{2(x^2+1)}{\sqrt{\cos 2x}}$
+#### Evaluating Integrals
+Evaluate the integrals in Exercises 31–78.
+
+31. $\int e^x\sin(e^x)dx$  
+    Let $e^x = u, \dfrac{du}{dx} = e^x$  
+    $\int e^x\sin(e^x)dx$  
+    $= \int\sin udu$  
+    $= -\cos u + C$  
+    $= -\cos e^x + C$  
+#### Solving Equations
+In Exercises 79–84, solve for $y$.
+
+79. $3^y = 2^{y+1}$  
+    $3^y = 2\cdot2^y$  
+    $(\dfrac{3}{2})^y = 2$  
+    $y = \log_{\frac{3}{2}}2$  
+#### Applying L’Hôpital’s Rule
+Use l’Hôpital’s Rule to find the limits in Exercises 85–108.
+
+85. $\lim\limits_{x \to 1}\dfrac{x^2 + 3x -4}{x - 1}$  
+    $\lim\limits_{x \to 1}\dfrac{x^2 + 3x -4}{x - 1}$  
+    $= \lim\limits_{x \to 1}\dfrac{2x + 3}{1} = 5$
+#### Comparing Growth Rates of Functions
+109. Does $f$ grow faster, slower, or at the same rate as $g$ as $x \to \infty$?Give reasons for your answers.  
+a. $f(x) = \log_2 x, g(x) = \log_3 x$  
+b. $f(x) = x, g(x) = x + \dfrac{1}{x}$  
+c. $f(x) = \dfrac{x}{100}, g(x) = xe^{-x}$  
+d. $f(x) = x, g(x) = \tan^{-1}x$  
+e. $f(x) = \csc^{-1}x, g(x) = \dfrac{1}{x}$  
+f. $f(x) = \sinh x, g(x) = e^x$  
+a. same  
+b. same  
+c. $\lim\limits_{x \to\infty}\dfrac{\frac{x}{100}}{xe^{-x}}$  
+$= \lim\limits_{x \to\infty}\dfrac{\frac{1}{100}}{\frac{x}{e^x} + \frac{1}{e^x}}$  
+$= \lim\limits_{x \to\infty}\dfrac{e^x}{100(x+1)} = \infty$ $f$ faster than $g$  
+d. $f$ faster than $g$   
+e. same  
+f. $\lim\limits_{x \to\infty}\dfrac{\sinh x}{e^x}$  
+$= \lim\limits_{x \to\infty}\dfrac{\frac{e^x-\frac{1}{e^x}}{2}}{e^x}$  
+$= \lim\limits_{x \to\infty}\dfrac{\frac{e^{2x}-1}{2e^x}}{e^x}$  
+$= \dfrac{1}{2}$, same rate. 
+#### Theory and Applications
+113. The function $ƒ(x) = e^x + x$, being differentiable and one-to-one, has a differentiable inverse $f^{-1}(x)$. Find the value of $\dfrac{df^{-1}}{dx}$ at the point $f(\ln 2)$.  
+    $\dfrac{df^{-1}}{dx}(f(\ln 2)) = \dfrac{1}{f'(f^{-1}(f(\ln 2)))}$  
+    $= \dfrac{1}{f'(\ln 2)}$  
+    $= \dfrac{1}{e^{\ln 2} + 1}$  
+    $= \dfrac{1}{3}$   
+### Additional and Advanced Exercises
+#### Limits
+Find the limits in Exercises 1–6.
+1. $\lim\limits_{x \to1^-}\int_0^b\dfrac{dx}{\sqrt{1-x^2}}$  
+   $\lim\limits_{x \to1^-}\int_0^b\dfrac{dx}{\sqrt{1-x^2}}$  
+   $= \lim\limits_{x \to1^-}[\sin^{-1}x]_0^b$  
+   $= \lim\limits_{x \to1^-}(\sin^{-1}b)$  
+   $= \dfrac{\pi}{2}$
+#### Theory and Examples
+11. Find the areas between the curves $y = \dfrac{2\log_2x}{x}$ and $y = \dfrac{2\log_4x}{x}$ and the $x$-axis from $x = 1$ to $x = e$. What is the ratio of the larger area to the smaller?  
+    $S_1 = \int_1^e\dfrac{2\log_2x}{x}dx$  
+    $= \int_1^e\dfrac{2\frac{\ln x}{\ln 2}}{x}dx$  
+    $= \int_1^e\dfrac{2\ln x}{x\ln 2}dx$  
+    Let $\ln x = u, \dfrac{du}{dx} =\dfrac{1}{u}$  
+    $= \int_0^1\dfrac{2\ln x}{x\ln 2}dx$  
+    $= \int_0^1\dfrac{2u}{\ln 2}du$  
+    $= [\dfrac{1}{\ln 2}u^2]_0^1$  
+    $= \dfrac{1}{\ln 2}$  
+    $S_2 = \int_1^e\dfrac{2\log_4x}{x}dx$  
+    $= \int_1^e\dfrac{2\frac{\ln x}{\ln 4}}{x}dx$  
+    $= \int_1^e\dfrac{2\ln x}{x\ln 4}dx$  
+    Let $\ln x = u, \dfrac{du}{dx} =\dfrac{1}{u}$  
+    $= \int_0^1\dfrac{2\ln x}{x\ln 4}dx$  
+    $= \int_0^1\dfrac{2u}{\ln 4}du$  
+    $= [\dfrac{1}{\ln 4}u^2]_0^1$  
+    $= \dfrac{1}{\ln 4}$  
+    $\dfrac{S_1}{S_2} = \dfrac{\ln 4}{\ln 2} = 2$

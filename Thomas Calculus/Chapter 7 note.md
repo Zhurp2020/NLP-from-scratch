@@ -268,7 +268,7 @@ $$
 (f^{-1})'(x) = \dfrac{1}{f'(f^{-1}(x))} \\
 = \dfrac{1}{\cos(\arcsin x)} \\
 = \dfrac{1}{\sqrt{1-\sin^2(\arcsin x)}} \\
-= \dfrac{1}{1-x^2}
+= \dfrac{1}{\sqrt{1-x^2}}
 $$
 #### The Derivative of $y = \arctan u$
 $$
@@ -350,7 +350,7 @@ Let $f(x)$ and $g(x)$ be positive for $x$ sufficiently large
 >$$
 >\lim_{x\to\infty}\dfrac{g(x)}{f(x)} = 0
 >$$
->We also say that $g$ grows slower than $f$ as $x \to\infty$
+>We also say that $g$ grows slower than $f$ as $x \to\infty$  
 >2.  $f$ and $g$ grow at the same rate as $x \to\infty$ if
 >$$
 >\lim_{x\to\infty}\dfrac{f(x)}{g(x)} = L
