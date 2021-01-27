@@ -57,7 +57,7 @@ Success in writing a rational function $\dfrac{f(x)}{g(x)}$ as a sum of partial 
     $$
     Do this for each distinct quadratic factor of $g(x)$.
 3. Set the original fraction $\dfrac{f(x)}{g(x)}$ equal to the sum of all these partial fractions. Clear the resulting equation of fractions and arrange the terms in decreasing powers of $x$.
-2. Equate the coefficients of corresponding powers of x and solve the resulting equations for the undetermined coefficients
+2. Equate the coefficients of corresponding powers of $x$ and solve the resulting equations for the undetermined coefficients
 #### Other Ways to Determine the Coefficients
 ### 8.6 Integral Tables and Computer Algebra Systems
 #### Integral Tables
