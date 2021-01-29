@@ -76,9 +76,9 @@ To approximate $\int^b_af(x) dx$, use
 >$$
 >T =\dfrac{\Delta x}{2}(y_0 + 2y_1 + 2y_2 + \cdots + 2y_{n-1} + y_n).
 >$$
->The y’s are the values of $f$ at the partition points
+>The $y$’s are the values of $f$ at the partition points
 >$$
->x_0 = a, x_1 = a + \Delta x, x2 = a + 2\Delta x,\cdots, x_{n-1} = a + (n - 1)\Delta x, x_n = b,
+>x_0 = a, x_1 = a + \Delta x, x_2 = a + 2\Delta x,\cdots, x_{n-1} = a + (n - 1)\Delta x, x_n = b,
 >$$
 >where $\Delta x = \dfrac{b-a}{n}$
 #### Simpson’s Rule: Approximations Using Parabolas
@@ -89,7 +89,7 @@ To approximate $\int^b_af(x) dx$, use
 >$$
 >The $y$’s are the values of $f$ at the partition points
 >$$
->x_0 = a, x_1 = a + \Delta x, x2 = a + 2\Delta x,\cdots, x_{n-1} = a + (n - 1)\Delta x, x_n = b,
+>x_0 = a, x_1 = a + \Delta x, x_2 = a + 2\Delta x,\cdots, x_{n-1} = a + (n - 1)\Delta x, x_n = b,
 >$$
 >The number $n$ is even, and $\Delta x = \dfrac{b-a}{n}$
 #### Error Analysis
@@ -208,3 +208,26 @@ If each outcome in the sample space is equally likely to occur, then the random 
 $$
 f(x) = \dfrac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 $$
+### 8.9 Probability Density Functions
+In Exercises 1–8, determine which are probability density functions and justify your answer.
+1. $f(x) = \dfrac{1}{18}x$ over $[4, 8]$  
+   $\int_4^8f(x)dx$  
+   $= \dfrac{1}{9}x^2]_4^8$  
+   $= \dfrac{16}{3}$ not a pdf. 
+#### Exponential Distributions
+29. Digestion time. The digestion time in hours of a fixed amount of food is exponentially distributed with a mean of 1 hour. What is the probability that the food is digested in less than 30 minutes?    
+    $f(x) = e^{-x}$  
+    $P = \int_0^{\frac{1}{2}}f(x)dx$  
+    $= 1- \dfrac{1}{\sqrt{e}}$
+#### Normal Distributions
+39. cholesterol levels. The serum cholesterol levels of children aged 12 to 14 years follows a normal distribution with mean $m = 162$ mg/dl and standard deviation $s = 28$ mg/dl. In a population of 1000 of these children, how many would you expect to have serum cholesterol levels between 165 and 193? between 148 and 167?  
+    $f(x) = \dfrac{1}{28\sqrt{2\pi}}e^{-\frac{(x-162)^2}{1568}}$  
+    $P_1 = \int_{165}^{193}f(x)dx \approx 0.32$  
+    $P_2 = \int_{148}^{167}f(x)dx \approx 0.36$
+#### Discrete Random Variables
+53. A fair coin is tossed four times and the random variable $X$ assigns the number of tails that appear in each outcome.  
+a. Determine the set of possible outcomes.  
+b. Find the value of $X$ for each outcome.   
+c. Create a probability bar graph for $X$, as in Figure 8.21. What is the probability that at least two heads appear in the four tosses of the coin?  
+a. $\{HTTT, HHTT, HHHT, HHHH, TTTT, TTTH, TTHH, THHH, THTH, HTHT,HTTH,THHT,HTHH, HHTH, THTT, TTHT\}$  
+b. $\{3,2,1,0,4,3,2,1,2,2,2,2,1,1,3,3,\}$

@@ -394,3 +394,305 @@ $= \dfrac{1}{4}x^4\ln x - \int\dfrac{1}{4}x^3dx$
 $=\dfrac{1}{4}x^4\ln x - \dfrac{1}{16}x^4$  
 d. $\dfrac{1}{5}x^5\ln x - \dfrac{1}{25}x^5$  
 e. $\dfrac{1}{n+1}x^{n + 1}\ln x - \dfrac{1}{(n+1)^2}x^{n + 1}$
+### 8.7 Numerical Integration
+#### Estimating Definite Integrals
+The instructions for the integrals in Exercises 1–10 have two parts, one for the Trapezoidal Rule and one for Simpson’s Rule.  
+i. Using the trapezoidal rule  
+a. Estimate the integral with $n = 4$ steps and find an upper bound for $|E_T|$.  
+b. Evaluate the integral directly and find $|E_T|$  
+c. Use the formula $\dfrac{|E_T|}{true\quad value} * 100$ to express $|E_T|$ as a percentage of the integral’s true value.  
+ii. Using simpson’s rule  
+a. Estimate the integral with $n = 4$ steps and find an upper bound for $|E_S|$ .  
+b. Evaluate the integral directly and find $|E_S|$  
+c. Use the formula $\dfrac{|E_S|}{true\quad value} * 100$ to express  $|E_S|$ as a percentage of the integral’s true value.
+1. $\int_1^2xdx$  
+   i. a. $T = \dfrac{\frac{1}{4}}{2}(1 + 2\dfrac{5}{4} + 2\dfrac{3}{2} + 2\dfrac{7}{4} + 2)$  
+   $= \dfrac{1}{8}12$  
+   $= \dfrac{3}{2}$  
+   $f'' = 0, M = 1$  
+   $|E_T| \le \dfrac{1}{192}$  
+   b. $\int_1^2xdx = [\dfrac{1}{2}x^2]_1^2 =\dfrac{3}{2}$   
+   c. $0\%$  
+   ii a. $S = \dfrac{\frac{1}{4}}{3}(1 + 4\dfrac{5}{4} + 2\dfrac{3}{2} + 4\dfrac{7}{4} + 2)$  
+   $= \dfrac{1}{12}18 = \dfrac{3}{2}$  
+   $|E_S| \le \dfrac{1}{46080}$  
+#### Estimating the Number of Subintervals
+In Exercises 11–22, estimate the minimum number of subintervals needed to approximate the integrals with an error of magnitude less than $10^{-4}$ by (a) the Trapezoidal Rule and (b) Simpson’s Rule. (The integrals in Exercises 11–18 are the integrals from Exercises 1–8.)  
+
+11. $\int_1^2xdx$  
+    $|E_T| \le \dfrac{1}{12n^2} \le 10^{-4}$  
+    $n^2 \ge \dfrac{1}{12*10^{-4}}, n \ge 29$  
+    $|E_S| \le \dfrac{1}{180n^2} \le 10^{-4}$  
+    $n^4 \ge \dfrac{1}{180*10^{-4}}, n \ge 3$
+#### Estimates with Numerical Data
+23. Volume of water in a swimming poo.l A rectangular swimming pool is 30 ft wide and 50 ft long. The accompanying table shows the depth $h(x)$ of the water at 5-ft intervals from one end of the pool to the other. Estimate the volume of water in the pool using the Trapezoidal Rule with $n = 10$ applied to the integral  
+    $$
+    \int_0^{50}30h(x)dx
+    $$
+
+| position (ft)$x$ | Depth (ft)$h(x)$ | position (ft)$x$ | Depth (ft)$h(x)$ |
+| :------------: | :------------: | :------------: | :------------: |
+|       0        |      6.0       |       30       |      11.5      |
+|       5        |      8.2       |       35       |      11.9      |
+|       10       |      9.1       |       40       |      12.3      |
+|       15       |      9.9       |       45       |      12.7      |
+|       20       |      10.5      |       50       |      13.0      |
+|       25       |      11.0      |
+$T = 15990$  
+#### Theory and Examples
+27. Usable values of the sine-integral function. The sine-integral function,
+$$  
+si(x)=\int_0^x\dfrac{\sin t}{t}dt
+$$
+is one of the many functions in engineering whose formulas cannot be simplified. There is no elementary formula for the antiderivative of $\dfrac{\sin t}{t}$. The values of $Si(x)$, however, are readily estimated by numerical integration.  
+Although the notation does not show it explicitly, the function being integrated is 
+$$
+f(t) = 
+\left\{\begin{aligned}
+    \dfrac{\sin t}{t} &,t \ne 0 \\
+    1                 &,t = 0
+\end{aligned}\right.
+$$  
+the continuous extension of $\dfrac{\sin t}{t}$ to the interval $[0, x]$ . The function has derivatives of all orders at every point of its domain. Its graph is smooth, and you can expect good results from Simpson’s Rule.  
+a. Use the fact that $|f^{(4)}|\le 1$ on $[0, \dfrac{\pi}{2}]$ to give an upper bound for the error that will occur if
+$$  
+si(\dfrac{\pi}{2})=\int_0^{\frac{\pi}{2}}\dfrac{\sin t}{t}dt
+$$
+is estimated by Simpson’s Rule with $n = 4.$  
+b. Estimate $si(\dfrac{\pi}{2})$ by Simpson’s Rule with $n = 4.$  
+c. Express the error bound you found in part (a) as a percentage of the value you found in part (b).  
+a. $|E_S| \le \dfrac{(\frac{\pi}{2})^3}{180*4^4} = \dfrac{\pi^5}{368640}$  
+b. $S = \dfrac{\frac{\pi}{8}}{3}(1 + 4\dfrac{\sin\frac{\pi}{8}}{\frac{\pi}{8}} + 2\dfrac{\sin\frac{\pi}{4}}{\frac{\pi}{4}} + 4\dfrac{\sin\frac{3\pi}{8}}{\frac{3\pi}{8}} + \dfrac{\sin\frac{\pi}{2}}{\frac{\pi}{8}})$  
+$\approx 1.62$  
+c.$0.05\%$
+#### Applications
+32. The length of one arch of the curve $y = \sin x$ is given by
+    $$
+    L = \int_0^{\pi}\sqrt{1+\cos^2x}dx
+    $$
+    Estimate $L$ by Simpson’s Rule with $n = 8.$
+    $L = \dfrac{\frac{\pi}{8}}{3}(1+4\sqrt{1+\cos^2\dfrac{\pi}{8}} + 2\sqrt{1+\cos^2\dfrac{\pi}{4}} + 4\sqrt{1+\cos^2\dfrac{3\pi}{8}} + 2\sqrt{1+\cos^2\dfrac{\pi}{2}} + 4\sqrt{1+\cos^2\dfrac{5\pi}{8}} + 2\sqrt{1+\cos^2\dfrac{3\pi}{4}} + 4\sqrt{1+\cos^2\dfrac{7\pi}{8}} + \sqrt{1+\cos^2\pi})$  
+    $\approx 3.65$
+### 8.8 Improper Integrals 
+#### Evaluating Improper Integrals
+The integrals in Exercises 1–34 converge. Evaluate the integrals without using tables.
+1. $\int_0^{\infty}\dfrac{dx}{1+x^2}$  
+   $\int_0^{\infty}\dfrac{dx}{1+x^2}$  
+   $= \lim\limits_{b\to\infty}\int_0^{b}\dfrac{dx}{1+x^2}$  
+   $= \lim\limits_{b\to\infty}[\arctan x]_0^{b}$  
+   $= \lim\limits_{b\to\infty}\arctan b = \dfrac{\pi}{2}$  
+#### Testing for Convergence
+In Exercises 35–68, use integration, the Direct Comparison Test, or the Limit Comparison Test to test the integrals for convergence. If more than one method applies, use whatever method you prefer.   
+
+35. $\int_{\frac{1}{2}}^2\dfrac{dx}{x\ln x}$   
+    $\int_{\frac{1}{2}}^2\dfrac{dx}{x\ln x}$  
+    $= \int_{\frac{1}{2}}^{1}\dfrac{dx}{x\ln x} + \int_{1}^2\dfrac{dx}{x\ln x}$    
+    $= \lim\limits_{b\to1^-}\int_{\frac{1}{2}}^{b}\dfrac{dx}{x\ln x} + \lim\limits_{a\to1^+}\int_{a}^{2}\dfrac{dx}{x\ln x}$  
+    $= \lim\limits_{b\to1^-}\ln |\dfrac{\ln b}{\ln \frac{1}{2}}| +\lim\limits_{a\to1^+}\ln |\dfrac{\ln 2}{\ln a}|$    
+    Does not converge
+#### Theory and Examples
+69. Find the values of $p$ for which each integral converges.   
+a. $\int_1^2\dfrac{dx}{x(\ln x)^p}$  
+b. $\int_1^{\infty}\dfrac{dx}{x(\ln x)^p}$   
+a.  when $p= 1,$ does not converge, when $p \ne 1$  
+    $\int_{\frac{1}{2}}^2\dfrac{dx}{x(\ln x)^p}$  
+    $= \int_{\frac{1}{2}}^{1}\dfrac{dx}{x(\ln x)^p} + \int_{1}^2\dfrac{dx}{x(\ln x)^p}$    
+    $= \lim\limits_{b\to1^-}\int_{\frac{1}{2}}^{b}\dfrac{dx}{x(\ln x)^p} + \lim\limits_{a\to1^+}\int_{a}^{2}\dfrac{dx}{x(\ln x)^p}$  
+    $= \lim\limits_{b\to1^-}\dfrac{(\ln b)^{1-p} - (\ln \frac{1}{2})^{1-p}}{1-p} +\lim\limits_{a\to1^+}\dfrac{(\ln 2)^{1-p} - (\ln a)^{1-p}}{1-p}$, converges  
+b. when $p= 1,$ does not converge, when $p \ne 1$  
+    $\int_{\frac{1}{2}}^{\infty}\dfrac{dx}{x(\ln x)^p}$  
+    $= \lim\limits_{b\to1^-}\dfrac{(\ln b)^{1-p} - (\ln \frac{1}{2})^{1-p}}{1-p} +\lim\limits_{a\to\infty}\dfrac{(\ln 2)^{1-p} - (\ln a)^{1-p}}{1-p}$  
+    $p > 1,$ converges  
+    $p < 1,$ does not converge. 
+#### COMPUTER EXPLORATIONS
+In Exercises 87–90, use a CAS to explore the integrals for various values of p (include noninteger values). For what values of $p$ does the integral converge? What is the value of the integral when it does converge? Plot the integrand for various values of $p$.
+
+87. $\int_0^ex^p\ln xdx$
+### 8.9 Probability 
+#### Probability Density Functions
+In Exercises 1–8, determine which are probability density functions and justify your answer.
+1. $f(x) = \dfrac{1}{18}x$ over $[4, 8]$  
+   $\int_4^8f(x)dx$  
+   $= \dfrac{1}{9}x^2]_4^8$  
+   $= \dfrac{16}{3}$ not a pdf. 
+#### Exponential Distributions
+29. Digestion time. The digestion time in hours of a fixed amount of food is exponentially distributed with a mean of 1 hour. What is the probability that the food is digested in less than 30 minutes?    
+    $f(x) = e^{-x}$  
+    $P = \int_0^{\frac{1}{2}}f(x)dx$  
+    $= 1- \dfrac{1}{\sqrt{e}}$
+#### Normal Distributions
+39. cholesterol levels. The serum cholesterol levels of children aged 12 to 14 years follows a normal distribution with mean $m = 162$ mg/dl and standard deviation $s = 28$ mg/dl. In a population of 1000 of these children, how many would you expect to have serum cholesterol levels between 165 and 193? between 148 and 167?  
+    $f(x) = \dfrac{1}{28\sqrt{2\pi}}e^{-\frac{(x-162)^2}{1568}}$  
+    $P_1 = \int_{165}^{193}f(x)dx \approx 0.32$  
+    $P_2 = \int_{148}^{167}f(x)dx \approx 0.36$
+#### Discrete Random Variables
+53. A fair coin is tossed four times and the random variable $X$ assigns the number of tails that appear in each outcome.  
+a. Determine the set of possible outcomes.  
+b. Find the value of $X$ for each outcome.   
+c. Create a probability bar graph for $X$, as in Figure 8.21. What is the probability that at least two heads appear in the four tosses of the coin?  
+a. $\{HTTT, HHTT, HHHT, HHHH, TTTT, TTTH, TTHH, THHH, THTH, HTHT,HTTH,THHT,HTHH, HHTH, THTT, TTHT\}$  
+b. $\{3,2,1,0,4,3,2,1,2,2,2,2,1,1,3,3,\}$   
+c. $P = \dfrac{3}{8}+ \dfrac{1}{4} + \dfrac{1}{16} = \dfrac{11}{16}$  
+### Practice Exercises
+#### Integration by Parts
+Evaluate the integrals in Exercises 1–8 using integration by parts.
+1. $\int\ln (x + 1) dx$  
+   Let $u(x) = \ln(x + 1), v'(x) = 1$  
+   $u'(x) = \dfrac{1}{x + 1}, v(x) = x$  
+   $\int\ln (x + 1) dx$  
+   $= x\ln(x + 1) - \int\dfrac{x}{x + 1}dx$  
+   $= x\ln(x + 1) - \int1 - \dfrac{1}{x + 1}dx$  
+   $= x\ln(x + 1) - x + \ln(x + 1) + C$
+#### Partial Fractions
+Evaluate the integrals in Exercises 9–28. It may be necessary to use a substitution first.
+
+9. $\int\dfrac{xdx}{x^2-3x+2}$  
+   $\dfrac{x}{x^2-3x+2} = \dfrac{2}{x - 2} - \dfrac{1}{x - 1}$  
+   $\int\dfrac{xdx}{x^2-3x+2}$  
+   $= \int\dfrac{2}{x - 2} - \dfrac{1}{x - 1}dx$  
+   $= 2\ln|x-2| - \ln |x-1| + C$
+#### Trigonometric Substitutions
+Evaluate the integrals in Exercises 29–32 (a) without using a trigonometric substitution, (b) using a trigonometric substitution.
+
+29. $\int\dfrac{ydy}{\sqrt{16-y^2}}$   
+    Let $u= 16-y^2, \dfrac{du}{dy} = -2y$  
+    $\int-\dfrac{1}{2}\dfrac{1}{\sqrt{u}}du$  
+    $= -\sqrt{u}+ C$  
+    $= -\sqrt{16-y^2} + C$   
+    Let $y = 4\sin\theta, 16-y^2 = 16(1-\sin^2\theta) = 16\cos^2\theta,\dfrac{dy}{d\theta} =4\cos\theta, \theta = \arcsin\dfrac{y}{4}\in[-\dfrac{\pi}{2},\dfrac{\pi}{2}]$  
+    $\int\dfrac{ydy}{\sqrt{16-y^2}}$  
+    $= \int\dfrac{4\sin\theta}{4\cos\theta}4\cos\theta d\theta$  
+    $= 4\int\sin\theta d\theta$  
+    $= -4\cos\theta + C$  
+    $= -4\sqrt{1-\dfrac{x^2}{16}} + C$  
+    $= -\sqrt{16-y^2} + C$
+#### Trigonometric Integrals
+Evaluate the integrals in Exercises 37–44.
+
+37. $\int\sin^3x\cos^4xdx$  
+    $\sin^3x = \sin^2x\sin x = (1-\cos^2x)\sin x$  
+    $\int\sin^3x\cos^4xdx$  
+    $= \int(1-\cos^2x)\sin x\cos^4xdx$  
+    Let $u = \cos x,\dfrac{du}{dx} = -\sin x$  
+    $\int(1-\cos^2x)\sin x\cos^4xdx$  
+    $= \int-(1-u^2)u^4du$  
+    $= \int u^6du - \int u^4du$  
+    $= \dfrac{1}{7}u^7 - \dfrac{1}{5}u^5 + C$  
+    $= \dfrac{1}{7}\cos^7 x - \dfrac{1}{5}\cos^5 x + C$  
+#### Numerical Integration
+45. According to the error-bound formula for Simpson’s Rule, how many subintervals should you use to be sure of estimating the value of
+    $$
+    \ln 3 = \int_1^3\dfrac{1}{x}dx
+    $$
+    by Simpson’s Rule with an error of no more than $10^{-4}$ in absolute value? (Remember that for Simpson’s Rule, the number of subintervals has to be even.)   
+    $f' = -\dfrac{1}{x^2}, f'' = \dfrac{2}{x^3} \le 2$  
+    $|E_S| \le \dfrac{3*32}{180n^4} \le 10^{-4}$  
+    $n \ge 10$  
+#### Improper Integrals
+Evaluate the improper integrals in Exercises 53–62.
+
+53. $\int_0^3\dfrac{dx}{\sqrt{9-x^2}}$  
+    $\int_0^3\dfrac{dx}{\sqrt{9-x^2}}$  
+    $= \lim\limits_{b\to3^-}\int_0^b\dfrac{dx}{\sqrt{9-x^2}}$  
+    $= \lim\limits_{b\to3^-}\arcsin\dfrac{b}{3}$  
+    $= \dfrac{\pi}{2}$
+#### Assorted Integrations
+Evaluate the integrals in Exercises 69–136. The integrals are listed in random order so you need to decide which integration technique to use.
+
+69. $\int xe^{2x}dx$  
+    Let $u(x) = x, v'(x) = e^{2x}$  
+    $u'(x) = 1, v(x) = \dfrac{1}{2}e^{2x}$  
+    $\int xe^{2x}dx$  
+    $= \dfrac{x}{2}e^{2x} - \int \dfrac{1}{2}e^{2x}dx$  
+    $= \dfrac{x}{2}e^{2x} - \dfrac{1}{4}e^{2x}  + C$
+### Additional and Advanced Exercises
+#### Evaluating Integrals
+Evaluate the integrals in Exercises 1–6.
+1. $\int\arcsin^2 xdx$  
+   Let $u(x) = \arcsin^2 x, v'(x) = 1$  
+   $u'(x) =\dfrac{2}{\sqrt{1-x^2}}\arcsin x, v(x) = x$   
+   $\int\arcsin^2 xdx$  
+   $= x\arcsin^2 x - 2\int x\dfrac{1}{\sqrt{1-x^2}}\arcsin xdx$   
+   Let $u(x) = \arcsin x, v'(x)= \dfrac{x}{\sqrt{1-x^2}}$  
+   $u'(x) = \dfrac{1}{\sqrt{1-x^2}}, v(x) = -\sqrt{1-x^2}$  
+   $\int x\dfrac{1}{\sqrt{1-x^2}}\arcsin xdx$  
+   $= -\sqrt{1-x^2}\arcsin^2 x + \int 1dx$    
+   $= -\sqrt{1-x^2}\arcsin^2 x + x + C$
+   $\int\arcsin^2 xdx$  
+   $= x\arcsin^2 x + 2\sqrt{1-x^2}\arcsin^2 x-2x + C$
+#### Applications
+11. Finding arc length Find the length of the curve
+    $$
+    y = \int_0^x\sqrt{cos 2t}dt, 0 \le x \le \dfrac{\pi}{4}
+    $$  
+    $\dfrac{dy}{dt} = \sqrt{cos 2x}$  
+    $l = \int_0^{\frac{\pi}{4}}\sqrt{1+\cos 2x}dx$   
+    $= \int_0^{\frac{\pi}{4}}\sqrt{2\cos^2x}dx$  
+    $= \sqrt{2}[\sin x]_0^{\frac{\pi}{4}}$  
+    $= 1$
+#### The Substitution $z = \tan \dfrac{x}{2}$
+The substitution
+$$
+z = \tan \dfrac{x}{2}
+$$
+reduces the problem of integrating a rational expression in $\sin x$ and $\cos x$ to a problem of integrating a rational function of $z$. This in turn can be integrated by partial fractions.   
+From the accompanying figure
+![](../images/Thomas%20Calculus/8-3.jpg)  
+we can read the relation
+$$
+\tan \dfrac{x}{2} = \dfrac{\sin x}{1 + \cos x}
+$$
+To see the effect of the substitution, we calculate
+$$
+\cos x = \dfrac{1-z^2}{1+z^2}
+$$
+and 
+$$
+\sin x = \dfrac{2z}{1+z^2}
+$$
+Finally, $x = 2 \arctan z,$ so
+$$
+dx = \dfrac{2dz}{1+z^2}
+$$
+Use the substitutions in Equations (1)–(4) to evaluate the integrals in Exercises 33–40. Integrals like these arise in calculating the average angular velocity of the output shaft of a universal joint when the input and output shafts are not aligned.
+
+33. $\int\dfrac{dx}{1-\sin x}$  
+    Let $z = \tan \dfrac{x}{2},\sin x = \dfrac{2z}{1+z^2},dx = \dfrac{2dz}{1+z^2}$  
+    $\int\dfrac{dx}{1-\sin x}$  
+    $= \int\dfrac{1}{1-\frac{2z}{1+z^2}}\dfrac{2dz}{1+z^2}$  
+    $= \int\dfrac{1+z^2}{(1-z)^2}\dfrac{2dz}{1+z^2}$  
+    $= \int\dfrac{2dz}{(1-z)^2}$  
+    $= \dfrac{2}{1-z}$  
+    $= \dfrac{2}{1-\tan\frac{x}{2}}$
+#### The Gamma Function and Stirling’s Formula
+Euler’s gamma function $\Gamma(x)$ (“gamma of x”; $\Gamma$ is a Greek capital g) uses an integral to extend the factorial function from the nonnegative integers to other real values. The formula is 
+$$
+\Gamma(x) = \int_0^{\infty}t^{x-1}e^{-t}dt, x>0
+$$
+For each positive $x$, the number $\Gamma(x)$ is the integral of $t^{x-1}e^{-t}dt$ with respect to $t$ from 0 to $\infty$. Figure 8.28 shows the graph of $\Gamma$ near the origin. You will see how to calculate $Γ(\dfrac{1}{2})$ if you do Additional Exercise 23 in Chapter 15.  
+![](../images/Thomas%20Calculus/8-4.jpg)  
+
+43. if $n$ is a nonnegative integer, $\Gamma(n + 1) = n!$  
+    a. Show that $\Gamma(1) = 1$  
+    b. Then apply integration by parts to the integral for $\Gamma(n + 1)$to show that $\Gamma(x + 1) = x\Gamma(x)$. This gives
+    $$
+    \Gamma(2) = 1\Gamma(1) = 1 \\
+    \Gamma(3) = 2\Gamma(2) = 2 \\
+    \Gamma(4) = 3\Gamma(3) = 6 \\
+    \cdots \\
+    \Gamma(n+1) = n\Gamma(n) = n!
+    $$
+    c. Use mathematical induction to verify Equation (5) for every nonnegative integer $n$.  
+    $\Gamma(1) = \int_0^{\infty}t^0e^{-t}dt$  
+    $= \int_0^{\infty}\dfrac{1}{e^t}dt$  
+    $= \lim\limits_{b\to\infty}(-\dfrac{1}{e^b} + 1) = 1$  
+    b. $\Gamma(x + 1) = \int_0^{\infty}t^{x}e^{-t}dt$  
+    Let $u(t) = t^{x},v'(t) = e^{-t}$  
+    $u'(t) = xt^{x-1}, v(t) = -e^{-t}$  
+    $\Gamma(x + 1) = [-t^{x}e^{-t}]_0^{\infty}+ x\int_0^{\infty} t^{x-1}e^{-t}dt$  
+    $= \lim\limits_{b\to\infty}-\dfrac{b^x}{e^b} + x\Gamma(x)$  
+    $= x\Gamma(x)$  
+    c. For $n = 1, \Gamma(1) = 1!$  
+    Suppose for $n = k,k \ge 2,\Gamma(k) = (k-1)!$  
+    For $n = k+1, \Gamma(k +1) = k\Gamma(k) = k!$  
+    For $n \ge 1, \Gamma(n+1) = n!$
