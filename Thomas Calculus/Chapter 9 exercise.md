@@ -139,3 +139,173 @@ The autonomous differential equations in Exercises 9–12 represent models for p
     $v'' = -\dfrac{2k}{m}v$  
     c. $v = \sqrt{\dfrac{110}{0.005}} \approx 145$f/s  
     $v = \sqrt{\dfrac{220}{0.005}} \approx 209$f/s
+### 9.4 Systems of Equations and Phase Planes
+1. List three important considerations that are ignored in the competitive-hunter model as presented in the text  
+   Other competitors  
+   Other conditions  
+   The relationship between two resources
+#### Lotka-Volterra Equations for a Predator-Prey Model
+In 1925 Lotka and Volterra introduced the predator-prey equations, a system of equations that models the populations of two species, one of which preys on the other. Let $x(t)$ represent the number of rabbits living in a region at time $t$, and $y(t)$ the number of foxes in the same region. As time passes, the number of rabbits increases at a rate proportional to their population, and decreases at a rate proportional to the number of encounters between rabbits and foxes. The foxes, which compete for food, increase in number at a rate proportional to the number of encounters with rabbits but decrease at a rate proportional to the number of foxes. The number of encounters between rabbits and foxes is assumed to be proportional to the product of the two populations. These assumptions lead to the autonomous system  
+$$
+\dfrac{dx}{dt} = (a - by) x  \\
+\dfrac{dy}{dt} = (-c + dx) y
+$$
+where $a, b, c, d$ are positive constants. The values of these constants vary according to the specific situation being modeled. We can study the nature of the population changes without setting these constants to specific values.
+9. What happens to the rabbit population if there are no foxes present?   
+   Increase exponentially  
+### Practice Exercises
+In Exercises 1–22 solve the differential equation.
+1. $y' = xe^y\sqrt{x - 2}$  
+   $\dfrac{1}{e^y}y' = x\sqrt{x - 2}$  
+   $\int \dfrac{dy}{e^y} = \int x\sqrt{x - 2}dx$  
+   Let $u(x) = x, v'(x) = \sqrt{x - 2}$  
+   $u'(x) = 1, v(x) = \dfrac{2}{3}(x - 2)^{\frac{3}{2}}$  
+   $\int x\sqrt{x - 2}dx$  
+   $= x\dfrac{2}{3}(x - 2)^{\frac{3}{2}} - \int \dfrac{2}{3}(x - 2)^{\frac{3}{2}}dx$  
+   $= x\dfrac{2}{3}(x - 2)^{\frac{3}{2}} -\dfrac{4}{15}(x - 2)^{\frac{5}{2}}$  
+   $-e^{-y} = x\dfrac{2}{3}(x - 2)^{\frac{3}{2}} -\dfrac{4}{15}(x - 2)^{\frac{5}{2}}$  
+#### Initial Value Problems
+In Exercises 23–28 solve the initial value problem.
+
+23. $(x + 1)\dfrac{dy}{dx} + 2y = x, x > -1, y(0) = 1$  
+    $\dfrac{dy}{dx} + \dfrac{2}{x+1}y = \dfrac{x}{x+1}$  
+    $v(x) = e^{\int\frac{2}{x+1}dx}$  
+    $= e^{2\ln|x + 1|} = (x + 1)^2, \dfrac{dv}{dx} =2x + 2$  
+    $(x + 1)^2\dfrac{dy}{dx} + \dfrac{2}{x+1}y(x + 1)^2 = \dfrac{x}{x+1}(x + 1)^2$     
+    $\dfrac{d}{dx}(x + 1)^2y = x(x+1)$   
+    $(x+1)^2y = \int x^2 + xdx$  
+    $y = \dfrac{\frac{2}{3}x^3 + \frac{1}{2}x^2 + C}{(x + 1)^2}$  
+    $y(0) =\dfrac{C}{1} = 1, C = 1$  
+#### Euler’s Method
+In Exercises 29 and 30, use Euler’s method to solve the initial value problem on the given interval starting at $x_0$ with $dx = 0.1$.
+
+29. $y' = y + \cos x, y(0) = 0; 0 \le x \le 2; x_0 = 0$  
+    $L(x) = 0 + (0+\cos 0)(x - 0) = x$  
+    $y_1 = L(x_1) = 0.1$  
+    $y_2 = 0.1 + (0.1 + \cos 0.1)0.1 \approx 0.209$  
+    $y_3 = 0.209 + (0.209 + \cos 0.2)0.1 \approx 0.328$
+####  Slope Fields
+In Exercises 35–38, sketch part of the equation’s slope field. Then add to your sketch the solution curve that passes through the point $P(1, -1)$. Use Euler’s method with $x_0 = 1$ and $dx = 0.2$ to estimate $y(2)$. Round your answers to four decimal places. Find the exact value of $y(2)$ for comparison.
+
+35. $y' = x$  
+    $L(x) = -1 + 1(x - 1) = x-2$  
+    $y_1 = L(x_1)= -0.8$  
+    $y_2 = -0.8 + 1.2\cdot0.2 = -0.56$  
+    $y = \dfrac{1}{2}x^2 - \dfrac{3}{2}$  
+    $y_2 = -0.52$  
+#### Autonomous Differential Equations and Phase Lines
+In Exercises 39 and 40:  
+a. Identify the equilibrium values. Which are stable and which are unstable?  
+b. Construct a phase line. Identify the signs of $y'$ and $y''.$  
+c. Sketch a representative selection of solution curves.
+
+39. $\dfrac{dy}{dx} = y^2 - 1$  
+    $y^2 - 1 = 0, y_1 = -1, y_2 = 1$  
+    $y'' = 2y, y_3 = 0$  
+    $y > 1, y' > 0, y'' > 0$  
+    $0 < y < 1, y' < 0, y'' > 0$   
+    $-1 < y < 0, y' < 0, y'' < 0$  
+    $y < -1, y' > 0, y'' < 0$  
+    1 is unstable, -1 is stable
+#### applications
+41. Escape velocity. The gravitational attraction $F$ exerted by an airless moon on a body of mass $m$ at a distance $s$ from the moon’s center is given by the equation $F = -mgR^2s^{-2}$ , where $g$ is the acceleration of gravity at the moon’s surface and $R$ is the moon’s radius (see accompanying figure). The force $F$ is negative because it acts in the direction of decreasing $s$.   
+    ![](../images/Thomas%20Calculus/9-4.jpg)  
+    a. If the body is projected vertically upward from the moon’s surface with an initial velocity $v_0$ at time $t = 0$, use Newton’s second law, $F = ma$, to show that the body’s velocity at position $s$ is given by the equation  
+    $$
+    v^2 = \dfrac{2gR^2}{s} + v_0^2 -2gR
+    $$
+    Thus, the velocity remains positive as long as $v_0 >\sqrt{2gR}$. The velocity $v_0 =\sqrt{2gR}$ is the moon’s escape velocity. A body projected upward with this velocity or a greater one will escape from the moon’s gravitational pull.  
+    b. Show that if $v_0 =\sqrt{2gR}$, then 
+    $$
+    s = R(1 + \dfrac{3v_0}{2R}t)^{\frac{2}{3}}
+    $$   
+    $F = -mgR^2s^{-2} =ma$  
+    $\dfrac{dv}{dt} = a = -gR^2s^{-2}$  
+    $\dfrac{dv}{dt} = \dfrac{dv}{ds}\dfrac{ds}{dt} = v\dfrac{dv}{ds}$    
+    $v\dfrac{dv}{ds} = -gR^2s^{-2}$  
+    $\int vdv = -gR^2\int s^{-2}ds$  
+    $\dfrac{1}{2}v^2 = -gR^2(-s^{-1}) + C$   
+    $v^2 = \dfrac{2gR^2}{s} + C$  
+    $v(0)^2 = \dfrac{2gR^2}{s} + C = v_0^2$  
+    $C = v_0^2 - \dfrac{2gR^2}{s} = v_0^2 - 2gR$  
+    $v^2 = \dfrac{2gR^2}{s} + v_0^2 -2gR$  
+    b. $v^2 = \dfrac{2gR^2}{s}$  
+    $\dfrac{ds}{dt} = v = \sqrt\dfrac{2gR^2}{s}$  
+    $\sqrt{\dfrac{s}{2gR^2}}ds = dt$  
+    $\sqrt{\dfrac{1}{2gR^2}}\int\sqrt{s}ds = \int dt$  
+    $\sqrt{\dfrac{1}{2gR^2}}\dfrac{2}{3}s^{\frac{3}{2}}= t + C$  
+    $s^{\frac{3}{2}} = \dfrac{3\sqrt{2gR^2}}{2}t + C$   
+    $s = (\dfrac{3\sqrt{2gR^2}}{2}t + C)^{\frac{2}{3}}$  
+    $s(0) = C^{\frac{2}{3}} = R, C = \sqrt{R^3}$  
+    $s = (\dfrac{3\sqrt{2gR^2}}{2}t + \sqrt{R^3})^{\frac{2}{3}}$  
+    $= (\sqrt{R^3}(\dfrac{3\sqrt{2gR^2}}{2\sqrt{R^3}}t + 1))^{\frac{2}{3}}$  
+    $= R(1 + \dfrac{3v_0}{2R}t)^{\frac{2}{3}}$
+#### Mixture Problems
+In Exercises 43 and 44, let $S$ represent the pounds of salt in a tank at time $t$ minutes. Set up a differential equation representing the given information and the rate at which $S$ changes. Then solve for $S$ and answer the particular questions.
+
+43. A mixture containing 12 lb of salt per gallon flows into a tank at the rate of 6 gal/min and the well-stirred mixture lows out of the tank at the rate of 4 gal/min. The tank initially holds 160 gal of solution containing 10 lb of salt.  
+    a. How many gallons of solution are in the tank after 1 minute? after 10 minutes? after 1 hour?  
+    b. How many pounds of salt are in the tank after 1 minute? after 10 minutes? after 1 hour?  
+    a. $V(t) = 160 + 2t$  
+    $V(1) = 162$ gal  
+    $v(10) = 180$ gal  
+    $v(60) = 280$ gal  
+    b. $\dfrac{dS}{dt} = 72 - \dfrac{4S}{160+2t}$  
+    $\dfrac{dS}{dt} + \dfrac{4S}{160+2t} = 72$  
+    $v(t) = e^{\int\frac{4}{160+2t}dt} =e^{2\ln |2t+160|} = (2t+160)^2, \dfrac{dv}{dt} =4(2t+160)$    
+    $(2t+160)^2\dfrac{dS}{dt} + \dfrac{4S}{160+2t}(2t+160)^2 = 72(2t+160)^2$    
+    $\dfrac{d}{dt}v(t)S(t) = 72(2t+160)^2$   
+    $S(t) = \dfrac{72(\frac{4}{3}t^3 + 320t^2 + 160^2t) + C}{(2t+160)^2}$  
+    $S(0) = \dfrac{C}{25600} = 10, C = 256000$  
+    $S(1) \approx11.1$ lb  
+    $S(10) \approx 85.5$ lb   
+    $S(60) \approx 1334.5$ lb 
+### Additional and Advanced Exercises
+#### Theory and Applications
+1. transport through a cell membrane. Under some conditions, the result of the movement of a dissolved substance across a cell’s membrane is described by the equation  
+   $$
+   \dfrac{dy}{dt} = k\dfrac{A}{V}(c - y)
+   $$
+   In this equation, $y$ is the concentration of the substance inside the cell and $\dfrac{dy}{dt}$ is the rate at which $y$ changes over time. The letters $k, A, V,$ and $c$ stand for constants, $k$ being the permeability coefficient (a property of the membrane), $A$ the surface area of the membrane, $V$ the cell’s volume, and $c$ the concentration of the substance outside the cell. The equation says that the rate at which the concentration changes within the cell is proportional to the difference between it and the outside concentration.  
+   a. Solve the equation for $y(t)$, using $y_0$ to denote $y(0)$.  
+   b. Find the steady-state concentration, $\lim\limits_{t\to\infty} y(t)$.   
+   $\dfrac{dy}{dt} + \dfrac{kA}{v}y = \dfrac{kAc}{V}$  
+   $v(t) = e^{\int\frac{kA}{V}dt} = e^{\frac{kA}{V}t}, \dfrac{dv}{dt} = \dfrac{kA}{V}e^{\frac{kA}{V}t}$  
+   $\dfrac{dy}{dt}e^{\frac{kA}{V}t} + \dfrac{kA}{V}ye^{\frac{kA}{V}t} = \dfrac{kAc}{V}e^{\frac{kA}{V}t}$  
+   $\dfrac{d}{dt}v(t)y(t) = \dfrac{kAc}{V}e^{\frac{kA}{V}t}$  
+   $v(t)y(t) = \dfrac{kAc}{V}\int e^{\frac{kA}{V}t}dt$  
+   $y(t) = \dfrac{kAc}{Ve^{\frac{kA}{v}t}}(\dfrac{V}{kA}e^{\frac{kA}{V}t} + C)$   
+   $y(0) =\dfrac{kAc}{V}(\dfrac{V}{kA} + C) = y_0$  
+   $\dfrac{kAc}{V}C = y_0 - c, C = \dfrac{V(y_0-c)}{kAc}$  
+   $y = c + \dfrac{y_0 - c}{e^{\frac{kA}{V}t}}$  
+   b. $\lim\limits_{t\to\infty} y(t) = c$
+#### Homogeneous Equations
+A first-order differential equation of the form  
+$$
+\dfrac{dy}{dx} = F(\dfrac{y}{x})
+$$
+is called homogeneous. It can be transformed into an equation whose variables are separable by defining the new variable $v = \dfrac{y}{x}$. Then, $y = vx$ and
+$$
+\dfrac{dy}{dx} = v + x\dfrac{dv}{dx}
+$$
+Substitution into the original differential equation and collecting terms with like variables then gives the separable equation
+$$
+\dfrac{dx}{x} + \dfrac{dv}{v-F(v)} = 0  
+$$
+After solving this separable equation, the solution of the original equation is obtained when we replace $v$ by $\dfrac{y}{x}$ .
+Solve the homogeneous equations in Exercises 5–10. First put the equation in the form of a homogeneous equation.
+
+5. $(x^2+y^2)dx + xydy = 0$  
+   $\dfrac{x^2 +y^2}{xy} = -\dfrac{dy}{dx}$  
+   $\dfrac{dy}{dx} = -(\dfrac{x}{y} + \dfrac{y}{x})$  
+   Let $v = \dfrac{y}{x}, y = vx, \dfrac{dy}{dx} = v + x\dfrac{dv}{dx}$   
+   $v + x\dfrac{dv}{dx} =-(v + \dfrac{1}{v})$   
+   $x\dfrac{dv}{dx} = -2v - \dfrac{1}{v}$  
+   $\dfrac{1}{2v +\frac{1}{v}}dv = -\dfrac{1}{x}dx$  
+   $\int\dfrac{v}{2v^2 + 1}dv = -\int\dfrac{1}{x}dx$  
+   Let $u(v) = 2v^2 + 1, \dfrac{du}{dv} = 4v$  
+   $\int\dfrac{v}{2v^2 + 1}dv$  
+   $= \dfrac{1}{4}\int\dfrac{1}{u}du$  
+   $=\dfrac{1}{4}\ln (2v^2 +1)$  
+   $\dfrac{1}{4}\ln (2v^2 +1) = -\ln|x| + C$  
+   $\dfrac{1}{4}\ln(2\dfrac{y^2}{x^2} + 1) = -\ln |x| + C$
