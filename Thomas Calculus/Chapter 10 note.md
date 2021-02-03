@@ -64,7 +64,7 @@ If $\{a_n\}$ is bounded from above and below, then $\{a_n\}$ is bounded. If $\{a
 >DEFINITIONS   
 A sequence $\{a_n\}$ is nondecreasing if $a_n \le a_{n+1}$ for all $n$. That is, $a_1 \le a_2 \le a_3 \le \cdots$ The sequence is nonincreasing if $a_n \ge a_{n+1}$ for all $n$. The sequence $\{a_n\}$ is monotonic if it is either nondecreasing or nonincreasing.
 
-> **THEOREM 6—The Monotonic Sequence Theorem**  
+> **THEOREM 6—The Monotonic Sequence Theorem**    
 If a sequence $\{a_n\}$ is both bounded and monotonic, then the sequence converges.
 ### 10.2 Infinite Series
 >**DEFINITIONS** 
@@ -108,3 +108,27 @@ $\sum (a_n - b_n) = \sum a_n - \sum b_n = A - B$
 $\sum ka_n = k\sum a_n = kA$  
 #### Adding or Deleting Terms
 #### Reindexing
+### 10.3 The Integral Test
+#### Nondecreasing Partial Sums
+> **Corollary of Theorem 6**  
+A series $\sum\limits_{n=1}^{\infty}a_n$ of nonnegative terms converges if and only if its partial sums are bounded from above
+#### The Integral Test
+>**THEOREM 9—The Integral Test**  
+Let $\{a_n\}$ be a sequence of positive terms. Suppose that $a_n = f(n)$, where $f$ is a continuous, positive, decreasing function of $x$ for all $x \ge N$ ($N$ a positive integer). Then the series $\sum\limits_{n=N}^{\infty}a_n$ and the integral $\int_{N}^{\infty}f(x)$ both converge or both diverge.
+#### Error Estimation
+>Bounds for the Remainder in the Integral Test  
+Suppose $\{a_k\}$ is a sequence of positive terms with $a_k = f(k)$, where $f$ is a continuous positive decreasing function of $x$ for all $x \ge n$, and that $\sum a_n$ converges to $S$. Then the remainder $R_n = S - s_n$ satisfies the inequalities  
+> $$
+>\int_{n+1}^{\infty}f(x)dx \le R_n \le \int_{n}^{\infty}f(x)dx
+>$$
+### 10.4 Comparison Tests
+> **THEOREM 10—Direct Comparison Test**  
+Let $\sum a_n$ and $\sum b_n$ be two series with $0 \le a_n \le b_n$ for all $n$. Then
+>1. If $\sum b_n$ converges, then $\sum a_n$ also converges.
+>2. If $\sum a_n$ diverges, then $\sum b_n$ also diverges.
+#### The Limit Comparison Test
+> **THEOREM 11—Limit Comparison Test**
+Suppose that $a_n > 0$ and $b_n > 0$ for all $n \ge N$ ($N$ an integer).
+>1. If $\lim\limits_{n\to\infty}\dfrac{a_n}{b_n} = c$ and $c > 0$, then $\sum a_n$ and $\sum b_n$ both converge or both diverge.
+>2. If $\lim\limits_{n\to\infty}\dfrac{a_n}{b_n} = 0$ and $\sum b_n$ converges, then $\sum a_n$ converges.
+>3. If $\lim\limits_{n\to\infty}\dfrac{a_n}{b_n} = \infty$ and $\sum b_n$ diverges, then $\sum b_n$ diverges.
