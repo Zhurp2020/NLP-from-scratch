@@ -171,3 +171,105 @@ Which of the series in Exercises 17–56 converge, and which diverge? Use any me
     b. Plot the first 100 points $(k, s_k)$ for the sequence of partial sums. Do they appear to converge? What would you estimate the limit to be?  
     c. Next plot the first 200 points $(k, s_k)$. Discuss the behavior in your own words.   
     d. Plot the first 400 points $(k, s_k)$ What happens when $k = 355$? Calculate the number $\dfrac{355}{133}$. Explain from you calculation what happened at $k = 355$. For what values of $k$ would you guess this behavior might occur again?
+### 10.5 Absolute Convergence; The Ratio and Root Tests
+#### Using the Ratio Test
+In Exercises 1–8, use the Ratio Test to determine if each series converges absolutely or diverges.
+1. $\sum\limits_{n = 1}^{\infty}\dfrac{2^n}{n!}$   
+   $\lim\limits_{n\to\infty}|\dfrac{\frac{2^{n+1}}{(n+1)!}}{\frac{2^n}{n!}}|$  
+   $= \lim\limits_{n\to\infty}|\dfrac{2}{n + 1}| = 0 < 1$  
+   The series absolutely converges. 
+#### Using the Root Test
+In Exercises 9–16, use the Root Test to determine if each series converges absolutely or diverges.
+
+9. $\sum\limits_{n = 1}^{\infty}\dfrac{7}{(2n + 5)^n}$  
+   $\lim\limits_{n\to\infty}\sqrt[n]{|\dfrac{7}{(2n + 5)^n}|}$  
+   $= \lim\limits_{n\to\infty}\dfrac{\sqrt[n]{7}}{|2n + 5|} = 0 < 1$  
+   The series absolutely converges.
+#### Determining Convergence or Divergence
+In Exercises 17–46, use any method to determine if the series converges or diverges. Give reasons for your answer.
+
+17. $\sum\limits_{n = 1}^{\infty}\dfrac{n^{\sqrt{2}}}{2^n}$   
+    $\lim\limits_{n\to\infty}|\dfrac{\frac{(n + 1)^{\sqrt{2}}}{2^{n + 1}}}{\frac{n^{\sqrt{2}}}{2^n}}|$  
+    $= \lim\limits_{n\to\infty}|(\dfrac{n + 1}{n})^{\sqrt{2}}\dfrac{1}{2}| = \dfrac{1}{2} < 1$  
+    converges
+#### Convergence or Divergence
+Which of the series in Exercises 57–64 converge, and which diverge? Give reasons for your answers.
+
+57. $\sum\limits_{n = 1}^{\infty}\dfrac{2^n n!n!}{(2n)!}$  
+    $\lim\limits_{n\to\infty}|\dfrac{\frac{2^{n + 1} (n + 1)!(n + 1)!}{(2n + 2)!}}{\frac{2^n n!n!}{(2n)!}}|$  
+    $= \lim\limits_{n\to\infty}|\dfrac{2(n + 1)^2}{(2n + 2)(2n + 1)}| = \dfrac{1}{2} < 1$  
+    converges
+#### Theory and Examples
+67. Neither the Ratio Test nor the Root Test helps with $p$-series. Try them on
+    $$
+    \sum\limits_{n = 1}^{\infty}\dfrac{1}{n^p}
+    $$
+    and show that both tests fail to provide information about convergence.  
+    $\lim\limits_{n\to\infty}|\dfrac{\frac{1}{(n + 1)^p}}{\frac{1}{n^p}}|$  
+    $= \lim\limits_{n\to\infty}|(\dfrac{n}{n + 1})^p| = 1$  
+    $\lim\limits_{n\to\infty}\sqrt[n]{|\dfrac{1}{n^p}|}$  
+    $= \lim\limits_{n\to\infty}\dfrac{1}{|n^{\frac{p}{n}}|} = 1$ 
+### 10.6 Alternating Series and Conditional Convergence 
+#### Determining Convergence or Divergence
+In Exercises 1–14, determine if the alternating series converges or diverges. Some of the series do not satisfy the conditions of the Alternating Series Test.
+1. $\sum\limits_{n = 1}^{\infty}(-1)^{n + 1}\dfrac{1}{\sqrt{n}}$   
+   $\dfrac{1}{\sqrt{n}} \ge \dfrac{1}{\sqrt{n + 1}}$ for $n \ge 1$  
+   $\dfrac{1}{\sqrt{n}} > 0$  
+   $\dfrac{1}{\sqrt{n}} \to 0$  
+   converges
+#### Absolute and Conditional Convergence
+Which of the series in Exercises 15–48 converge absolutely, which converge, and which diverge? Give reasons for your answers.
+
+15. $\sum\limits_{n = 1}^{\infty}(-1)^{n + 1}(0.1)^n$  
+    $(0.1)^n \ge (0.1)^{n + 1}$ for $n \ge 1$  
+   $(0.1)^n > 0$  
+   $(0.1)^n \to 0$  
+   converges
+#### Error Estimation
+In Exercises 49–52, estimate the magnitude of the error involved in using the sum of the first four terms to approximate the sum of the entire series.
+
+49. $\sum\limits_{n = 1}^{\infty}(-1)^{n + 1}\dfrac{1}{n}$  
+    $E < \dfrac{1}{5}$  
+    $\dfrac{7}{12} < L < \dfrac{47}{60}$  
+    $L + \dfrac{1}{4} > 0$
+#### Theory and Examples
+85. a. The series
+    $$
+    \dfrac{1}{3} -\dfrac{1}{2} + \dfrac{1}{9} -\dfrac{1}{4} + \dfrac{1}{27} - \dfrac{1}{8} + \cdots + \dfrac{1}{3^n} - \dfrac{1}{2^n} + \cdots
+    $$
+    does not meet one of the conditions of Theorem 14. Which one?  
+    b. Use Theorem 17 to find the sum of the series in part (a)  
+    a. $\dfrac{1}{3^n} - \dfrac{1}{2^n} < 0$  
+    b. $\sum | \dfrac{1}{3^n} - \dfrac{1}{2^n}| = \dfrac{1}{2^n} - \dfrac{1}{3^n}$ converges  
+    $\sum \dfrac{1}{3^n} - \dfrac{1}{2^n} = \sum \dfrac{1}{3^n} - \sum\dfrac{1}{2^n} = \dfrac{1}{1-\frac{1}{3}} - \dfrac{1}{1-\dfrac{1}{2}} = -\dfrac{1}{2}$
+### 10.7 Power Series
+#### Intervals of Convergence
+In Exercises 1–36, (a) find the series’ radius and interval of convergence. For what values of $x$ does the series converge (b) absolutely, (c) conditionally?
+1. $\sum\limits_{n = 1}^{\infty}x^n$  
+   $\lim\limits_{n\to\infty}\sqrt[n]{|x^n|} = |x|$  
+   $-1 < x < 1$, converges  
+   $x = \plusmn1$, diverges  
+   $R = 1, I = (-1,1)$  
+   For $(-1,1)$, converges absolutely
+#### Using the Geometric Series
+49. In Example 2 we represented the function $f(x) =\dfrac{2}{x}$ as a power series about $x = 2.$ Use a geometric series to represent $f(x)$ as a power series about $x = 1$, and find its interval of convergence.  
+    $\dfrac{c_1}{1-a(x-1)} = \dfrac{2}{x}$  
+    $2 - 2ax + 2a = c_1x, a = -1, c_1 = 2$  
+    $\dfrac{2}{x} = 2-2(x-1)+2(x-1)^2 - 2(x-1)^3 + \cdots = \sum\limits_{n = 0}^{\infty}2(1-x)^{n}$  
+    $|1-x| < 1, -1 < 1-x < 1, 0 < x < 2$
+#### Theory and Examples
+53. For what values of $x$ does the series  
+    $$
+    1-\dfrac{1}{2}(x-3)+\dfrac{1}{4}(x-3)^2 + \cdots + (-\dfrac{1}{2})^n(x-3)^{n} +\cdots
+    $$
+    converge? What is its sum? What series do you get if you differentiate the given series term by term? For what values of $x$ does the new series converge? What is its sum?  
+    $|-\dfrac{x-3}{2}| < 1$  
+    $1 < x < 5$  
+    $\sum (-\dfrac{1}{2})^n(x-3)^{n} = \dfrac{1}{1+\frac{x-3}{2}} =\dfrac{2}{x-1}$  
+    $\dfrac{d}{dx}\sum\limits_{n = 0}^{\infty} (-\dfrac{1}{2})^n(x-3)^{n} = \sum\limits_{n = 1}^{\infty} n(-\dfrac{1}{2})^n(x-3)^{n-1}$  
+    converges in $(1,5)$   
+    $s_n = 1(-\dfrac{1}{2}) + 2(-\dfrac{1}{2})^2(x-3) + 3(-\dfrac{1}{2})^3(x-3)^2 + \cdots + n(-\dfrac{1}{2})^n(x-3)^{n-1}$   
+    $-\dfrac{x-3}{2}s_n = 1(-\dfrac{1}{2})^2(x-3) + 2(-\dfrac{1}{2})^3(x-3)^2 + \cdots + (n-1)(-\dfrac{1}{2})^n(x-3)^{n-1} + n(-\dfrac{1}{2})^{n + 1}(x-3)^n$  
+    $(1 + \dfrac{x-3}{2})s_n = -\dfrac{1}{2} + (-\dfrac{1}{2})^2(x-3) + (-\dfrac{1}{2})^3(x-3)^2 + \cdots + (-\dfrac{1}{2})^n(x-3)^{n-1} - (-\dfrac{1}{2})^{n + 1}(x-3)^n$  
+    $\lim\limits_{n\to\infty}(1 + \dfrac{x-3}{2})s_n = \dfrac{1}{1+\frac{x-3}{2}}$   
+    $\sum\limits_{n = 1}^{\infty} n(-\dfrac{1}{2})^n(x-3)^{n-1} = (\dfrac{2}{x-1})^2$
