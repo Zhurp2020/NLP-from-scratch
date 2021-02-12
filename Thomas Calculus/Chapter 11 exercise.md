@@ -125,3 +125,64 @@ c. Evaluate the length of the curve using an integral. Compare your approximatio
     $L = \sqrt{\dfrac{1}{144} + \dfrac{1}{64}} +\sqrt{\dfrac{1}{16} + \dfrac{9}{64}}$  
     $= \dfrac{\sqrt{10}}{24} + \dfrac{\sqrt{13}}{8}$  
     $L = \int_0^1\sqrt{t^4 + t^2}dt$  
+### 11.3 Polar Coordinates
+#### Polar Coordinates
+1. Which polar coordinate pairs label the same point?  
+a. $(3, 0)$ b. $(-3, 0)$ c. $(2, \dfrac{2}{3}\pi)$  
+d. $(2, \dfrac{7}{3}\pi)$ e. $(-3, \pi)$ f. $(2, \dfrac{1}{3}\pi)$  
+g. $(-3, 2\pi)$ h. $(-2, -\dfrac{1}{3}\pi)$   
+a and e, b and g, c and h, d and f  
+#### Polar to Cartesian Coordinates
+5. Find the Cartesian coordinates of the points in Exercise 1.   
+   a. $(3,0)$ b. $(-3,0)$ c. $(-1,\sqrt{3}$, d $(1,\sqrt{3})$  
+#### Cartesian to Polar Coordinates
+7. Find the polar coordinates, $0 \le \theta \le 2\pi$ and $r \ge 0$, of the following points given in Cartesian coordinates.  
+a. $(1, 1)$ b. $(-3, 0)$    
+c. $(\sqrt{3},-1)$d. $(-3, 4)$  
+a. $(\sqrt{2},\dfrac{\pi}{4})$  b. $(-3,0)$  
+c. $(2,\dfrac{5}{3}\pi)$ d. $(5,\pi - \arctan\dfrac{4}{3})$      
+#### Graphing Sets of Polar Coordinate Points
+Graph the sets of points whose polar coordinates satisfy the equations and inequalities in Exercises 11–26.
+
+11. $r = 2$
+#### Polar to Cartesian Equations
+Replace the polar equations in Exercises 27–52 with equivalent Cartesian equations. Then describe or identify the graph.
+
+27. $r \cos \theta = 2$  
+    $\dfrac{x}{r}r = 2$  
+    $x = 2$  
+## Cartesian to Polar Equations
+Replace the Cartesian equations in Exercises 53–66 with equivalent polar equations.
+
+53. $x = 7$  
+    $r\cos \theta = 7$
+### 11.4  Graphing Polar Coordinate Equations
+#### Symmetries and Polar Graphs
+Identify the symmetries of the curves in Exercises 1–12. Then sketch the curves in the $xy$-plane.
+
+1. $r = 1 + \cos \theta$  
+   around the $x$ axis
+#### Slopes of Polar Curves in the $xy$-Plane
+Find the slopes of the curves in Exercises 17–20 at the given points. Sketch the curves along with their tangents at these points.
+
+17. cardioid $r = -1 + \cos \theta, \theta = \dfrac{\pi}{2}$  
+    $\dfrac{dy}{dx} = \dfrac{-\sin^2\theta  - \cos\theta + \cos^2 \theta}{-\sin\theta\cos\theta + \sin\theta - \sin\theta\cos\theta}$  
+    $= \dfrac{\cos2\theta - \cos\theta}{\sin\theta-\sin2\theta}$  
+    $\dfrac{dy}{dx}|_{(-1,\frac{\pi}{2})} = -1$
+#### Concavity of Polar Curves in the $xy$-Plane
+Equation (1) gives the formula for the derivative $y'$ of a polar curve $r = f(\theta)$. The second derivative is $\dfrac{d^2y}{dx^2} = \dfrac{\frac{dy'}{d\theta}}{\frac{dx}{d\theta}}$ (see Equation (2) in Section 11.2). Find the slope and concavity of the curves in Exercises 21–24 at the given points.
+
+21. $r = \sin \theta, \theta = \dfrac{\pi}{6}, \dfrac{\pi}{3}$  
+    $\dfrac{dy}{dx} = \dfrac{\cos\theta\sin\theta + \cos\theta\sin\theta}{\cos^2\theta - \sin^2\theta} = \tan2\theta$  
+    $\dfrac{dy}{dx}|_{(\frac{1}{2},\frac{\pi}{6})} =\sqrt{3}$  
+    $\dfrac{dy}{dx}|_{(\frac{\sqrt{3}}{2},\frac{\pi}{3})} =-\sqrt{3}$  
+    $\dfrac{d^2y}{dx^2} =\dfrac{2\sec^22\theta}{-\sin\theta}$  
+    $\dfrac{d^2y}{dx^2}|_{(\frac{1}{2},\frac{\pi}{6})} =-\dfrac{8}{\frac{1}{2}} = -16$, concave down  
+    $\dfrac{d^2y}{dx^2}|_{(\frac{\sqrt{3}}{2},\frac{\pi}{3})} =-\dfrac{8}{\frac{\sqrt{3}}{2}} = -\dfrac{16\sqrt{3}}{3}$,concave down
+#### Graphing Limaçons
+Graph the limaçons in Exercises 25–28. Limaçon (“lee-ma-sahn”) is Old French for “snail.” You will understand the name when you graph the limaçons in Exercise 25. Equations for limaçons have the form $r = a\plusmn b \cos \theta$ or $r = a \plusmn b \sin \theta$. There are four basic shapes.
+
+25. Limaçons with an inner loop  
+a. $r =\dfrac{1}{2} +\cos\theta$ b.  $r =\dfrac{1}{2} +\sin\theta$
+#### Graphing Polar Regions and Curves in the xy-Plane
+29. Sketch the region deifned by the inequalities $-1 \le r \le 2$ and  $-\dfrac{\pi}{2} \le \theta \le \dfrac{\pi}{2}$

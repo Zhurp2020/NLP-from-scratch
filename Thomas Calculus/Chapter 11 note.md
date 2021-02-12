@@ -49,3 +49,26 @@ If a smooth curve $x = f(t), y = g(t), a \le t \le b$, is traversed exactly once
 >$$
 >S = \int_1^b2\pi x\sqrt{[f'(t)]^2 + [g'(t)]^2}dt
 >$$
+### 11.3 Polar Coordinates
+#### Definition of Polar Coordinates
+$P(r,\theta)$
+#### Polar Equations and Graphs
+#### Relating Polar and Cartesian Coordinates
+>**Equations Relating Polar and Cartesian Coordinates**  
+>$$
+>x = r \cos\theta, y = r \sin \theta\\
+>r^2 = x^2 + y^2, \tan \theta =\dfrac{y}{x}
+>$$
+### 11.4 Graphing Polar Coordinate Equations
+#### Symmetry
+Symmetry Tests for Polar Graphs in the Cartesian $xy$-Plane  
+1. Symmetry about the $x$-axis: If the point $(r, \theta)$ lies on the graph, then the point $(r, -\theta)$ or $(-r, \pi -\theta)$ lies on the graph (Figure 11.28a).  
+2. Symmetry about the $y$-axis: If the point $(r, \theta)$ lies on the graph, then the point $(r, \pi - \theta)$ or $(-r, -\theta)$ lies on the graph (Figure 11.28b).
+3. Symmetry about the origin: If the point $(r, \theta)$ lies on the graph, then the point $(-r, \theta)$ or $(r, \pi + \theta)$ lies on the graph (Figure 11.28c)
+#### Slope
+>Slope of the Curve $r = f(\theta)$ in the Cartesian $xy$-Plane
+>$$
+>\dfrac{dy}{dx}|_{r,\theta} = \dfrac{f'(\theta)\sin\theta + f(\theta)\cos\theta}{f'(\theta)\cos\theta - f(\theta)\sin\theta}
+>$$
+>provided $\dfrac{df}{d\theta} \ne 0$ at $(r, \theta)$
+#### Converting a Graph from the $r\theta$- to $xy$-Plane
