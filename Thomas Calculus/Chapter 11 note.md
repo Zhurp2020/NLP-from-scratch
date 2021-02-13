@@ -72,3 +72,37 @@ Symmetry Tests for Polar Graphs in the Cartesian $xy$-Plane
 >$$
 >provided $\dfrac{df}{d\theta} \ne 0$ at $(r, \theta)$
 #### Converting a Graph from the $r\theta$- to $xy$-Plane
+### 11.5 Areas and Lengths in Polar Coordinates
+#### Area in the Plane  
+>**Area of the Fan-Shaped Region Between the Origin and the Curve $r = f(\theta)$ when $\alpha \le \theta \le \beta, r\ge \theta$ and $\beta - \alpha \le 2\pi$**  
+>$$
+>A = \int_{\alpha}^{\beta}\dfrac{1}{2}r^2d\theta
+>$$
+>This is the integral of the area differential (Figure 11.33)
+>$$
+>dA = \dfrac{1}{2}r^2d\theta = \dfrac{1}{2}(f(\theta))^2d\theta
+>$$ 
+
+>**Area of the Region $0 \le r_1(\theta) \le r \le r_2(\theta) \le,\alpha \le \theta \le \beta$ and $\beta - \alpha \le 2\pi$**  
+>$$
+>A = \int_{\alpha}^{\beta}\dfrac{1}{2}r_2^2d\theta - \int_{\alpha}^{\beta}\dfrac{1}{2}r_1^2d\theta = \int_{\alpha}^{\beta}\dfrac{1}{2}(r_2^2 - r_1^2)d\theta
+>$$
+#### Length of a Polar Curve
+>**Length of a Polar Curve**   
+If $r = f(\theta)$ has a continuous first derivative for $\alpha \le \theta \le \beta$ and if the point $P(r, \theta)$ traces the curve $r = f(\theta)$ exactly once as $\theta$ runs from $\alpha$ to $\beta$, then the length of the curve is
+>$$
+>L = \int_{\alpha}^{\beta}\sqrt{r^2 + (\dfrac{df}{d\theta})^2}d\theta 
+>$$
+### 11.6 Conic Sections
+#### Parabolas
+>**DEFINITIONS**   
+A set that consists of all the points in a plane equidistant from a given fixed point and a given fixed line in the plane is a parabola. The fixed point is the focus of the parabola. The fixed line is the directrix.
+
+![](../images/Thomas%20Calculus/11-2.jpg)  
+#### Ellipses
+>**DEFINITIONS**   
+An ellipse is the set of points in a plane whose distances from two fixed points in the plane have a constant sum. The two fixed points are the foci of the ellipse. The line through the foci of an ellipse is the ellipse’s focal axis. The point on the axis halfway be-tween the foci is the center. The points where the focal axis and ellipse cross are the ellipse’s vertices.
+#### Hyperbolas
+>**DEFINITIONS**   
+A hyperbola is the set of points in a plane whose distances from two fixed points in the plane have a constant difference. The two fixed points are the foci of the hyperbola.  
+The line through the foci of a hyperbola is the focal axis. The point on the axis halfway between the foci is the hyperbola’s center. The points where the focal axis and hyperbola cross are the vertices.
