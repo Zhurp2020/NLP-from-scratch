@@ -106,3 +106,36 @@ An ellipse is the set of points in a plane whose distances from two fixed points
 >**DEFINITIONS**   
 A hyperbola is the set of points in a plane whose distances from two fixed points in the plane have a constant difference. The two fixed points are the foci of the hyperbola.  
 The line through the foci of a hyperbola is the focal axis. The point on the axis halfway between the foci is the hyperbola’s center. The points where the focal axis and hyperbola cross are the vertices.
+### 11.7 Conics in Polar Coordinates
+#### Eccentricity
+>**DEFINITION**  
+The eccentricity of the ellipse $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1, a >b$ is
+>$$
+>e = \dfrac{c}{a} = \dfrac{\sqrt{a^2-b^2}}{a}
+>$$
+>The eccentricity of the hyperbola $\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1, a >b$ is
+>$$
+>e = \dfrac{c}{a} = \dfrac{\sqrt{a^2+b^2}}{a}
+>$$
+>The eccentricity of a parabola is $e = 1$
+#### Polar Equations
+>**Polar Equation for a Conic with Eccentricity $e$**
+>$$
+>r = \dfrac{ke}{1 + e\cos\theta}
+>$$
+>where $x = k > 0$ is the vertical directrix.
+
+>Polar Equation for the Ellipse with Eccentricity $e$ and Semimajor Axis $a$  
+>$$
+>r = \dfrac{a(1-e^2)}{1 + e\cos\theta}
+>$$
+#### Lines
+>**The Standard Polar Equation for Lines**  
+If the point $P_0(r_0,\theta_0)$ is the foot of the perpendicular from the origin to the line $L$, and $r_0\ge 0$, then an equation for $L$ is
+>$$
+>r\cos(\theta-\theta_0) = r_0
+>$$
+#### Circles
+$$
+r = 2a\cos(\theta - \theta_=)
+$$
