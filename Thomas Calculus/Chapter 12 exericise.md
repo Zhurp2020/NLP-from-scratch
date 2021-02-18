@@ -63,3 +63,97 @@ In Exercises 35–38, find a. the direction of $\overrightarrow{P_1P_2}$ and b. 
 #### Theory and Applications
 41. Linear combination Let $\mathbf{u} = 2\mathbf{i} + \mathbf{j}, v = \mathbf{i} + \mathbf{j}$, and $\mathbf{w} = \mathbf{i} - \mathbf{j}$. Find scalars $a$ and $b$ such that $\mathbf{u} = a\mathbf{v} + b\mathbf{w}$  
     $a = 2,b=-3$
+### 12.3 The Dot Product
+#### Dot Product and Projections
+In Exercises 1–8, find  
+a. $\mathbf{u} \cdot \mathbf{v}, |\mathbf{u}|,|\mathbf{v}|$  
+b. the cosine of the angle between $\mathbf{v}$ and $\mathbf{u}$  
+c. the scalar component of $\mathbf{u}$ in the direction of $\mathbf{v}$
+d. the vector $proj_v\mathbf{u}$.    
+1. $\mathbf{v} = 2\mathbf{i} - 4\mathbf{j} + \sqrt{5}\mathbf{k}, \mathbf{u} = -2\mathbf{i} + 4\mathbf{j} - \sqrt{5}\mathbf{k}$   
+   $\mathbf{u} \cdot \mathbf{v} = -4 - 16 -5 = -25$  
+   $|\mathbf{u}| = \sqrt{4 + 16 + 5} = 5, |\mathbf{v}| = 5$  
+   $\cos\theta = \dfrac{-25}{25} = -1$  
+   $|\mathbf{u}|\cos\theta = -5$  
+   $proj_v\mathbf{u} = \dfrac{-25}{5}(\dfrac{\mathbf{v}}{|\mathbf{v}|})$  
+   $=-2\mathbf{i} + 4\mathbf{j} - \sqrt{5}\mathbf{k}$
+#### Angle Between Vectors
+Find the angles between the vectors in Exercises 9–12 to the nearest hundredth of a radian.
+
+9. $\mathbf{u} = 2\mathbf{i} + \mathbf{j}, \mathbf{v} = \mathbf{i} + 2\mathbf{j} - \mathbf{k}$  
+    $\cos\theta = \dfrac{2 + 2}{\sqrt{5}\sqrt{6}} = \dfrac{4}{\sqrt{30}}$
+#### Theory and Examples
+19. sums and differences In the accompanying figure, it looks as if $\mathbf{v}_1 + \mathbf{v}_2$ and $\mathbf{v}_1 + \mathbf{v}_2$  are orthogonal. Is this mere coincidence, or are there circumstances under which we may expect the sum of two vectors to be orthogonal to their difference? Give reasons for your answer.  
+    ![](../images/Thomas%20Calculus/12-2.jpg)  
+    $|\mathbf{v}_1| = |\mathbf{v}_2|$  
+#### Equations for Lines in the Plane
+33. Line perpendicular to a vector Show that $\mathbf{v} = a\mathbf{i} + b\mathbf{j}$ is perpendicular to the line $ax + by = c$ by establishing that the slope of the vector $\mathbf{v}$ is the negative reciprocal of the slope of the given line.  
+    $k_v = \dfrac{b}{a}$  
+    $y = c-\dfrac{a}{b}x, k_l = -\dfrac{a}{b}$
+#### Work
+43. Work along a line Find the work done by a force $\mathbf{F} = 5\mathbf{i}$ (magnitude 5 N) in moving an object along the line from the origin to the point $(1, 1)$ (distance in meters).    
+    $W = 5$  
+#### Angles Between Lines in the Plane
+The acute angle between intersecting lines that do not cross at right angles is the same as the angle determined by vectors normal to the lines or by the vectors parallel to the lines  
+![](../images/Thomas%20Calculus/12-3.jpg)  
+Use this fact and the results of Exercise 33 or 34 to find the acute angles between the lines in Exercises 47–52.
+
+47. $3x + y = 5, 2x - y = 4$  
+    $\cos\theta = \dfrac{6-1}{\sqrt{10}\sqrt{5}} = \dfrac{\sqrt{2}}{2}$
+### 12.4 The Cross Product
+#### Cross Product Calculations
+In Exercises 1–8, find the length and direction (when defined) of $\mathbf{u} \times \mathbf{v}$ and $\mathbf{v} \times \mathbf{u}$
+
+1. $\mathbf{u} = 2\mathbf{i} - 2\mathbf{j} - \mathbf{k}, \mathbf{v} = \mathbf{i} - \mathbf{k}$   
+   $\mathbf{u} \times \mathbf{v}= \left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\2 & -2 & -1 \\1 & 0 & -1\end{array}\right|$  
+   $= 3\mathbf{i} - \mathbf{j} + 2\mathbf{k}$  
+   $l = \sqrt{14}, d = \dfrac{3}{\sqrt{14}}\mathbf{i} - \dfrac{1}{\sqrt{14}}\mathbf{j} + \dfrac{2}{\sqrt{14}}\mathbf{k}$  
+   $\mathbf{v} \times \mathbf{u}= -3\mathbf{i} + \mathbf{j} - 2\mathbf{k}$   
+#### Triangles in Space
+In Exercises 15–18,
+a. Find the area of the triangle determined by the points $P, Q,$ and $R.$  
+b. Find a unit vector perpendicular to plane $PQR$.
+
+15. $P(1, -1, 2), Q(2, 0, -1), R(0, 2, 1)$  
+    $\overrightarrow{PQ} = (1,1,-3),\overrightarrow{PR} = (-1,3,-1)$  
+    $S = \dfrac{1}{2}|\overrightarrow{PQ}\times \overrightarrow{PR}|$  
+    $= \dfrac{1}{2}|\left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\1 & 1 & -3 \\-1 & 3 & -1\end{array}\right||$  
+    $= \dfrac{1}{2}|10\mathbf{i} +2 \mathbf{j} +4\mathbf{k}|$  
+    $= \sqrt{30}$  
+    $\mathbf{n} = \dfrac{5}{\sqrt{30}}\mathbf{i} +\dfrac{1}{\sqrt{30}} \mathbf{j} +\dfrac{2}{\sqrt{30}}\mathbf{k}$
+#### Triple Scalar Products
+In Exercises 19–22, verify that $(\mathbf{u} \times \mathbf{v})\cdot  \mathbf{w} = (\mathbf{v} \times \mathbf{w})\cdot  \mathbf{u} = (\mathbf{w} \times \mathbf{u})\cdot  \mathbf{v}$ and find the volume of the parallelepiped (box) determined by $\mathbf{u}, \mathbf{v}$ and $\mathbf{w}$.  
+
+|$\mathbf{u}$|$\mathbf{v}$|$\mathbf{w}$|
+|:-:|:-:|:-:|
+|19. $2\mathbf{i}$|$2\mathbf{j}$|$2\mathbf{k}$|  
+
+$(\mathbf{u} \times \mathbf{v})\cdot  \mathbf{w} = \left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\2 & 0 & 0 \\0 & 2 & 0\end{array}\right|\cdot \mathbf{w}$  
+$= 4\mathbf{k}\cdot2\mathbf{k} = 8$  
+$(\mathbf{v} \times \mathbf{w})\cdot  \mathbf{u} = \left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\0 & 2 & 0 \\0 & 0 & 2\end{array}\right|\cdot \mathbf{u}$  
+$= 4\mathbf{i}\cdot2\mathbf{i} = 8$   
+$(\mathbf{w} \times \mathbf{u})\cdot  \mathbf{v} = \left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\0 & 0 & 2 \\2 & 0 & 0\end{array}\right|\cdot \mathbf{v}$  
+$= 4\mathbf{j}\cdot2\mathbf{j} = 8$   
+$V = 8$ 
+#### Theory and Examples
+23. parallel and perpendicular vectors Let $\mathbf{u} = 5\mathbf{i} -1 \mathbf{j} +1 \mathbf{k}, \mathbf{v} =  \mathbf{j} -5\mathbf{k}, \mathbf{w} = -15\mathbf{i} +3 \mathbf{j} -3\mathbf{k}$ Which vectors, if any, are (a) perpendicular? (b) Parallel? Give reasons for your answers.  
+    $\mathbf{u}\cdot \mathbf{v} = 0$  
+    $\mathbf{w} = 3\mathbf{u}$  
+#### Area of a Parallelogram
+Find the areas of the parallelograms whose vertices are given inExercises 35–40.
+
+35. $A(1, 0), B(0, 1), C(-1, 0), D(0, -1)$  
+    $S = 2$  
+#### Area of a Triangle
+Find the areas of the triangles whose vertices are given in Exercises 41–47.
+
+41. $A(0, 0), B(-2, 3), C(3, 1)$  
+    $S = \dfrac{1}{2}| \left| \begin{array}{cccc} \mathbf{i}  & \mathbf{j}   & \mathbf{k} \\-2 & 3 & 0\\3 & 1 & 0\end{array}\right||$  
+    $= \dfrac{1}{2}|-11\mathbf{k}|$  
+    $= \dfrac{11}{2}$
+#### Volume of a Tetrahedron
+Using the methods of Section 6.1, where volume is computed by integrating cross-sectional area, it can be shown that the volume of a tetrahedron formed by three vectors is equal to $\dfrac{1}{6}$ the volume of the parallelipiped formed by the three vectors. Find the volumes of the tetrahedra whose vertices are given in Exercises 51–54.
+
+51. $A(0, 0, 0), B(2, 0, 0), C(0, 3, 0), D(0, 0, 4)$  
+    $V = \dfrac{1}{6}|\left| \begin{array}{cccc}  2 & 0 & 0\\0 & 3 & 0 \\ 0 & 0 &4\end{array}\right||$  
+    $= \dfrac{1}{6}\cdot48 = 8$
