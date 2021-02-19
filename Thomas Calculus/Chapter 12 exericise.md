@@ -157,3 +157,49 @@ Using the methods of Section 6.1, where volume is computed by integrating cross-
 51. $A(0, 0, 0), B(2, 0, 0), C(0, 3, 0), D(0, 0, 4)$  
     $V = \dfrac{1}{6}|\left| \begin{array}{cccc}  2 & 0 & 0\\0 & 3 & 0 \\ 0 & 0 &4\end{array}\right||$  
     $= \dfrac{1}{6}\cdot48 = 8$
+### 12.6   Cylinders and Quadric Surfaces
+#### Matching Equations with Surfaces
+In Exercises 1–12, match the equation with the surface it defines. Also, identify each surface by type (paraboloid, ellipsoid, etc.). The surfaces are labeled (a)–(1).
+1. $x^2 + y^2 + 4z^2 = 10$    
+   ![](../images/Thomas%20Calculus/12-5.jpg)  
+   d, ellipsoid   
+#### Drawing
+Sketch the surfaces in Exercises 13–44.
+##### CYLINDERS
+13. $x^2 + y^2 = 4$  
+#### Theory and Examples
+45. a. Express the area $A$ of the cross-section cut from the ellipsoid
+    $$
+    x^2 + \dfrac{y^2}{4} + \dfrac{z^2}{9} = 1
+    $$
+    by the plane $z = c$ as a function of $c$. (The area of an ellipse with semiaxes $a$ and $b$ is $\pi ab$.)  
+    b. Use slices perpendicular to the $z$-axis to find the volume of the ellipsoid in part (a).
+    c. Now find the volume of the ellipsoid
+    $$
+    \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} + \dfrac{z^2}{c^2} = 1
+    $$
+    Does your formula give the volume of a sphere of radius $a$ if $a = b = c$?  
+    a. $x^2 + \dfrac{y^2}{4} = 1-\dfrac{c^2}{9}$  
+    $\dfrac{x^2}{1-\frac{c^2}{9}} +\dfrac{y^2}{4(1-\frac{c^2}{9})} = 1$  
+    $S = \pi \sqrt{1-\dfrac{c^2}{9}}\sqrt{4(1-\dfrac{c^2}{9})}$  
+    $= 2\pi(1-\dfrac{c^2}{9})$   
+    b. $V = \int_{-3}^32\pi(1-\dfrac{c^2}{9})dc$  
+    $=4\pi\int_0^31 - \dfrac{c^2}{9}dc$  
+    $=4\pi[c - \dfrac{c^3}{27}]_0^3$  
+    $= 8\pi$  
+    c. $\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1 - \dfrac{z^2}{c^2}$  
+    $\dfrac{x^2}{a^2(1 - \frac{z^2}{c^2})} +\dfrac{y^2}{b^2(1-\frac{z^2}{c^2})} = 1$  
+    $S = \pi \sqrt{a^2(1 - \dfrac{z^2}{c^2})}\sqrt{b^2(1 - \dfrac{z^2}{c^2})}$  
+    $= ab\pi(1-\dfrac{c^2}{z^2})$   
+    $V = \int_{-c}^cab\pi(1-\dfrac{c^2}{z^2})dz$  
+    $=2ab\pi\int_0^c1 - \dfrac{z^2}{c^2}dz$  
+    $=2ab\pi[z - \dfrac{z^3}{3c^2}]_0^c$  
+    $= \dfrac{4}{3}abc\pi$  
+#### Viewing Surfaces
+Plot the surfaces in Exercises 49–52 over the indicated domains. If you can, rotate the surface into different viewing positions.
+
+49. $z = y^2, -2 \le x \le 2, -0.5 \le y \le 2$
+#### COMPUTER EXPLORATIONS
+Use a CAS to plot the surfaces in Exercises 53–58. Identify the type of quadric surface from your graph.
+
+53.  $\dfrac{x^2}{9} + \dfrac{y^2}{36} = 1-\dfrac{z^2}{25}$

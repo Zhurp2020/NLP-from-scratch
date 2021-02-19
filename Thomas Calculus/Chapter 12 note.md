@@ -104,3 +104,44 @@ If $\mathbf{u} = u_1\mathbf{i} +u_2\mathbf{j}+u_3\mathbf{k}$ and $\mathbf{v} = v
 >    w_1 & w_2 & w_3 \\
 >\end{array}\right|
 >$$
+### 12.5 Lines and Planes in Space
+#### Lines and Line Segments in Space
+>Vector Equation for a Line  
+A vector equation for the line $L$ through $P_0(x_0, y_0, z_0)$ parallel to $\mathbf{v}$ is  
+>$$
+>\mathbf{r}(t) = \mathbf{r}_0 + t \mathbf{v}, -\infty < t < \infty 
+>$$
+>where $\mathbf{r}$ is the position vector of a point $P(x, y, z)$ on $L$ and $\mathbf{r}_0$ is the position vector of $P_0(x_0, y_0, z_0)$  
+
+>Parametric Equations for a Line  
+the standard parametrization of the line through $P_0(x_0, y_0, z_0)$   parallel to $\mathbf{v} = v_1\mathbf{i} +v_2\mathbf{j}+v_3\mathbf{k}$ is
+>$$
+>x = x_0 + tv_1, y = y_0 + tv_2, z = z_0 + tv_2, -\infty < t < \infty , 
+>$$
+#### The Distance from a Point to a Line in Space
+>Distance from a Point $S$ to a Line Through $P$ Parallel to $\mathbf{v}$
+>$$
+>d = \dfrac{|\overrightarrow{PS}\times\mathbf{v}|}{|\mathbf{v}|} 
+>$$
+#### An Equation for a Plane in Space
+>Equation for a Plane
+The plane through $P_0(x_0, y_0, z_0)$ normal to $\mathbf{n} = A\mathbf{i} +B\mathbf{j}+C\mathbf{k}$ has   
+Vector equation: 
+>$$
+>\mathbf{n}\cdot\overrightarrow{P_0P} = 0
+>$$
+>component equation: 
+>$$
+>A(x - x_0) + B(y - y_0) + C(z - z_0) = 0
+>$$
+>component equation simplified: 
+>$$
+>Ax + By + Cz = D, \mathsf{where}\quad D = Ax_0 + By_0 + Cz_0
+>$$
+#### Lines of Intersection
+#### The Distance from a Point to a Plane
+>Distance from a Point $S$ to a Plane with Normal $\mathbf{n}$ at Point $P$     
+>$$
+>d = |\overrightarrow{PS}\dfrac{\mathbf{n}}{|\mathbf{n}|}| 
+>$$ 
+#### Angles Between Planes
