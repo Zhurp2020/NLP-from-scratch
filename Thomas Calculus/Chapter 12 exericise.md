@@ -203,3 +203,32 @@ Plot the surfaces in Exercises 49–52 over the indicated domains. If you can, r
 Use a CAS to plot the surfaces in Exercises 53–58. Identify the type of quadric surface from your graph.
 
 53.  $\dfrac{x^2}{9} + \dfrac{y^2}{36} = 1-\dfrac{z^2}{25}$
+### Practice Exercises
+#### Vector Calculations in Two Dimensions
+In Exercises 1–4, let $\mathbf{u} = <-3,4>$ and $\mathbf{u} = <2,-5>$. Find (a) the component form of the vector and (b) its magnitude  
+1. $3\mathbf{u} -  4\mathbf{v}$  
+   $<-17,32>,\sqrt{1313}$  
+#### Vector Calculations in Three Dimensions
+Express the vectors in Exercises 13 and 14 in terms of their lengths and directions.  
+
+13. $2\mathbf{i} -3 \mathbf{j} +6 \mathbf{k}$   
+    $l =7,\dfrac{2}{7}\mathbf{i} -\dfrac{3}{7}\mathbf{j} +\dfrac{6}{7} \mathbf{k}$
+#### Lines, Planes, and Distances
+27. Suppose that $\mathbf{n}$ is normal to a plane and that $\mathbf{v}$ is parallel to the plane. Describe how you would find a vector $\mathbf{n}$ that is both perpendicular to $\mathbf{v}$ and parallel to the plane
+#### Quadric Surfaces
+Identify and sketch the surfaces in Exercises 65–76.
+
+65. $x^2 + y^2 + z^2 = 4$  
+### Additional and Advanced Exercises
+1. submarine hunting Two surface ships on maneuvers are trying to determine a submarine’s course and speed to prepare for an aircraft intercept. As shown here, ship $A$ is located at $(4, 0, 0),$ whereas ship $B$ is located at $(0, 5, 0)$. All coordinates are given in thousands of feet. Ship $A$ locates the submarine in the direction of the vector $2\mathbf{i} +3\mathbf{j} -\dfrac{1}{3} \mathbf{k}$, and ship $B$ locates it in the direction of the vector $16\mathbf{i} -6\mathbf{j} - \mathbf{k}$. Four minutes ago, the submarine was located at $(2, -1, -\dfrac{1}{3})$. The aircraft is due in 20 min. Assuming that the submarine moves in a straight line at a constant speed, to what position should the surface ships direct the aircraft?   
+   ![](../images/Thomas%20Calculus/12-6.jpg)  
+   $l_1: x = 4+ 2t, y = 3t, z = -\dfrac{1}{3}t$  
+   $l_2: x = 18s, y = 5-6s, z= -s$  
+   $\left\{\begin{aligned}4 + 2t &= 18s \\3t &= 5-6s\end{aligned}\right.$  
+   $\left\{\begin{aligned}t &= 1 \\s &=\dfrac{1}{3}\end{aligned}\right.$   
+   $(6,3,-1)$  
+   sub:  $(4,1,-\dfrac{2}{3})$  
+   20 m:$(20,5,-\dfrac{10}{3})$  
+   $(26,8,-\dfrac{13}{3})$  
+
+   
