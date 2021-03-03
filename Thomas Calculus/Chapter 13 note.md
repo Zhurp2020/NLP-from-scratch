@@ -22,5 +22,38 @@ The vector function $\mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\math
 >$$
 #### Differentiation Rules
 #### Vector Functions of Constant Length
+### 13.2 Integrals of Vector Functions; Projectile Motion
+#### Integrals of Vector Functions
+>**DEFINITION**   
+The indefinite integral of $\mathbf{R}$ with respect to $t$ is the set of all antiderivatives of $\mathbf{r}$, denoted by $\int \mathbf{r}(t) dt$. If $\mathbf{R}$ is any antiderivative of $\mathbf{R}$, then
+>$$
+>\int \mathbf{r}(t)dt = \mathbf{R}(t) + \mathbf{C}
+>$$
 
+>**DEFINITION**   
+If the components of $\mathbf{r}(t) = f(t)\mathbf{i} + g(t)\mathbf{j} + h(t)\mathbf{k}$ are integrable
+over $[a, b]$ , then so is $\mathbf{r}$, and the definite integral of $\mathbf{r}$ from $a$ to $b$ is 
+>$$
+>\int_a^b \mathbf{r}(t)dt = \int_a^b f(t)dt\mathbf{i} + \int_a^bg(t)dt\mathbf{j} + \int_a^bh(t)dt\mathbf{k}
+>$$ 
+#### The Vector and Parametric Equations for Ideal Projectile Motion
+>Ideal Projectile Motion Equation
+>$$
+>\mathbf{r} = (v_0\cos\alpha)t\mathbf{i} + ((v_0\sin\alpha) t - \dfrac{1}{2}gt^2)\mathbf{j} 
+>$$
 
+>Height, Flight Time, and Range for Ideal Projectile Motion  
+For ideal projectile motion when an object is launched from the origin over a horizontal surface with initial speed $v_0$ and launch angle $\alpha$   
+Maximum height:
+>$$
+>y_{\max} = \dfrac{(v_0\sin\alpha)^2}{2g}
+>$$
+>Flight time:
+>$$
+>t = \dfrac{2v_0\sin\alpha}{g}
+>$$
+>Range:
+>$$
+>t = \dfrac{v_0^2}{g}\sin2\alpha
+>$$
+#### Projectile Motion with Wind Gusts
