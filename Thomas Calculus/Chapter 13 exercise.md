@@ -169,4 +169,36 @@ The main force affecting the motion of a projectile, other than gravity, is air 
     $= |\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ m&n&p\\\int_a^bf(t)dt&\int_a^bg(t)dt&\int_a^bh(t)dt\end{array}|$  
     $= (n\int_a^bh(t)dt-p\int_a^bg(t)dt)\mathbf{i}+(m\int_a^bh(t)dt-p\int_a^bf(t)dt)\mathbf{j}+(m\int_a^bg(t)dt-n\int_a^bf(t)dt)\mathbf{k}$  
     $= \int_a^b\mathbf{C}\times\mathbf{r}(t)dt$
-    
+### 13.3 Arc Length in Space
+#### Finding Tangent Vectors and Lengths
+In Exercises 1–8, find the curve’s unit tangent vector. Also, find the length of the indicated portion of the curve.  
+1. $\mathbf{r}(t) = (2\cos t)\mathbf{i} + 2\sin t\mathbf{j} + \sqrt{5}t\mathbf{k}, 0 \le t \le \pi$  
+   $\mathbf{v}(t) = (-2\sin t)\mathbf{i} + 2\cos t\mathbf{j} + \sqrt{5}\mathbf{k}$  
+   $|\mathbf{v}(t)| = \sqrt{4 + 5} = 3$   
+   $\mathbf{T} = (-\dfrac{2}{3}\sin t)\mathbf{i} + \dfrac{2}{3}\cos t\mathbf{j} + \dfrac{\sqrt{5}}{3}\mathbf{k}$  
+   $L = \int_0^{\pi}3dt = 3\pi$
+#### Arc Length Parameter
+In Exercises 11–14, find the arc length parameter along the curve from the point where $t = 0$ by evaluating the integral  
+$$
+s = \int_0^t|\mathbf{v}(\tau)|d\tau
+$$   
+from Equation (3). Then find the length of the indicated portion of the curve.  
+
+11. $\mathbf{r}(t) = (4\cos t)\mathbf{i} + 4\sin t\mathbf{j} + 3t\mathbf{k}, 0 \le t \le \dfrac{\pi}{2}$  
+    $\mathbf{v}(t) = (-4\sin t)\mathbf{i} + 4\cos t\mathbf{j} + 3\mathbf{k}$  
+    $|\mathbf{v}| = 5$  
+    $\int_0^{\frac{\pi}{2}}5d\tau = \dfrac{5}{2}\pi$
+#### Theory and Examples
+15. Arc length Find the length of the curve  
+    $$
+    \mathbf{r}(t) = \sqrt{2}t\mathbf{i} + \sqrt{2}t\mathbf{j} + (1 - t^2)\mathbf{k}
+    $$  
+    from $(0, 0, 1)$ to $(\sqrt{2},\sqrt{2},0)$.  
+    $0 \le t \le 1$  
+    $\mathbf{v}(t) = \sqrt{2}\mathbf{i} + \sqrt{2}\mathbf{j}  - 2t\mathbf{k}$  
+    $|\mathbf{v}| = \sqrt{4 + 4t^2}$  
+    $L = 2\int_0^1\sqrt{1 + t^2}dt$  
+    Let $u = \sqrt{1 + t^2}, \dfrac{du}{dt} = \dfrac{1}{2\sqrt{1 + t^2}} = \dfrac{1}{2u}$   
+    $= 2\int_1^{\sqrt{2}}2u^2du$  
+    $= 4[\dfrac{1}{3}u^3]_1^{\sqrt{2}}$  
+    $= \dfrac{8}{3}\sqrt{2}-\dfrac{4}{3}$

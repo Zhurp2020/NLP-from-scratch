@@ -57,3 +57,20 @@ Maximum height:
 >t = \dfrac{v_0^2}{g}\sin2\alpha
 >$$
 #### Projectile Motion with Wind Gusts
+### 13.3 Arc Length in Space
+#### Arc Length Along a Space Curve
+>**DEFINITION** 
+The length of a smooth curve $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}, a \le t \le b$  that is traced exactly once as $t$ increases from $t = a$ to $t = b$, is
+>$$
+>L = \int_a^b\sqrt{(\dfrac{dx}{dt})^2 + (\dfrac{dy}{dt})^2 + (\dfrac{dz}{dt})^2}dt
+>$$  
+>$$
+>L = \int_a^b|\mathbf{v}|dt
+>$$   
+
+>Arc Length Parameter with Base Point $P(t_0)$
+>$$
+>s(t) = \int_{t_0}^t\sqrt{(x'(\tau))^2 + (y'(\tau))^2 + (z'(\tau))^2}d\tau = \int_{t_0}^t|\mathbf{v}(\tau)|d\tau
+>$$ 
+#### Speed on a Smooth Curve
+#### Unit Tangent Vector
