@@ -4,7 +4,7 @@
 In Exercises 1–4, find the given limits.  
 1. $\lim\limits_{t\to\pi}(\sin\dfrac{t}{2}\mathbf{i} + \cos\dfrac{2t}{3}\mathbf{j} + \dfrac{5t}{4}\mathbf{k})$   
    $\lim\limits_{t\to\pi}(\sin\dfrac{t}{2}\mathbf{i} + \cos\dfrac{2t}{3}\mathbf{j} + \dfrac{5t}{4}\mathbf{k})$  
-   $=\lim\limits_{t\to\pi}(\sin\dfrac{t}{2}\mathbf{i} + \cos\dfrac{2t}{3}\mathbf{j} + \dfrac{5t}{4}\mathbf{k}$  
+   $=\mathbf{i} -\dfrac{1}{2}\mathbf{j} + \dfrac{5\pi}{4}\mathbf{k}$  
 #### Motion in the Plane
 In Exercises 5–8, $\mathbf{r}(t)$ is the position of a particle in the $xy$-plane at time $t$. Find an equation in $x$ and $y$ whose graph is the path of the particle. Then find the particle’s velocity and acceleration vectors at the given value of $t$.  
 
@@ -202,3 +202,49 @@ from Equation (3). Then find the length of the indicated portion of the curve.
     $= 2\int_1^{\sqrt{2}}2u^2du$  
     $= 4[\dfrac{1}{3}u^3]_1^{\sqrt{2}}$  
     $= \dfrac{8}{3}\sqrt{2}-\dfrac{4}{3}$
+### 13.4 Curvature and Normal Vectors of a Curve
+#### Plane Curves
+Find $\mathbf{T}, \mathbf{N},$ and $\kappa$ for the plane curves in Exercises 1–4.
+1. $\mathbf{r}(t) = t\mathbf{i} + \ln(\cos t)\mathbf{j}, -\dfrac{\pi}{2} < t < \dfrac{\pi}{2}$  
+   $\mathbf{v}(t) = \mathbf{i} -\dfrac{\sin t}{\cos t}\mathbf{j} = \mathbf{i} -\tan t\mathbf{j}$   
+   $\mathbf{T}(t) = \dfrac{1}{\sqrt{\tan ^2 t + 1}}\mathbf{i} -\dfrac{\tan t}{\sqrt{\tan ^2 t + 1}}\mathbf{j} = \dfrac{1}{\sec t}\mathbf{i} -\dfrac{\tan t}{\sec t}\mathbf{j} = \cos t\mathbf{i} -\sin t\mathbf{j}$  
+   $\mathbf{N}(t) =\dfrac{-\sin t\mathbf{i} -\cos t\mathbf{j}}{1} = -\sin t\mathbf{i} -\cos t\mathbf{j}$  
+   $\kappa =\dfrac{1}{\sqrt{1 + \tan^2t}} = \cos t$  
+#### Space Curves
+Find $\mathbf{T}, \mathbf{N},$ and $\kappa$ for the space curves in Exercises 9–16.
+
+9. $\mathbf{r}(t) = 3\sin t\mathbf{i} + 3\cos t\mathbf{j} + 4t\mathbf{k}$  
+   $\mathbf{v}(t) = 3\cos t\mathbf{i} -3\sin t\mathbf{j} + 4\mathbf{k}$  
+   $\mathbf{T}(t) = \dfrac{3}{5}\cos t\mathbf{i} - \dfrac{3}{5}\sin t\mathbf{j} +  \dfrac{4}{5}\mathbf{k}$   
+   $\mathbf{N}(t) = \dfrac{-\frac{3}{5}\sin t\mathbf{i} - \frac{3}{5}\cos t\mathbf{j}}{\frac{3}{5}} =-\sin t\mathbf{i} - \cos t\mathbf{j}$  
+   $\kappa = \dfrac{1}{5}\dfrac{3}{5} = \dfrac{3}{25}$ 
+#### More on Curvature
+17. Show that the parabola $y = ax^2, a \ne 0$, has its largest curvature at its vertex and has no minimum curvature. (Note: Since the curvature of a curve remains the same if the curve is translated or rotated, this result is true for any parabola.)  
+    $\mathbf{v}(t) = \mathbf{i} -2at\mathbf{j}$  
+    $\mathbf{T}(t) = \dfrac{1}{\sqrt{1 + 4a^2t^2}}\mathbf{i} -\dfrac{2at}{\sqrt{1 + 4a^2t^2}}\mathbf{j}$  
+    $\dfrac{d\mathbf{T}}{dt} =  -\dfrac{4a^2t}{(1 + 4a^2t^2)^{\frac{3}{2}}}\mathbf{i} -(-\dfrac{8a^3t^2}{(1 + 4a^2t^2)^{\frac{3}{2}}} + \dfrac{2a}{\sqrt{1 + 4a^2t^2}})\mathbf{j}$  
+    $|\dfrac{d\mathbf{T}}{dt}|^2 = \dfrac{16a^4t^2}{(1 + 4a^2t^2)^3} + (\dfrac{4a^2}{1 + 4a^2t^2} - \dfrac{32a^4t^2}{(1 + 4a^2t^2)^2} + \dfrac{64a^6t^4}{(1 + 4a^2t^2)^3})$  
+    $= \dfrac{16a^4t^2 + 64a^6t^4}{(1 + 4a^2t^2)^3} +  \dfrac{4a^2 + 16a^4t^2 -32a^4t^2}{(1 + 4a^2t^2)^2}$  
+    $= \dfrac{16a^4t^2}{(1 + 4a^2t^2)^2} +  \dfrac{4a^2 - 16a^4t^2}{(1 + 4a^2t^2)^2}$  
+    $|\dfrac{d\mathbf{T}}{dt}| = \dfrac{2a}{1 + 4a^2t^2}$  
+    $\kappa = \dfrac{1}{\sqrt{1 + 4a^2t^2}}\dfrac{2a}{1 + 4a^2t^2} = \dfrac{2a}{(1 + 4a^2t^2)^{\frac{3}{2}}}$  
+    $\dfrac{d\kappa}{dt} = -\dfrac{24a^3t}{(1 + 4a^2t^2)^{\frac{5}{2}}} = 0, t = 0$   
+    $t < 0, \kappa < 2a, t > 0, \kappa >2a$  
+    $\kappa_{max} = 2a$  
+### COMPUTER EXPLORATIONS
+In Exercises 31–38 you will use a CAS to explore the osculating circle at a point $P$ on a plane curve where $\kappa \ne 0$. Use a CAS to perform the following steps:  
+a. Plot the plane curve given in parametric or function form over the specified interval to see what it looks like.  
+b. Calculate the curvature $\kappa$ of the curve at the given value $t_0$ using the appropriate formula from Exercise 5 or 6. Use the parametrization $x = t$ and $y = f(t)$ if the curve is given as a function $y = f(x)$.  
+c. Find the unit normal vector $\mathbf{N}$ at $t_0$ . Notice that the signs of the components of $\mathbf{N}$ depend on whether the unit tangent vector $\mathbf{t}$ is turning clockwise or counterclockwise at $t = t_0$. (See Exercise 7.)  
+d. If $\mathbf{C} = a\mathbf{i} + b\mathbf{j}$ is the vector from the origin to the center $(a, b)$ of the osculating circle, find the center $\mathbf{C}$ from the vector equation  
+$$
+\mathbf{C} = \mathbf{r}(t_0) + \dfrac{1}{\kappa(t_0)}\mathbf{N}(t_0)
+$$
+The point $P(x_0, y_0)$ on the curve is given by the position vector $\mathbf{r}(t_0)$.  
+e. Plot implicitly the equation $(x - a)^2 + (y - b)^2 =\dfrac{1}{\kappa^2}$ of the osculating circle. Then plot the curve and osculating circle together. You may need to experiment with the size of the viewing window, but be sure the axes are equally scaled.  
+
+31. $\mathbf{r}(t) = 3\cos t\mathbf{i} + 5\sin t\mathbf{j}, 0 \le t \le 2\pi, t_0 = \dfrac{\pi}{4}$  
+    $\kappa = \dfrac{|15\sin^2 t  + 15\cos^2 t|}{(9\sin^2 t+ 25\cos^2t)^{\frac{3}{2}}} =\dfrac{15}{17\sqrt{17}}$    
+    $\mathbf{N} = -5\cos t \mathbf{i} - 3\sin t\mathbf{j} = -\dfrac{5}{2}\sqrt{2}\mathbf{i} - \dfrac{3}{2}\sqrt{2}\mathbf{j}$  
+    $\mathbf{C} = \dfrac{3}{2}\sqrt{2}\mathbf{i} + \dfrac{5}{2}\sqrt{2}\mathbf{j} + \dfrac{17\sqrt{17}}{15}(-\dfrac{5}{2}\sqrt{2}\mathbf{i} - \dfrac{3}{2}\sqrt{2}\mathbf{j})$  
+    $= \dfrac{15\sqrt{2}-85\sqrt{34}}{30}\mathbf{i} + \dfrac{75\sqrt{2}-51\sqrt{34}}{30}\mathbf{j}$

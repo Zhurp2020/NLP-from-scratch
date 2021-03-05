@@ -74,3 +74,33 @@ The length of a smooth curve $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + 
 >$$ 
 #### Speed on a Smooth Curve
 #### Unit Tangent Vector
+### 13.4 Curvature and Normal Vectors of a Curve
+#### Curvature of a Plane Curve
+>**DEFINITION** 
+If $\mathbf{T}$ is the unit vector of a smooth curve, the curvature function of the curve is
+>$$
+>\kappa = |\dfrac{d\mathbf{T}}{ds}|
+>$$ 
+
+>Formula for Calculating Curvature  
+If $\mathbf{r}(t)$ is a smooth curve, then the curvature is the scalar function
+>$$
+>\kappa = \dfrac{1}{|\mathbf{v}|}|\dfrac{d\mathbf{T}}{dt}|
+>$$  
+>where $\mathbf{T} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$ is the unit tangent vector.
+
+
+>**DEFINITION**  
+At a point where $\kappa \ne 0$, the principal unit normal vector for a smooth curve in the plane is
+>$$
+>N = \dfrac{1}{\kappa}\dfrac{d\mathbf{T}}{dt}
+>$$   
+
+>Formula for Calculating $\mathbf{N}$  
+If $\mathbf{r}(t)$ is a smooth curve, then the principal unit normal is
+>$$
+>N = \dfrac{\frac{d\mathbf{T}}{dt}}{|\frac{d\mathbf{T}}{dt}|}
+>$$ 
+>where $\mathbf{T} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$ is the unit tangent vector.
+#### Circle of Curvature for Plane Curves
+#### Curvature and Normal Vectors for Space Curves
