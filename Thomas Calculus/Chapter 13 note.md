@@ -104,3 +104,41 @@ If $\mathbf{r}(t)$ is a smooth curve, then the principal unit normal is
 >where $\mathbf{T} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$ is the unit tangent vector.
 #### Circle of Curvature for Plane Curves
 #### Curvature and Normal Vectors for Space Curves
+### 13.5 Tangential and Normal Components of Acceleration
+#### The TNB Frame
+#### Tangential and Normal Components of Acceleration
+>**DEFINITION**  
+If the acceleration vector is written as
+>$$
+>a = a_{\mathbf{T}}\mathbf{T} + a_{\mathbf{N}}\mathbf{N}
+>$$ 
+>then
+>$$
+>a_{\mathbf{T}} = \dfrac{d^s}{dt^2}= \dfrac{d}{dt}|\mathbf{v}|,a_{\mathbf{N}} = \kappa(\dfrac{ds}{dt})^2= \kappa|\mathbf{v}|^2
+>$$ 
+>are the tangential and normal scalar components of acceleration
+
+>Formula for Calculating the Normal Component of Acceleration
+>$$
+>a_{\mathbf{N}} = \sqrt{|\mathbf{a}|^2 - a_{\mathbf{T}}^2}
+>$$ 
+#### Torsion
+>**DEFINITION**  
+Let $\mathbf{B} = \mathbf{T} \times \mathbf{N}$. The torsion function of a smooth curve is
+>$$
+>\tau = -\dfrac{d\mathbf{B}}{ds}\cdot \mathbf{N}
+>$$ 
+#### Formulas for Computing Curvature and Torsion
+>Vector Formula for Curvature
+>$$
+>\kappa = \dfrac{|\mathbf{v}\times\mathbf{a}|}{|\mathbf{v}|^3}
+>$$ 
+
+>Formula for Torsion
+>$$
+>\tau = \dfrac{\left|\begin{array}{cccc}
+    \dot{x} & \dot{y} & \dot{z} \\  
+    \ddot{x} & \ddot{y} & \ddot{z} \\ 
+    \dot{\ddot{x}} & \dot{\ddot{y}} & \dot{\ddot{z}} \\
+    \end{array}\right|}{|\mathbf{v}\times\mathbf{a}|^2}
+>$$ 

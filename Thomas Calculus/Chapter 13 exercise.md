@@ -163,10 +163,10 @@ The main force affecting the motion of a projectile, other than gravity, is air 
     $= \int_a^bmf(t)dt\mathbf{i} + \int_a^bng(t)dt\mathbf{j}$  
     $= (m\mathbf{i} + n\mathbf{j})\cdot(\int_a^bf(t)dt\mathbf{i} + \int_a^bg(t)dt\mathbf{j})$  
     $= \mathbf{C}\cdot\int_a^b\mathbf{r}(t)dt$   
-    $\int_a^b\mathbf{C}\times\mathbf{r}(t)dt =\int_a^b|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ m&n&p\\f(t)&g(t)&h(t)\end{array}|dt$   
+    $\int_a^b\mathbf{C}\times\mathbf{r}(t)dt =\int_a^b\left|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ m&n&p\\f(t)&g(t)&h(t)\end{array}\right|dt$   
     $= \int_a^b(nh(t)-pg(t))\mathbf{i}+(mh(t)-pf(t))\mathbf{j}+(mg(t)-nf(t))\mathbf{k}dt$  
     $\mathbf{C}\times\int_a^b\mathbf{r}(t)dt$   
-    $= |\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ m&n&p\\\int_a^bf(t)dt&\int_a^bg(t)dt&\int_a^bh(t)dt\end{array}|$  
+    $= \left|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ m&n&p\\\int_a^bf(t)dt&\int_a^bg(t)dt&\int_a^bh(t)dt\end{array}\right|$  
     $= (n\int_a^bh(t)dt-p\int_a^bg(t)dt)\mathbf{i}+(m\int_a^bh(t)dt-p\int_a^bf(t)dt)\mathbf{j}+(m\int_a^bg(t)dt-n\int_a^bf(t)dt)\mathbf{k}$  
     $= \int_a^b\mathbf{C}\times\mathbf{r}(t)dt$
 ### 13.3 Arc Length in Space
@@ -248,3 +248,53 @@ e. Plot implicitly the equation $(x - a)^2 + (y - b)^2 =\dfrac{1}{\kappa^2}$ of 
     $\mathbf{N} = -5\cos t \mathbf{i} - 3\sin t\mathbf{j} = -\dfrac{5}{2}\sqrt{2}\mathbf{i} - \dfrac{3}{2}\sqrt{2}\mathbf{j}$  
     $\mathbf{C} = \dfrac{3}{2}\sqrt{2}\mathbf{i} + \dfrac{5}{2}\sqrt{2}\mathbf{j} + \dfrac{17\sqrt{17}}{15}(-\dfrac{5}{2}\sqrt{2}\mathbf{i} - \dfrac{3}{2}\sqrt{2}\mathbf{j})$  
     $= \dfrac{15\sqrt{2}-85\sqrt{34}}{30}\mathbf{i} + \dfrac{75\sqrt{2}-51\sqrt{34}}{30}\mathbf{j}$
+### 13.5 Tangential and Normal Components of Acceleration
+#### Finding Tangential and Normal Components
+In Exercises 1 and 2, write $\mathbf{a}$ in the form $\mathbf{a} = a_{\mathbf{T}}\mathbf{T} + a_{\mathbf{N}}\mathbf{N}$ without finding $\mathbf{T}$ and $\mathbf{N}$.
+1. $\mathbf{r}(t) = a\cos t\mathbf{i} + a\sin t\mathbf{j}+bt\mathbf{k}$   
+   $\mathbf{v}(t) = -a\sin t\mathbf{i} + a\cos t\mathbf{j}+b\mathbf{k}$  
+   $\mathbf{a}(t) = -a\cos t\mathbf{i} - a\sin t\mathbf{j}$  
+   $a_{\mathbf{T}} = \dfrac{d}{dt}|\mathbf{v}(t)| = \dfrac{d}{dt}\sqrt{a^2 + b^2t^2} = \dfrac{b^2t}{\sqrt{a^2 + b^2t^2}}$  
+   $a_{\mathbf{N}} = \sqrt{a^2-\dfrac{b^4t^2}{a^2 + b^2t^2}}$  
+#### Finding the TNB Frame
+In Exercises 7 and 8, find $\mathbf{r}, \mathbf{T}, \mathbf{N},$ and $\mathbf{B}$ at the given value of $t$. Then find equations for the osculating, normal, and rectifying planes at that value of $t$  
+
+7. $\mathbf{r}(t) = \cos t\mathbf{i} + \sin t\mathbf{j}-\mathbf{k}, t = \dfrac{\pi}{4}$  
+   $\mathbf{r} = \dfrac{\sqrt{2}}{2}\mathbf{i} + \dfrac{\sqrt{2}}{2}\mathbf{j}-\mathbf{k}$  
+   $\mathbf{v}(t) = -\sin t\mathbf{i} + \cos t\mathbf{j}$  
+   $\mathbf{v} =-\dfrac{\sqrt{2}}{2}\mathbf{i} + \dfrac{\sqrt{2}}{2}\mathbf{j}$  
+   $\mathbf{T}(t) =-\sin t\mathbf{i} + \cos t\mathbf{j}$  
+   $\mathbf{T} =-\dfrac{\sqrt{2}}{2}\mathbf{i} + \dfrac{\sqrt{2}}{2}\mathbf{j}$  
+   $\mathbf{N}(t) =-\cos t\mathbf{i} - \sin t\mathbf{j}$   
+   $\mathbf{N} =-\dfrac{\sqrt{2}}{2}\mathbf{i} - \dfrac{\sqrt{2}}{2}\mathbf{j}$  
+   $\mathbf{B} = \left|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ -\dfrac{\sqrt{2}}{2}&\dfrac{\sqrt{2}}{2}&0\\-\dfrac{\sqrt{2}}{2}&-\dfrac{\sqrt{2}}{2}&0\end{array}\right|$  
+   $= \mathbf{k}$  
+   rectifying: $-\dfrac{\sqrt{2}}{2}(x-\dfrac{\sqrt{2}}{2}) - \dfrac{\sqrt{2}}{2}(y-\dfrac{\sqrt{2}}{2}) = 0$  
+   Osculating: $z + 1= 0$   
+   normal: $-\dfrac{\sqrt{2}}{2}(x-\dfrac{\sqrt{2}}{2}) + \dfrac{\sqrt{2}}{2}(y-\dfrac{\sqrt{2}}{2}) = 0$  
+#### Physical Applications
+17. The speedometer on your car reads a steady 35 mph. Could you be accelerating? Explain  
+    Yes. The magnitude is the same, but the direction changes
+#### Theory and Examples
+21. Show that $\kappa$ and $\tau$ are both zero for the line  
+    $$
+    \mathbf{r}(t) = (x_0 + At)\mathbf{i} + (y_0 + Bt)\mathbf{j}+(z_0 + Ct)\mathbf{k}
+    $$  
+    $\mathbf{v}(t) = A\mathbf{i} + B\mathbf{j}+C\mathbf{k}$  
+    $\mathbf{a}(t) = 0$  
+    $\mathbf{v}(t)\times\mathbf{a}(t) = 0,\kappa = 0,\tau = 0$  
+#### COMPUTER EXPLORATIONS
+Rounding the answers to four decimal places, use a CAS to find $\mathbf{v}, \mathbf{a},$ speed, $\mathbf{T}, \mathbf{N}, \mathbf{B}, \kappa, \tau$, and the tangential and normal components of acceleration for the curves in Exercises 27–30 at the given values of $t$.   
+
+27. $\mathbf{r}(t) = t\cos t\mathbf{i} + t\sin t\mathbf{j}+t\mathbf{k}, t = \sqrt{3}$  
+    $\mathbf{v}(t) = (-t\sin t+\cos t)\mathbf{i} + (t\cos t + \sin t)\mathbf{j}+\mathbf{k}$  
+    $\mathbf{v} = (-\sqrt{3}\sin \sqrt{3}+\cos \sqrt{3})\mathbf{i} + (\sqrt{3}\cos \sqrt{3} + \sin \sqrt{3})\mathbf{j}+\mathbf{k}$    
+    $\mathbf{a}(t) = (-(t\cos t + \sin t)-\sin t)\mathbf{i} + ((-t\sin t+\cos t) + \cos t)\mathbf{j} =(-t\cos t -2\sin t)\mathbf{i} + (-t\sin t+2\cos t)\mathbf{j}$   
+    $s = \sqrt{\cos^2t - 2t\sin t\cos t + t^2\sin^2t + t^2\cos^2t + 2t\cos t\sin t + \sin^2t + 1}$  
+    $= \sqrt{2+t^2} = \sqrt{5}$  
+    $\mathbf{T}(t) = \dfrac{(-t\sin t+\cos t)}{\sqrt{2+t^2}}\mathbf{i} + \dfrac{(t\cos t + \sin t)}{\sqrt{2+t^2}}\mathbf{j}+\dfrac{1}{\sqrt{2+t^2}}\mathbf{k}$  
+    $\mathbf{N}(t) = \dfrac{(-t\cos t -2\sin t)\sqrt{2 + t^2} - (-t\sin t+\cos t)\frac{t}{\sqrt{2 + t^2}}}{2+t^2}\mathbf{i} + \dfrac{(-t\sin t+2\cos t)\sqrt{2 + t^2} - (t\cos t + \sin t)\frac{t}{\sqrt{2 + t^2}}}{2+t^2}\mathbf{j}-\dfrac{t}{(2+t^2)^{\frac{3}{2}}}\mathbf{k}$   
+    $\mathbf{B} = \mathbf{T}\times\mathbf{N}$  
+    $\kappa = \dfrac{|\mathbf{v}\times\mathbf{a}|}{|\mathbf{v}|^3}$  
+    $\tau = \dfrac{\left|\begin{array}{cccc}\dot{x} & \dot{y} & \dot{z} \\  \ddot{x} & \ddot{y} & \ddot{z} \\ \dot{\ddot{x}} & \dot{\ddot{y}} & \dot{\ddot{z}}\\\end{array}\right|}{|\mathbf{v}\times\mathbf{a}|^2}$     
+    $a_{\mathbf{T}} = \dfrac{d}{dt}|\mathbf{v}|,a_{\mathbf{N}} = \sqrt{|\mathbf{a}|^2 - a_{\mathbf{T}}^2}$  
