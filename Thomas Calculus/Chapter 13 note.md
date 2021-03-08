@@ -74,3 +74,21 @@ The length of a smooth curve $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + 
 >$$ 
 #### Speed on a Smooth Curve
 #### Unit Tangent Vector
+### 13.6 Velocity and Acceleration in Polar Coordinates
+#### Motion in Polar and Cylindrical Coordinates
+Position 
+$$
+\mathbf{r} = r\mathbf{u}_r + z\mathbf{k}
+$$ 
+Velocity: 
+$$
+\mathbf{v} = \dot{r}\mathbf{u}_r + r\dot{\theta}\mathbf{u}_{\theta} + \dot{z}\mathbf{k}
+$$ 
+Acceleration:  
+$$
+\mathbf{a} = (\ddot{r} - r\dot{\theta}^2)\mathbf{u}_r + (r\ddot{\theta}+ 2\dot{r}\dot{\theta})\mathbf{u}_{\theta} + \ddot{z}\mathbf{k}
+$$ 
+#### Planets Move in Planes
+#### Kepler’s First Law (Ellipse Law)
+#### Kepler’s Second Law (Equal Area Law)
+#### Kepler’s Third Law (Time–Distance Law)

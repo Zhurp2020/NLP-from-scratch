@@ -202,3 +202,31 @@ from Equation (3). Then find the length of the indicated portion of the curve.
     $= 2\int_1^{\sqrt{2}}2u^2du$  
     $= 4[\dfrac{1}{3}u^3]_1^{\sqrt{2}}$  
     $= \dfrac{8}{3}\sqrt{2}-\dfrac{4}{3}$
+### 13.6 Velocity and Acceleration in Polar Coordinates
+In Exercises 1–7, find the velocity and acceleration vectors in terms of 
+$\mathbf{u}_r$ and $\mathbf{u}_{\theta}$.
+1. $r = \theta,\dfrac{d\theta}{dt} =  2$  
+   $\mathbf{u}_r =\cos\theta\mathbf{i} + \sin\theta\mathbf{j},\mathbf{u}_{\theta} =-\sin\theta\mathbf{i} + \cos\theta\mathbf{j}$    
+   $\mathbf{v} = 2\cos\theta\mathbf{i} + 2\sin\theta\mathbf{j} + 2\theta(-\sin\theta\mathbf{i} + \cos\theta\mathbf{j})$  
+   $= (2\cos\theta + 2\theta\cos\theta)\mathbf{i} + (2\sin\theta - 2\theta\sin\theta)\mathbf{j}$  
+   $\mathbf{a} = 4\theta(\cos\theta\mathbf{i} + \sin\theta\mathbf{j}) + 8(-\sin\theta\mathbf{i} + \cos\theta\mathbf{j})$  
+   $= (4\theta\cos\theta-8\sin\theta ){i} + (4\theta\sin\theta+ 8\cos\theta)\mathbf{j}$  
+### Practice Exercises
+#### Motion in the Plane
+In Exercises 1 and 2, graph the curves and sketch their velocity and acceleration vectors at the given values of $t$. Then write $\mathbf{a}$ in the form $\mathbf{a} = a_T\mathbf{T} + a_N\mathbf{N}$ without finding $\mathbf{T}$ and $\mathbf{N}$, and find the value of $\kappa$ at the given values of $t$.
+1. $\mathbf{r}(t) = (4\cos t)\mathbf{i} + \sqrt{2}\sin t\mathbf{j} , t = 0, t = \dfrac{\pi}{4}$  
+   $\mathbf{v}(t) = (-4\sin t)\mathbf{i} + \sqrt{2}\cos t\mathbf{j}$  
+   $|\mathbf{v}(t)| =\sqrt{16\sin^2t + 2\cos^2t}$  
+   $a_T = \dfrac{32\sin t\cos t - 4\cos t \sin t}{2\sqrt{16\sin^2t + 2\cos^2t}} = \dfrac{14\sin t \cos t}{\sqrt{16\sin^2t + 2\cos^2t}}$   
+   $\mathbf{a}(t) = (-4\cos t)\mathbf{i} - \sqrt{2}\sin t\mathbf{j}$   
+   $a_N = \sqrt{16\cos^2t + 2\sin^2 t - \dfrac{196\sin^2 t \cos^2 t}{16\sin^2t + 2\cos^2t}}$  
+   $= \sqrt{\dfrac{256\sin^2t \cos^2t + 32\cos^4t + 32\sin^4t + 4\sin^2t\cos^2t - 196\sin^2t\cos^2t}{16\sin^2t + 2\cos^2t}}$  
+   $= \sqrt{\dfrac{64\sin^2t\cos^2t + 32\cos^4t + 32\sin^4t }{16\sin^2t + 2\cos^2t}}$  
+   $=\sqrt{\dfrac{16}{8\sin^2t + \cos^2t}}$  
+   $t = 0, \mathbf{v}(t) = \sqrt{2}\mathbf{j},\mathbf{a}(t) = -4\mathbf{i}$  
+   $\kappa = \dfrac{|\left|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k}\\0&\sqrt{2}&0 \\ -4&0&0\end{array}\right||}{2\sqrt{2}}$  
+   $= \dfrac{|4\sqrt{2}\mathbf{k}|}{2\sqrt{2}} = 2$
+#### Projectile Motion
+11. Shot put A shot leaves the thrower’s hand 6.5 ft above the  ground at a 45° angle at 44 ft/sec. Where is it 3 sec later?  
+    $\mathbf{r}(t) = (44\dfrac{\sqrt{2}}{2})t\mathbf{i} + (44\dfrac{\sqrt{2}}{2}t - 5t^2 + 6.5)\mathbf{j}$  
+    $\mathbf{r}(3) = 66\sqrt{2}\mathbf{i} + (66\sqrt{2} - 23.5)\mathbf{j}$
