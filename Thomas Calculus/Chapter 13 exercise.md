@@ -326,4 +326,53 @@ In Exercises 1 and 2, graph the curves and sketch their velocity and acceleratio
 11. Shot put A shot leaves the thrower’s hand 6.5 ft above the  ground at a 45° angle at 44 ft/sec. Where is it 3 sec later?  
     $\mathbf{r}(t) = (44\dfrac{\sqrt{2}}{2})t\mathbf{i} + (44\dfrac{\sqrt{2}}{2}t - 5t^2 + 6.5)\mathbf{j}$  
     $\mathbf{r}(3) = 66\sqrt{2}\mathbf{i} + (66\sqrt{2} - 23.5)\mathbf{j}$
+#### Motion in Space
+Find the lengths of the curves in Exercises 15 and 16
 
+15. $\mathbf{r}(t) = 2\cos t\mathbf{i} + 2\sin t\mathbf{j} + t^2\mathbf{k}, 0 \le t\le \dfrac{\pi}{4}$  
+    $L = \int_0^{\frac{\pi}{4}}\sqrt{4\sin^2t + 4\cos^2t + 4t^2}dt$  
+    $= 2\int_0^{\frac{\pi}{4}}\sqrt{1+ t^2}dt$  
+    $= 2[\dfrac{t}{2}\sqrt{1 + t^2} + \dfrac{1}{2}\ln(1 + \sqrt{1 +t^2})]_0^{\frac{\pi}{4}}$  
+    $= \dfrac{\pi}{4}\sqrt{1 + \dfrac{\pi^2}{16}} + \ln(1 + \sqrt{1 + \dfrac{\pi^2}{16}})$  
+#### Theory and Examples
+29. Synchronous curves By eliminating $\alpha$ from the ideal projectile equations  
+    $$
+    x = (v_0\cos\alpha)t, y= (v_0\sin\alpha) t - \dfrac{1}{2}gt^2
+    $$
+    show that $x^2 + (y + \dfrac{gt^2}{2})^2 = v_0^2t^2$. This shows that projectiles launched simultaneously from the origin at the same initial speed will, at any given instant, all lie on the circle of radius $v_0t$ centered at $(0, -\dfrac{gt^2}{2})^2)$, regardless of their launch angle. These circles are the synchronous curves of the launching.  
+    $x^2 + (y + \dfrac{gt^2}{2})^2$  
+    $= (v_0^2\cos^2\alpha) t^2 + (v_0^2\sin^2\alpha)t^2 = v_0^2t^2$
+### Additional and Advanced Exercises
+#### Applications
+1. A frictionless particle $P$, starting from rest at time $t = 0$ at the point $(a, 0, 0),$ slides down the helix
+    $$
+    \mathbf{r}(\theta) = a\cos \theta\mathbf{i} + a\sin \theta\mathbf{j} + b\theta\mathbf{k}, a,b > 0
+    $$
+    under the influence of gravity, as in the accompanying figure. The $\theta$ in this equation is the cylindrical coordinate $\theta$ and the helix is the curve $r = a, z = b\theta,\theta\ge 0$, in cylindrical coordinates. We assume $\theta$ to be a differentiable function of $t$ for the motion. The law of conservation of energy tells us that the particle’s speed after it has fallen straight down a distance $z$ is $\sqrt{2gz}$, where $g$ is the constant acceleration of gravity.  
+    a. Find the angular velocity $\dfrac{d\theta}{dt}$ when $\theta = 2\pi$.  
+    b. Express the particle’s $\theta-$ and $z$-coordinates as functions of $t$.  
+    c. Express the tangential and normal components of the velocity $\dfrac{d\mathbf{r}}{dt}$ and acceleration $\dfrac{d^2\mathbf{r}}{dt^2}$ as functions of $t$. Does the acceleration have any nonzero component in the direction of the binormal vector $\mathbf{B}$?  
+    ![](../images/Thomas%20Calculus/13-2.jpg)  
+    a. $\dfrac{d\mathbf{r}}{dt} = (-a\sin \theta\mathbf{i} + a\cos \theta\mathbf{j} + b\mathbf{k})\dfrac{d\theta}{dt}$  
+    $|v| = \sqrt{2gz} = \sqrt{a^2\sin^2\theta + a^2\cos^2\theta +b^2}\dfrac{d\theta}{dt}$  
+    $\dfrac{d\theta}{dt}=\sqrt{\dfrac{2gb\theta}{a^2 +b^2}}$  
+    $\theta = 2\pi, \dfrac{d\theta}{dt} = \sqrt{\dfrac{4gb\pi}{a^2 +b^2}}$  
+    b. $\dfrac{d\theta}{dt}=\sqrt{\dfrac{2gb\theta}{a^2 +b^2}}$  
+    $\dfrac{d\theta}{\sqrt{\theta}}=\sqrt{\dfrac{2gb}{a^2 +b^2}}dt$    
+    $2\sqrt{\theta} = \sqrt{\dfrac{2gb}{a^2 +b^2}}t + C$  
+    $t =0 , 2\sqrt{\theta} = C = 0$  
+    $\theta =\dfrac{gb}{2(a^2 +b^2)}t^2,z = \dfrac{gb^2}{2(a^2 +b^20}t^2$  
+    c. $\mathbf{T} =\dfrac{-a\sin \theta\mathbf{i} + a\cos \theta\mathbf{j} + b\mathbf{k}}{\sqrt{a^2 + b^2}}$  
+    $\mathbf{v} = \dfrac{d\theta}{dt}\sqrt{a^2+b^2}\mathbf{T}$  
+    $\dfrac{d\theta}{dt} = \dfrac{gb}{a^2+b^2}t$  
+    $\mathbf{v} = \dfrac{gbt}{\sqrt{a^2+b^2}}\mathbf{T}$  
+    $\mathbf{a} = (-a\cos\theta\mathbf{i} - a\sin \theta\mathbf{j})\dfrac{d\theta}{dt} + (-a\sin \theta\mathbf{i} + a\cos \theta\mathbf{j} + b\mathbf{k})\dfrac{d^2\theta}{dt^2}$  
+    $\mathbf{a}_T = \dfrac{d}{dt}|\mathbf{v}| = \dfrac{gb}{\sqrt{a^2 + b^2}}$  
+    $\mathbf{a}_N = \sqrt{a^2\dfrac{g^2b^2t^2}{(a^2+b^2)^2} + \dfrac{g^2b^2}{a^2+b^2} -\dfrac{g^2b^2}{a^2+b^2}} = a\dfrac{gbt}{a^2 + b^2}$
+#### Motion in Polar and Cylindrical Coordinates
+3. Deduce from the orbit equation  
+   $$
+    r = \dfrac{(1 + e)r_0}{1 + e\cos\theta}
+    $$  
+    that a planet is closest to its sun when $\theta = 0$ and show that $r = r_0$ at that time  
+    $d = |r|, d_{\min} = r_0 = r, \theta = 0$

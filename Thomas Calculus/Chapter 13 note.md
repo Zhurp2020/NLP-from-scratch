@@ -128,7 +128,7 @@ Let $\mathbf{B} = \mathbf{T} \times \mathbf{N}$. The torsion function of a smoot
 >$$ 
 
 #### Arc Length Along a Space Curve
->**DEFINITION** 
+>**DEFINITION**  
 The length of a smooth curve $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}, a \le t \le b$  that is traced exactly once as $t$ increases from $t = a$ to $t = b$, is
 >$$
 >L = \int_a^b\sqrt{(\dfrac{dx}{dt})^2 + (\dfrac{dy}{dt})^2 + (\dfrac{dz}{dt})^2}dt
