@@ -95,3 +95,79 @@ If the partial derivatives $f_x$ and $f_y$  of a function $f(x, y)$ are continuo
 
 >THEOREM 4—Differentiability Implies Continuity  
 If a function $f(x, y)$ is differentiable at $(x_0, y_0)$, then $f$ is continuous at  $(x_0, y_0)$
+### 14.4 The Chain Rule
+#### Functions of Two Variables
+>THEOREM 5—Chain Rule For Functions of One Independent Variable and Two Intermediate Variables  
+If $w = f(x, y)$ is differentiable and if $x = x(t), y = y(t)$ are differentiable functions of t, then the composition $w = f(x(t), y(t))$ is a differentiable function of $t$ and
+>$$
+>\dfrac{\partial w}{\partial t} = f_{x}(x(t),y(t))x'(t) + f_y(x(t),y(t))y'(t)
+>$$
+>or
+>$$
+>\dfrac{\partial w}{\partial t} = \dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial t} + \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial t}
+>$$
+#### Functions of Three Variables
+>THEOREM 6—Chain Rule for Functions of One Independent Variable and Three Intermediate Variables  
+If $w = f(x, y, z)$ is differentiable and $x, y,$ and $z$ are differentiable functions of $t$, then $w$ is a differentiable function of $t$ and
+>$$
+>\dfrac{\partial w}{\partial t} = \dfrac{\partial w}{\partial x}\dfrac{\partial x}{\partial t} + \dfrac{\partial w}{\partial y}\dfrac{\partial y}{\partial t} + \dfrac{\partial w}{\partial z}\dfrac{\partial z}{\partial t}
+>$$
+#### Functions Defined on Surfaces
+>THEOREM 7—Chain Rule for Two Independent Variables and Three Intermediate Variables  
+Suppose that $w = f(x, y, z), x = g(r, s), y = h(r, s)$, and $z = k(r, s).$ If all four functions are differentiable, then $w$ has partial derivatives with respect to $r$ and $s$, given by the formulas
+>$$
+>\dfrac{\partial w}{\partial r} = \dfrac{\partial w}{\partial x}\dfrac{\partial x}{\partial r} + \dfrac{\partial w}{\partial y}\dfrac{\partial y}{\partial r} + \dfrac{\partial w}{\partial z}\dfrac{\partial z}{\partial r}  \\
+>\dfrac{\partial w}{\partial s} = \dfrac{\partial w}{\partial x}\dfrac{\partial x}{\partial s} + \dfrac{\partial w}{\partial y}\dfrac{\partial y}{\partial s} + \dfrac{\partial w}{\partial z}\dfrac{\partial z}{\partial s}
+>$$
+#### Implicit Differentiation Revisited
+>THEOREM 8—A Formula for Implicit Differentiation  
+Suppose that $F(x, y)$ is differentiable and that the equation $F(x, y) = 0$ defines $y$ as a differentiable function of x. Then at any point where $F_y \ne 0$  
+>$$
+>\dfrac{dy}{dx}= -\dfrac{F_x}{F_y}
+>$$
+#### Functions of Many Variables
+### 14.5 Directional Derivatives and Gradient Vectors
+#### Directional Derivatives in the Plane
+>DEFINITION   
+The derivative of $f$ at $P_0(x_0, y_0)$ in the direction of the unit vector $\mathbf{u} = u_1\mathbf{i} + u_2\mathbf{j}$ is the number
+>$$
+>\dfrac{dy}{ds}_{\mathbf{u},P_0}= \lim_{s\to0}\dfrac{f(x_0 + su_1,y_0+su_2)-f(x_0,y_0)}{s}
+>$$
+>provided the limit exists.
+#### Interpretation of the Directional Derivative
+#### Calculation and Gradients
+>DEFINITION   
+The gradient vector (or gradient) of $f(x, y)$ is the vector  
+>$$
+>\nabla f = \dfrac{\partial f}{\partial x}\mathbf{i} + \dfrac{\partial f}{\partial y}\mathbf{j}
+>$$
+>The value of the gradient vector obtained by evaluating the partial derivatives at a point $P_0(x_0, y_0)$ is written  
+>$$
+>\nabla f|_{P_0}\quad\mathsf{or}\quad\nabla f(x_0,y_0)
+>$$
+
+>THEOREM 9—The Directional Derivative Is a Dot Product  
+If $f(x, y)$ is differentiable in an open region containing  $P_0(x_0, y_0)$, then
+>$$
+>\dfrac{dy}{ds}_{\mathbf{u},P_0} = \nabla f|_{P_0}\cdot\mathbf{u}
+>$$
+>the dot product of the gradient $\nabla f$ at $P_0$ with the vector $\mathbf{u}$. In brief, $D_uf = \nabla f\cdot \mathbf{u}$
+
+>Properties of the Directional Derivative $D_uf = \nabla f\cdot \mathbf{u} = |\nabla f|\cos\theta$
+>1. The function $f$ increases most rapidly when $\cos\theta = 1$, which means that $\theta = 0$ and $\mathbf{u}$ is the direction of $\nabla f$. That is, at each point $P$ in its domain, $f$ increases most rapidly in the direction of the gradient vector $\nabla f$ at $P$. The derivative in this direction is 
+>$$
+>D_uf  = |\nabla f|\cos0 = |\nabla f|
+>$$
+>2. Similarly, $f$ decreases most rapidly in the direction of $-\nabla f$. The derivative in this direction is $D_uf  = |\nabla f|\cos(-\pi) = -|\nabla f|$.
+>3. Any direction $\mathbf{u}$  orthogonal to a gradient $\nabla f \ne 0$ is a direction of zero change in $f$ because $\mathbf{u}$ then equals $\dfrac{\pi}{2}$ and $D_uf  = |\nabla f|\cos(\dfrac{\pi}{2}) = 0$.
+#### Gradients and Tangents to Level Curves
+>Tangent Line to a Level Curve
+>$$
+>f_x(x_0,y_0)(x-x_0) + f_y(x_0,y_0)(y-y_0) = 0
+>$$
+#### Functions of Three Variables
+#### The Chain Rule for Paths
+>The Derivative Along a Path
+>$$
+>\dfrac{d}{dt}f(\mathbf{r}(t)) = \nabla f(\mathbf{r}(t))\mathbf{r}'(t)
+>$$

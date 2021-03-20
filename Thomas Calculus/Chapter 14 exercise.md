@@ -156,3 +156,83 @@ In Exercises 63–66, use the limit definition of partial derivative to compute 
     $f_x = 0$  
     $f_y =  \begin{cases}3y^2&\quad y \ge 0 \\-2y&\quad y < 0 \end{cases}$  
     $f_{xy} = f_{yx} = 0$
+### 14.4 The Chain Rule
+#### Chain Rule: One Independent Variable
+In Exercises 1–6, (a) express $\dfrac{\partial w}{\partial t}$ as a function of $t$, both by using the Chain Rule and by expressing w in terms of $t$ and differentiating directly with respect to $t$. Then (b) evaluate $\dfrac{\partial w}{\partial t}$ at the given value of $t$.
+1. $w = x^2 + y^2, x = \cos t, y = \sin t; t = \pi$  
+   $\dfrac{\partial w}{\partial t} =-2x\sin t + 2y\cos t =0$  
+   $w = 1, \dfrac{\partial w}{\partial t} = 0$
+#### Chain Rule: Two and Three Independent Variables
+In Exercises 7 and 8, (a) express $\dfrac{\partial z}{\partial u}$ and $\dfrac{\partial z}{\partial v}$ as functions of $u$ and $v$ both by using the Chain Rule and by expressing $z$ directly in terms of $u$ and $z$ before differentiating. Then (b) evaluate $\dfrac{\partial z}{\partial u}$ and $\dfrac{\partial z}{\partial v}$ at the given point $(u, v)$.  
+
+7. $z = 4e^x\ln y,x = \ln(u\cos v), y = u\sin v,(u,v) = (2,\dfrac{\pi}{4})$  
+   $\dfrac{\partial z}{\partial u} = 4e^x\ln y\dfrac{1}{u} + \dfrac{4e^x}{y}\sin v$  
+   $= \dfrac{4e^{\ln(u\cos v)}\ln (u\sin v)}{u} + \dfrac{4e^{\ln(u\cos v)}\sin v}{u\sin v}$  
+   $= 4\cos v\ln(u\sin v) + 4\cos v$  
+   $z = 4u\cos v\ln(u\sin v),\dfrac{\partial z}{\partial u}=4\cos vu\dfrac{1}{u} + 4\cos v\ln(u\sin v) = 4\cos v\ln(u\sin v) + 4\cos v$  
+   $\dfrac{\partial z}{\partial u}|_{(u,v) = (2,\frac{\pi}{4})} =2\sqrt{2}\ln\sqrt{2} + 2\sqrt{2}$  
+   $\dfrac{\partial z}{\partial v} = 4e^x\ln y\dfrac{-\sin v}{\cos v} + \dfrac{4e^x}{y}u\cos v$  
+   $= \dfrac{-4u\cos v\sin v\ln (u\sin v)}{\cos v} + \dfrac{4u^2\cos^2 v}{u\sin v}$  
+   $= -4u\sin v\ln(u\sin v) + 4u\cos v\cot v$  
+   $z = 4u\cos v\ln(u\sin v),\dfrac{\partial z}{\partial v}=4u(\cos v\dfrac{\cos v}{\sin v} -\sin v\ln(u\sin v)) =-4u\sin v\ln(u\sin v) + 4u\cos v\cot v$  
+   $\dfrac{\partial z}{\partial u}|_{(u,v) = (2,\frac{\pi}{4})} =-4\sqrt{2}\ln\sqrt{2} + 4\sqrt{2}$ 
+#### Using a Dependency Diagram
+In Exercises 13–24, draw a dependency diagram and write a Chain Rule formula for each derivative.
+
+13. $\dfrac{\partial z}{\partial t}$ for $z = f(x, y), x = g(t), y = h(t)$  
+    $\dfrac{\partial z}{\partial t} = \dfrac{\partial z}{\partial x}\dfrac{\partial x}{\partial t} + \dfrac{\partial z}{\partial y}\dfrac{\partial y}{\partial t}$
+#### Implicit Differentiation
+Assuming that the equations in Exercises 25–30 define $y$ as a differentiable function of $x$, use Theorem 8 to find the value of $\dfrac{dy}{dx}$ at the given point.
+
+25.  $x^3 - 2y^2 + xy = 0, (1, 1)$   
+     $\dfrac{dy}{dx} = -\dfrac{3x^2+y}{-4y+x}$  
+     $\dfrac{dy}{dx}|_{(1,1)} = \dfrac{4}{3}$
+#### Finding Partial Derivatives at Specified Points
+35. Find $\dfrac{\partial w}{\partial r}$ when $r = 1, s = -1$ if $w = (x + y + z)^2,x = r - s, y = \cos (r + s), z = \sin (r + s).$   
+    $w = x^2+y^2+z^2 + 2xy + 2xz + 2yz$  
+    $\dfrac{\partial w}{\partial r}= (2x + 2y + 2z) - (2x + 2y + 2z)\sin(r + s)+  (2x + 2y + 2z)\cos(r + s)$  
+    $=(2r -2s + 2\cos(r +s) + 2\sin(r+ s))(1-\sin (r + s) + \cos(r + s))$  
+    $\dfrac{\partial w}{\partial r}|_{(1,1)} = (4+2)(1+1) = 12$  
+#### Theory and Examples
+41. Assume that $w = f(s^3 + t^2)$ and $f'(x) = e^x$. Find $\dfrac{\partial w}{\partial t}$ and $\dfrac{\partial w}{\partial s}$  
+    $w = e^{s^3 + t^2} + C$  
+    $\dfrac{\partial w}{\partial t}= 2te^{s^3 + t^2}$  
+    $\dfrac{\partial w}{\partial s}= 3s^2e^{s^3 + t^2}$
+### 14.5 Directional Derivatives and Gradient Vectors
+#### Calculating Gradients
+In Exercises 1–6, find the gradient of the function at the given point. Then sketch the gradient together with the level curve that passes through the point.
+1. $f(x, y) = y - x, (2, 1)$  
+   $\nabla f = \dfrac{\partial f}{\partial x}\mathbf{i} + \dfrac{\partial f}{\partial y}\mathbf{j}$  
+   $=-\mathbf{i} + {j}$
+#### Finding Directional Derivatives
+In Exercises 11–18, find the derivative of the function at $P_0$ in the direction of $\mathbf{u}$.
+
+11. $f(x, y) = 2xy - 3y^2, P_0(5, 5), \mathbf{u} = 4\mathbf{i} + 3{j}$  
+    $\nabla f = 2y\mathbf{i} + (2x-6y)\mathbf{j} =10\mathbf{i}-20\mathbf{j}$  
+    $D_uf = -20$
+#### Tangent Lines to Level Curves
+In Exercises 25–28, sketch the curve $f(x, y) = c$ together with $\nabla f$ and the tangent line at the given point. Then write an equation for the tangent line.
+
+25. $x^2 + y^2 = 4,(\sqrt{2},\sqrt{2})$   
+    $\nabla f =2y\mathbf{i} + 2z\mathbf{j} =2\sqrt{2}\mathbf{i}-2\sqrt{2}\mathbf{j}$  
+    $f_x = f_y = 2\sqrt{2}$  
+    $2\sqrt{2}(x-\sqrt{2})+2\sqrt{2}(y-\sqrt{2}) = 0$  
+    $2\sqrt{2}x-2\sqrt{2}y = 0, x = y$  
+#### Theory and Examples
+29. Let $f(x, y) = x^2 - xy + y^2 - y$. Find the directions $\mathbf{u}$ and the values of $D_{\mathbf{u}} f(1, -1)$ for which  
+    a. $D_{\mathbf{u}} f(1, -1)$ is largest b. $D_{\mathbf{u}} f(1, -1)$ is smallest    
+    c. $D_{\mathbf{u}} f(1, -1) = 0$ d. $D_{\mathbf{u}} f(1, -1) =4$  
+    e. $D_{\mathbf{u}} f(1, -1) = -3$  
+    $\nabla f = (2x-y)\mathbf{i} + (2y-x-1)\mathbf{j}=3\mathbf{i}-4\mathbf{j}$  
+    a. $\mathbf{u} = \dfrac{3}{5}\mathbf{i}-\dfrac{4}{5}\mathbf{j},D_{\mathbf{u}} f(1, -1) =5$  
+    b.  $\mathbf{u} = -\dfrac{3}{5}\mathbf{i}+\dfrac{4}{5}\mathbf{j},D_{\mathbf{u}} f(1, -1) =-5$  
+    c. $\mathbf{u} = \dfrac{4}{5}\mathbf{i}+\dfrac{3}{5}\mathbf{j},$ or $\mathbf{u} = -\dfrac{4}{5}\mathbf{i}-\dfrac{3}{5}\mathbf{j},D_{\mathbf{u}} f(1, -1) =0$   
+    d. $3t-4(\sqrt{1-t^2}) = 4$  
+    $9t^2-24t + 16 = 16-16t^2$  
+    $25t^2-24t = 0,t = 0$ or $t = \dfrac{24}{25}$  
+    $\mathbf{u} = \dfrac{24}{25}\mathbf{i}+\dfrac{7}{25}\mathbf{j},\mathbf{u} = \mathbf{j}$  
+    e.$3t-4(\sqrt{1-t^2}) = -3$  
+    $9t^2+18t + 9 = 16-16t^2$  
+    $25t^2 + 18t-7 = 0$  
+    $(t-1)(25t-7) = 0, t = 1, t = \dfrac{7}{25}$  
+    $\mathbf{u} = \dfrac{7}{25}\mathbf{i}+\dfrac{24}{25}\mathbf{j},\mathbf{u} = \mathbf{i}$
