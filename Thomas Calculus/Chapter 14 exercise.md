@@ -236,3 +236,67 @@ In Exercises 25–28, sketch the curve $f(x, y) = c$ together with $\nabla f$ an
     $25t^2 + 18t-7 = 0$  
     $(t-1)(25t-7) = 0, t = 1, t = \dfrac{7}{25}$  
     $\mathbf{u} = \dfrac{7}{25}\mathbf{i}+\dfrac{24}{25}\mathbf{j},\mathbf{u} = \mathbf{i}$
+### 14.6 Tangent Planes and Differentials
+#### Tangent Planes and Normal Lines to Surfaces
+In Exercises 1–10, find equations for the  
+(a) tangent plane and   
+(b) normal line at the point $P_0$ on the given surface.
+1. $x^2 + y^2 + z^2 = 3, P_0(1, 1, 1)$  
+   a. $2(x-1) + 2(y-1) +2(z-1) = 0$  
+   b. $x = 1+2t, y=1+2t,z=1+2t$
+#### Tangent Lines to Intersecting Surfaces
+In Exercises 15–20, find parametric equations for the line tangent to the curve of intersection of the surfaces at the given point.
+
+15. Surfaces: $x + y^2 + 2z = 4, x = 1$  
+    Point: $(1, 1, 1)$  
+    $y^2 + 2z = 3$  
+    $x = 1,y=1 + 2t,z = 1+ 2t$ 
+#### Estimating Change
+21. By about how much will  
+    $$
+    f(x, y, z) = \ln\sqrt{x^2 + y^2 + z^2}
+    $$
+    change if the point $P(x, y, z)$ moves from $P_0(3, 4, 12)$a distance of $ds = 0.1$ unit in the direction of $3\mathbf{i}+6\mathbf{j}-2\mathbf{k}$?  
+    $\nabla f=\dfrac{\frac{x}{\sqrt{x^2 + y^2 + z^2}}}{\sqrt{x^2 + y^2 + z^2}}\mathbf{i}+\dfrac{\frac{y}{\sqrt{x^2 + y^2 + z^2}}}{\sqrt{x^2 + y^2 + z^2}}\mathbf{j} + \dfrac{\frac{z}{\sqrt{x^2 + y^2 + z^2}}}{\sqrt{x^2 + y^2 + z^2}}\mathbf{k}$  
+    $=\dfrac{x}{x^2 + y^2 + z^2}\mathbf{i}+\dfrac{y}{x^2 + y^2 + z^2}\mathbf{j} + \dfrac{z}{x^2 + y^2 + z^2}\mathbf{k}$  
+    $df = (\nabla f|_{P_0}\cdot \mathbf{u})ds$  
+    $=(\dfrac{3}{169}\mathbf{i}+\dfrac{4}{169}\mathbf{j} + \dfrac{144}{169}\mathbf{k})(3\mathbf{i}+6\mathbf{j}-2\mathbf{k})ds$  
+    $= \dfrac{9+24-288}{169}ds$   
+    $= -\dfrac{255}{1690} = -\dfrac{51}{338}$  
+#### Finding Linearizations
+In Exercises 27–32, find the linearization $L(x, y)$ of the function at each point.
+
+27. $f(x, y) = x^2 + y^2 + 1$ at a. $(0, 0)$, b. $(1, 1)$   
+    a.$L(x,y) =1$  
+    b. $L(x,y) = 3 + 2(x-1) + 2(y-1)$  
+#### Bounding the Error in Linear Approximations
+In Exercises 35–40, find the linearization $L(x, y)$ of the function $f(x, y)$ at $P_0$. Then find an upper bound for the magnitude $E$ of the error in the approximation $f(x, y) ≈ L(x, y)$ over the rectangle $R$.
+
+35. $f(x, y) = x^2 - 3xy + 5$ at $P_0(2, 1),R: | x - 2| \le 0.1, | y - 1 |\le0.1$    
+    $f_{x} = 2x-3y,f_{xx} = 2,f_{yy} =0, f_{xy} =-3M = 2$  
+    $E(x,y) \le \dfrac{1}{2}M(| x - 2|^2 + | y - 1 |^2)$  
+    $\le 0.02$  
+#### Linearizations for Three Variables
+Find the linearizations $L(x, y, z)$ of the functions in Exercises 41–46 at the given points.
+
+41. $f(x, y, z) = xy + yz + xz$ at  
+a. $(1, 1, 1)$ b. $(1, 0, 0)$ c. $(0, 0, 0)$  
+    a. $L(x,y,z) = 3 + 2(x-1) + 2(y-1) + 2(z-1)$  
+    b. $L(x,y,z) = 1 + 2(x-1)$  
+    c. $L(x,y,z) = 0$
+#### Estimating Error; Sensitivity to Change
+51. Estimating maximum error Suppose that $T$ is to be found from the formula $T = x(e^y + e^{-y})$, where $x$ and $y$ are found to be $2$ and $\ln 2$ with maximum possible errors of $| dx | = 0.1$ and $| dy | =0.02$. Estimate the maximum possible error in the computed value of $T$.  
+    $T_x =(e^y + e^{-y}), T_{xx} = 0,T_{xy} = e^y -\dfrac{1}{e^{2y}}, T_y =x(e^y -\dfrac{1}{e^{2y}}), T_{yy} = x(e^y -\dfrac{2}{e^{3y}}), M =4$  
+    $E(x,y) \le \dfrac{1}{2}M(dx^2 + dy^2) \le 0.0208$  
+#### Theory and Examples
+57. the linearization of $f(x, y)$ is a tangent-plane approximation. Show that the tangent plane at the point $P_0(x_0, y_0, f(x_0, y_0))$ on the surface $z = f(x, y)$ defined by a differentiable function $f$ is the plane  
+    $$
+    f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)-(z-f(x_0, y_0)) = 0 
+    $$
+    or 
+    $$
+    z = f(x_0, y_0) + f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)
+    $$
+     Thus, the tangent plane at $P_0$ is the graph of the linearization of $f$ at $P_0$ (see accompanying figure)
+     ![](../images/Thomas%20Calculus/14-5.jpg)  
+     $f_x(P_0)(x - x_0) + f_y(P_0)(y - y_0) + f_z(P_0)(z - z_0) = 0$

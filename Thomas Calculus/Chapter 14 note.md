@@ -171,3 +171,58 @@ If $f(x, y)$ is differentiable in an open region containing  $P_0(x_0, y_0)$, th
 >$$
 >\dfrac{d}{dt}f(\mathbf{r}(t)) = \nabla f(\mathbf{r}(t))\mathbf{r}'(t)
 >$$
+### 14.6 Tangent Planes and Differentials
+#### Tangent Planes and Normal Lines
+>DEFINITIONS   
+The tangent plane to the level surface $f(x, y, z) = c$ of a differentiable function $f$ at a point $P_0$ where the gradient is not zero is the plane through $P_0$ normal to $\nabla f|_{P_0}$.  
+The normal line of the surface at $P_0$ is the line through $P_0$ parallel to $\nabla f|_{P_0}$.  
+
+>Tangent Plane to $f(x, y, z) = c$ at $P_0(x_0, y_0, z_0)$
+>$$
+>f_x(P_0)(x - x_0) + f_y(P_0)(y - y_0) + f_z(P_0)(z - z_0) = 0 
+>$$  
+>Normal Line to $f(x, y, z) = c$ at $P_0(x_0, y_0, z_0)$
+>$$
+>x = x_0 + f_x(P_0)t, y = y_0 + f_y(P_0)t, z = z_0 + f_z(P_0)t 
+>$$  
+
+>Plane Tangent to a Surface $z = f(x, y)$ at $(x_0, y_0, f(x_0, y_0))$  
+>The plane tangent to the surface $z = f(x, y)$ of a differentiable function $f$ at the point $P_0(x_0, y_0, z_0)= (x_0, y_0, f(x_0, y_0))$ is  
+>$$
+>f_x(P_0)(x - x_0) + f_y(P_0)(y - y_0) +(z - z_0) = 0 
+>$$ 
+#### Estimating Change in a Specific Direction
+>Estimating the Change in $f$ in a Direction $\mathbf{u}$    
+To estimate the change in the value of a differentiable function $f$ when we move a small distance $ds$ from a point $P_0$ in a particular direction $\mathbf{u}$, use the formula
+>$$
+>df = (\nabla f|_{P_0}\cdot\mathbf{u})ds
+>$$ 
+#### How to Linearize a Function of Two Variables
+>DEFINITIONS   
+The linearization of a function $f(x, y)$ at a point $(x_0, y_0)$ where $ƒ$ is differentiable is the function
+>$$
+>L(x,y) = f(x_0, y_0) + f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) 
+>$$ 
+>The approximation
+>$$
+>f(x,y)\approx L(x,y)
+>$$ 
+>is the standard linear approximation of $f$ at $(x_0, y_0)$
+
+>The Error in the Standard Linear Approximation  
+If $f$ has continuous first and second partial derivatives throughout an open set containing a rectangle $R$ centered at $(x_0, y_0)$ and if $M$ is any upper bound for the values of $|f_{xx}|,|f_{yy}|$ and $|f_{xy}|$ on $R$, then the error $E(x, y)$ incurred in replacing $f(x, y)$ on $R$ by its linearization
+>$$
+>L(x,y) = f(x_0, y_0) + f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0) 
+>$$ 
+>satisfies the inequality
+>$$
+>|E(x,y)| \le \dfrac{1}{2}M(|x-x_0|+|y-y_0|)^2
+>$$ 
+#### Differentials
+>DEFINITION 
+If we move from $(x_0, y_0)$ to a point $(x_0 + dx, y_0 + dy)$ nearby, the resulting change
+>$$
+>df = f_x(x_0, y_0) dx + f_y(x_0, y_0) dy
+>$$ 
+>in the linearization of $f$ is called the total differential of $f$.
+#### Functions of More Than Two Variables
