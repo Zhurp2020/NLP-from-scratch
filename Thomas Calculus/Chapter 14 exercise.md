@@ -300,3 +300,114 @@ a. $(1, 1, 1)$ b. $(1, 0, 0)$ c. $(0, 0, 0)$
      Thus, the tangent plane at $P_0$ is the graph of the linearization of $f$ at $P_0$ (see accompanying figure)
      ![](../images/Thomas%20Calculus/14-5.jpg)  
      $f_x(P_0)(x - x_0) + f_y(P_0)(y - y_0) + f_z(P_0)(z - z_0) = 0$
+### 14.7 Extreme Values and Saddle Points
+#### Finding Local Extrema
+Find all the local maxima, local minima, and saddle points of the functions in Exercises 1–30.
+1. $ƒ(x, y) = x^2 + xy + y^2 + 3x - 3y + 4$  
+   $f_x = 2x +y + 3,f_y = 2y + x -3$  
+   $f_{xx} = 2,f_{yy} = 2, f_{xy} = 1$  
+   $f_x = f_y = 0$  
+   $\begin{cases}2x + y = -3 \\x + 2y = 3\end{cases}$  
+   $\begin{cases}x  = -3 \\y = 3\end{cases}$   
+   Critical point $(-3,3)$  
+   $f_{xx}f_{yy} - f_{xy}^2 = 3>0,$ local maximum
+#### Finding Absolute Extrema
+In Exercises 31–38, find the absolute maxima and minima of the functions on the given domains.
+
+31. $f(x, y) = 2x^2 - 4x + y^2 - 4y + 1$ on the closed triangular plate bounded by the lines $x = 0, y = 2, y = 2x$ in the first quadrant    
+    boundary points $(0,0),(0,2),(1,2)$  
+    $f(0,0) = 1,f(0,2) = -3,f(1,2) = -5$  
+    $f_x =2x-4,f_y = 2y-4$  
+    $f_x = f_y = 0,x =2,y=2$  
+    maximum $(0,0,1)$,minimum $(1,2,-5)$  
+#### Theory and Examples
+43. Find the maxima, minima, and saddle points of $f(x, y)$, if any, given that  
+a. $f_x = 2x - 4y$ and $f_y = 2y - 4x$   
+b. $f_x = 2x - 2$ and $f_y = 2y - 4$  
+c. $f_x = 9x^2 - 9$ and $f_y = 2y + 4$  
+Describe your reasoning in each case  
+a. $f_{xx} = 2,f_{yy} = 2, f_{xy} = -4$  
+$f_x = f_y = 0,x = 0,y=0$  
+$f_{xx}f_{yy} - f_{xy}^2=-12>0$  
+saddle point at $(0,0)$  
+b. $f_{xx} = 2,f_{yy} = 2, f_{xy} = 0$  
+$f_x = f_y = 0,x = 1,y=2$  
+$f_{xx}f_{yy} - f_{xy}^2=4>0$  
+local minimum at $(1,2)$    
+c. $f_{xx} = 18x,f_{yy} = 2, f_{xy} = 0$  
+$f_x = f_y = 0,x = 1,y=-2$ or $x = 0,y=-2$  
+at $(1,-2),f_{xx}f_{yy} - f_{xy}^2=36>0$   
+at $(0,-2),f_{xx}f_{yy} - f_{xy}^2=0$  
+local minimum $(1,-2)$  
+#### COMPUTER EXPLORATIONS
+In Exercises 71–76, you will explore functions to identify their local extrema. Use a CAS to perform the following steps:  
+a. Plot the function over the given rectangle.  
+b. Plot some level curves in the rectangle.  
+c. Calculate the function’s first partial derivatives and use the CAS equation solver to find the critical points. How do the critical points relate to the level curves plotted in part (b)?  Which critical points, if any, appear to give a saddle point?Give reasons for your answer.  
+d. Calculate the function’s second partial derivatives and find the discriminant $f_{xx}f_{yy} - f_{xy}^2$  
+e. Using the max-min tests, classify the critical points found in part (c). Are your findings consistent with your discussion in part (c)?
+
+71. $f(x, y) = x^2 + y^3 - 3xy, -5 \le x \le 5, -5 \le y \le 5$  
+    $f_x = 2x-3y,f_y=3y^2-3x$  
+    $f_x = f_y = 0$  
+    $3y^2-\dfrac{9}{2}y = 0,y_1 = 0,y_2 = \dfrac{3}{2}$  
+    Critical point $(0,0),(\dfrac{9}{4},\dfrac{3}{2})$  
+    $f_{xx} = 2,f_{yy} = 6y, f_{xy} = -3$   
+    $f_{xx}f_{yy} - f_{xy}^2 = -9<0$  
+    $f_{xx}f_{yy} - f_{xy}^2 = 9>0$  
+    Saddle point $(0,0)$    
+### 14.8 Lagrange Multipliers
+#### Two Independent Variables with One Constraint
+1. Extrema on an ellipse. Find the points on the ellipse $x^2 + 2y^2 = 1$ where $f(x, y) = xy$ has its extreme values.   
+   $f(x,y) = xy, g(x,y) = x^2 + 2y^2 - 1$  
+   $\nabla f = y\mathbf{i},\nabla g = 2x\mathbf{i} +4y\mathbf{j}$  
+   $\nabla f = \lambda \nabla y$  
+   $\begin{cases}2x\lambda = y \\4y\lambda = 0\\ x^2 + 2y^2 - 1 = 0\end{cases}$   
+   $\begin{cases}\lambda = 0 \\x = \pm 1\\y = 0\end{cases}$   
+#### Three Independent Variables with One Constraint
+17. Minimum distance to a point Find the point on the plane $x + 2y + 3z = 13$ closest to the point $(1, 1, 1)$   
+    $f(x,y,z) = \sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2},g(x,y,z) = x + 2y + 3z - 13$  
+    $\nabla f = \dfrac{x + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}}\mathbf{i} + \dfrac{y + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}}\mathbf{j} + \dfrac{z + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}}\mathbf{k},$  
+    $\nabla g = \mathbf{i} + 2\mathbf{j} + 3\mathbf{k}$   
+    $\begin{cases}\lambda = \dfrac{x + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}} \\2\lambda =\dfrac{y + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}}\\3\lambda = \dfrac{z + 1}{\sqrt{(x-1)^2 + (y-1)^2 +(z-1)^2}} \\ x + 2y + 3z - 13 = 0\end{cases}$   
+    $\begin{cases}2x -y=-1 \\3x -z = -2 \\ x + 2y + 3z - 13 = 0\end{cases}$   
+    $x + 4x + 2 + 9x + 6 -13 = 0, x = -\dfrac{5}{14}$  
+    $\begin{cases} x = -\dfrac{5}{14} \\y = \dfrac{2}{7} \\ z = \dfrac{13}{14}\end{cases}$  
+#### Extreme Values Subject to Two Constraints
+37. Maximize the function $f(x, y, z) = x^2 + 2y - z^2$ subject to the constraints $2x - y = 0$ and $y + z = 0.$   
+    $f(x,y,z) =  x^2 + 2y - z^2,g_1(x,y,z) =  2x -y, g_2(x,y) = y + z$  
+    $\nabla f = 2x\mathbf{i} + 2\mathbf{j} -2z\mathbf{k},\nabla g_1 = 2\mathbf{i} -\mathbf{j},\nabla g_2 = \mathbf{j} + \mathbf{k}$  
+    $\begin{cases}2\lambda = 2x \\-\lambda + u =2 \\ u = -2z \\2x - y = 0\\ y + z = 0.\end{cases}$   
+    $\begin{cases}-x -2z = 2 \\2x - y = 0\\ y + z = 0.\end{cases}$  
+    $\begin{cases}x = \dfrac{2}{3} \\y = \dfrac{4}{3}\\ z = -\dfrac{4}{3}.\end{cases}$   
+    $f(x)_{\max} = \dfrac{3}{9}+\dfrac{8}{3}-\dfrac{16}{9} =\dfrac{11}{9}$
+#### Theory and Examples
+45. the condition $\nabla f = \lambda \nabla g$ is not sufficient Although $\nabla f = \lambda \nabla g$ is a necessary condition for the occurrence of an extreme value of $f(x, y)$ subject to the conditions $g(x, y) = 0$ and $\nabla g \ne 0,$ it does not in itself guarantee that one exists. As a case in point, try using the method of Lagrange multipliers to find a maximum value of $f(x, y) = x + y$ subject to the constraint that $xy = 16$. The method will identify the two points $(4, 4)$ and $(-4, -4)$ as candidates for the location of extreme values. Yet the sum $x + y$ has no maximum value on the hyperbola $xy = 16$. The farther you go from the origin on this hyperbola in the first quadrant, the larger the sum $f(x, y) = x + y$ becomes.
+#### COMPUTER EXPLORATIONS
+In Exercises 49–54, use a CAS to perform the following steps implementing the method of Lagrange multipliers for finding constrained extrema:   
+a. Form the function $h = f - \lambda_1g_1 - \lambda_2g_2$, where $f$ is the
+function to optimize subject to the constraints $g_1 = 0$ and $g_2 = 0$.   
+b. Determine all the first partial derivatives of $h,$ including the partials with respect to $\lambda_1$ and $\lambda_2$, and set them equal to $0$.   
+c. Solve the system of equations found in part (b) for all the unknowns, including $\lambda_1$ and $\lambda_2$.  
+d. Evaluate $f$ at each of the solution points found in part (c) and select the extreme value subject to the constraints asked for in the exercise.  
+
+49. Minimize $f(x, y, z) = xy + yz$ subject to the constraints $x^2 + y^2 - 2 = 0$ and $x^2 + z^2 - 2 = 0.$   
+    $h = xy + yz-\lambda_1(x^2 + y^2 - 2) - \lambda_2(x^2 + z^2 - 2)$  
+    $h_x =(-2\lambda_1 - 2\lambda_2)x +y$  
+    $h_y =-2\lambda_1y +x + z$  
+    $h_z = -2\lambda_2z + y$  
+    $h_{\lambda_1} = -(x^2 + y^2 - 2)$  
+    $h_{\lambda_2} = -(x^2 + z^2 - 2)$  
+    $\begin{cases}(-2\lambda_1 - 2\lambda_2)x +y = 0  \\-2\lambda_1y +x + z = 0\\  -2\lambda_2z + y = 0 \\-(x^2 + y^2 - 2) = 0 \\ -(x^2 + z^2 - 2) = 0\end{cases}$  
+    if $y = z$  
+    $\begin{cases}(-2\lambda_1 - 2\lambda_2)x +y = 0  \\ x + (1-2\lambda_1) y= 0\\  (1-2\lambda_2) y = 0 \\ x^2 +y^2 = 2\end{cases}$  
+    $\lambda_2 =\dfrac{1}{2}$   
+    $\begin{cases}(-2\lambda_1 - 1)x +y = 0  \\ x + (1-2\lambda_1) y= 0 \\ x^2 +y^2 = 2\end{cases}$   
+    $\begin{cases} x^2 + (4\lambda_1^2 + 4\lambda_1 +1)x^2 = 2\\ x^2 + \dfrac{x^2}{4\lambda_1^2 - 4\lambda_1 +1}= 2 \end{cases}$  
+    No solution 
+    $y = -z$      
+    $\begin{cases}(-2\lambda_1 - 2\lambda_2)x +y = 0  \\ x - (1+2\lambda_1) y= 0\\  (1+2\lambda_2) y = 0 \\ x^2 +y^2 = 2\end{cases}$   
+    $\lambda_2 = -\dfrac{1}{2}$   
+    $\begin{cases}(-2\lambda_1 - 1)x +y = 0  \\ x - (1+2\lambda_1) y= 0 \\ x^2 +y^2 = 2\end{cases}$  
+    $\begin{cases}x = \sqrt{2}\\y = -\sqrt{2}\\  z= \sqrt{2} \\ \lambda_1 = -1\\ \lambda_2 = -\dfrac{1}{2}\end{cases}$  or $\begin{cases}x = -\sqrt{2}\\y = \sqrt{2}\\  z =-\sqrt{2} \\ \lambda_1 = -1\\ \lambda_2 = -\dfrac{1}{2}\end{cases}$  
+    $f(x)_{\min} = -4$

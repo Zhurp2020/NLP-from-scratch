@@ -226,3 +226,45 @@ If we move from $(x_0, y_0)$ to a point $(x_0 + dx, y_0 + dy)$ nearby, the resul
 >$$ 
 >in the linearization of $f$ is called the total differential of $f$.
 #### Functions of More Than Two Variables
+### 14.7 Extreme Values and Saddle Points
+#### Derivative Tests for Local Extreme Values
+>DEFINITIONS Let $f(x, y)$ be defined on a region $R$ containing the point $(a, b).$ Then  
+>1. $f(a, b)$ is a local maximum value of $f$ if $f(a, b)\ge f(x, y)$ for all domain points $(x, y)$ in an open disk centered at $(a, b)$.
+>2. $f(a, b)$ is a local minimum value of $f$ if $f(a, b) \le f(x, y)$ for all domain points $(x, y)$ in an open disk centered at $(a, b)$.
+
+>THEOREM 10—First Derivative Test for Local Extreme Values  
+If $f(x, y)$ has a local maximum or minimum value at an interior point $(a, b)$ of its domain and if the first partial derivatives exist there, then $f_x(a, b) = 0$ and$f_y(a, b) = 0.$
+
+>DEFINITION  
+An interior point of the domain of a function $f(x,y)$ where both $f_x$ and $f_y$ are zero or where one or both of $f_x$ and $f_y$ do not exist is a critical point of $f$
+
+>DEFINITION  
+A differentiable function $f(x, y)$ has a saddle point at a critical point $(a, b)$ if in every open disk centered at $(a, b)$ there are domain points $(x, y)$ where $f(x, y) > f(a, b)$ and domain points $(x, y)$ where $f(x, y) < f(a, b)$. The corresponding point $(a, b, f(a, b))$ on the surface $z = f(x, y)$ is called a saddle point of the surface
+
+>THEOREM 11—Second Derivative Test for Local Extreme Values  
+Suppose that $f(x, y)$ and its first and second partial derivatives are continuous throughout a disk centered at $(a, b)$ and that $f_x(a, b) = f_y(a, b) = 0.$ Then  
+>1. $f$ has a local maximum at $(a, b)$ if $f_{xx} < 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$ at $(a, b)$.
+>2. $f$ has a local minimum at $(a, b)$ if $f_{xx} > 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$ at $(a, b)$
+>3. $f$ has a saddle point at $(a, b)$ if $f_{xx}f_{yy} - f_{xy}^2 < 0$ at $(a, b)$
+>4. the test is inconclusive at $(a, b)$ if $f_{xx}f_{yy} - f_{xy}^2 = 0$ at $(a, b)$. In this case,we must find some other way to determine the behavior of $f$ at $(a, b).$
+#### Absolute Maxima and Minima on Closed Bounded Regions
+### 14.8 Lagrange Multipliers
+#### Constrained Maxima and Minima
+#### The Method of Lagrange Multipliers
+>THEOREM 12—The Orthogonal Gradient Theorem  
+Suppose that $f(x, y, z)$ is differentiable in a region whose interior contains a smooth curve
+>$$
+>C: \mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j} + z(t)\mathbf{k}
+>$$
+>If $P_0$ is a point on $C$ where $f$ has a local maximum or minimum relative to its values on $C$, then $\nabla f$ is orthogonal to $C$ at $P_0$.
+
+>COROLLARY   
+At the points on a smooth curve $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}$ where a differentiable function $f(x, y)$ takes on its local maxima and minima relative to its values on the curve, $\nabla f\cdot  \mathbf{r}'= 0$
+
+>The Method of Lagrange Multipliers  
+Suppose that $f(x, y, z)$ and $g(x, y, z)$ are differentiable and $\nabla g \ne 0$ when$g(x, y, z) = 0$. To find the local maximum and minimum values of $f$ subject to the constraint $g(x, y, z) = 0$ (if these exist), find the values of $x, y, z$, and $\lambda$ that simultaneously satisfy the equations
+>$$
+>\nabla f = \lambda \nabla g, g(x,y,z) = 0
+>$$
+>For functions of two independent variables, the condition is similar, but without the variable $z$.
+#### Lagrange Multipliers with Two Constraints
