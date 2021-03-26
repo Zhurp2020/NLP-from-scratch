@@ -268,3 +268,19 @@ Suppose that $f(x, y, z)$ and $g(x, y, z)$ are differentiable and $\nabla g \ne 
 >$$
 >For functions of two independent variables, the condition is similar, but without the variable $z$.
 #### Lagrange Multipliers with Two Constraints
+### 14.9 Taylor’s Formula for Two Variables
+#### Derivation of the Second Derivative Test
+#### The Error Formula for Linear Approximations
+#### Taylor’s Formula for Functions of Two Variables
+>Taylor’s Formula for $f(x, y)$ at the Point $(a, b)$  
+Suppose $f(x, y)$ and its partial derivatives through order $n + 1$ are continuous throughout an open rectangular region $R$ centered at a point $(a, b)$. Then, throughout $R$,
+>$$
+>f(a + h, b + k) = f(a, b) + (hf_x + kf_y)|_{(a, b)}+\dfrac{1}{2!}(h^2f_{xx} + 2hkf_{xy} + k^2f_{yy})|_{(a, b)} \\
+>+\dfrac{1}{3!}(h^3f_{xxx} + 2h^2kf_{xxy} + 3hk^2f_{xyy} +k^3f_{yyy})|_{(a, b)} + \cdots + \\
+>\dfrac{1}{n!}(h\dfrac{\partial f}{\partial x} + k\dfrac{\partial f}{\partial y})^n|_{(a, b)} + \dfrac{1}{(n + 1)!}(h\dfrac{\partial f}{\partial x} + k\dfrac{\partial f}{\partial y})^{n + 1}|_{(a + ch, b + ck)}
+>$$
+### 14.10 Partial Derivatives with Constrained Variables
+#### Decide Which Variables Are Dependent and Which Are Independent
+#### How to Find $\dfrac{\partial w}{\partial x}$ When the Variables in $w = f(x, y, z)$ Are Constrained by Another Equation
+#### Notation
+#### Arrow Diagrams

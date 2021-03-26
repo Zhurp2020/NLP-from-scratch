@@ -411,3 +411,178 @@ d. Evaluate $f$ at each of the solution points found in part (c) and select the 
     $\begin{cases}(-2\lambda_1 - 1)x +y = 0  \\ x - (1+2\lambda_1) y= 0 \\ x^2 +y^2 = 2\end{cases}$  
     $\begin{cases}x = \sqrt{2}\\y = -\sqrt{2}\\  z= \sqrt{2} \\ \lambda_1 = -1\\ \lambda_2 = -\dfrac{1}{2}\end{cases}$  or $\begin{cases}x = -\sqrt{2}\\y = \sqrt{2}\\  z =-\sqrt{2} \\ \lambda_1 = -1\\ \lambda_2 = -\dfrac{1}{2}\end{cases}$  
     $f(x)_{\min} = -4$
+### 14.9 Taylor’s Formula for Two Variables
+#### Finding Quadratic and Cubic Approximations
+In Exercises 1–10, use Taylor’s formula for $f(x, y)$ at the origin to find quadratic and cubic approximations of $f$ near the origin.
+1. $f(x, y) = xe^y$    
+   $f_x = e^y = e, f_y = xe^y = 0$  
+   $f_{xx}= 0, f_{xy} = e^y = e, f_{yy} = xe^y = 0$  
+   $f_{xxx} = 0, f_{xxy} =0, f_{xyy} = e^y = e, f_{yyy} = xe^y = 0$  
+   $f(x,y) =ex + exy +ex^2y$  
+### 14.10 Partial Derivatives with Constrained Variables
+#### Finding Partial Derivatives with Constrained Variables
+In Exercises 1–3, begin by drawing a diagram that shows the relations among the variables.
+1. If $w = x^2 + y^2 + z^2$ and $z = x^2 + y^2$, find  
+   a. $(\dfrac{\partial w}{\partial y})_z$  b. $(\dfrac{\partial w}{\partial y})_x$  c. $(\dfrac{\partial w}{\partial z})_y$  
+    a. $x^2 = z-y^2,w =z^2 +z$  
+    $(\dfrac{\partial w}{\partial y})_z = 0$  
+    b. $w = x^2 + y^2 + x^4 + 2x^2y^2 + y^4$  
+     $(\dfrac{\partial w}{\partial y})_x = 4y^3 + 2y + 4x^2y$  
+     c. $(\dfrac{\partial w}{\partial y})_z = 2z + 1$
+#### Theory and Examples
+9. Establish the fact, widely used in hydrodynamics, that if $f(x, y, z) = 0$, then  
+    $$
+    (\dfrac{\partial x}{\partial y})_z(\dfrac{\partial y}{\partial z})_x(\dfrac{\partial z}{\partial x})_y = -1
+    $$
+    $\dfrac{\partial f}{\partial x}\dfrac{\partial x}{\partial x} + \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial x} + \dfrac{\partial f}{\partial z}\dfrac{\partial z}{\partial x} = 0$  
+    $\dfrac{\partial f}{\partial x} + \dfrac{\partial f}{\partial y}\dfrac{\partial y}{\partial x} = 0, (\dfrac{\partial x}{\partial y})_z=-\dfrac{\frac{\partial f}{\partial y}}{\frac{\partial f}{\partial x}}$  
+    $(\dfrac{\partial x}{\partial y})_z(\dfrac{\partial y}{\partial z})_x(\dfrac{\partial z}{\partial x})_y = -\dfrac{\frac{\partial f}{\partial y}\frac{\partial f}{\partial z}\frac{\partial f}{\partial x}}{\frac{\partial f}{\partial x}\frac{\partial f}{\partial y}\frac{\partial f}{\partial z}} = -1$
+### Practice Exercises
+#### Domain, Range, and Level Curves
+In Exercises 1–4, find the domain and range of the given function and identify its level curves. Sketch a typical level curve.
+1. $f(x, y) = 9x^2 + y^2$   
+   $R: [0,\infty),D:R$  
+#### Evaluating Limits
+Find the limits in Exercises 9–14.
+
+9. $\lim\limits_{(x,y)\to(\pi,\ln 2)}e^y\cos x$   
+    $\lim\limits_{(x,y)\to(\pi,\ln 2)}e^y\cos x = 2\cos \pi = -2$
+#### Partial Derivatives
+In Exercises 19–24, find the partial derivative of the function with respect to each variable.
+
+19. $g(r, \theta) = r \cos \theta + r \sin \theta$   
+    $\dfrac{\partial g}{\partial r} =\cos \theta + \sin \theta$  
+    $\dfrac{\partial g}{\partial \theta} =r\cos \theta - r\sin \theta$
+#### Second-Order Partials
+Find the second-order partial derivatives of the functions in Exercises 25–28.
+
+25. $g(x, y) = y +\dfrac{x}{y}$  
+    $g_x =\dfrac{1}{y},g_y = 1 -\dfrac{x}{y^2}$  
+    $g_{xx} = 0, g_{yy} = -\dfrac{2x}{y^3},g_{xy} = -\dfrac{1}{y^2}$  
+#### Chain Rule Calculations
+29. Find $\dfrac{dw}{dt}$ at $t = 0$ if $w = \sin (xy + \pi), x = e^t$, and $y =\ln (t + 1).$  
+    $\dfrac{dw}{dt} =y\cos(xy + \pi)e^t + x\cos(xy + \pi)\dfrac{1}{t + 1} =-e$\
+#### Implicit Differentiation
+Assuming that the equations in Exercises 35 and 36 define $y$ as a differentiable function of $x$, find the value of $\dfrac{dy}{dx}$ at point $P$.
+
+35. $1 - x - y^2 - \sin xy = 0, P(0, 1)$  
+    $\dfrac{dy}{dx} = -\dfrac{-1-y\cos xy}{-2y - x\cos xy} = -\dfrac{-2}{-2} = -1$
+#### Directional Derivatives
+In Exercises 37–40, find the directions in which $f$ increases and decreases most rapidly at $P_0$ and find the derivative of $f$ in each direction. Also, find the derivative of $f$ at $P_0$ in the direction of the vector $\mathbf{v}$.
+
+37. $f(x, y) = \cos x \cos y, P_0(\dfrac{\pi}{4}, \dfrac{\pi}{4}),  \mathbf{v}= 3\mathbf{i} + 4\mathbf{j}$   
+    $\nabla f = -\cos y\sin x\mathbf{i} -\cos x\sin y\mathbf{j} = -\dfrac{1}{2}\mathbf{i} -\dfrac{1}{2}\mathbf{j}$  
+    $D_{\mathbf{v}}f = -\dfrac{3}{2}-2 = -\dfrac{7}{2}$  
+#### Gradients, Tangent Planes, and Normal Lines
+In Exercises 45 and 46, sketch the surface $f(x, y, z) = c$ together with $\nabla f$ at the given points.
+
+45. $x^2 + y + z^2 = 0; (0, -1, \pm 1), (0, 0, 0)$  
+    $\nabla f = 2x\mathbf{i} + \mathbf{j}+ 2z\mathbf{k}$  
+    $\nabla f_1=  \mathbf{j}+ 2\mathbf{k}$  
+    $l:x = 0,y=-1+t, z = 1 + 2t$  
+    $\nabla f_2=  \mathbf{j}- 2\mathbf{k}$  
+    $l:x = 0,y=-1+t, z = -1-2t$  
+    $\nabla f_3=  \mathbf{j}$     
+    $l:x = 0,y=t, z =0$
+#### Tangent Lines to Curves
+In Exercises 53 and 54, find parametric equations for the line that is tangent to the curve of intersection of the surfaces at the given point.
+
+53. Surfaces: $x^2 + 2y + 2z = 4, y = 1$  
+    Point: $(1, 1, \dfrac{1}{2})$  
+    $x = 1 + 2t, y = 1 + 2t, z = \dfrac{1}{2} + 2t$  
+#### Linearizations
+In Exercises 55 and 56, find the linearization $L(x, y)$ of the function $f(x, y)$ at the point $P_0$. Then find an upper bound for the magnitude of the error $E$ in the approximation $f(x, y) \approx L(x, y)$ over the rectangle $R$.
+
+55. $f(x, y) = \sin x \cos y, P_0(\dfrac{\pi}{4}, \dfrac{\pi}{4})R: | x - \dfrac{\pi}{4}|\le 0.1, | y - \dfrac{\pi}{4}|\le 0.1$    
+    $f_x = \cos y \cos x, f_y = -\sin x\sin y$  
+    $L(x,y) = \dfrac{1}{2} + \dfrac{1}{2}(x-\dfrac{\pi}{4})  -\dfrac{1}{2}(y-\dfrac{\pi}{4})$  
+    $E < 0.04$  
+#### Estimates and Sensitivity to Change
+59. Measuring the volume of a pipeline You plan to calculate the volume inside a stretch of pipeline that is about 36 in. in diameter and 1 mile long. With which measurement should you be more careful, the length or the diameter? Why?  
+    diameter
+#### Local Extrema
+Test the functions in Exercises 65–70 for local maxima and minima and saddle points. Find each function’s value at these points.
+
+65. $f(x, y) = x^2 - xy + y^2 + 2x + 2y - 4$  
+    $f_x = 2x-y + 2, f_y = -x +2y + 2$  
+    $f_x = f_y = 0$  
+    $\begin{cases}2x-y + 2= 0\\ -x +2y + 2 = 0\end{cases}$  
+    $\begin{cases}x = -2\\ y= -2\end{cases}$  
+    $f_{xx} = 2,f_{xy} = -1, f_{yy} = 2$  
+    Local minima $f(-2,-2) = -8$
+#### Absolute Extrema
+In Exercises 71–78, find the absolute maximum and minimum values of $f$ on the region $R$.
+
+71. $f(x, y) = x^2 + xy + y^2 - 3x + 3y$  
+$R$: The triangular region cut from the first quadrant by the line $x + y = 4$   
+    $f(0,0) = 0, f(4,0) = 4, f(0,4) = 28$  
+    $f_x = 2x + y -3, f_y = 2y + x + 3$  
+    $\begin{cases}2x + y -3= 0\\ 2y + x + 3 = 0\end{cases}$   
+    $\begin{cases}x= 3\\ y= -3\end{cases}$  
+    max:$28$,min:$0$
+#### Lagrange Multipliers
+79. Extrema on a circle Find the extreme values of $ƒ(x, y) =x^3 + y^2$ on the circle $x^2 + y^2 = 1.$   
+    $\nabla f = 3x^2\mathbf{i} + 2y\mathbf{j}$   
+    $\nabla g = 2x\mathbf{i} + 2y\mathbf{j}$   
+    $\begin{cases}3x^2 = \lambda 2x\\ 2y = \lambda 2y \\x^2 + y^2 = 1 \end{cases}$   
+    $\begin{cases}x = 0\\ y = \pm 1\end{cases}$ or  
+    $\begin{cases}x = \dfrac{2}{3}\\ y = \pm \dfrac{\sqrt{3}}{3}\end{cases}$  
+    min$\dfrac{17}{27}$,max $1$
+#### Theory and Examples
+89. Let $w = f(r, \theta), r =\sqrt{x^2 + y^2}$, and $\theta  = \arctan \dfrac{y}{x}$. Find $\dfrac{\partial w}{\partial x}$ and $\dfrac{\partial w}{\partial y}$ and express your answers in terms of $r$ and $\theta$   
+    $\dfrac{\partial w}{\partial y} = \dfrac{\partial w}{\partial r}\dfrac{\partial r}{\partial x} + \dfrac{\partial w}{\partial \theta}\dfrac{\partial \theta}{\partial x} = \dfrac{\partial w}{\partial r}\dfrac{x}{\sqrt{x^2 + y^2}} - \dfrac{\partial w}{\partial \theta}\dfrac{\frac{1}{x^2}}{1 + \frac{y^2}{x^2}}$   
+    $\dfrac{\partial w}{\partial y} = \dfrac{\partial w}{\partial r}\dfrac{\partial r}{\partial y} + \dfrac{\partial w}{\partial \theta}\dfrac{\partial \theta}{\partial y} = \dfrac{\partial w}{\partial r}\dfrac{y}{\sqrt{x^2 + y^2}} + \dfrac{\partial w}{\partial \theta}\dfrac{\frac{1}{x}}{1 + \frac{x^2}{y^2}}$
+#### Partial Derivatives with Constrained Variables
+In Exercises 101 and 102, begin by drawing a diagram that shows the relations among the variables.
+
+101. If $w = x^2e^{yz}$ and $z = x^2 - y^2$ find  
+     a. $(\dfrac{\partial w}{\partial y})_z$  
+     b. $(\dfrac{\partial w}{\partial z})_x$  
+     c. $(\dfrac{\partial w}{\partial z})_y$    
+     a. $(\dfrac{\partial w}{\partial y})_z = z(z + y^2)e^{yz}$  
+     b. $(\dfrac{\partial w}{\partial z})_x = x^2e^{z\sqrt{x^2-z}}(-\dfrac{1}{2\sqrt{x^2 - z}} + \sqrt{x^2-z})$  
+     c. $w = (z + y^2)e^{yz}$    
+     $(\dfrac{\partial w}{\partial z})_y = y(z + y^2)e^{yz} + e^{yz}$
+### Additional and Advanced Exercises
+#### Partial Derivatives
+Partial Derivatives
+1. Function with saddle at the origin If you did Exercise 60 in Section 14.2, you know that the function
+    $$
+    \begin{cases}xy\dfrac{x^2-y^2}{x^2 + y^2}\quad&(x,y) \ne (0,0)\\ 0\quad& (x,y) = (0,0)\end{cases}
+    $$
+    (see the accompanying figure) is continuous at $(0, 0)$. Find $f_{xy}(0, 0)$ and $f_{yx}(0, 0)$.  
+    ![](../images/Thomas%20Calculus/14-6.jpg)  
+    $f_x = xy\dfrac{2x(x^2 + y^2)-2x(x^2 - y^2)}{(x^2 + y^2)^2} +y\dfrac{x^2-y^2}{x^2 + y^2}$  
+    $=\dfrac{4x^2y^3 + x^4y -y^5}{x^4 + 2x^2y^2 + y^4}$  
+    $f_{xy}(0,0) = \lim\limits_{h\to 0}\dfrac{f_x(0,h)}{h} =\dfrac{-\frac{h^5}{h^4}}{h} = -1$  
+    $f_y = xy\dfrac{2y(x^2 + y^2)+2y(x^2 - y^2)}{(x^2 + y^2)^2} +x\dfrac{x^2-y^2}{x^2 + y^2}$  
+    $= \dfrac{4x^3y^2 +x^5-xy^4 }{x^4 + 2x^2y^2 + y^4}$  
+    $f_{xy}(0,0) = \lim\limits_{h\to 0}\dfrac{f_x(h,0)}{h} =\dfrac{\frac{h^5}{h^4}}{h} = 1$
+#### Gradients and Tangents
+7. properties of position vectors Let $\mathbf{r} = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}$ and let $r = | r |$ .   
+a. Show that $\nabla r = \dfrac{\mathbf{r}}{r}$.  
+b. Show that $∇(r^n) = nr^{n-2}\mathbf{r}.$   
+c. Find a function whose gradient equals $\mathbf{r}$.  
+d. Show that $\mathbf{r}\cdot d\mathbf{r} = r dr.$  
+e. Show that $\nabla (\mathbf{A} \cdot \mathbf{r}) = \mathbf{A}$ for any constant vector $\mathbf{A}.$  
+a. $r = \sqrt{x^2 + y^2 + z^2}$  
+$\nabla \mathbf{r} = \dfrac{x}{ \sqrt{x^2 + y^2 + z^2}}\mathbf{i} + \dfrac{y}{ \sqrt{x^2 + y^2 + z^2}}\mathbf{j} + \dfrac{z}{ \sqrt{x^2 + y^2 + z^2}}\mathbf{k} = \dfrac{\mathbf{r}}{r}$  
+b. $\nabla r^n = nx(x^2 + y^2 + z^2)^{\frac{n}{2}-1}\mathbf{i} + ny(x^2 + y^2 + z^2)^{\frac{n}{2}-1}\mathbf{j} + nz(x^2 + y^2 + z^2)^{\frac{n}{2}-1}\mathbf{k}$  
+$nr^{n-2}\mathbf{r} = n(x^2 + y^2 + z^2)^{\frac{n}{2}-1}(x\mathbf{i} + y\mathbf{j} + z\mathbf{k}) = \nabla r^n$   
+c. $f(x) = \dfrac{1}{2}(x^2 + y^2 + z^2)$  
+d. $d\mathbf{r} = dx\mathbf{i} + dy\mathbf{j} + dz\mathbf{k},\mathbf{r}\cdot d\mathbf{r}=xdx + ydy + zdz$  
+$dr = r_xdx + r_ydy + r_zdz = \dfrac{xdx + ydy + zdz}{r},\mathbf{r}\cdot d\mathbf{r} = rdr$
+e.  $\mathbf{A} = a\mathbf{i} + b\mathbf{j} + c\mathbf{k}$   
+    $\mathbf{A} \cdot \mathbf{r} = ax + by + cz$  
+    $\nabla \mathbf{A} \cdot \mathbf{r} = a\mathbf{i} + b\mathbf{j} + c\mathbf{k} = \mathbf{A}$
+#### Extreme Values
+11. Extrema on a surface Show that the only possible maxima and minima of $z$ on the surface $z = x^3 + y^3 - 9xy + 27$ occur at $(0, 0)$ and $(3, 3)$. Show that neither a maximum nor a minimum occurs at $(0, 0).$ Determine whether $z$ has a maximum or a minimum at $(3, 3).$   
+    $z_x = 3x^2 -9y, z_y = 3y^2 -9x$  
+    $\begin{cases}3x^2 -9y = 0\\ 3y^2 -9x = 0\end{cases}$  
+    $y =\dfrac{1}{3}x^2$  
+    $3\dfrac{1}{9}x^4-9x = 0$  
+    $x(x^3-27) = 0$  
+    $\begin{cases}x = 0\\ y = 0\end{cases}$ or $\begin{cases}x = 3\\ y = 3\end{cases}$   
+    $z_{xx} = 6x, z_{xy} = -9,z_{yy} = 6y$  
+    at $(0,0),z_{xx}z_{yy}-z_{xy}^2 < 0,$ saddle point  
+    at $(3,3),z_{xx} > ,$local minimum
