@@ -32,3 +32,29 @@ The area of a closed, bounded plane region $R$ is
 >A = \iint\limits_RdA
 >$$
 #### Average Value
+### 15.4 Double Integrals in Polar Form
+#### Integrals in Polar Coordinates
+#### Finding Limits of Integration
+>Area in Polar Coordinates
+The area of a closed and bounded region $R$ in the polar coordinate plane is
+>$$
+>A = \iint\limits_Rrdrd\theta
+>$$
+#### Changing Cartesian Integrals into Polar Integrals
+$$
+\iint\limits_Rf(x,y)dxdy = \iint\limits_Rf(r\cos\theta,r\sin\theta)rdrd\theta
+$$
+### 15.5 Triple Integrals in Rectangular Coordinates
+#### Triple Integrals
+#### Volume of a Region in Space
+>DEFINITION   
+The volume of a closed, bounded region $D$ in space is
+>$$
+>V = \iiint\limits_DdV
+>$$
+#### Finding Limits of Integration in the Order $dz, dy, dx$
+#### Average Value of a Function in Space
+$$
+\dfrac{1}{V}\iiint\limits_DF(x,y,z)dV
+$$
+#### Properties of Triple Integrals
