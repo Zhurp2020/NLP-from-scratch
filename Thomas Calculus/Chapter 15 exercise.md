@@ -252,3 +252,205 @@ In Exercises 49–52, use a CAS integration utility to evaluate the triple integ
     $\int_{-1}^1\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}\int_0^1x^2y^2zdzdydx$  
     $= \int_{-1}^1\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}[\dfrac{1}{2}x^2y^2]dydx$  
     $= \dfrac{1}{2}\int_{-1}^1[2x^2\sqrt{1-x^2}^{\frac{3}{2}}]dydx = 0$
+### 15.6 Applications
+#### Plates of Constant Density
+1. Finding a center of mass Find the center of mass of a thin plate of density $\delta = 3$ bounded by the lines $x = 0, y = x$, and the parabola $y = 2 - x^2$ in the first quadrant  
+   $x = 2-x^2, x > 0, x = 1$  
+   $M = \int_0^1\int_{x}^{2-x^2} 3dydx$  
+   $= \int_0^1[6-3x^2-3x]dx$  
+   $= [6x-x^3-\dfrac{3}{2}x^2]_0^1 = \dfrac{7}{2}$  
+   $M_y = \int_0^1\int_{x}^{2-x^2} 3xdydx$  
+   $= \int_0^1[6x-3x^3-3x^2]dydx$  
+   $=[3x^2-\dfrac{3}{4}x^4-x^3]_0^1 =\dfrac{5}{4}$  
+   $M_x = \int_0^1\int_{x}^{2-x^2} 3ydydx$  
+   $= \int_0^1[\dfrac{3}{2}(2-x^2)^2-\dfrac{3}{2}x^2]dx$  
+   $=\int_0^1[\dfrac{3}{2}x^4-\dfrac{15}{2}x^2 + 6]dx$  
+   $= [\dfrac{3}{10}x^5-\dfrac{5}{2}x^3+6x]_0^1 = \dfrac{19}{5}$  
+   $\bar{x} = \dfrac{5}{14}, \bar{y} =\dfrac{38}{35}$  
+#### Plates with Varying Density
+11. Finding a moment of inertia Find the moment of inertia about the $x$-axis of a thin plate bounded by the parabola $x = y - y^2$ and the line $x + y = 0$ if $\delta(x, y) = x + y$.   
+    $I_x= \int_{0}^2\int_{-y}^{y-y^2}(x+y)y^2dxdy$  
+    $= \int_{0}^2[\dfrac{1}{2}y^2(y-y^2)^2+y^3(y-y^2)-\dfrac{1}{2}y^4+y^4]dy$  
+    $=\int_{0}^2[(y-y^2)(\dfrac{3}{2}y^3-\dfrac{1}{2}y^4)+\dfrac{1}{2}y^4]dy$  
+    $=\int_{0}^2[\dfrac{1}{2}y^6-2y^5-y^4]dy$  
+    $= [\dfrac{1}{14}y^7-\dfrac{1}{3}y^6-\dfrac{1}{5}y^5]_{0}^2=\dfrac{64}{7}-\dfrac{64}{3}-\dfrac{32}{5} = \dfrac{960-2240-672}{105} = -\dfrac{1952}{105}$
+#### Solids with Constant Density
+21. Moments of inertia Find the moments of inertia of the rectangular solid shown here with respect to its edges by calculating $I_x$, $I_y$, and $I_z$.  
+    ![](../images/Thomas%20Calculus/15-5.jpg)  
+    $I_x = \int_0^a\int_0^b\int_0^c(y^2 + z^2)\delta dzdydx$  
+    $= \int_0^a\int_0^b[y^2\delta c- \dfrac{1}{3}\delta c^3]dydx$  
+    $= \int_0^a[\dfrac{1}{3}\delta c b^3 - \dfrac{1}{3}\delta c^3 b]dx$  
+    $= \dfrac{1}{3}\delta c b^3a - \dfrac{1}{3}\delta c^3a b$   
+    $I_x = \int_0^a\int_0^b\int_0^c(x^2 + z^2)\delta dzdydx$  
+    $= \int_0^a\int_0^b[x^2\delta c- \dfrac{1}{3}\delta c^3]dydx$  
+    $= \int_0^a[x^2 \delta c b - \dfrac{1}{3}\delta c^3 b]dx$  
+    $= \dfrac{1}{3}\delta c ba^3 - \dfrac{1}{3}\delta c^3a b$  
+    $I_z = \int_0^a\int_0^b\int_0^c(y^2 + x^2)\delta dzdydx$  
+    $= \int_0^a\int_0^b[y^2\delta c- \delta x^2c]dydx$  
+    $= \int_0^a[\dfrac{1}{3}\delta c b^3 - \delta x^2c b]dx$  
+    $= \dfrac{1}{3}\delta c b^3a - \dfrac{1}{3}\delta ca^3 b$
+#### Solids with Varying Density
+In Exercises 29 and 30, find   
+a. the mass of the solid. b. the center of mass.
+
+29. A solid region in the first octant is bounded by the coordinate planes and the plane $x + y + z = 2$. The density of the solid is $\delta(x, y, z) = 2x$ gm/cm3.   
+    a. $M = \int_0^2\int_0^{-x+2}\int_0^{2-x-y}2x dzdydx$  
+    $= \int_0^2\int_0^{-x+2}[(2-x-y)2x]dydx$  
+    $= \int_0^2\int_0^{-x+2}(-2x^2+4x-2xy)dydx$  
+    $= \int_0^2((-2x^2+4x)(2-x)-x(2-x)^2)dx$   
+    $= \int_0^2[2x^3-8x^2+8x-4x+4x^2-x^3]dx$  
+    $= \int_0^2[x^3-4x^2+4x]dx$  
+    $= [\dfrac{1}{4}x^4-\dfrac{4}{3}x^3+2x^2]_0^2=4-\dfrac{32}{3}+8 = \dfrac{4}{3}$  
+    b. $M_{yz} =\int_0^2\int_0^{-x+2}\int_0^{2-x-y}2x^2 dzdydx$  
+    $= \int_0^2\int_0^{-x+2}[(2-x-y)2x^2]dydx$  
+    $= \int_0^2\int_0^{-x+2}(-2x^3+4x^2-2x^2y)dydx$  
+    $= \int_0^2((-2x^3+4x^2)(2-x)-x^2(2-x)^2)dx$   
+    $= \int_0^2[x^4-4x^3+4x^2]dx$  
+    $= [\dfrac{1}{5}x^5-x^4+\dfrac{4}{3}x^3]_0^2=\dfrac{32}{5}-16+\dfrac{32}{3} = -\dfrac{48}{5}+\dfrac{32}{3}=\dfrac{16}{15}$  
+    $M_{xz} =\int_0^2\int_0^{-x+2}\int_0^{2-x-y}2xy dzdydx$  
+    $= \int_0^2\int_0^{-x+2}[(2-x-y)2xy]dydx$  
+    $= \int_0^2\int_0^{-x+2}(-2x^2y+4xy-2xy^2)dydx$  
+    $= \int_0^2((2x-x^2)(2-x)^2-\dfrac{2}{3}x(2-x)^3)dx$   
+    $= \int_0^2[(4-4x+x^2)(2x-x^2-\dfrac{4}{3}x+\dfrac{2}{3}x^2)]dx$  
+    $= \int_0^2[(4-4x+x^2)(\dfrac{1}{3}x^2+\dfrac{2}{3}x)]dx$   
+    $= \int_0^2[\dfrac{1}{3}x^4-\dfrac{2}{3}x^3-\dfrac{4}{3}x^2+\dfrac{8}{3}x]dx$  
+    $= [\dfrac{1}{15}x^5-\dfrac{1}{6}x^4-\dfrac{4}{9}x^3+\dfrac{4}{3}x^2]_0^2=\dfrac{32}{15}-\dfrac{8}{3}-\dfrac{32}{9}+\dfrac{16}{3} = \dfrac{32}{15}-\dfrac{8}{9}=\dfrac{56}{45}$   
+    $M_{xy} =\int_0^2\int_0^{-x+2}\int_0^{2-x-y}2xz dzdydx$  
+    $= \int_0^2\int_0^{-x+2}[(2-x-y)^2x]dydx$  
+    $= \int_0^2\int_0^{-x+2}(4-4x+4y+x^2-2xy+y^2)xdydx$   
+    $= \int_0^2((x^3-4x^2+4x)(2-x)+(2x-x^2)(2-x)^2+\dfrac{1}{3}x(2-x)^3)dx$  
+    $= \int_0^2((x^3-4x^2+4x+x^3-4x^2+4x)(2-x)+\dfrac{1}{3}x(4-4x+x^2)(2-x))dx$   
+    $= \int_0^2((2x^3-8x^2+8x)(2-x)+(\dfrac{4}{3}x-\dfrac{4}{3}x^2+\dfrac{1}{3}x^3)(2-x))dx$  
+    $= \int_0^2((\dfrac{7}{3}x^3-\dfrac{28}{3}x^2+\dfrac{28}{3}x)(2-x))dx$   
+    $= \int_0^2[-\dfrac{7}{3}x^4+14x^3-28x^2+\dfrac{56}{3}x]dx$  
+    $= [-\dfrac{7}{15}x^5+\dfrac{7}{2}x^4-\dfrac{28}{3}x^3+\dfrac{28}{3}x^2]_0^2=-\dfrac{224}{15}+56-\dfrac{224}{3}+\dfrac{112}{3} = \dfrac{840}{15}-\dfrac{224}{15}-\dfrac{560}{15} = \dfrac{56}{15}$  
+    $\bar{x}=\dfrac{4}{5},\bar{y}=\dfrac{14}{15},\bar{z}=\dfrac{14}{5}$ 
+#### Theory and Examples
+the parallel Axis theorem Let $L_{c.m.}$ be a line through the center of mass of a body of mass $m$ and let $L$ be a parallel line $h$ units away from $L_{c.m.}$. The Parallel Axis Theorem says that the moments of inertia $I_{c.m.}$ and $I_L$ of the body about $L_{c.m.}$ and $L$ satisfy the equation
+$$
+I_L = I_{c.m.} + mh^2
+$$
+As in the two-dimensional case, the theorem gives a quick way to calculate one moment when the other moment and the mass are known.
+
+35. proof of the parallel Axis theorem  
+    a. Show that the first moment of a body in space about any plane through the body’s center of mass is zero. (Hint: Place the body’s center of mass at the origin and let the plane be the $yz$-plane. What does the formula $\bar{x} = \dfrac{M_{yz}}{M}$ then tell you?)  
+    ![](../images/Thomas%20Calculus/15-6.jpg)  
+    b. To prove the Parallel Axis Theorem, place the body with its center of mass at the origin, with the line $L_{c.m.}$ along the $z$-axis and the line $L$ perpendicular to the $xy$-plane at the point $(h, 0, 0)$. Let $D$ be the region of space occupied by the body. Then, in the notation of the figure,  
+    $$
+    I_L = \iiint\limits_D|\mathbf{v}-h\mathbf{i}|^2dm
+    $$
+    Expand the integrand in this integral and complete the proof.   
+    a. $\bar{x}=\bar{y}=\bar{z} = 0, \dfrac{M_{plane}}{M} = 0, M_{plane} = 0$  
+    b.  $\mathbf{v}-h\mathbf{i} = (x-h,y,0)$  
+    $\iiint\limits_D|\mathbf{v}-h\mathbf{i}|^2dm$  
+    $=\iiint\limits_D(x^2-2xh+h^2+y^2)dm$  
+    $\overrightarrow{PS} = (x-h,y,0)$  
+    $r(x,y,z) = \dfrac{\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k}\\x-h&y&0\\0&0&1\end{array}}{1}=y\mathbf{i} + (x-h)\mathbf{j}$  
+    $I_{cm} = \iiint\limits_Dy^2+x^2-2xh+h^2dV$   
+    $I_L = I_{c.m.} + mh^2$
+#### Joint Probability Density Functions
+For Exercises 39–42, verify that $f$ gives a joint probability density function. Then find the expected values $\mu X$ and $\mu Y$.
+
+39. $f(x, y) = \begin{cases}x + y&\quad0\le x\le 1, 0\le y\le 1 \\0&\quad\mathsf{otherwise}\end{cases}$   
+    $f(x,y)\ge 0$  
+    $\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x, y) dx dy$  
+    $=\int_0^1\int_0^{1}x + ydxdy$  
+    $=\int_0^1[\dfrac{1}{2}+y]dy$  
+    $= 1$
+### 15.7 Triple Integrals in Cylindrical and Spherical Coordinates
+In Exercises 1–12, sketch the graph described by the following cylindrical coordinates in three-dimensional space.
+1. $r = 2$  
+#### Evaluating Integrals in Cylindrical Coordinates
+Evaluate the cylindrical coordinate integrals in Exercises 23–28.
+
+23. $\int_0^{2\pi}\int_0^1\int_r^{\sqrt{2-r^2}}dzrdrd\theta$   
+    $= \int_0^{2\pi}\int_0^1[\sqrt{2-r^2}-r]rdrd\theta$  
+    $\int_0^{2\pi}\int_0^1[r\sqrt{2-r^2}-r^2]drd\theta$  
+    Let $2-r^2 = u,\dfrac{du}{dr} = -2r$  
+    $\int_0^1r\sqrt{2-r^2}dr$  
+    $=\int_1^2\dfrac{1}{2}\sqrt{u}dr$  
+    $=[\dfrac{1}{3}u^{\frac{3}{2}}]_1^2=\dfrac{2\sqrt{2}}{3}-\dfrac{1}{3}$  
+    $\int_0^{2\pi}\int_0^1\int_r^{\sqrt{2-r^2}}dzrdrd\theta$  
+    $= \int_0^{2\pi}[\dfrac{2\sqrt{2}-2}{3}]d\theta$  
+    $=\dfrac{4\sqrt{2}-2}{3}\pi$  
+#### Changing the Order of Integration in Cylindrical Coordinates
+The integrals we have seen so far suggest that there are preferred orders of integration for cylindrical coordinates, but other orders usually work well and are occasionally easier to evaluate. Evaluate the integrals in Exercises 29–32.
+
+29. $\int_0^{2\pi}\int_0^3\int_0^{\frac{z}{3}}r^3drdzd\theta$   
+    $= \int_0^{2\pi}\int_0^3[\dfrac{z^4}{108}]dzd\theta$  
+    $= \int_0^{2\pi}\dfrac{243}{540}d\theta$  
+    $=\dfrac{9}{10}\pi$
+#### Finding Iterated Integrals in Cylindrical Coordinates
+35. Give the limits of integration for evaluating the integral 
+    $$
+    \iiint f(r, \theta, z) dz r dr d\theta
+    $$
+    as an iterated integral over the region that is bounded below by the plane $z = 0$, on the side by the cylinder $r = \cos \theta$, and on top by the paraboloid $z = 3r^2$.   
+    $\int_0^{2\pi}\int_0^1\int_0^{3r^2}r^3drdzd\theta$
+#### Evaluating Integrals in Spherical Coordinates
+Evaluate the spherical coordinate integrals in Exercises 43–48.
+
+43. $\int_0^{\pi}\int_0^{\pi}\int_0^{2\sin\phi}\rho^2\sin\phi d\rho d\phi d\theta$   
+    $= \int_0^{\pi}\int_0^{\pi}[\dfrac{1}{3}\sin\phi 8\sin^3\phi] d\phi d\theta$  
+    $=\dfrac{8}{3}\int_0^{\pi}\int_0^{\pi}\sin^4\phi d\phi d\theta$  
+    $= \dfrac{8}{3}\int_0^{\pi}\int_0^{\pi}(\dfrac{1-\cos2\phi}{2})^2 d\phi d\theta$  
+    $\dfrac{2}{3}\int_0^{\pi}\int_0^{\pi}1-2\cos2\phi +\cos^22\phi d\phi d\theta$  
+    $= \dfrac{2}{3}\int_0^{\pi}\int_0^{\pi}1-2\cos2\phi +\dfrac{1-\cos4\phi}{2} d\phi d\theta$  
+    $= \dfrac{2}{3}\int_0^{\pi}[\dfrac{3}{2}\phi-\sin2\phi -\dfrac{1}{8}\sin 4\phi]_0^{\pi} d\theta$  
+    $= \dfrac{2}{3}\int_0^{\pi}\dfrac{3}{2}\pi d\theta =\pi^2$  
+#### Changing the Order of Integration in Spherical Coordinates
+The previous integrals suggest there are preferred orders of integration for spherical coordinates, but other orders give the same value and are occasionally easier to evaluate. Evaluate the integrals in Exercises 49–52.  
+
+49. $\int_0^{2}\int_{-\pi}^{0}\int_{\frac{\pi}{2}}^{\frac{\pi}{4}}\rho^3\sin2\phi d\phi d\theta d\rho$  
+    $=\int_0^{2}\int_{-\\pi}^{0}[-\dfrac{1}{2}\rho^3\cos2\phi]_{\frac{\pi}{2}}^{\frac{\pi}{4}} d\theta d\rho$  
+    $= \int_0^{2}\int_{-\pi}^{0}[-\dfrac{1}{2}\rho^3]d\theta d\rho$  
+    $= \int_0^{2}[-\dfrac{1}{2}\rho^3\pi] d\rho$  
+    $=-\rho^3\pi$
+#### Finding Iterated Integrals in Spherical Coordinates
+In Exercises 55–60, (a) find the spherical coordinate limits for the integral that calculates the volume of the given solid and then (b) evaluate the integral.  
+
+55. The solid between the sphere $\rho = \cos\phi$ and the hemisphere $\rho = 2, z \ge 0$  
+    ![](../images/Thomas%20Calculus/15-7.jpg)  
+    $\int_0^{2\pi}\int_0^{\pi}\int_{\cos\phi}^{2}\rho^2\sin\phi d\rho d\phi d\theta$   
+    $= \int_0^{2\pi}\int_0^{\pi}[\dfrac{8}{3}\sin\phi-\dfrac{\cos^3\phi\sin\phi}{3}]d\phi d\theta$   
+    $\cos^3\phi\sin\phi = \cos\phi\sin\phi(1-\sin^2\phi)$  
+    $= \dfrac{1}{2}\sin2\phi(1-\dfrac{1-\cos2\phi}{2})$
+    $= \dfrac{1}{4}\sin2\phi +\dfrac{1}{4}\sin2\pi\cos2\phi = \dfrac{1}{4}\sin2\phi +\dfrac{1}{8}\sin4\phi$  
+    $\int_0^{2\pi}\int_0^{\pi}\int_{\cos\phi}^{2}\rho^2\sin\phi d\rho d\phi d\theta$  
+    $=\int_0^{2\pi}[-\dfrac{8}{3}\cos\phi+\dfrac{1}{2}\cos2\phi +\dfrac{1}{4}\cos4\phi]_0^{\pi} d\theta$  
+    $=\int_0^{2\pi}[\dfrac{41}{12}+\dfrac{23}{12}]d\theta = \dfrac{32}{3}\pi$  
+#### Finding Triple Integrals
+61. Set up triple integrals for the volume of the sphere $\rho = 2$ in (a) spherical, (b) cylindrical, and (c) rectangular coordinates.   
+    a. $\int_0^{2\pi}\int_0^{\pi}\int_{0}^{2}\rho^2\sin\phi d\rho d\phi d\theta$  
+    b. $\int_0^{2\pi}\int_0^{2}\int_{-\sqrt[3]{8-r^3\cos^3\theta-r^3\sin^3\theta}}^{\sqrt[3]{8-r^3\cos^3\theta-r^3\sin^3\theta}} dz rdr d\theta$  
+    c. $\int_{-2}^{2}\int_{-\sqrt{4-x^2}}^{\sqrt{4-x^2}}\int_{-\sqrt[3]{8-x^3-y^3}}^{\sqrt[3]{8-x^3-y^3}} dz dydx$  
+#### Volumes
+Find the volumes of the solids in Exercises 65–70.
+
+65. ![](../images/Thomas%20Calculus/15-8.jpg)  
+    $V =\int_0^{2\pi}\int_0^{1}\int_{r^4-1}^{4-4r^2} dz rdr d\theta$  
+    $= \int_0^{2\pi}\int_0^{1}[5-4r^2-r^4]rdr d\theta$  
+    $=\int_0^{2\pi}[\dfrac{5}{2}r^2-r^4-\dfrac{1}{6}r^6]_0^{1}d\theta$  
+    $= \int_0^{2\pi}\dfrac{7}{6}d\theta = \dfrac{7}{3}\pi$
+#### Average Values
+85. Find the average value of the function $f(r, \theta, z) = r$ over the region bounded by the cylinder $r = 1$ between the planes $z = -1$ and $z = 1.$     
+    $\dfrac{1}{2\pi}\int_0^{2\pi}\int_0^{1}\int_{-1}^{1} rdz rdr d\theta$  
+    $= \dfrac{1}{2\pi}\int_0^{2\pi}\int_0^{1}2 r^2dr d\theta$  
+    $= \dfrac{1}{2\pi}\int_0^{2\pi}\dfrac{2}{3} d\theta = \dfrac{2}{3}$
+#### Masses, Moments, and Centroids
+89. Center of mass A solid of constant density is bounded below by the plane $z = 0$, above by the cone $z = r, r \ge 0$, and on the sides by the cylinder $r = 1$. Find the center of mass.  
+    $\bar{x} = \bar{y} = 0$  
+    $M = \int_0^{2\pi}\int_0^{1}\int_{0}^{r} dz rdr d\theta$  
+    $= \int_0^{2\pi}\int_0^{1} r^2dr d\theta$  
+    $= \int_0^{2\pi}\dfrac{1}{3} d\theta$  
+    $= \dfrac{2}{3}\pi$  
+    $M_{r\theta} = \int_0^{2\pi}\int_0^{1}\int_{0}^{r} zdz rdr d\theta$  
+    $= \int_0^{2\pi}\int_0^{1}\dfrac{1}{2} r^3dr d\theta$  
+    $= \int_0^{2\pi}\dfrac{1}{6}  d\theta = \dfrac{1}{3}\pi$  
+    $\bar{z} = \dfrac{1}{2}$
+#### Theory and Examples
+105. Vertical planes in cylindrical coordinates   
+a. Show that planes perpendicular to the $x$-axis have equations of the form $r = a \sec \theta$ in cylindrical coordinates.  
+b. Show that planes perpendicular to the $y$-axis have equations of the form $r = b \csc \theta$  
+a. $x=a=r\cos\theta,r=a\sec\theta$    
+b. $y=b=r\sin\theta,r=b\csc\theta$

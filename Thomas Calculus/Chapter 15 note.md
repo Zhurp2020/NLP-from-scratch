@@ -58,3 +58,39 @@ $$
 \dfrac{1}{V}\iiint\limits_DF(x,y,z)dV
 $$
 #### Properties of Triple Integrals
+### 15.6 Applications
+#### Masses and First Moments
+#### Moments of Inertia
+#### Probability
+>DEFINITION 
+A joint probability density function $f$ is a function that satisfies three conditions:
+>1. $f(x, y) \ge 0$
+>2. $\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x, y) dx dy = 1$
+>3. $P((X, Y)\in R) = \iint\limits_Rf(x, y) dx dy$
+#### Means and Expected Values
+### 15.7 Triple Integrals in Cylindrical and Spherical Coordinates
+#### Integration in Cylindrical Coordinates
+>DEFINITION cylindrical coordinates represent a point $P$ in space by ordered triples $(r, \theta, z)$ in which $r \ge 0$,
+>1. $r$ and $\theta$ are polar coordinates for the vertical projection of $P$ on the $xy$-plane
+>2. $z$ is the rectangular vertical coordinate.
+
+>Equations Relating Rectangular $(x, y, z)$ and Cylindrical $(r, \theta, z)$ Coordinates  
+>$$
+>x = r\cos\theta, y=r\sin\theta , z = z\\
+>r^2 = x^2 + y^2, \tan\theta = \dfrac{y}{x}
+>$$
+#### How to Integrate in Cylindrical Coordinates
+#### Spherical Coordinates and Integration
+>DEFINITION   
+spherical coordinates represent a point $P$ in space by ordered triples $(\rho, \phi, \theta)$ in which  
+>1. $\rho$ is the distance from $P$ to the origin $(\rho \ge 0)$.  
+>2. $\phi$ is the angle $\overrightarrow{OP}$ makes with the positive $z$-axis $(0 \le \phi \le \pi)$.
+>3. $\theta$ is the angle from cylindrical coordinates.
+
+>Equations Relating Spherical Coordinates to Cartesian and Cylindrical Coordinates  
+>$$
+>r = \rho\sin\phi, x = r\cos\theta  \\
+>z = \rho\cos\phi, y = r\sin\theta  \\
+>\rho = \sqrt{x^2 + y^2 + z^2} = \sqrt{r^2 + z^2}
+>$$
+#### How to Integrate in Spherical Coordinates
