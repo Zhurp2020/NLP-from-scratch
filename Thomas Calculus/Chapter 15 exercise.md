@@ -454,3 +454,37 @@ a. Show that planes perpendicular to the $x$-axis have equations of the form $r 
 b. Show that planes perpendicular to the $y$-axis have equations of the form $r = b \csc \theta$  
 a. $x=a=r\cos\theta,r=a\sec\theta$    
 b. $y=b=r\sin\theta,r=b\csc\theta$
+### 15.8 Substitutions in Multiple Integrals
+#### Jacobians and Transformed Regions in the Plane
+1. a. Solve the system  
+    $$
+    u = x - y, v = 2x + y
+    $$
+    for $x$ and $y$ in terms of $u$ and $v.$ Then find the value of the Jacobian $\dfrac{\partial(x,y)}{\partial(u,v)}$.  
+    b. Find the image under the transformation $u = x - y,v = 2x + y$ of the triangular region with vertices $(0, 0),(1, 1)$, and $(1, -2)$ in the $xy$-plane. Sketch the transformed region in the $uv$-plane.   
+    a. $x = \dfrac{u + v}{3},y=-\dfrac{2}{3}u+\dfrac{1}{3}v$   
+    $\dfrac{\partial(x,y)}{\partial(u,v)}=\dfrac{1}{3}\dfrac{1}{3}-(-\dfrac{2}{3}\dfrac{1}{3})= \dfrac{1}{3}$   
+    $x-y = 0,v=0$  
+    $2x + y=0,v=0$  
+    $x=1,u +v = 3$  
+#### Substitutions in Double Integrals
+5. Evaluate the integral  
+   $$
+   \int_0^4\int_{\frac{y}{2}}^{\frac{y}{2} + 1}\dfrac{2x-y}{2}dxdy
+   $$
+   from Example 1 directly by integration with respect to $x$ and $y$ to confirm that its value is 2  
+   $= \int_0^4[\dfrac{1}{2}x^2-\dfrac{y}{2}x]_{\frac{y}{2}}^{\frac{y}{2} + 1}dy$  
+   $= \int_0^4[\dfrac{1}{2}(\dfrac{1}{4}y^2+y+1)-\dfrac{y}{2}(\dfrac{y}{2} + 1)-\dfrac{1}{2}\dfrac{y^2}{4}+\dfrac{y^2}{4}]_{\frac{y}{2}}^{\frac{y}{2} + 1}dy$  
+   $= \int_0^4\dfrac{1}{2}dy = 2$
+#### Substitutions in Triple Integrals
+17. Evaluate the integral in Example 5 by integrating with respect to $x, y$, and $z$  
+    $\int_0^3\int_0^4\int_{\frac{y}{2}}^{\frac{y}{2} + 1}\dfrac{2x-y}{2} + \dfrac{z}{3}dxdydz$  
+    $= \int_0^3\int_0^4[\dfrac{1}{2} + \dfrac{yz}{6}+\dfrac{z}{3}-\dfrac{yz}{6}]dydz$  
+    $= \int_0^32+\dfrac{4}{3}zdz$  
+    $=[2z + \dfrac{2}{3}z^2]_0^3=12$
+#### Theory and Examples
+21. Find the Jacobian $\dfrac{\partial(x,y)}{\partial(u,v)}$ of the transformation  
+a. $x = u \cos v, y = u \sin v$  
+b. $x = u \sin v, y = u \cos v$  
+a. $\cos v\cdot u\cos v-(-u\sin v\cdot\sin v)=u$  
+b. $\sin v\cdot (-u\sin v)-(u\cos v\cdot\cos v)=-u$

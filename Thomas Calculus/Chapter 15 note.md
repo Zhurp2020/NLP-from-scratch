@@ -94,3 +94,20 @@ spherical coordinates represent a point $P$ in space by ordered triples $(\rho, 
 >\rho = \sqrt{x^2 + y^2 + z^2} = \sqrt{r^2 + z^2}
 >$$
 #### How to Integrate in Spherical Coordinates
+### 15.8 Substitutions in Multiple Integrals
+#### Substitutions in Double Integrals
+>DEFINITION   
+The Jacobian determinant or Jacobian of the coordinate transformation $x = g(u, v), y = h(u, v)$ is
+>$$
+>J(u,v) = \left |\begin{array}{cccc}
+>   \dfrac{\partial x}{\partial u}&\dfrac{\partial x}{\partial v} \\    
+>   \dfrac{\partial y}{\partial u}&\dfrac{\partial y}{\partial v}
+>\end{array}\right | = \dfrac{\partial x}{\partial u}\dfrac{\partial y}{\partial v}-\dfrac{\partial x}{\partial v}\dfrac{\partial y}{\partial u}
+>$$
+
+> THEOREM 3—Substitution for Double Integrals  
+Suppose that $f(x, y)$ is continuous over the region $R$. Let $G$ be the preimage of $R$ under the transformation $x = g(u, v), y = h(u, v)$, which is assumed to be one-to-one on the interior of $G$. If the functions $g$ and $h$ have continuous first partial derivatives within the interior of $G$, then
+>$$
+>\iint\limits_Rf(x,y)dxdy = \iint\limits_Gf(g(u,v),h(u,v))|\dfrac{\partial(x,y)}{\partial(u,v)}|dudv
+>$$
+#### Substitutions in Triple Integrals
