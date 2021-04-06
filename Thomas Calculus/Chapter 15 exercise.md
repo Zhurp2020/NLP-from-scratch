@@ -488,3 +488,127 @@ a. $x = u \cos v, y = u \sin v$
 b. $x = u \sin v, y = u \cos v$  
 a. $\cos v\cdot u\cos v-(-u\sin v\cdot\sin v)=u$  
 b. $\sin v\cdot (-u\sin v)-(u\cos v\cdot\cos v)=-u$
+### Practice Exercises
+#### Evaluating Double Iterated Integrals
+In Exercises 1–4, sketch the region of integration and evaluate the  double integral.
+
+1. $\int_1^{10}\int_0^{\frac{1}{y}}ye^{xy}dxdy$  
+   $=\int_1^{10}[e^{xy}]_0^{\frac{1}{y}}dy$  
+   $= \int_1^{10}[e-1]dy=9e-9$  
+#### Areas and Volumes Using Double Integrals
+13. Area between line and parabola Find the area of the region  enclosed by the line $y = 2x + 4$ and the parabola $y = 4 - x^2$ in  the $xy$-plane.   
+    $2x + 4 = 4-x^2, x_1 = -2, x_2 = 0$   
+    $A = \int_{-2}^0\int_{2x + 4}^{4-x^2}dydx$  
+    $=\int_{-2}^0-x^2 - 2xdx$  
+    $= -\dfrac{1}{3}x^3 - x^2]_{-2}^0=\dfrac{4}{3}$  
+#### Average Values
+Find the average value of $f(x, y) = xy$ over the regions in Exercises  17 and 18.
+
+17. The square bounded by the lines $x = 1, y = 1$ in the first quadrant   
+    $\dfrac{1}{1}\int_0^1\int_0^1xydxdy$  
+    $=\int_0^1\dfrac{1}{2}ydy$  
+    $= \dfrac{1}{6}y^3]_0^1=\dfrac{1}{6}$
+#### Polar Coordinates
+Evaluate the integrals in Exercises 19 and 20 by changing to polar  coordinates.
+
+19. $\int_{-1}^1\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}\dfrac{2dydx}{(1+x^2+y^2)^2}$  
+    $\int_0^{2\pi}\int_0^1\dfrac{2rdrd\theta}{(1+r^2)^2}$  
+    $=\int_0^{2\pi}\int_0^1\dfrac{2rdrd\theta}{(1+r^2)^2}$  
+    Let $1 + r^2 = u,\dfrac{du}{dr} = 2r$  
+    $\int_0^1\dfrac{2rdr}{(1+r^2)^2}$  
+    $=\int_1^2\dfrac{du}{u^2}=[-\dfrac{1}{u}]_1^2=\dfrac{1}{2}$  
+    $\int_0^{2\pi}\int_0^1\dfrac{2rdrd\theta}{(1+r^2)^2}$  
+    $= \int_0^{2\pi}\dfrac{1}{2}d\theta = \pi$  
+#### Evaluating Triple Iterated Integrals
+Evaluate the integrals in Exercises 23–26 
+
+23. $\int_0^{\pi}\int_0^{\pi}\int_0^{\pi}\cos(x+y+z)dxdydz$  
+    $=\int_0^{\pi}\int_0^{\pi}[\sin(x + y + z)]_0^{\pi}dydz$  
+    $=\int_0^{\pi}[2\cos( y + z)]_0^{\pi}dz$  
+    $=-4\sin z]_0^{\pi}=0$
+#### Volumes and Average Values Using Triple Integrals
+27. Volume Find the volume of the wedge-shaped region enclosed  on the side by the cylinder $x = -\cos y, -\dfrac{\pi}{2} \le y \le \dfrac{\pi}{2}$, on the top by the plane $z = -2x$, and below by the $xy$-plane.  
+    ![](../images/Thomas%20Calculus/15-9.jpg)  
+    $-V = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\int_0^{-\cos y}\int_0^{-2x}dzdxdy$  
+    $= \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\int_0^{-\cos y}-2xdxdy$  
+    $= \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}[-\cos^2y]dy$  
+    $= \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}[-\dfrac{1+\cos 2y}{2}]dy$  
+    $= [-\dfrac{1}{2}y-\dfrac{1}{4}\sin 2y]_{-\frac{\pi}{2}}^{\frac{\pi}{2}}=-\dfrac{\pi}{2}$  
+    $V = \dfrac{\pi}{2}$
+#### Cylindrical and Spherical Coordinates
+31. Cylindrical to rectangular coordinates Convert    
+    $$
+    \int_0^{2\pi}\int_0^{\sqrt{2}}\int_r^{\sqrt{4-r^2}}3dzrdrd\theta
+    $$  
+    to (a) rectangular coordinates with the order of integration $dz dx dy$ and (b) spherical coordinates. Then (c) evaluate one of the integrals.    
+    a. $\int_{-\sqrt{2}}^{\sqrt{2}}\int_{-\sqrt{2-y^2}}^{\sqrt{2-y^2}}\int_{\sqrt{x^2 + y^2}}^{\sqrt{4-x^2-y^2}}3dzdxdy$  
+    b. $\int_0^{2\pi}\int_0^{\frac{\pi}{4}}\int_0^{2}3\rho^2\sin\phi d\rho d\phi d\theta$  
+    c. $\int_0^{2\pi}\int_0^{\frac{\pi}{4}}\int_0^{2}3\rho^2\sin\phi d\rho d\phi d\theta$  
+    $=\int_0^{2\pi}\int_0^{\frac{\pi}{4}}8\sin\phi d\phi d\theta$  
+    $= \int_0^{2\pi}[-8\cos\phi]_0^{\frac{\pi}{4}}d\theta$  
+    $= (16-8\sqrt{2})\pi$
+#### Masses and Moments
+38. Finding $I_z$ in spherical coordinates Find the moment of inertia about the z-axis of a solid of constant density $\delta = 1$ that is bounded above by the sphere $r = 2$ and below by the cone $\phi = \dfrac{\pi}{3}$ (spherical coordinates).   
+    $I_z = \int_0^{2\pi}\int_0^{\frac{\pi}{3}}\int_0^{2}\rho^4\sin^2\phi d\rho d\phi d\theta$  
+    $= \int_0^{2\pi}\int_0^{\frac{\pi}{3}}\dfrac{32}{5}\sin^2\phi  d\phi d\theta$  
+    $= \int_0^{2\pi}\int_0^{\frac{\pi}{3}}\dfrac{16}{5}(1-\cos 2\phi) d\phi d\theta$  
+    $=\dfrac{16}{5}\int_0^{2\pi}[\phi - \dfrac{1}{2}\sin2\phi]_0^{\frac{\pi}{3}} d\theta$
+    $= \dfrac{16}{5}\int_0^{2\pi}[\dfrac{\pi}{3}-\dfrac{\sqrt{3}}{4}] d\theta=\dfrac{32}{15}\pi^2-\dfrac{8}{5}\sqrt{3}\pi$
+#### Substitutions
+53. Show that if $u = x - y$ and $y = v,$ then for any continuous $f$  
+    $$
+    \int_0^{\infty}\int_0^xe^{-sx}f(x-y,y)dydx=\int_0^{\infty}\int_0^{\infty}e^{-s(u+v)}f(u,v)dyd
+    $$
+    $x = u + v$
+### Additional and Advanced Exercises
+#### Volumes
+1. Sand pile: double and triple integrals The base of a sand pile  covers the region in the $xy$-plane that is bounded by the parabola  $x^2 + y = 6$ and the line $y = x$. The height of the sand above the  point $(x, y)$ is $x^2$. Express the volume of sand as (a) a double integral, (b) a triple integral. Then (c) find the volume.  
+   $V = \int_{-3}^2\int_x^{6-x^2}x^2dydx$  
+   $= \int_{-3}^2\int_x^{6-x^2}\int_0^{x^2}dzdydx$  
+   $= \int_{-3}^2[6x^2-x^4-x^3]dx$  
+   $= [2x^3-\dfrac{1}{5}x^5-\dfrac{1}{4}x^4]_{-3}^2$  
+    $=(16-\dfrac{32}{5}-4-(-54+\dfrac{243}{5}-\dfrac{91}{4}))$  
+    $=66+\dfrac{81}{4}-\dfrac{275}{5}=\dfrac{44+81}{4}=\dfrac{125}{4}$  
+#### Changing the Order of Integration
+11. Evaluate the integral  
+    $$
+    \int_0^{\infty}\dfrac{e^{-ax}-e^{-bx}}{x}dx
+    $$
+     (Hint: Use the relation
+     $$
+    \dfrac{e^{-ax}-e^{-bx}}{x}=\int_a^be^{-x}dy
+    $$ 
+    to form a double integral and evaluate the integral by changing the order of integration.)  
+    $\int_0^{\infty}\dfrac{e^{-ax}-e^{-bx}}{x}dx$  
+    $=\int_0^{\infty}\int_a^be^{-x}dydx$  
+    $= \int_a^b\int_0^{\infty}e^{-x}dxdy$  
+    $= \int_a^b\lim\limits_{c\to\infty}[-e^{-c}+1]dy=b-a$
+#### Masses and Moments
+15. Minimizing polar inertia A thin plate of constant density is to  occupy the triangular region in the first quadrant of the $xy$-plane  having vertices $(0, 0), (a, 0),$ and $(a, \dfrac{1}{a})$. What value of a will minimize the plate’s polar moment of inertia about the origin?  
+    $I_O = \int_0^a\int_0^{\frac{1}{a^2}x}(x^2 +y^2)dydx$  
+    $= \int_0^a[\dfrac{1}{a^2}x^3+\dfrac{1}{3a^6}x^3]dx$  
+    $=\dfrac{1}{4a^2}x^4 + \dfrac{1}{12a^6}x^4]_0^a=\dfrac{1}{4}a^2 + \dfrac{1}{12a^2}$    
+    $\dfrac{dI_O}{da} = \dfrac{1}{2}a -\dfrac{1}{6a^3}=0$  
+    $3a^4=1, a= \pm\dfrac{1}{\sqrt[4]{3}}$
+#### Theory and Examples
+19. Evaluate  
+    $$
+    \int_0^a\int_0^be^{\max(b^2x^2,a^2y^2)}dydx
+    $$  
+    where $a$ and $b$ are positive numbers and  
+    $$
+    \max(b^2x^2,a^2y^2)=\begin{cases}
+        b^2 x^2 \quad&b^2 x^2\ge a^2 y^2  \\
+        a^2 y^2 \quad&b^2 x^2< a^2 y^2 
+    \end{cases}
+    $$  
+    if $b^2 x^2\ge a^2 y^2,y \le \dfrac{bx}{a}$  
+    $\int_0^a\int_0^{\frac{bx}{a}}e^{\max(b^2x^2,a^2y^2)}dydx$  
+    $=\int_0^a\int_0^{\frac{bx}{a}}e^{b^2x^2}dydx$   
+    $=\int_0^a\dfrac{bx}{a}e^{b^2x^2}dx$  
+    $=[\dfrac{b}{2a}xe^{b^2x^2}]_0^a=\dfrac{b}{2}e^{a^2b^2}$  
+    if $b^2 x^2< a^2 y^2,x < \dfrac{ay}{b}$  
+    $\int_0^a\int_0^{b}e^{\max(b^2x^2,a^2y^2)}dydx$  
+    $=\int_0^{b}\int_0^{\frac{ay}{b}}e^{a^2y^2}dxdy$   
+    $=\int_0^b\dfrac{ay}{b}e^{a^2y^2}dy$  
+    $=[\dfrac{a}{2b}xe^{a^2y^2}]_0^b=\dfrac{a}{2}e^{a^2b^2}$
