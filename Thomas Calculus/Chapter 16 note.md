@@ -86,3 +86,60 @@ The differential form $M dx + N dy + P dz$ is exact on an open simply connected 
 >\dfrac{\partial P}{\partial y} = \dfrac{\partial N}{\partial z},\dfrac{\partial M}{\partial z} = \dfrac{\partial P}{\partial x},\dfrac{\partial N}{\partial x} = \dfrac{\partial M}{\partial y}
 >$$
 >This is equivalent to saying that the field $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ is conservative.
+### 16.4 Green’s Theorem in the Plane
+#### Spin Around an Axis: The $\mathbf{k}$-Component of Curl
+>DEFINITION   
+The circulation density of a vector field $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ at the point $(x, y)$ is the scalar expression
+>$$
+>\dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y},
+>$$     
+>This expression is also called the $k$-component of the curl, denoted by $(\mathsf{curl} \mathbf{F})\cdot\mathbf{k}$.
+#### Divergence
+>DEFINITION 
+The divergence (flux density) of a vector field $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ at  the point $(x, y)$ is
+>$$
+>\mathsf{div}\mathbf{F} = \dfrac{\partial M}{\partial x} + \dfrac{\partial N}{\partial y},
+>$$  
+#### Two Forms for Green’s Theorem
+>THEOREM 4—Green’s Theorem (Circulation-Curl or Tangential Form)  
+Let $C$ be a piecewise smooth, simple closed curve enclosing a region $R$ in the plane. Let $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ be a vector field with $M$ and $N$ having continuous first partial derivatives in an open region containing $R$. Then the counterclockwise circulation of $\mathbf{F}$ around $C$ equals the double integral of $(\mathsf{curl} \mathbf{F})\cdot\mathbf{k}$ over $R$.
+>$$
+>\oint\limits_C\mathbf{F}\cdot\mathbf{T}ds = \oint\limits_C Mdx - Ndy = \iint\limits_C(\dfrac{\partial N}{\partial x} - \dfrac{\partial M}{\partial y})dxdy
+>$$
+
+>THEOREM 5—Green’s Theorem (Flux-Divergence or Normal Form)  
+Let $C$ be a piecewise smooth, simple closed curve enclosing a region $R$ in the plane. Let $\mathbf{F} = M\mathbf{i} + N\mathbf{j}$ be a vector field with $M$ and $N$ having continuous first partial derivatives in an open region containing $R$. Then the outward flux of $\mathbf{F}$ across $C$ equals the double integral of $\mathsf{div}\mathbf{F}$ over the region $R$ enclosed by $C$.
+>$$
+>\oint\limits_C\mathbf{F}\cdot\mathbf{n}ds = \oint\limits_C Mdy + Ndx = \iint\limits_C(\dfrac{\partial M}{\partial x} + \dfrac{\partial N}{\partial y})dxdy
+>$$
+#### Using Green’s Theorem to Evaluate Line Integrals
+#### Proof of Green’s Theorem for Special Regions
+### 16.5 Surfaces and Area
+#### Parametrizations of Surfaces
+#### Surface Area
+>DEFINITION   
+A parametrized surface $\mathbf{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k}$ is smooth if $\mathbf{r}_u$ and $\mathbf{r}_v$ are continuous and $\mathbf{r}_u \times \mathbf{r}_v$  is never zero on the interior of the parameter domain.
+
+>DEFINITION   
+The area of the smooth surface $\mathbf{r}(u, y) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k},a\le u \le b, c\le v\le d$ is
+>$$
+>A = \iint\limits_R |\mathbf{r}_u \times \mathbf{r}_v|dA = \int_c^d\int_a^b|\mathbf{r}_u \times \mathbf{r}_v|dudv
+>$$
+
+>Surface Area Differential for a Parametrized Surface
+>$$
+>A = \iint\limits_Sd\sigma
+>$$
+#### Implicit Surfaces
+>Formula for the Surface Area of an Implicit Surface  
+The area of the surface $F(x, y, z) = c$ over a closed and bounded plane region $R$ is  
+>$$
+>A = \iint\limits_R |\dfrac{\nabla F}{\nabla F \cdot \mathbf{p}}|dA
+>$$
+>where $\mathbf{p} = \mathbf{i}, \mathbf{j}$, or $\mathbf{k}$ is normal to $R$ and $\nabla F \cdot \mathbf{p} \ne 0$
+
+>Formula for the Surface Area of a Graph $z = f(x, y)$  
+For a graph $z = f(x, y)$ over a region $R$ in the $xy$-plane, the surface area formula is
+>$$
+>A = \iint\limits_R \sqrt{f_x^2 + f_y^2 + 1}dxdy
+>$$
