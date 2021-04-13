@@ -121,7 +121,7 @@ Let $C$ be a piecewise smooth, simple closed curve enclosing a region $R$ in the
 A parametrized surface $\mathbf{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k}$ is smooth if $\mathbf{r}_u$ and $\mathbf{r}_v$ are continuous and $\mathbf{r}_u \times \mathbf{r}_v$  is never zero on the interior of the parameter domain.
 
 >DEFINITION   
-The area of the smooth surface $\mathbf{r}(u, y) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k},a\le u \le b, c\le v\le d$ is
+The area of the smooth surface $\mathbf{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k},a\le u \le b, c\le v\le d$ is
 >$$
 >A = \iint\limits_R |\mathbf{r}_u \times \mathbf{r}_v|dA = \int_c^d\int_a^b|\mathbf{r}_u \times \mathbf{r}_v|dudv
 >$$
@@ -143,3 +143,49 @@ For a graph $z = f(x, y)$ over a region $R$ in the $xy$-plane, the surface area 
 >$$
 >A = \iint\limits_R \sqrt{f_x^2 + f_y^2 + 1}dxdy
 >$$
+### 16.6 Surface Integrals
+#### Surface Integrals
+>Formulas for a Surface Integral of a Scalar Function  
+>1. For a smooth surface $S$ defined parametrically as $\mathbf{r}(u, v) = f(u, v)\mathbf{i} + g(u, v)\mathbf{j} + h(u, v)\mathbf{k},(u,v)\in R$, and a continuous function $G(x, y, z)$ defined on $S$, the surface integral of $G$ over $S$ is given by the double integral over $R$, 
+>$$
+>\iint\limits_SG(x,y,z)d\sigma = \iint\limits_R G(f(u,v),g(u,v),h(u,v))|\mathbf{r}_u\times\mathbf{r}_v|dudv
+>$$ 
+>2. For a surface $S$ given implicitly by $F(x, y, z) = c$, where $F$ is a continuously  differentiable function, with $S$ lying above its closed and bounded shadow region $R$ in the coordinate plane beneath it, the surface integral of the continuous function $G$ over $S$ is given by the double integral over $R$,   
+>$$
+>\iint\limits_SG(x,y,z)d\sigma = \iint\limits_R G(x,y,z)\dfrac{|\nabla F|}{\nabla F\cdot\mathbf{p}}dA
+>$$ 
+>where $\mathbf{p}$ is a unit vector normal to $R$ and $\nabla F\cdot\mathbf{p}\ne 0$.  
+>
+>3. For a surface $S$ given explicitly as the graph of $z = f(x, y)$, where $f$ is a continuously differentiable function over a region $R$ in the $xy$-plane, the surface integral of the continuous function $G$ over $S$ is given by the double integral over R,
+>$$
+>\iint\limits_SG(x,y,z)d\sigma = \iint\limits_R G(x,y,f(x,y))\sqrt{f_x^2 +f_y^2 + 1}dxdy
+>$$ 
+#### Orientation of a Surface
+#### Surface Integrals of Vector Fields
+>DEFINITION 
+Let $\mathbf{F}$ be a vector field in three-dimensional space with continuous components defined over a smooth surface $S$ having a chosen field of normal unit vectors $\mathbf{n}$ orienting $S$. Then the surface integral of $\mathbf{F}$ over $S$ is
+>$$
+>\iint\limits_S\mathbf{F}\cdot\mathbf{n}d\sigma
+>$$ 
+>This integral is also called the flux of the vector field $\mathbf{F}$ across $S$
+#### Computing a Surface Integral for a Parametrized Surface
+#### Computing a Surface Integral for a Level Surface
+#### Moments and Masses of Thin Shells
+### 16.7 Stokes’ Theorem
+#### The Curl Vector Field
+#### Stokes’ Theorem
+>THEOREM 6—Stokes’ Theorem  
+Let $S$ be a piecewise smooth oriented surface having a piecewise smooth boundary curve $C$. Let $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ be a vector field whose components have continuous first partial derivatives on an open region containing $S$. Then the circulation of $\mathbf{F}$ around $C$ in the direction counterclockwise with respect to the surface’s unit normal vector $\mathbf{n}$ equals the integral of the curl vector field $\nabla \times F$ over $S$:
+>$$
+>\oint\limits_C\mathbf{F}\cdot dr = \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr
+>$$ 
+#### Paddle Wheel Interpretation of $\nabla \times F$
+#### Proof Outline of Stokes’ Theorem for Polyhedral Surfaces
+#### Stokes’ Theorem for Surfaces with Holes
+#### An Important Identity
+#### Conservative Fields and Stokes’ Theorem
+>THEOREM 7—Curl $\mathbf{F} = 0$ Related to the Closed-Loop Property     
+If $\nabla \times F = 0$ at every point of a simply connected open region $D$ in space, then on any piecewise-smooth closed path $C$ in $D$,
+>$$
+>\oint\limits_C\mathbf{F}\cdot dr = 0
+>$$ 

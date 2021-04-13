@@ -242,4 +242,83 @@ The tangent plane at a point $P_0(f(u_0, v_0), g(u_0, v_0), h(u_0, v_0))$ on a p
 37. Find the area of the surface cut from the paraboloid $x^2 + y^2 - z =0$ by the plane $z = 2.$  
     $x^2 +y^2 = 2$  
     $A=2\pi$  
-      
+### 16.6 Surface Integrals
+#### Surface Integrals of Scalar Functions
+In Exercises 1–8, integrate the given function over the given surface.
+1. Parabolic cylinder $G(x, y, z) = x,$ over the parabolic cylinder  $y = x^2, 0\le x \le 2, 0 \le z \le 3$  
+   $\nabla F=2x\mathbf{i}-\mathbf{j}$  
+   $\iint_Rx\dfrac{\sqrt{4x^2 + 1}}{1}A$  
+   $= \int_0^2\int_0^3x\sqrt{4x^2 + 1}dzdx$  
+   $= \int_0^23x\sqrt{4x^2 + 1}dx$  
+   Let $4x^2 + 1 = u,\dfrac{du}{dx} = 8x$  
+   $= \int_1^{17}\sqrt{u}\dfrac{3}{8}du$  
+   $=\dfrac{1}{4}u^{\frac{3}{2}}]_1^{17}=\dfrac{17\sqrt{17}-1}{4}$
+#### Finding Flux or Surface Integrals of Vector Fields
+In Exercises 19–28, use a parametrization to find the flux $\iint\limits_S\mathbf{F}\cdot\mathbf{n}d\sigma$ across the surface in the specified direction.
+
+19. Parabolic cylinder $\mathbf{F}= z^2\mathbf{i}+ x\mathbf{j} -3z\mathbf{k}$ outward (normal away from the $x$-axis) through the surface cut from the parabolic cylinder $z = 4 -y^2$ by the planes $x = 0, x = 1,$ and $z = 0$  
+    $x=x,y=y,z=4-y^2$  
+    $\mathbf{r}(x,y)=x\mathbf{i}+ y\mathbf{j} +(4-y^2)\mathbf{k}$  
+    $\mathbf{r}_x\times\mathbf{r}_y=$  
+    $|\begin{array}{cccc}\mathbf{i}&\mathbf{j}&\mathbf{k} \\ 1& 0& 0\\0& 1& -2y\\ \end{array}|=-2y\mathbf{j} +\mathbf{k}$  
+   $\iint\limits_S\mathbf{F}\cdot\mathbf{n}d\sigma$  
+   $= \int_{-2}^2\int_0^1(-2xy-3z)dxdy$  
+   $=\int_{-2}^2\int_0^1(-2xy-12+3y^2)dxdy$  
+   $=\int_{-2}^2[3y^2-y-12]dy$  
+   $=[y^3-\dfrac{1}{2}y^2-12y]_{-2}^2=-18-(-10+24)=-32$
+#### Moments and Masses
+43. Centroid Find the centroid of the portion of the sphere  $x^2 + y^2 + z^2 = a^2$ that lies in the first octant.  
+    $M = \iint_Rd\sigma = \dfrac{1}{2}a^2\pi$  
+    $M_{xy} = 2\pi a^3$  
+    $C(\dfrac{a}{2},\dfrac{a}{2},\dfrac{a}{2})$
+### 16.7 Stokes’ Theorem
+In Exercises 1–6, find the curl of each vector field $\mathbf{F}$.
+1. $\mathbf{F} = (x + y - z)\mathbf{i} + (2x - y + 3z)\mathbf{j} + (3x + 2y + z)\mathbf{k}$   
+   $\nabla \cdot F = (2-3)\mathbf{i} + (-1-3)\mathbf{j} + (2-1)\mathbf{k} = -\mathbf{i} -4\mathbf{j} + \mathbf{k}$
+#### Using Stokes’ Theorem to Find Line Integrals
+In Exercises 7–12, use the surface integral in Stokes’ Theorem to calculate the circulation of the field $\mathbf{F}$ around the curve $C$ in the indicated direction.
+
+7. $\mathbf{F} = x^2\mathbf{i} + 2x\mathbf{j} + z^2\mathbf{k}$  
+$C$: The ellipse $4x^2 + y^2 = 4$ in the $xy$-plane, counterclockwise  when viewed from above   
+    $\nabla \cdot F = 2\mathbf{k}$  
+    $\mathbf{n}=\mathbf{k}$  
+    $\oint\limits_C\mathbf{F}\cdot dr = \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr$  
+    $=\iint_R2dxdy = 2\pi ab=4\pi$  
+#### Integral of the Curl Vector Field
+13. Let $\mathbf{n}$ be the outer unit normal of the elliptical shell 
+    $$
+    S: 4x^2 + 9y^2 + 36z^2 = 36, z \ge 0
+    $$ 
+    , and let
+    $$
+    \mathbf{F} = y\mathbf{i} + x^2\mathbf{j} +(x^2+y^4)^{\frac{3}{2}}\sin e^{\sqrt{xyz}}\mathbf{k}
+    $$
+    Find the value of
+    $$
+    \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr
+    $$
+    (Hint: One parametrization of the ellipse at the base of the shell is  $x = 3 \cos t, y = 2 \sin t, 0 \le t \le 2\pi.$)  
+    $\mathbf{r}(t) = 3 \cos t\mathbf{i} +2 \sin t\mathbf{j}$  
+    $\dfrac{d\mathbf{r}}{dt} = -3 \sin t\mathbf{i} +2 \cos t\mathbf{j}$  
+    $\oint\limits_C\mathbf{F}\cdot dr = \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr$  
+    $\mathbf{F}\cdot dr=-6\sin^2t\mathbf{i} +18 \cos^2 t\mathbf{j}$  
+    $\oint\limits_C\mathbf{F}\cdot dr=\int_0^{2\pi}-6\sin^2t\mathbf{i} +18 \cos^2 t\mathbf{j}dt=-6\pi$  
+#### Stokes’ Theorem for Parametrized Surfaces
+In Exercises 19–24, use the surface integral in Stokes’ Theorem to  calculate the flux of the curl of the field $\mathbf{F}$ across the surface $S$ in the direction of the outward unit normal $\mathbf{n}.$
+
+19. $\mathbf{F} = 2z\mathbf{i} + 3x\mathbf{j} +5y\mathbf{k}$  
+$S: \mathbf{r}(r,\theta) = r\cos \theta\mathbf{i} +r \sin \theta\mathbf{j} + (4-r^2) \mathbf{k},0\le r\le 2, 0\le \theta \le 2\pi$    
+$\mathbf{r}_r=\cos\theta\mathbf{i} +\sin \theta\mathbf{j} -2r\mathbf{k}$  
+$\mathbf{r}_{\theta}=-r\sin\theta\mathbf{i} +r\cos \theta\mathbf{j}$   
+$N = \mathbf{r}_r\times\mathbf{r}_{\theta} = 2r^2\cos\theta\mathbf{i} +2r^2\sin \theta\mathbf{j}+r\mathbf{k}$   
+$\nabla \times F = 5\mathbf{i} +2\mathbf{j}+3\mathbf{k}$  
+$\iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr=12\pi$
+#### Theory and Examples
+25. Let $C$ be the smooth curve $\mathbf{r}(t)=2\cos t\mathbf{i} +2\sin t\mathbf{j} + (3-2\cos^3t)\mathbf{k}$, oriented to be traversed counterclockwise around the $z$-axis when viewed from above. Let $S$ be the piece-wise smooth cylindrical surface $x^2 + y^2 = 4,$ below the curve for $z \ge 0$, together with the base disk in the $xy$-plane. Note that $C$ lies on the cylinder $S$ and above the $xy$-plane (see the accompanying  figure). Verify Equation (4) in Stokes’ Theorem for the vector field  $\mathbf{F}=y\mathbf{i} -x\mathbf{j} + x^2\mathbf{k}$  
+![](../images/Thomas%20Calculus/16-3.jpg)  
+$\dfrac{d\mathbf{r}}{dt}=-2\sin t\mathbf{i} +2\cos t\mathbf{j} + 6\cos^2t\sin t\mathbf{k}$  
+$\mathbf{F}\cdot d\mathbf{r}=4(6\cos^4t\sin t-1)dt$  
+$\oint\mathbf{F}\cdot d\mathbf{r}=-8\pi$  
+$\nabla\times \mathbf{F}=-2x\mathbf{j} +2\mathbf{k}$  
+$\nabla\times \mathbf{F}\cdot \mathbf{n}=-2$  
+$\iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr=-8\pi$
