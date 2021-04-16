@@ -177,7 +177,7 @@ Let $\mathbf{F}$ be a vector field in three-dimensional space with continuous co
 >THEOREM 6—Stokes’ Theorem  
 Let $S$ be a piecewise smooth oriented surface having a piecewise smooth boundary curve $C$. Let $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ be a vector field whose components have continuous first partial derivatives on an open region containing $S$. Then the circulation of $\mathbf{F}$ around $C$ in the direction counterclockwise with respect to the surface’s unit normal vector $\mathbf{n}$ equals the integral of the curl vector field $\nabla \times F$ over $S$:
 >$$
->\oint\limits_C\mathbf{F}\cdot dr = \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr
+>\oint\limits_C\mathbf{F}\cdot\mathbb{n} dr = \iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr
 >$$ 
 #### Paddle Wheel Interpretation of $\nabla \times F$
 #### Proof Outline of Stokes’ Theorem for Polyhedral Surfaces
@@ -189,3 +189,27 @@ If $\nabla \times F = 0$ at every point of a simply connected open region $D$ in
 >$$
 >\oint\limits_C\mathbf{F}\cdot dr = 0
 >$$ 
+### 16.8 The Divergence Theorem and a Unified Theory
+#### Divergence in Three Dimensions
+#### Divergence Theorem
+>THEOREM 8—Divergence Theorem  
+Let $\mathbf{F}$ be a vector field whose components have continuous first partial derivatives, and let $S$ be a piecewise smooth oriented closed surface. The flux of $\mathbf{F}$ across $S$ in the direction of the surface’s outward unit normal field $\mathbf{n}$ equals the triple integral of the divergence $\nabla \cdot \mathbf{F}$ over the region $D$ enclosed by the surface:  
+>$$
+>\iint\limits_S\mathbf{F}\cdot\mathbf{n} dr = \iiint\limits_D(\nabla \times F)dV
+>$$ 
+
+>COROLLARY   
+The outward flux across a piecewise smooth oriented closed surface $S$ is zero for any vector field $\mathbf{F}$ having zero divergence at every point of the region enclosed by the surface.
+#### Divergence and the Curl
+>THEOREM 9   
+If $\mathbf{F} = M\mathbf{i} + N\mathbf{j} + P\mathbf{k}$ is a vector field with continuous second partial derivatives, then
+>$$
+>\mathsf{div}(\mathsf{curl}\mathbf{F}) = \nabla\cdot(\nabla \times \mathbf{F}) =0
+>$$ 
+#### Proof of the Divergence Theorem for Special Regions
+#### Divergence Theorem for Other Regions
+#### Gauss’s Law: One of the Four Great Laws of Electromagnetic Theory
+#### Continuity Equation of Hydrodynamics
+#### Unifying the Integral Theorems
+> A Unifying Fundamental Theorem of Vector Integral Calculus  
+The integral of a differential operator acting on a field over a region equals the sum of the field components appropriate to the operator over the boundary of the region.
