@@ -322,3 +322,84 @@ $\oint\mathbf{F}\cdot d\mathbf{r}=-8\pi$
 $\nabla\times \mathbf{F}=-2x\mathbf{j} +2\mathbf{k}$  
 $\nabla\times \mathbf{F}\cdot \mathbf{n}=-2$  
 $\iint\limits_S(\nabla \times F)\cdot \mathbf{n}dr=-8\pi$
+### 16.8 The Divergence Theorem and a Unified Theory
+#### Calculating Divergence
+In Exercises 1–8, find the divergence of the field.
+1. $\mathbf{F} = (x-y+z)\mathbf{i} + (2x + y -z)\mathbf{j} +(3x + 2y-2z)\mathbf{k}$  
+   div $\mathbf{F} = 1+1-2 = 0$
+#### Calculating Flux Using the Divergence Theorem
+In Exercises 9–20, use the Divergence Theorem to find the outward flux of $\mathbf{F}$ across the boundary of the region $D$.
+
+9. Cube $\mathbf{F} = (y-x)\mathbf{i} + (z-y)\mathbf{j} +(y-x)\mathbf{k}$
+D: The cube bounded by the planes $x = \pm 1, y = \pm 1$, and $z = \pm 1$  
+flux $=\iiint_D(-1-1+0)dV$  
+$= \int_{-1}^1\int_{-1}^1\int_{-1}^1(-2)dxdydz$  
+$=-16$
+#### Theory and Examples
+21. a. Show that the outward flux of the position vector field $\mathbf{F} = x\mathbf{i} + y\mathbf{j} +z\mathbf{k}$ through a smooth closed surface $S$ is three times the volume of the region enclosed by the surface.  
+b. Let $\mathbf{n}$ be the outward unit normal vector field on $S$. Show that it is not possible for $\mathbf{F}$ to be orthogonal to $\mathbf{n}$ at every point of $S$.  
+a. flux $= \iiint_D3dV = 3V$  
+b. If orthogonal at every point, flux = 0, False. 
+### Practice Exercises
+#### Evaluating Line Integrals
+1. The accompanying figure shows two polygonal paths in space joining the origin to the point $(1, 1, 1)$. Integrate $f(x, y, z) =2x - 3y^2 - 2z + 3$ over each path.
+   ![](../images/Thomas%20Calculus/16-4.jpg)
+    p1: $\mathbf{r}(t) = t\mathbf{i} + t\mathbf{j} +t\mathbf{k}$  
+    $\int_Cfds$  
+    $= \int_0^1(2t-3t^2-2t+3)\sqrt{3}dt$  
+    $= \int_0^1-3\sqrt{3}t^2+3\sqrt{3}dt$  
+    $= 2\sqrt{3}$  
+p2: C_1 : $\mathbf{r}(t) = t\mathbf{i} + t\mathbf{j}$  
+C_2 : $\mathbf{r}(t) = \mathbf{i} + \mathbf{j} +t\mathbf{k}$   
+$\int_Cfds$  
+$= \int_0^1(2t-3t^2+3)\sqrt{2}dt + \int_0^1(2-2t)tdt$  
+$= 3\sqrt{2} +1$
+#### Finding and Evaluating Surface Integrals
+11. Area of an elliptical region Find the area of the elliptical region cut from the plane $x + y + z = 1$ by the cylinder $x^2 + y^2 = 1$   
+    $z = 1-x-y$  
+    $A = \iint\sqrt{1+1+1}dA$  
+    $= \int_0^{2\pi}\int_0^1\sqrt{3}rdrd\theta$  
+    $=\sqrt{3}\pi$  
+#### Parametrized Surfaces
+Find parametrizations for the surfaces in Exercises 19–24. (There are many ways to do these, so your answers may not be the same as those in the back of the book.)
+
+19. Spherical band The portion of the sphere $x^2 + y^2 + z^2 = 36$ between the planes $z = -3$ and $z = 3\sqrt{3}$   
+    $\mathbf{r}(\theta,\phi) = 6\sin\phi\cos\theta\mathbf{i} + 6\sin\phi\sin\theta\mathbf{j} +6\cos\theta\mathbf{k},0\le\theta\le2\pi,\dfrac{6}{\pi}\le\phi\le\dfrac{2}{3}\pi$
+#### Conservative Fields
+Which of the fields in Exercises 29–32 are conservative, and which are not?
+
+29. $\mathbf{F} = x\mathbf{i} + y\mathbf{j} +z\mathbf{k}$  
+    $\dfrac{\partial P}{\partial y} = \dfrac{\partial N}{\partial z} = 0$  
+    $\dfrac{\partial P}{\partial X} = \dfrac{\partial M}{\partial z} = 0$  
+    $\dfrac{\partial N}{\partial x} = \dfrac{\partial M}{\partial y} = 0$
+#### Work and Circulation
+In Exercises 35 and 36, ind the work done by each field along the paths from $(0, 0, 0)$ to $(1, 1, 1)$ in Exercise 1.
+
+35. $\mathbf{F} = 2xy\mathbf{i} + \mathbf{j} +x^2\mathbf{k}$    
+    p1: $W = \int_0^13t^2 + 1dt=2$  
+    p2: $W =\int_0^12t^2+1dt+\int_0^1dt = \dfrac{8}{3}$  
+#### Masses and Moments
+41. Wire with different densities Find the mass of a thin wire lying along the curve $\mathbf{r}(t) = \sqrt{2}\mathbf{i} + \sqrt{2}\mathbf{j} +(4-t^2)\mathbf{k},0\le t\le1$ if the density at $t$ is (a) $\delta = 3t$ and (b) $\delta = 1.$   
+   a. $M = \int_0^13t\sqrt{\dfrac{1+t^2}{t}}dt$  
+   b. $M = \int_0^1\sqrt{\dfrac{1+t^2}{t}}dt$
+#### Flux Across a Plane Curve or Surface
+Use Green’s Theorem to find the counterclockwise circulation and outward flux for the fields and curves in Exercises 49 and 50.
+
+49. Square $\mathbf{F} = (2xy+x)\mathbf{i} + (xy-y\mathbf{j}$  
+C: The square bounded by $x = 0, x = 1, y = 0, y = 1$    
+flux :$\int_0^1\int_0^1(2y+1+x-1)dxdy=\dfrac{3}{2}$  
+circulation $\int_0^1\int_0^1(2y-x)dxdy=-\dfrac{1}{2}$
+###  Additional and Advanced Exercises
+#### Finding Areas with Green’s Theorem
+Use the Green’s Theorem area formula in Exercises 16.4 to find the areas of the regions enclosed by the curves in Exercises 1–4.
+1. The limaçon $x = 2 \cos t - \cos 2t, y = 2 \sin t, 0\le t \le 2\pi$  
+   ![](../images/Thomas%20Calculus/16-5.jpg)  
+   $dx =-2\sin t +2\sin 2t,dy = 2\cos t$  
+   $A = \int_0^{2\pi}xdy-ydx=6\pi$
+#### Theory and Applications
+5. a. Give an example of a vector field $\mathbf{F} (x, y, z)$ that has value 0 at only one point and such that curl $\mathbf{F}$ is nonzero everywhere. Be sure to identify the point and compute the curl.  
+b. Give an example of a vector field $\mathbf{F} (x, y, z)$ that has value 0 on precisely one line and such that curl $\mathbf{F}$ is nonzero everywhere. Be sure to identify the line and compute the curl.  
+c. Give an example of a vector field $\mathbf{F} (x, y, z)$ that has value 0 on a surface and such that curl $\mathbf{F}$ is nonzero everywhere. Be sure to identify the surface and compute the curl.  
+a. $\mathbf{F} = z\mathbf{i} + x\mathbf{j}+y\mathbf{k},(0,0,0)$  
+b. $\mathbf{F} = z\mathbf{i} + y\mathbf{k},x=t,y=0,z=0$  
+c. $\mathbf{F} = z\mathbf{i}z=0$
