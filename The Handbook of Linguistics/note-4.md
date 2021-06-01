@@ -1,6 +1,6 @@
 # The Handbook of Linguistics
 ## Part 1 Starting Points
-### 3 Field Linguistics Gathering Language Data from  Native Speakers 
+### 4 Field Linguistics Gathering Language Data from  Native Speakers 
 #### 1  What Is “Field Linguistics”?
 + the collection of primary data on the basic grammatical  facts of a relatively little studied language from ordinary speakers in a relatively natural setting, and the analysis and dissemination of such data
 + not normally based on introspection
