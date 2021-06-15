@@ -1,6 +1,6 @@
 # The Handbook of Linguistics
 ## Part 2 Theoretical Bases
-### 6The History of Linguistics  Approaches to Linguistics
+### 6 The History of Linguistics  Approaches to Linguistics
 #### 1 Introduction
 #### 2 Grammatical Traditions
 + the Old-Babylonian tradition: first linguistic texts, Sumerian and Akkadian neurons
