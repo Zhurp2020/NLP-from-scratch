@@ -1,6 +1,6 @@
 # The Handbook of Linguistics
 ## Part 3 Core Fields
-### 8 Linguistic Phonetics The Sounds of Languages
+### 9 Linguistic Phonetics The Sounds of Languages
 #### 1 Introduction 
 + phonetics: the scientific study of the nature, use, and variety of all aspects of speech
 + phonology: the study of communicative aspects of spoken language
