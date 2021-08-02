@@ -1,6 +1,6 @@
 # The Handbook of Linguistics
 ## Part 3 Core Fields
-### 11 Morphology
+### 12 The Lexicon
 #### 1 Introduction
 + A list of the basic units constitutes the lexicon of the language
 #### 2 Words 
