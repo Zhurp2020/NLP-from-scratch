@@ -1,6 +1,5 @@
 # The Handbook of Linguistics
 ## Part 4 Languages and the Mind
-## Part 3 Core Fields
 ### 16 Neurolinguistics
 + language disorders (aphasiology) and the relationship between language and the brain. 
 + Aphasiology has made important discoveries about what goes wrong with language after brain damage, some of which have implications for what language is and how it is processed.

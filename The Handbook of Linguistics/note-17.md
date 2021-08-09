@@ -1,6 +1,5 @@
 # The Handbook of Linguistics
 ## Part 4 Languages and the Mind
-## Part 3 Core Fields
 ### 17 Psycholinguistics
 + Psycholinguistics is the study of the interfaces between language structure and language use: between thought and production, production and comprehension, and comprehension and thought, as well as the many other cognitive systems that shape the use of language as it is flowing into and out of the mind in real time.
 #### 1 Psycholinguistics as a Field of Study
