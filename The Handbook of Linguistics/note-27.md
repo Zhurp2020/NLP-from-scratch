@@ -1,6 +1,6 @@
 # The Handbook of Linguistics
 ## Part 5 Languages in Use
-###  27 7 Second Language Acquisition One Person with Two Languages
+###  27 Second Language Acquisition One Person with Two Languages
 #### 1 Overall Issues
 #### 2 Early Days: Links and Questions
 + A coordinate bilingual has two separate concepts for a word: two concepts, two words
