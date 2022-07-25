@@ -64,3 +64,6 @@ $$
 Make the shape of the gradient the shape of parameters so that $\dfrac{\partial s}{\partial \boldsymbol{W}}$ is $m\times n$ 
 ![](../images/cs224n/3.png)
 There could be difference between the Jacobian shape (makes chain rule easy) and shape convention (makes SGD easy)
+### Back propagation
+![](../images/cs224n/4.png)
+#### Efficiency: avoid duplicated computation

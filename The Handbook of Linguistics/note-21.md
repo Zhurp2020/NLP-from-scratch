@@ -4,7 +4,7 @@
 + Discourse analysis is concerned with the contexts in and the processes through which we use oral and written language with specific audiences, for specific purposes, 
 in specific settings
 #### What is Discourse? A Preliminary Characterization
-+ discourse analysis emphasizes that language is not merely a self-contained system of symbols but more importantly a mode of doing, being, and becoming.
++ discourse analysis emphasizes that language is not merely a self-contained system of symbols but more importantly a mode of doing, being, and becoming.
 + discourse analysis seeks to describe and explain linguistic phenomena in terms of the affective, cognitive, situational, and cultural contexts of their use and to identify linguistic resources through which we (re)construct our life
 + why some but not other linguistic forms are used ion given occasions; and what are the linguistic resources for accomplishing various social, affective, and cognitive actions and interactions
 ##### 1.1 Communicative motivations for the selection of linguistic forms
