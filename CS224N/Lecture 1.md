@@ -10,7 +10,7 @@
 ### Word2vec
 #### General idea
 1. We have a corpus of text
-2. Every wor in a fixed vocabulary is representeed by a vector
+2. Every word in a fixed vocabulary is representeed by a vector
 3. Go through each position $t$ in the text, with center word $c$ and context words $o$.
 4. Use similarity of word vectors for $c$ and $o$ to calculate $P(o|c)$
 5. Adjust the vectors to maximize $p$
