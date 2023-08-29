@@ -106,3 +106,179 @@ $x_1 = 5, x_2 = -3$
      $E'' = \begin{bmatrix}1 & 0 &0&0 \\ 0 & 1 & 0 &0 \\ 0 & 0 & 1 &0 \\ 0 & 0 & -1 &1 \end{bmatrix}$  
      $M = E'''E'E = \begin{bmatrix}1 & 0 &0&0 \\ 0 & 1 & 0 &0 \\ 0 & 0 & 1 &0 \\ 0 & 0 & -1 &1 \end{bmatrix}\begin{bmatrix}1 & 0 &0&0 \\ -1 & 1 & 0 &0 \\ 1 & -2 & 1 &0 \\ 0 & 1 & -2 &1 \end{bmatrix}$  
      $= \begin{bmatrix}1 & 0 &0&0 \\ -1 & 1 & 0 &0 \\ 1 & -2 & 1 &0 \\ -1 & 3 & -3 &1 \end{bmatrix}$
+### 2.4 Rules for Matrix Operations
+Problems 1-16 are about the laws of matrix multiplication.
+1. $A$ is 3 by 5, $B$ is 5 by 3, $C$ is 5 by 1, and $D$ is 3 by 1. ,All entries are 1. Which of these matrix operations are allowed, and what are the results ?  
+   $$
+   BA \quad AB \quad ABD\quad DC \quad A(B+C)
+   $$  
+   $BA = \begin{bmatrix}3 & 3 &3&3 & 3\\ 3 & 3 &3&3 & 3 \\ 3 & 3 &3&3 & 3 \\ 3 & 3 &3&3 & 3 \end{bmatrix}$  
+   $AB = \begin{bmatrix}5 & 5 & 5 \\ 5 & 5 & 5 \\ 5 & 5 & 5 \end{bmatrix}$  
+   $ABD = \begin{bmatrix}15 \\ 15 \\ 15  \end{bmatrix}$  
+   $DC$: not allowed  
+   $A(B+C)$: not allowed
+
+2.   For $A = \begin{bmatrix}2 & -1  \\ 3 & -2 \end{bmatrix}$  and $B =\begin{bmatrix}1 & 0 & 4  \\ 1 & 0 & 6 \end{bmatrix}$, compute these answers and nothing more:  
+(a) column 2 of $AB$  
+(b) row 2 of $AB$  
+(c) row 2 of $AA = A^2$   
+(d) row 2 of $AAA= A^3$.  
+(a)$\begin{bmatrix}0  \\ 0 \end{bmatrix}$  
+(b)$\begin{bmatrix}1 & 0 & 0 \end{bmatrix}$  
+(c)$\begin{bmatrix}0 & 1 \end{bmatrix}$   
+(d)$\begin{bmatrix}3 & -2 \end{bmatrix}$
+
+Problems 18-20 use $a_{ij}$ for the entry in row $i$, column $j$ of $A$  
+
+18. Write down the 3 by 3 matrix $A$ whose entries are   
+    (a) $a_{ij}$ = minimum of $i$ and $j$  
+    (b) $a_{ij} = (-1)^{i+j}$  
+    (c) $a_{ij} = \dfrac{i}{j}$  
+    (a) $\begin{bmatrix}1 & 1 & 1 \\ 1 & 2 & 2 \\ 1 & 2 & 3 \end{bmatrix}$  
+    (b) $\begin{bmatrix}1 & -1 & 1 \\ -1 & 1 & -1 \\ 1 & -1 & 1 \end{bmatrix}$  
+    (c) $\begin{bmatrix}1 & \dfrac{1}{2} & \dfrac{1}{3} \\ 2 & 1 & \dfrac{2}{3} \\ 3 & \dfrac{3}{2} & 1 \end{bmatrix}$   
+
+Problems 21-24 involve powers of $A$.   
+
+21.  Compute $A^2, A^3, A^4$ and also $A\bold{v},A^2\bold{v}, A^3\bold{v}, A^4\bold{v}$ for  
+        $$
+        A = \begin{bmatrix}0 & 2 & 0 &0 \\ 0 & 0 & 2 &0 \\ 0 & 0 & 0 & 2 \\ 0 & 0 & 0 &0 \end{bmatrix}, \bold{v} = \begin{bmatrix}  x \\ y \\ z\\t       \end{bmatrix}
+        $$  
+        $A\bold{v} = \begin{bmatrix}           2y\\2z \\2t \\0      \end{bmatrix}$  
+        $A^2 = \begin{bmatrix}0 & 0 & 4 &0 \\ 0 & 0 & 0 &4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 &0 \end{bmatrix}, A^2\bold{v}=\begin{bmatrix}     4z\\4t \\0 \\0      \end{bmatrix}$   
+        $A^3 = \begin{bmatrix}0 & 0 & 0 &8 \\ 0 & 0 & 0 &0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 &0 \end{bmatrix}, A^3\bold{v}=\begin{bmatrix}     8t\\0 \\0 \\0      \end{bmatrix}$   
+        $A^4 = \begin{bmatrix}0 & 0 & 0 &0 \\ 0 & 0 & 0 &0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 &0 \end{bmatrix}, A^4\bold{v}=\begin{bmatrix}     0\\0 \\0 \\0      \end{bmatrix}$  
+
+Problems 25-31 use column-row multiplication and block multiplication. 
+
+25. Multiply $A$ times $I$ using columns of $A$ (3 by 3) times rows of $I$  
+    $AI = \begin{bmatrix}a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}\begin{bmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} = \begin{bmatrix}a & b & c \\ d & e & f \\ g & h & i \end{bmatrix}$  
+
+26. (Very important) Suppose you solve $A\bold{x} = \bold{b}$ for three special right sides $\bold{b}$:   
+    $$
+    A\bold{x}_1 = \begin{bmatrix}1 \\ 0 \\ 0  \end{bmatrix}, A\bold{x}_2 = \begin{bmatrix}0 \\ 1 \\ 0  \end{bmatrix}, A\bold{x}_3 = \begin{bmatrix}0 \\ 0 \\ 1  \end{bmatrix}
+    $$ 
+    If the three solutions $\bold{x}_1, \bold{x}_2, \bold{x}_3$ are the columns of a matrix $X$, what is $A$ times $X$?  
+    $I = \begin{bmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$
+#### Challenge Problems 
+36. **Practical question** Suppose $A$ is $m$ by $n$, $B$ is $n$ by $p$, and $C$ is $p$ by $q$. Then the multiplication count is $mnp$ for $AB + mpq$ for $(AB) C$. The same matrix comes from  $A$ times $BC$ with $mnq + npq$ separate multiplications. Notice $npq$ for $BC$.   
+    (a): If $A$ is 2 by 4, $B$ is 4 by 7, and $C$ is 7 by 10, do you prefer $(AB) C$ or $A (BC)$?   
+    (b) With $N$-component vectors, would you choose $(\bold{u}^T\bold{v})\bold{w}^T$ or $\bold{u}^T(\bold{v}\bold{w}^T)$?   
+    (c) Divide by $mnpq$ to show that $(AB) C$ is faster when $n^{-1} + q^{-q} < m^{-1} + q^{-1}$  
+    (a)$mnp + mpq =56 +140= 196$  
+    $mnq + npq = 80 + 280 = 360$  
+    $(AB)C$  is better.    
+    (b)$(\bold{u}^T\bold{v})\bold{w}^T$: $2N$ multiplications  
+    $\bold{u}^T(\bold{v}\bold{w}^T)$:$N+N^2$  
+    use $(\bold{u}^T\bold{v})\bold{w}^T$  
+    (c) $\dfrac{mnp + mpq}{mnpq} =\dfrac{1}{q} + \dfrac{1}{n}$  
+    $\dfrac{mnq + npq}{mnpq} =\dfrac{1}{p} + \dfrac{1}{m}$  
+    $\dfrac{1}{q} + \dfrac{1}{n} < \dfrac{1}{p} + \dfrac{1}{m}$  
+    $mnp + mpq< mnq + npq$, $(AB)C$ is faster
+### 2.5 Inverse Matrices
+1. Find the inverses (directly or from the 2 by 2 formula) of $A, B, C$:  
+   $$A = \begin{bmatrix}0 & 3  \\ 4 & 0 \end{bmatrix}, B =\begin{bmatrix}2 & 0  \\ 4 & 2 \end{bmatrix}, C = \begin{bmatrix}3 & 4  \\ 5 & 7 \end{bmatrix}$$
+    $A^{-1} = -\dfrac{1}{12}\begin{bmatrix} 0 &-4\\  -& 0\ \end{bmatrix} = \begin{bmatrix} 0 &\dfrac{1}{4}\\  \dfrac{1}{3} & 0\ \end{bmatrix}$  
+    $B^{-1} = \dfrac{1}{4}\begin{bmatrix}2 &-4\\ 0 & 2  \end{bmatrix} =  \begin{bmatrix}\dfrac{1}{2} & 0\\ -1 & \dfrac{1}{2}\ \end{bmatrix}$     
+    $C^{-1} = \begin{bmatrix}7 & -4\\ -5 & 3 \end{bmatrix}$  
+
+Questions 22-28 a:re about the Gauss-Jordan method for calculating $A^{-1}$  
+
+22. Change $I$ into $A^{-1}$ as you reduce $A$ to $I$ (by row operations):   
+    $$\begin{bmatrix}A &I \end{bmatrix} = \begin{bmatrix}1 & 3 & 1 & 0  \\ 2 & 7 & 0& 1 \end{bmatrix}, \begin{bmatrix}A &I \end{bmatrix} = \begin{bmatrix}1 & 4 & 1 & 0  \\ 3 & 9 & 0& 1 \end{bmatrix}$$  
+    $\begin{bmatrix}1 & 3 & 1 & 0  \\ 2 & 7 & 0& 1 \end{bmatrix} \rArr \begin{bmatrix}1 & 3 & 1 & 0  \\ 0 & 1 & -2& 1 \end{bmatrix} \rArr \begin{bmatrix}1 & 0 & 7 & -3  \\ 0 & 1 & -2& 1 \end{bmatrix}$  
+    $\begin{bmatrix}1 & 4 & 1 & 0  \\ 3 & 9 & 0& 1 \end{bmatrix} \rArr \begin{bmatrix}1 & 4 & 1 & 0  \\ 0 & -3 & -3& 1 \end{bmatrix} \rArr \begin{bmatrix}1 & 0 & -3& 0  \\ 0 & -3 & -3& 1 \end{bmatrix} \rArr \begin{bmatrix}1 & 0 & -3& -\dfrac{4}{3}  \\ 0 & 1 & 1& -\dfrac{1}{3} \end{bmatrix}$
+
+29. True or false ( with a counterexample if false and a reason if true):      
+    (a) A 4 by 4 matrix with a row of zeros is not invertible.  
+    (b) Every matrix with l's down the main diagonal is   invertible.  
+    (c) If $A$ is invertible then $A^{-1}$ and $A^2$ are invertible  
+    (a): True, it does not have four pivots  
+    (b): False $\begin{bmatrix}1 & 3  \\ \dfrac{1}{3} & 1 \end{bmatrix}$  
+    (c): True. 
+#### Challenge Problems
+30. (Recommended) $A$ is a 4 by 4 matrix with 1 's on the diagonal and $-a, -b, -c$ on the diagonal above. Find $A^{-1}$ for this bidiagonal matrix.  
+    $\begin{bmatrix}1 & -a & 0 &0 &1 & 0 & 0 &0 \\ 0 & 1 & -b &0 & 0 & 1 &0 &0 \\ 0 & 0 & 1 &-c & 0 & 0 & 1 &0\\ 0 & 0 & 0 &1 &  0 & 0 & 0 &1 \end{bmatrix} \rArr \begin{bmatrix}1 & 0 & 0 &0 &1 & a &ab &abc \\ 0 & 1 & 0 &0 & 0 & 1 &b &bc\\ 0 & 0 & 1 &0 & 0 & 0 & 1 &c\\ 0 & 0 & 0 &1 &  0 & 0 & 0 &1 \end{bmatrix}$
+### 2.6 Elimination = Factorization: $A = LU$ 
+Problems 1-14 compute the factorization $A = LU$ (and also $A = LDU$)  
+1. (Important) Forward elimination changes $\begin{bmatrix}1 & 1  \\ 1 & 2 \end{bmatrix}\bold{x} = \bold{b}$ to a triangular $\begin{bmatrix}1 & 1  \\ 0 & 1 \end{bmatrix}\bold{x} = \bold{c}$
+    $$\begin{alignedat}{4}x & {}+{} & y  &  & = 5\\ x  & {}+{} & 2y & & = 7\end{alignedat} \rArr \begin{alignedat}{4}x & {}+{} & y  &  & = 5\\  &  & y & & = 2\end{alignedat}，  \begin{bmatrix}1 & 1 & 5 \\ 1 & 2 & 7 \end{bmatrix} \rArr \begin{bmatrix}1 & 1 & 5 \\ 0 & 1 & 2 \end{bmatrix}$$  
+    That step subtracted $l_{21} = 1$ times row 1 from row 2. The reverse step adds $l_{21}$ times row 1 to row 2. The matrix for that reverse step is $L =  \begin{bmatrix}1 & 0 \\ 1 & 1  \end{bmatrix}$. Multiply this $L$ times the triangular system $\begin{bmatrix}1 & 1  \\ 0 & 1 \end{bmatrix}\bold{x}_1 = \begin{bmatrix}5  \\2 \end{bmatrix}$ to get $\begin{bmatrix}1 & 1 \\ 1 & 2  \end{bmatrix} \bold{x}_1 = \begin{bmatrix}5  \\7 \end{bmatrix}$ . In letters, $L$ multiplies $U\bold{x} = \bold{c}$ to give $LU\bold{x} = L\bold{c}$  
+
+Problems 15-16 use $L$ and $U$ (without needing $A$) to solve $A\bold{x} = \bold{b}$.  
+
+15. Solve the triangular system $L\bold{c} = \bold{b}$ to find $\bold{c}$. Then solve $U\bold{x} = \bold{c}$ to find $\bold{x}$:     
+    $$L = \begin{bmatrix}1 & 0  \\ 4 & 1 \end{bmatrix}, U = \begin{bmatrix}2 & 4  \\ 0 & 1 \end{bmatrix}, \bold{b} = \begin{bmatrix}2  \\ 11 \end{bmatrix}$$  
+    For safety multiply $LU$ and solve $A\bold{x} = \bold{b}$ as usual. Circle $c$ when you see it.    
+    $\begin{bmatrix}1 & 0  \\ 4 & 1 \end{bmatrix}\bold{c} = \begin{bmatrix}2  \\ 11 \end{bmatrix}, \bold{c} = \begin{bmatrix}2  \\ 3 \end{bmatrix}$  
+    $\begin{bmatrix}2 & 4  \\ 0 & 1 \end{bmatrix}\bold{x} = \begin{bmatrix}2  \\ 3 \end{bmatrix}, \bold{x} = \begin{bmatrix}-5  \\ 3 \end{bmatrix}$   
+    $\begin{bmatrix}2 & 4  \\ 8 & 17 \end{bmatrix}\bold{x} = \begin{bmatrix}2  \\ 11 \end{bmatrix}, \bold{x} = \begin{bmatrix}-5  \\ 3 \end{bmatrix}$
+
+17. (a) When you apply the usual elimination steps to $L$, what matrix do you reach?  
+    $$L = \begin{bmatrix}1 & 0 & 0 \\ l_{21} & 1 & 0 \\ l_{31} & l_{32} & 1 \end{bmatrix}$$  
+    (b) When you apply the same steps to $I$, what matrix do you get?  
+    (c) When you apply the same steps to $LU$, what matrix do you get?  
+    (a): $I$  
+    (b): $L^{-1}$  
+    (c): $U$  
+#### Challenge Problems
+24. Which invertible matrices allow $A = LU$ (elimination without row exchanges)? Good question! Look at each of the square upper left submatrices $A_k$ of $A$.   
+    All upper left $k$ by $k$ sub matrices $A_k$ must be invertible ( sizes $k = l, ... , n$ ).   
+    Explain that answer: $A_k$ factors into $L_kU_k$ because $LU= \begin{bmatrix}L_k & 0  \\ * & * \end{bmatrix} \begin{bmatrix}U_k & *  \\ 0 & * \end{bmatrix}$
+### 2.7 Transposes and Permutations
+Questions 1-7 are about the rules for transpose matrices. 
+1. Find $A^T$ and $A^{-1}$ and $(A^{-1})^T$ and $(A^T){-1}$ for  
+   $$
+    A = \begin{bmatrix}1 & 0  \\9 & 3 \end{bmatrix}, A = \begin{bmatrix}1 & c  \\c & 0 \end{bmatrix}
+   $$  
+   $A^T = \begin{bmatrix}1 & 9  \\0 & 3 \end{bmatrix}, A^{-1} = \begin{bmatrix}1 & -3  \\0 & \dfrac{1}{3} \end{bmatrix}$  
+   $(A^{-1})^T = \begin{bmatrix}1 & 0  \\-3 & \dfrac{1}{3} \end{bmatrix}, (A^T)^{-1} = \begin{bmatrix}1 & 0  \\-3 & \dfrac{1}{3} \end{bmatrix}$
+
+Questions 8-15 are about permutation matrices. 
+
+8. Why are there $n!$ permutation matrices of order $n$?  
+   $P_n^n = n!$  
+
+Questions 16-21 are about symmetric matrices and their factorizations.  
+
+16. If $A = A^T$ and $B = B^T$ , which of these matrices are certainly symmetric?   
+    (a) $A^2 -B^2$, (b)$(A+B)(A-B)$  (c)$ABA$ (d)$ABAB$   
+    $(A^2)^T =A^TA^T = A^2$  (a) and (b) are symmetric  
+    $(ABA)^T = (BA)^TA^T =A^TB^TA^T = ABA$  
+    $(ABAB)^T = (AB)^T (AB)^T = B^TA^TB^TA^T = BABA$, not symmetric  
+
+Questions 22-24 are about the factorizations $PA = LU$ and $A = L_1 P_1 U_1$   
+
+22. Find the $PA = LU$ factorizations (and check them) for  
+    $$
+    A = \begin{bmatrix}0 & 1 & 1 \\ 1 & 0 & 1 \\ 2 & 3 & 4 \end{bmatrix}, A = \begin{bmatrix}1 & 2 & 0 \\ 2 & 4 & 1 \\ 1 & 1 & 1 \end{bmatrix}
+    $$
+    $P = \begin{bmatrix}0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 &1 \end{bmatrix}, PA = \begin{bmatrix}1 & 0 & 1 \\0 & 1 & 1 \\  2 & 3 & 4 \end{bmatrix} = \begin{bmatrix}1 & 0 & 0 \\ 0  & 1 & 0 \\ 2 & 3 & 1 \end{bmatrix} \begin{bmatrix}1 & 0 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & -1\end{bmatrix} =LU$  
+    $P = \begin{bmatrix}1 & 0 & 0 \\ 0 & 0 & 1 \\ 1 & 0 &0 \end{bmatrix}, PA = \begin{bmatrix}1 & 2 & 0 \\1 & 1 & 1 \\2 & 4 & 1  \end{bmatrix} = \begin{bmatrix}1 & 0 & 0 \\ 1 & 1 & 0 \\ 2 & 0 & 1 \end{bmatrix} \begin{bmatrix}1 & 2 & 0 \\ 0 & -1 & 1 \\  0 & 0& 1\end{bmatrix} =LU$
+
+25. Prove that the identity matrix cannot be the product of three row exchanges (or five). It can be the product of two exchanges (or four).  
+    $P = P_{12} P_{23} P_{13}$  
+    Let $PA = I= A = IP^{-1} = P^{-1}$   
+    $(P_{12} P_{23} P_{13})^{-1} = I$  
+    $=P_{13}^{-1} P_{23}^{-1} P_{12}^{-1}$, so one of $P$ must be $I$   
+
+The next three questions are about applications of the identity $(A\bold{x})^T\bold{y} = \bold{x}^T (A^T\bold{y})$.
+
+29. Wires go between Boston, Chicago, and Seattle. Those cities are at voltages $x_B, x_C, x_S$. With unit resistances between cities, the currents between cities are in $\bold{y}$:  
+    $$
+    \bold{y} = A\bold{x}, \begin{bmatrix}
+        y_{BC} \\ y_{CS} \\ y_{BS}
+    \end{bmatrix} = \begin{bmatrix}
+        1 & -1& 0 \\ 0 & 1 &-1 \\ 1 & 0 & -1
+    \end{bmatrix} \begin{bmatrix}
+        x_B \\ x_C  \\x_S
+    \end{bmatrix}
+    $$  
+    (a) Find the total currents $A^T\bold{y}$ out of the three cities.  
+    (b) Verify that $(A\bold{x})^T\bold{y}$ agrees with $\bold{x}^T (A^T\bold{y})$-six terms in both.  
+    (a): $A^T = \begin{bmatrix}1 & 0& 1 \\ -1& 1 &0 \\ 0 & -1 & -1\end{bmatrix}, \bold{y} = \begin{bmatrix}x_B -x_C \\ x_C -x_S \\ x_B - x_S\end{bmatrix}A^T\bold{y} = \begin{bmatrix} 2x_B - x_C - x_S \\ 2x_C -x_B -x_S \\2x_S -x_C -x_B\end{bmatrix}$  
+    (b) $(A\bold{x})^T\bold{y} = \bold{y}^T\bold{y} = (x_B -x_C) ^2 +  (x_C -x_S )^2 + (x_B - x_S) ^2$   
+    $\bold{x}^T (A^T\bold{y}) =2x_B^2 + 2x_C^2 + 2x_S^2 -2x_Cx_B -2x_Cx_S -2x_Bx_S$  
+#### Challenge Problems 
+36. A square northwest matrix $B$ is zero in the southeast comer, below the antidiagonal that connects $(1, n)$ to $(n, 1)$. Will $B^T$ and $B^2$ be northwest matrices? Will $B^{-1}$ be northwest or southeast? What is the shape of $BC =$ northwest times southeast?    
+    $B^T$ ia, $B^2$ is not, $B^{-1}$ is southeast  $BC$ only has non-zero values along the antidiagonal
