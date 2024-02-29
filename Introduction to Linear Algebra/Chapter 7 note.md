@@ -28,7 +28,7 @@ Each $\sigma_i^2$ is an eigenvalue of $A^TA$ and also $AA^T$. When we put the si
 #### Proof of the SVD
 The $\bold{v}$'s will be orthonormal eigenvectors of $A^T A$.  
 $A^T A = (U\Sigma V^T)^T(U\Sigma V^T)= V\Sigma^TU^TU\Sigma V^T =V\Sigma^T\Sigma V^T$  
-$\bold{u}_i^T\bold{u}_j = (\frac{A\bold{v}_i}{\sigma_1})^T(\frac{A\bold{v}_j}{\sigma_j}) = \dfrac{\bold{v}_i^TATA\bold{v}_j}{\sigma_i\sigma_j} = \dfrac{\sigma_j^2}{\sigma_i\sigma_j}\bold{v}_i^T\bold{v}_j = 0$, For $i\ne j$   
+$\bold{u}_i^T\bold{u}_j = (\frac{A\bold{v}_i}{\sigma_1})^T(\frac{A\bold{v}_j}{\sigma_j}) = \dfrac{\bold{v}_i^TA^TA\bold{v}_j}{\sigma_i\sigma_j} = \dfrac{\sigma_j^2}{\sigma_i\sigma_j}\bold{v}_i^T\bold{v}_j = 0$, For $i\ne j$   
 The $\bold{v}$'s are eigenvectors of $A^T A$ (symmetric). They are orthogonal and now the $\bold{u}$'s are also orthogonal. Actually those $\bold{u}$'s will be eigenvectors of $AA^T$ .
 #### An Example of the SVD
 #### An Extreme Matrix 
